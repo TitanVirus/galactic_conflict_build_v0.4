@@ -1,0 +1,116 @@
+<!-- converted from XMB to XML -->
+
+<protounitsounddef>
+	<protounit name="zHomestead">
+		<soundtype name="Select">
+			<soundset name="swBldGeneric"/>
+		</soundtype>
+		<soundtype name="Death">
+			<soundset name="swBuildingDeath"/>
+		</soundtype>
+		<soundtype name="Creation">
+			<soundset name="swBldGeneric"/>
+		</soundtype>
+		<soundtype name="Exists">
+			<soundset name="deaf"/>
+		</soundtype>
+	</protounit>
+	<protounit name="zStorehouse">
+		<soundtype name="Select">
+			<soundset name="swBldStorehouse"/>
+		</soundtype>
+		<soundtype name="Death">
+			<soundset name="swBuildingDeath"/>
+		</soundtype>
+		<soundtype name="Creation">
+			<soundset name="swBldStorehouse"/>
+		</soundtype>
+		<soundtype name="Exists">
+			<soundset name="swAmbienceMarket"/>
+		</soundtype>
+	</protounit>
+	<protounit name="zResearchFacility">
+		<soundtype name="Select">
+			<soundset name="swBldResearchFacility"/>
+		</soundtype>
+		<soundtype name="Death">
+			<soundset name="swBuildingDeath"/>
+		</soundtype>
+		<soundtype name="Creation">
+			<soundset name="swBldResearchFacility"/>
+		</soundtype>
+		<soundtype name="Exists">
+			<soundset name="swResearchFacility"/>
+		</soundtype>
+	</protounit>
+	<protounit name="zWarCenter">
+		<soundtype name="Select">
+			<soundset name="swBldWarCenter"/>
+		</soundtype>
+		<soundtype name="Death">
+			<soundset name="swBuildingDeath"/>
+		</soundtype>
+		<soundtype name="Creation">
+			<soundset name="swBldWarCenter"/>
+		</soundtype>
+		<soundtype name="Exists">
+			<soundset name="swAmbienceWarCenter"/>
+		</soundtype>
+	</protounit>
+	<protounit name="zInfantryBarracks">
+		<soundtype name="Select">
+			<soundset name="swBldInfantryBarracks"/>
+		</soundtype>
+		<soundtype name="Death">
+			<soundset name="swBuildingDeath"/>
+		</soundtype>
+		<soundtype name="Creation">
+			<soundset name="swBldInfantryBarracks"/>
+		</soundtype>
+		<soundtype name="Exists">
+			<soundset name="swAmbienceInfantryBarracks"/>
+		</soundtype>
+	</protounit>
+	<protounit name="zVehicleWorkshop">
+		<soundtype name="Select">
+			<soundset name="swBldVehicleDepot"/>
+		</soundtype>
+		<soundtype name="Death">
+			<soundset name="swBuildingDeath"/>
+		</soundtype>
+		<soundtype name="Creation">
+			<soundset name="swBldVehicleDepot"/>
+		</soundtype>
+		<soundtype name="Exists">
+			<soundset name="swAmbienceVehicleDepot"/>
+		</soundtype>
+	</protounit>
+	<protounit name="zAirbase">
+		<soundtype name="Select">
+			<soundset name="swBldAirbase"/>
+		</soundtype>
+		<soundtype name="Death">
+			<soundset name="swBuildingDeath"/>
+		</soundtype>
+		<soundtype name="Creation">
+			<soundset name="swBldAirbase"/>
+		</soundtype>
+		<soundtype name="Exists">
+			<soundset name="swAmbienceAirbase"/>
+		</soundtype>
+	</protounit>
+	<protounit name="zWeaponsFactory">
+		<soundtype name="Select">
+			<soundset name="swBldHeavyFactory"/>
+		</soundtype>
+		<soundtype name="Death">
+			<soundset name="swBuildingDeath"/>
+		</soundtype>
+		<soundtype name="Creation">
+			<soundset name="swBldHeavyFactory"/>
+		</soundtype>
+		<soundtype name="Exists">
+			<soundset name="swAmbienceHeavyFactory"/>
+		</soundtype>
+	</protounit>
+</protounitsounddef>

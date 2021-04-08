@@ -1,0 +1,100 @@
+<!-- converted from XMB to XML -->
+
+<animfile>
+	<definebone>bone_2x2FX01</definebone>
+	<definebone>bone_2x2FX02</definebone>
+	<attachment>
+		fire01
+		<component>
+			emitter
+			<assetreference type="ParticleSystem">
+				<file>effects\fire\rubble_fire_small_A.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			None
+			<component>emitter</component>
+		</anim>
+	</attachment>
+	<attachment>
+		smoke01
+		<component>
+			emitter
+			<assetreference type="ParticleSystem">
+				<file>effects\smoke\rubble_smoke_small_A.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			None
+			<component>emitter</component>
+		</anim>
+	</attachment>
+	<attachment>
+		fire02
+		<component>
+			emitter
+			<assetreference type="ParticleSystem">
+				<file>effects\fire\rubble_fire_small_A.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			None
+			<component>emitter</component>
+		</anim>
+	</attachment>
+	<attachment>
+		smoke02
+		<component>
+			emitter
+			<assetreference type="ParticleSystem">
+				<file>effects\smoke\rubble_smoke_small_A.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			None
+			<component>emitter</component>
+		</anim>
+	</attachment>
+	<component>
+		ModelComp
+		<logic type="Variation">
+			<v1>
+				<assetreference type="GrannyModel">
+					<file>Star_Wars\Units\Mechs\Flash Speeder\RSF_FlashSpeeder_A1_deada</file>
+				</assetreference>
+				<attach a="fire01" frombone="ATTACHPOINT" tobone="bone_2x2FX01" syncanims="0"/>
+				<attach a="smoke01" frombone="ATTACHPOINT" tobone="bone_2x2FX01" syncanims="0"/>
+			</v1>
+			<v2>
+				<assetreference type="GrannyModel">
+					<file>Star_Wars\Units\Mechs\Flash Speeder\RSF_FlashSpeeder_A1_deadb</file>
+				</assetreference>
+				<attach a="fire01" frombone="ATTACHPOINT" tobone="bone_2x2FX01" syncanims="0"/>
+				<attach a="smoke01" frombone="ATTACHPOINT" tobone="bone_2x2FX01" syncanims="0"/>
+				<attach a="fire02" frombone="ATTACHPOINT" tobone="bone_2x2FX02" syncanims="0"/>
+				<attach a="smoke02" frombone="ATTACHPOINT" tobone="bone_2x2FX02" syncanims="0"/>
+			</v2>
+			<v3>
+				<assetreference type="GrannyModel">
+					<file>Star_Wars\Units\Mechs\Flash Speeder\RSF_FlashSpeeder_A1_deadc</file>
+				</assetreference>
+				<attach a="fire02" frombone="ATTACHPOINT" tobone="bone_2x2FX02" syncanims="0"/>
+				<attach a="smoke02" frombone="ATTACHPOINT" tobone="bone_2x2FX02" syncanims="0"/>
+			</v3>
+		</logic>
+		<decal>
+			<effecttype>bump</effecttype>
+			<texture>buildings\rubble\buildling_rubble_decal</texture>
+			<selectedtexture>shadows_selections\selection_square_128x128</selectedtexture>
+			<bumptexture>shadows_selections\flat_normal_black_spec</bumptexture>
+			<width>3.50</width>
+			<height>4.00</height>
+			<xoffset>0.00</xoffset>
+			<zoffset>0.15</zoffset>
+		</decal>
+	</component>
+	<anim>
+		Idle
+		<component>ModelComp</component>
+	</anim>
+</animfile>

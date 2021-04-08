@@ -1,0 +1,436 @@
+<!-- converted from XMB to XML -->
+
+<protounitsounddef>
+	<protounit name="zBikerScout">
+		<soundtype name="Select">
+			<soundset name="swStormtrooperSelect"/>
+		</soundtype>
+		<soundtype name="Grunt">
+			<soundset name="swStormtrooperGrunt"/>
+		</soundtype>
+		<soundtype name="Death">
+			<soundset name="swStormtrooperDeath"/>
+		</soundtype>
+		<soundtype name="Creation">
+			<soundset name="swStormtrooperBirth"/>
+		</soundtype>
+		<soundtype name="Acknowledge">
+			<targetlogic>
+				<choice name="default">
+					<soundset name="swStormtrooperMove"/>
+				</choice>
+				<choice name="AnimalPrey"> <!--> Animal <!-->
+					<soundset name="swStormtrooperAttackAnimal"/>
+				</choice>
+				<choice name="AbstractJapaneseMonk"> <!--> Droid <!-->
+					<soundset name="swStormtrooperAttackDroid"/>
+				</choice>
+				<choice name="AbstractHeavyInfantry"> <!--> Trooper Infantry <!-->
+					<soundset name="swStormtrooperAttackTrooper"/>
+				</choice>
+				<choice name="AbstractSiegeTrooper"> <!--> Rocket Infantry <!-->
+					<soundset name="swStormtrooperAttackRocketeer"/>
+				</choice>
+				<choice name="AbstractLightInfantry"> <!--> Sniper Infantry <!-->
+					<soundset name="swStormtrooperAttackSniper"/>
+				</choice>
+				<choice name="AbstractCavalryInfantry"> <!--> Speeder Bike <!-->
+					<soundset name="swStormtrooperAttackSpeederBike"/>
+				</choice>
+				<choice name="AbstractMahout"> <!--> Tracked Tank <!-->
+					<soundset name="swStormtrooperAttackTank"/>
+				</choice>
+				<choice name="AbstractZamburak"> <!--> Hover Tank <!-->
+					<soundset name="swStormtrooperAttackFighterTank"/>
+				</choice>
+				<choice name="AbstractHowdah"> <!--> Walker <!-->
+					<soundset name="swStormtrooperAttackWalker"/>
+				</choice>
+				<choice name="enemy">
+					<soundset name="swStormtrooperAttackGen"/>
+				</choice>
+			</targetlogic>
+		</soundtype>
+		<soundtype name="Exists">
+			<soundset name="swAmbienceSpeederBike"/>
+		</soundtype>
+	</protounit>
+	<protounit name="zTIEMauler">
+		<soundtype name="Select">
+			<soundset name="swImperialDriverSelect"/>
+		</soundtype>
+		<soundtype name="Grunt">
+			<soundset name="swMechGrunt"/>
+		</soundtype>
+		<soundtype name="Death">
+			<soundset name="swVehicleDeathGeneric"/>
+		</soundtype>
+		<soundtype name="Creation">
+			<soundset name="swStormtrooperBirth"/>
+		</soundtype>
+		<soundtype name="Acknowledge">
+			<targetlogic>
+				<choice name="default">
+					<soundset name="swImperialDriverMove"/>
+				</choice>
+				<choice name="AnimalPrey"> <!--> Animal <!-->
+					<soundset name="swStormtrooperAttackAnimal"/>
+				</choice>
+				<choice name="AbstractJapaneseMonk"> <!--> Droid <!-->
+					<soundset name="swStormtrooperAttackDroid"/>
+				</choice>
+				<choice name="AbstractHeavyInfantry"> <!--> Trooper Infantry <!-->
+					<soundset name="swStormtrooperAttackTrooper"/>
+				</choice>
+				<choice name="AbstractSiegeTrooper"> <!--> Rocket Infantry <!-->
+					<soundset name="swStormtrooperAttackRocketeer"/>
+				</choice>
+				<choice name="AbstractLightInfantry"> <!--> Sniper Infantry <!-->
+					<soundset name="swStormtrooperAttackSniper"/>
+				</choice>
+				<choice name="AbstractCavalryInfantry"> <!--> Speeder Bike <!-->
+					<soundset name="swStormtrooperAttackSpeederBike"/>
+				</choice>
+				<choice name="AbstractMahout"> <!--> Tracked Tank <!-->
+					<soundset name="swStormtrooperAttackTank"/>
+				</choice>
+				<choice name="AbstractZamburak"> <!--> Hover Tank <!-->
+					<soundset name="swStormtrooperAttackFighterTank"/>
+				</choice>
+				<choice name="AbstractHowdah"> <!--> Walker <!-->
+					<soundset name="swStormtrooperAttackWalker"/>
+				</choice>
+				<choice name="enemy">
+					<soundset name="swStormtrooperAttackGen"/>
+				</choice>
+			</targetlogic>
+		</soundtype>
+		<soundtype name="Exists">
+			<soundset name="swAmbienceTrackedTank"/>
+		</soundtype>
+	</protounit>
+	<protounit name="zTX225Tank">
+		<soundtype name="Select">
+			<soundset name="swImperialDriverSelect"/>
+		</soundtype>
+		<soundtype name="Grunt">
+			<soundset name="swMechGrunt"/>
+		</soundtype>
+		<soundtype name="Death">
+			<soundset name="swVehicleDeathGeneric"/>
+		</soundtype>
+		<soundtype name="Creation">
+			<soundset name="swStormtrooperBirth"/>
+		</soundtype>
+		<soundtype name="Acknowledge">
+			<targetlogic>
+				<choice name="default">
+					<soundset name="swImperialDriverMove"/>
+				</choice>
+				<choice name="AnimalPrey"> <!--> Animal <!-->
+					<soundset name="swStormtrooperAttackAnimal"/>
+				</choice>
+				<choice name="AbstractJapaneseMonk"> <!--> Droid <!-->
+					<soundset name="swStormtrooperAttackDroid"/>
+				</choice>
+				<choice name="AbstractHeavyInfantry"> <!--> Trooper Infantry <!-->
+					<soundset name="swStormtrooperAttackTrooper"/>
+				</choice>
+				<choice name="AbstractSiegeTrooper"> <!--> Rocket Infantry <!-->
+					<soundset name="swStormtrooperAttackRocketeer"/>
+				</choice>
+				<choice name="AbstractLightInfantry"> <!--> Sniper Infantry <!-->
+					<soundset name="swStormtrooperAttackSniper"/>
+				</choice>
+				<choice name="AbstractCavalryInfantry"> <!--> Speeder Bike <!-->
+					<soundset name="swStormtrooperAttackSpeederBike"/>
+				</choice>
+				<choice name="AbstractMahout"> <!--> Tracked Tank <!-->
+					<soundset name="swStormtrooperAttackTank"/>
+				</choice>
+				<choice name="AbstractZamburak"> <!--> Hover Tank <!-->
+					<soundset name="swStormtrooperAttackFighterTank"/>
+				</choice>
+				<choice name="AbstractHowdah"> <!--> Walker <!-->
+					<soundset name="swStormtrooperAttackWalker"/>
+				</choice>
+				<choice name="enemy">
+					<soundset name="swStormtrooperAttackGen"/>
+				</choice>
+			</targetlogic>
+		</soundtype>
+		<soundtype name="Exists">
+			<soundset name="swAmbienceHovertank"/>
+		</soundtype>
+	</protounit>
+	<protounit name="zATST">
+		<soundtype name="Select">
+			<soundset name="swImperialDriverSelect"/>
+		</soundtype>
+		<soundtype name="Grunt">
+			<soundset name="swMechGrunt"/>
+		</soundtype>
+		<soundtype name="Death">
+			<soundset name="swATSTDeath"/>
+		</soundtype>
+		<soundtype name="Creation">
+			<soundset name="swStormtrooperBirth"/>
+		</soundtype>
+		<soundtype name="Acknowledge">
+			<targetlogic>
+				<choice name="default">
+					<soundset name="swImperialDriverMove"/>
+				</choice>
+				<choice name="AnimalPrey"> <!--> Animal <!-->
+					<soundset name="swStormtrooperAttackAnimal"/>
+				</choice>
+				<choice name="AbstractJapaneseMonk"> <!--> Droid <!-->
+					<soundset name="swStormtrooperAttackDroid"/>
+				</choice>
+				<choice name="AbstractHeavyInfantry"> <!--> Trooper Infantry <!-->
+					<soundset name="swStormtrooperAttackTrooper"/>
+				</choice>
+				<choice name="AbstractSiegeTrooper"> <!--> Rocket Infantry <!-->
+					<soundset name="swStormtrooperAttackRocketeer"/>
+				</choice>
+				<choice name="AbstractLightInfantry"> <!--> Sniper Infantry <!-->
+					<soundset name="swStormtrooperAttackSniper"/>
+				</choice>
+				<choice name="AbstractCavalryInfantry"> <!--> Speeder Bike <!-->
+					<soundset name="swStormtrooperAttackSpeederBike"/>
+				</choice>
+				<choice name="AbstractMahout"> <!--> Tracked Tank <!-->
+					<soundset name="swStormtrooperAttackTank"/>
+				</choice>
+				<choice name="AbstractZamburak"> <!--> Hover Tank <!-->
+					<soundset name="swStormtrooperAttackFighterTank"/>
+				</choice>
+				<choice name="AbstractHowdah"> <!--> Walker <!-->
+					<soundset name="swStormtrooperAttackWalker"/>
+				</choice>
+				<choice name="enemy">
+					<soundset name="swStormtrooperAttackGen"/>
+				</choice>
+			</targetlogic>
+		</soundtype>
+		<soundtype name="Exists">
+			<soundset name="swAmbienceWalkerHeavy"/>
+		</soundtype>
+	</protounit>
+	<protounit name="zImperialScoutWalker">
+		<soundtype name="Select">
+			<soundset name="swImperialDriverSelect"/>
+		</soundtype>
+		<soundtype name="Grunt">
+			<soundset name="swMechGrunt"/>
+		</soundtype>
+		<soundtype name="Death">
+			<soundset name="swATSTDeath"/>
+		</soundtype>
+		<soundtype name="Creation">
+			<soundset name="swStormtrooperBirth"/>
+		</soundtype>
+		<soundtype name="Acknowledge">
+			<targetlogic>
+				<choice name="default">
+					<soundset name="swImperialDriverMove"/>
+				</choice>
+				<choice name="AnimalPrey"> <!--> Animal <!-->
+					<soundset name="swStormtrooperAttackAnimal"/>
+				</choice>
+				<choice name="AbstractJapaneseMonk"> <!--> Droid <!-->
+					<soundset name="swStormtrooperAttackDroid"/>
+				</choice>
+				<choice name="AbstractHeavyInfantry"> <!--> Trooper Infantry <!-->
+					<soundset name="swStormtrooperAttackTrooper"/>
+				</choice>
+				<choice name="AbstractSiegeTrooper"> <!--> Rocket Infantry <!-->
+					<soundset name="swStormtrooperAttackRocketeer"/>
+				</choice>
+				<choice name="AbstractLightInfantry"> <!--> Sniper Infantry <!-->
+					<soundset name="swStormtrooperAttackSniper"/>
+				</choice>
+				<choice name="AbstractCavalryInfantry"> <!--> Speeder Bike <!-->
+					<soundset name="swStormtrooperAttackSpeederBike"/>
+				</choice>
+				<choice name="AbstractMahout"> <!--> Tracked Tank <!-->
+					<soundset name="swStormtrooperAttackTank"/>
+				</choice>
+				<choice name="AbstractZamburak"> <!--> Hover Tank <!-->
+					<soundset name="swStormtrooperAttackFighterTank"/>
+				</choice>
+				<choice name="AbstractHowdah"> <!--> Walker <!-->
+					<soundset name="swStormtrooperAttackWalker"/>
+				</choice>
+				<choice name="enemy">
+					<soundset name="swStormtrooperAttackGen"/>
+				</choice>
+			</targetlogic>
+		</soundtype>
+		<soundtype name="Exists">
+			<soundset name="swAmbienceWalkerHeavy"/>
+		</soundtype>
+	</protounit>
+	<protounit name="zATAT">
+		<soundtype name="Select">
+			<soundset name="swImperialDriverSelect"/>
+		</soundtype>
+		<soundtype name="Grunt">
+			<soundset name="swMechGrunt"/>
+		</soundtype>
+		<soundtype name="Death">
+			<soundset name="swATATDeath"/>
+		</soundtype>
+		<soundtype name="Creation">
+			<soundset name="swStormtrooperBirth"/>
+		</soundtype>
+		<soundtype name="Acknowledge">
+			<targetlogic>
+				<choice name="default">
+					<soundset name="swImperialDriverMove"/>
+				</choice>
+				<choice name="AnimalPrey"> <!--> Animal <!-->
+					<soundset name="swStormtrooperAttackAnimal"/>
+				</choice>
+				<choice name="AbstractJapaneseMonk"> <!--> Droid <!-->
+					<soundset name="swStormtrooperAttackDroid"/>
+				</choice>
+				<choice name="AbstractHeavyInfantry"> <!--> Trooper Infantry <!-->
+					<soundset name="swStormtrooperAttackTrooper"/>
+				</choice>
+				<choice name="AbstractSiegeTrooper"> <!--> Rocket Infantry <!-->
+					<soundset name="swStormtrooperAttackRocketeer"/>
+				</choice>
+				<choice name="AbstractLightInfantry"> <!--> Sniper Infantry <!-->
+					<soundset name="swStormtrooperAttackSniper"/>
+				</choice>
+				<choice name="AbstractCavalryInfantry"> <!--> Speeder Bike <!-->
+					<soundset name="swStormtrooperAttackSpeederBike"/>
+				</choice>
+				<choice name="AbstractMahout"> <!--> Tracked Tank <!-->
+					<soundset name="swStormtrooperAttackTank"/>
+				</choice>
+				<choice name="AbstractZamburak"> <!--> Hover Tank <!-->
+					<soundset name="swStormtrooperAttackFighterTank"/>
+				</choice>
+				<choice name="AbstractHowdah"> <!--> Walker <!-->
+					<soundset name="swStormtrooperAttackWalker"/>
+				</choice>
+				<choice name="enemy">
+					<soundset name="swStormtrooperAttackGen"/>
+				</choice>
+			</targetlogic>
+		</soundtype>
+		<soundtype name="Exists">
+			<soundset name="swAmbienceWalkerHeavy"/>
+		</soundtype>
+	</protounit>
+	<protounit name="zATAA">
+		<soundtype name="Select">
+			<soundset name="swImperialDriverSelect"/>
+		</soundtype>
+		<soundtype name="Grunt">
+			<soundset name="swMechGrunt"/>
+		</soundtype>
+		<soundtype name="Death">
+			<soundset name="swVehicleDeathGeneric"/>
+		</soundtype>
+		<soundtype name="Creation">
+			<soundset name="swStormtrooperBirth"/>
+		</soundtype>
+		<soundtype name="Acknowledge">
+			<targetlogic>
+				<choice name="default">
+					<soundset name="swImperialDriverMove"/>
+				</choice>
+				<choice name="AnimalPrey"> <!--> Animal <!-->
+					<soundset name="swStormtrooperAttackAnimal"/>
+				</choice>
+				<choice name="AbstractJapaneseMonk"> <!--> Droid <!-->
+					<soundset name="swStormtrooperAttackDroid"/>
+				</choice>
+				<choice name="AbstractHeavyInfantry"> <!--> Trooper Infantry <!-->
+					<soundset name="swStormtrooperAttackTrooper"/>
+				</choice>
+				<choice name="AbstractSiegeTrooper"> <!--> Rocket Infantry <!-->
+					<soundset name="swStormtrooperAttackRocketeer"/>
+				</choice>
+				<choice name="AbstractLightInfantry"> <!--> Sniper Infantry <!-->
+					<soundset name="swStormtrooperAttackSniper"/>
+				</choice>
+				<choice name="AbstractCavalryInfantry"> <!--> Speeder Bike <!-->
+					<soundset name="swStormtrooperAttackSpeederBike"/>
+				</choice>
+				<choice name="AbstractMahout"> <!--> Tracked Tank <!-->
+					<soundset name="swStormtrooperAttackTank"/>
+				</choice>
+				<choice name="AbstractZamburak"> <!--> Hover Tank <!-->
+					<soundset name="swStormtrooperAttackFighterTank"/>
+				</choice>
+				<choice name="AbstractHowdah"> <!--> Walker <!-->
+					<soundset name="swStormtrooperAttackWalker"/>
+				</choice>
+				<choice name="enemy">
+					<soundset name="swStormtrooperAttackGen"/>
+				</choice>
+			</targetlogic>
+		</soundtype>
+		<soundtype name="Exists">
+			<soundset name="swAmbienceWalkerHeavy"/>
+		</soundtype>
+	</protounit>
+	<protounit name="zSPMA">
+		<soundtype name="Select">
+			<soundset name="swImperialDriverSelect"/>
+		</soundtype>
+		<soundtype name="Grunt">
+			<soundset name="swMechGrunt"/>
+		</soundtype>
+		<soundtype name="Death">
+			<soundset name="swVehicleDeathGeneric"/>
+		</soundtype>
+		<soundtype name="Creation">
+			<soundset name="swStormtrooperBirth"/>
+		</soundtype>
+		<soundtype name="Acknowledge">
+			<targetlogic>
+				<choice name="default">
+					<soundset name="swImperialDriverMove"/>
+				</choice>
+				<choice name="AnimalPrey"> <!--> Animal <!-->
+					<soundset name="swStormtrooperAttackAnimal"/>
+				</choice>
+				<choice name="AbstractJapaneseMonk"> <!--> Droid <!-->
+					<soundset name="swStormtrooperAttackDroid"/>
+				</choice>
+				<choice name="AbstractHeavyInfantry"> <!--> Trooper Infantry <!-->
+					<soundset name="swStormtrooperAttackTrooper"/>
+				</choice>
+				<choice name="AbstractSiegeTrooper"> <!--> Rocket Infantry <!-->
+					<soundset name="swStormtrooperAttackRocketeer"/>
+				</choice>
+				<choice name="AbstractLightInfantry"> <!--> Sniper Infantry <!-->
+					<soundset name="swStormtrooperAttackSniper"/>
+				</choice>
+				<choice name="AbstractCavalryInfantry"> <!--> Speeder Bike <!-->
+					<soundset name="swStormtrooperAttackSpeederBike"/>
+				</choice>
+				<choice name="AbstractMahout"> <!--> Tracked Tank <!-->
+					<soundset name="swStormtrooperAttackTank"/>
+				</choice>
+				<choice name="AbstractZamburak"> <!--> Hover Tank <!-->
+					<soundset name="swStormtrooperAttackFighterTank"/>
+				</choice>
+				<choice name="AbstractHowdah"> <!--> Walker <!-->
+					<soundset name="swStormtrooperAttackWalker"/>
+				</choice>
+				<choice name="enemy">
+					<soundset name="swStormtrooperAttackGen"/>
+				</choice>
+			</targetlogic>
+		</soundtype>
+		<soundtype name="Exists">
+			<soundset name="swAmbienceWalkerHeavy"/>
+		</soundtype>
+	</protounit>
+</protounitsounddef>

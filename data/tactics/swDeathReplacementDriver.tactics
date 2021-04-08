@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<tactics>
+	<action>
+		<name>SpawnImperialCombatDriver</name>
+		<type>Maintain</type>
+		<rate type="zImperialCombatDriver">1.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<tactic>
+		Normal
+		<action>SpawnImperialCombatDriver</action>
+	</tactic>
+</tactics>

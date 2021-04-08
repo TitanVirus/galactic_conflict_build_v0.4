@@ -1,0 +1,58 @@
+<!-- converted from XMB to XML -->
+
+<animfile>
+	<definebone>bone_FX01</definebone>
+	<attachment>
+		streamer
+		<component>
+			trail emitter
+			<assetreference type="ParticleSystem">
+				<file>effects\projectiles\flamingArrow_trail.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>trail emitter</component>
+		</anim>
+	</attachment>
+	<attachment>
+		ThrustSparks
+		<component>
+			Emitter1
+			<assetreference type="ParticleSystem">
+				<file>effects\projectiles\rocket_thrustSparks.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>Emitter1</component>
+		</anim>
+	</attachment>
+	<attachment>
+		sparkTrail
+		<component>
+			emitter1
+			<assetreference type="ParticleSystem">
+				<file>effects\projectiles\rocket_SparkTrail.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			None
+			<component>Emitter1</component>
+		</anim>
+	</attachment>
+	<component>
+		ModelComp
+		<assetreference type="GrannyModel">
+			<file>Star_Wars\Effects\Projectiles\P_Missile_Plex</file>
+		</assetreference>
+	</component>
+	<anim>
+		Idle
+		<component>ModelComp</component>
+		<attach a="ThrustSparks" frombone="ATTACHPOINT" tobone="bone_FX01" syncanims="0"/>
+		<attach a="sparkTrail" frombone="ATTACHPOINT" tobone="bone_FX01" syncanims="0"/>
+		<attach a="thrustTrail" frombone="ATTACHPOINT" tobone="bone_FX01" syncanims="0"/>
+		<attach a="streamer" frombone="ATTACHPOINT" tobone="bone_FX01" syncanims="0"/>
+	</anim>
+</animfile>

@@ -1,0 +1,319 @@
+<!-- converted from XMB to XML -->
+
+<animfile>
+	<definebone>bip01 Prop1</definebone>
+	<definebone>bone_ninja_blade</definebone>
+	<definebone>bip01 Prop2</definebone>
+	<definebone>bone_ninja_knife</definebone>
+	<definebone>bone_ninja_dust</definebone>
+	<definebone>Bip01 Head</definebone>
+	<definebone>Bip01 R Clavicle</definebone>
+	<definebone>Bip01 L Clavicle</definebone>
+	<attachment>
+		torch
+		<include>effects\projectiles\torch.xml</include>
+	</attachment>
+	<attachment>
+		ninja_blade
+		<component>
+			ninja_blade
+			<assetreference type="GrannyModel">
+				<file>Star_Wars\Units\Infantry\Riot Trooper\Attach_ElectroRiotStaff</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>ninja_blade</component>
+		</anim>
+	</attachment>
+	<attachment>
+		Helmet
+		<component>
+			HelmComp
+			<assetreference type="GrannyModel">
+				<file>Star_Wars\Units\Infantry\Riot Trooper\Attach_HeavyTrooper_Helmet</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>HelmComp</component>
+		</anim>
+	</attachment>
+	<attachment>
+		JumpPack
+		<component>
+			JumpPackComp
+			<assetreference type="GrannyModel">
+				<file>Star_Wars\Units\Infantry\Imperial Jump Trooper\Attach_JumpTrooper_JumpPack</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>JumpPackComp</component>
+		</anim>
+	</attachment>
+	<component>
+		ModelComp
+		<assetreference type="GrannyModel">
+			<file>Star_Wars\Units\Infantry\Riot Trooper\Riot_Trooper</file>
+		</assetreference>
+		<decal>
+			<effecttype>default</effecttype>
+			<texture isfakeshadow="1">shadows_selections\shadow_circle_32x32</texture>
+			<selectedtexture>shadows_selections\selection_circle_32x32</selectedtexture>
+			<width>1.0</width>
+			<height>1.0</height>
+		</decal>
+		<attach a="Helmet" frombone="bone_ninja_knife" tobone="Bip01 Head" syncanims="0"/>
+		<attach a="ninja_blade" frombone="bone_ninja_blade" tobone="Bip01 Prop1" syncanims="0"/>
+		<attach a="JumpPack" frombone="bone_backpack" tobone="SPINE1" syncanims="0"/>
+	</component>
+	<anim>
+		Death_by_melee
+		<assetreference type="GrannyAnim">
+			<file>animation_library\mercs\samurai\samurai_death_sword</file>
+			<tag type="SpecificSoundSet" checkvisible="1" set="RagdollImpact">0.26</tag>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Death_by_range
+		<assetreference type="GrannyAnim">
+			<file>animation_library\mercs\samurai\samurai_death_musket</file>
+			<tag type="SpecificSoundSet" checkvisible="1" set="RagdollImpact">0.58</tag>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\shared\human_death_shot_back_a</file>
+			<tag type="SpecificSoundSet" checkvisible="1" set="RagdollImpact">0.85</tag>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Death_by_havoc
+		<assetreference type="GrannyAnim">
+			<file>animation_library\range\havoc_death</file>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\range\havoc_deathB</file>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\range\havoc_deathC</file>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\range\havoc_deathD</file>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Death_havoc_flail
+		<assetreference type="GrannyAnim">
+			<file>animation_library\range\havoc_flail</file>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Death_havoc_spin
+		<assetreference type="GrannyAnim">
+			<file>animation_library\range\havoc_spin</file>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Cheer
+		<assetreference type="GrannyAnim">
+			<file>animation_library\mercs\samurai\samurai_cheer</file>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\mercs\samurai\samurai_cheer</file>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\shared\cheer_C</file>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Recoil
+		<assetreference type="GrannyAnim">
+			<file>animation_library\shared\recoil_A</file>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\shared\recoil_C</file>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\shared\recoil_E</file>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\shared\recoil_G</file>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		HC_openDoor
+		<assetreference type="GrannyAnim">
+			<file>animation_library\shared\doorOpen</file>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		HC_closeDoor
+		<assetreference type="GrannyAnim">
+			<file>animation_library\shared\doorClose</file>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Raze_Idle
+		<assetreference type="GrannyAnim">
+			<file>animation_library\shared\torch_throw_idle</file>
+		</assetreference>
+		<component>ModelComp</component>
+		<attach a="torch" frombone="ATTACHPOINT" tobone="L HAND" syncanims="0"/>
+	</anim>
+	<anim>
+		Raze_Attack
+		<assetreference type="GrannyAnim">
+			<file>animation_library\shared\torch_throwA</file>
+			<tag type="Attack">0.61</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="TorchSwing">0.48</tag>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\shared\torch_throwB</file>
+			<tag type="Attack">0.56</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="TorchSwing">0.45</tag>
+		</assetreference>
+		<component>ModelComp</component>
+		<attach a="torch" frombone="ATTACHPOINT" tobone="L HAND" syncanims="0"/>
+	</anim>
+	<anim>
+		Cover_In
+		<assetreference type="GrannyAnim">
+			<file>animation_library\mercs\ninja\idle2coveridle</file>
+			<tag type="Particles" particlename="effects\smoke\ninjaSmoke.particle">0.50</tag>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Cover_bored
+		<assetreference type="GrannyAnim">
+			<file>animation_library\mercs\ninja\cover_idle</file>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Cover_Idle
+		<assetreference type="GrannyAnim">
+			<file>animation_library\mercs\ninja\cover_idle</file>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Cover_walk
+		<assetreference type="GrannyAnim">
+			<file>animation_library\mercs\ninja\cover_jog</file>
+			<tag type="FootstepLeft" footprinttype="HumanLeft">0.06</tag>
+			<tag type="FootstepRight" footprinttype="HumanRight">0.53</tag>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Cover_jog
+		<assetreference type="GrannyAnim">
+			<file>animation_library\mercs\ninja\cover_jog</file>
+			<tag type="FootstepLeft" footprinttype="HumanLeft">0.14</tag>
+			<tag type="FootstepRight" footprinttype="HumanRight">0.61</tag>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Cover_run
+		<assetreference type="GrannyAnim">
+			<file>animation_library\mercs\ninja\cover_run</file>
+			<tag type="FootstepLeft" footprinttype="HumanLeft">0.14</tag>
+			<tag type="FootstepRight" footprinttype="HumanRight">0.61</tag>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Cover_Out
+		<assetreference type="GrannyAnim">
+			<file>animation_library\mercs\ninja\coveridle2idle</file>
+			<tag type="SpecificSoundSet" checkvisible="1" set="Swoosh">0.40</tag>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Defend_idle
+		<assetreference type="GrannyAnim">
+			<file>animation_library\mercs\samurai\samurai_defend_idle</file>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Defend_bored
+		<assetreference type="GrannyAnim">
+			<file>animation_library\mercs\samurai\samurai_defend_bored</file>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Charge_idle
+		<assetreference type="GrannyAnim">
+			<file>animation_library\mercs\ninja\idle</file>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\mercs\ninja\idle2</file>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\mercs\ninja\idle3</file>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Charge_bored
+		<assetreference type="GrannyAnim">
+			<file>animation_library\mercs\ninja\idle</file>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Charge_Attack
+		<assetreference type="GrannyAnim">
+			<file>animation_library\natives\clubman\charge_attackA</file>
+			<tag type="Attack">0.41</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="Swoosh">0.30</tag>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\natives\clubman\charge_attackB</file>
+			<tag type="Attack">0.50</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="Swoosh">0.36</tag>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Charge_walk
+		<assetreference type="GrannyAnim">
+			<file>animation_library\mercs\ninja\jog</file>
+			<tag type="FootstepLeft" footprinttype="HumanLeft">0.08</tag>
+			<tag type="FootstepRight" footprinttype="HumanRight">0.56</tag>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Charge_jog
+		<assetreference type="GrannyAnim">
+			<file>animation_library\mercs\ninja\jog</file>
+			<tag type="FootstepLeft" footprinttype="HumanLeft">0.14</tag>
+			<tag type="FootstepRight" footprinttype="HumanRight">0.61</tag>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Charge_run
+		<assetreference type="GrannyAnim">
+			<file>animation_library\mercs\ninja\run</file>
+			<tag type="FootstepLeft" footprinttype="HumanLeft">0.17</tag>
+			<tag type="FootstepRight" footprinttype="HumanRight">0.64</tag>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+</animfile>

@@ -1,0 +1,799 @@
+<!-- converted from XMB to XML -->
+
+<animfile>
+	<definebone>bone_flag_civ</definebone>
+	<definebone>bone_debris_1A</definebone>
+	<definebone>bone_debris_1B</definebone>
+	<definebone>bone_debris_1C</definebone>
+	<definebone>bone_debris_1D</definebone>
+	<definebone>bone_debris_1E</definebone>
+	<definebone>bone_debris_1F</definebone>
+	<definebone>bone_debris_1G</definebone>
+	<definebone>bone_debris_1H</definebone>
+	<definebone>bone_debris_1I</definebone>
+	<definebone>bone_debris_1J</definebone>
+	<definebone>bone_debris_1K</definebone>
+	<definebone>bone_debris_1L</definebone>
+	<definebone>bone_debris_1M</definebone>
+	<definebone>bone_debris_2A</definebone>
+	<definebone>bone_debris_2B</definebone>
+	<definebone>bone_debris_2C</definebone>
+	<definebone>bone_debris_2D</definebone>
+	<definebone>bone_debris_2E</definebone>
+	<definebone>bone_debris_2F</definebone>
+	<definebone>bone_debris_2G</definebone>
+	<definebone>bone_debris_2H</definebone>
+	<definebone>bone_debris_3A</definebone>
+	<definebone>bone_debris_3B</definebone>
+	<definebone>bone_debris_3C</definebone>
+	<definebone>bone_debris_3D</definebone>
+	<definebone>bone_debris_3E</definebone>
+	<definebone>bone_debris_3F</definebone>
+	<definebone>bone_debris_3G</definebone>
+	<definebone>bone_debris_3h</definebone>
+	<definebone>bone_debris_3i</definebone>
+	<definebone>bone_debris_3j</definebone>
+	<definebone>bone_debris_4a</definebone>
+	<definebone>bone_debris_4b</definebone>
+	<definebone>bone_debris_4c</definebone>
+	<definebone>bone_debris_4d</definebone>
+	<definebone>bone_debris_4e</definebone>
+	<definebone>bone_debris_4f</definebone>
+	<definebone>bone_debris_4g</definebone>
+	<definebone>bone_debris_4h</definebone>
+	<definebone>bone_debris_4i</definebone>
+	<definebone>bone_debris_4j</definebone>
+	<definebone>bone_debris_4k</definebone>
+	<definebone>bone_debris_5a</definebone>
+	<definebone>bone_debris_5b</definebone>
+	<definebone>bone_debris_5c</definebone>
+	<definebone>bone_debris_5d</definebone>
+	<definebone>bone_debris_5e</definebone>
+	<definebone>bone_debris_6a</definebone>
+	<definebone>bone_debris_6b</definebone>
+	<definebone>bone_debris_6c</definebone>
+	<definebone>bone_debris_6d</definebone>
+	<definebone>bone_debris_6e</definebone>
+	<definebone>bone_debris_6f</definebone>
+	<definebone>bone_debris_7A</definebone>
+	<definebone>bone_debris_7B</definebone>
+	<definebone>bone_debris_7C</definebone>
+	<definebone>bone_debris_8A</definebone>
+	<definebone>bone_debris_8B</definebone>
+	<definebone>bone_debris_8C</definebone>
+	<definebone>bone_debris_8D</definebone>
+	<definebone>bone_debris_8E</definebone>
+	<definebone>bone_debris_8F</definebone>
+	<definebone>bone_debris_9A</definebone>
+	<definebone>bone_debris_2I</definebone>
+	<definebone>bone_chimney</definebone>
+	<definebone>bone_debris_3k</definebone>
+	<definebone>bone_debris_3l</definebone>
+	<submodel>
+		empire_house_age1_01
+		<attachment>
+			collapse_smoke
+			<component>
+				collapse_smoke
+				<assetreference type="ParticleSystem">
+					<file>effects\smoke\collapse_smoke_a.particle</file>
+				</assetreference>
+			</component>
+			<anim>
+				Idle
+				<component>collapse_smoke</component>
+			</anim>
+		</attachment>
+		<attachment>
+			base smoke3
+			<component>
+				smoke wave center
+				<assetreference type="ParticleSystem">
+					<file>effects\smoke\collapse_smoke_wave02.particle</file>
+				</assetreference>
+			</component>
+			<anim>
+				Idle
+				<component>smoke wave center</component>
+			</anim>
+		</attachment>
+		<attachment>
+			base smoke2
+			<component>
+				smoke wave
+				<assetreference type="ParticleSystem">
+					<file>effects\smoke\collapse_smoke_wave.particle</file>
+				</assetreference>
+			</component>
+			<anim>
+				Idle
+				<component>smoke wave</component>
+			</anim>
+		</attachment>
+		<attachment>
+			base smoke
+			<component>
+				smoke base
+				<assetreference type="ParticleSystem">
+					<file>effects\smoke\collapsesmoke01.particle</file>
+				</assetreference>
+			</component>
+			<anim>
+				Idle
+				<component>smoke base</component>
+			</anim>
+		</attachment>
+		<component>
+			LIVE
+			<logic type="LowPoly">
+				<normal>
+					<logic type="Destruction">
+						<p1>
+							<assetreference type="GrannyModel" shape="indian_house_01_01">
+								<file>star_wars\buildingsets\Empire\prefabshelters\age_1\GE_House_A0_01</file>
+							</assetreference>
+						</p1>
+						<p99>
+							<assetreference type="GrannyModel" shape="indian_house_01_01">
+								<file>star_wars\buildingsets\Empire\prefabshelters\age_1\GE_House_A0_01</file>
+							</assetreference>
+						</p99>
+					</logic>
+				</normal>
+				<lowpoly>
+					<assetreference type="GrannyModel" shape="indian_house_01_01">
+						<file>star_wars\buildingsets\Empire\prefabshelters\age_1\GE_House_A0_01</file>
+					</assetreference>
+				</lowpoly>
+			</logic>
+			<decal>
+				<effecttype>bump</effecttype>
+				<texture>star_wars\buildingsets\Empire\prefabshelters\age_1\Deccal_House_01</texture>
+				<selectedtexture>shadows_selections\selection_square_64x64</selectedtexture>
+				<bumptexture>shadows_selections\flat_normal_black_spec</bumptexture>
+				<width>6.50</width>
+				<height>6.50</height>
+				<zoffset>-0.40</zoffset>
+			</decal>
+		</component>
+		<component>
+			DEAD
+			<logic type="LowPoly">
+				<normal>
+					<assetreference type="GrannyModel">
+						<file>star_wars\buildingsets\Empire\prefabshelters\age_1\GE_House_A0_01_destroyed</file>
+					</assetreference>
+				</normal>
+				<lowpoly>
+					<assetreference type="GrannyModel">
+						<file>star_wars\buildingsets\Empire\prefabshelters\age_1\GE_House_A0_01_destroyed</file>
+					</assetreference>
+				</lowpoly>
+			</logic>
+			<decal>
+				<effecttype>bump</effecttype>
+				<texture>star_wars\buildingsets\Empire\prefabshelters\age_1\Deccal_House_01</texture>
+				<selectedtexture>shadows_selections\selection_square_64x64</selectedtexture>
+				<bumptexture>shadows_selections\flat_normal_black_spec</bumptexture>
+				<width>6.50</width>
+				<height>6.50</height>
+				<zoffset>-0.40</zoffset>
+			</decal>
+		</component>
+		<anim>
+			Idle
+			<component>LIVE</component>
+			<simskeleton>
+				<model>star_wars\buildingsets\Empire\prefabshelters\age_1\GE_House_A0_01</model>
+				<damagetemplate>buildings\asian_civs\house_indian\india_house_age1_01.dmg</damagetemplate>
+			</simskeleton>
+		</anim>
+		<anim>
+			RangedAttack
+			<assetreference type="GrannyAnim">
+				<file>animation_library\building\ranged_attack</file>
+				<tag type="Attack">0.98</tag>
+				<tag type="SpecificSoundSet" checkvisible="1" set="Arrows">0.98</tag>
+			</assetreference>
+			<component>LIVE</component>
+			<simskeleton>
+				<model>star_wars\buildingsets\Empire\prefabshelters\age_1\GE_House_A0_01</model>
+				<damagetemplate>buildings\asian_civs\house_indian\india_house_age1_01.dmg</damagetemplate>
+			</simskeleton>
+		</anim>
+		<anim>
+			RangedAttackShip
+			<assetreference type="GrannyAnim">
+				<file>animation_library\building\ranged_attack</file>
+				<tag type="Attack">0.98</tag>
+				<tag type="SpecificSoundSet" checkvisible="1" set="Arrows">0.98</tag>
+			</assetreference>
+			<component>LIVE</component>
+			<simskeleton>
+				<model>star_wars\buildingsets\Empire\prefabshelters\age_1\GE_House_A0_01</model>
+				<damagetemplate>buildings\asian_civs\house_indian\india_house_age1_01.dmg</damagetemplate>
+			</simskeleton>
+		</anim>
+		<anim>
+			Death
+			<assetreference type="GrannyAnim">
+				<file>star_wars\buildingsets\Empire\prefabshelters\age_1\GE_House_A0_01_deathanime</file>
+			</assetreference>
+			<component>DEAD</component>
+			<attach a="collapse_smoke" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+			<attach a="base smoke" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+			<attach a="base smoke2" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+			<attach a="base smoke3" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+		</anim>
+	</submodel>
+	<submodel>
+		empire_house_age1_02
+		<attachment>
+			collapse_smoke
+			<component>
+				collapse_smoke
+				<assetreference type="ParticleSystem">
+					<file>effects\smoke\collapse_smoke_a.particle</file>
+				</assetreference>
+			</component>
+			<anim>
+				Idle
+				<component>collapse_smoke</component>
+			</anim>
+		</attachment>
+		<attachment>
+			base smoke3
+			<component>
+				smoke wave center
+				<assetreference type="ParticleSystem">
+					<file>effects\smoke\collapse_smoke_wave02.particle</file>
+				</assetreference>
+			</component>
+			<anim>
+				Idle
+				<component>smoke wave center</component>
+			</anim>
+		</attachment>
+		<attachment>
+			base smoke2
+			<component>
+				smoke wave
+				<assetreference type="ParticleSystem">
+					<file>effects\smoke\collapse_smoke_wave.particle</file>
+				</assetreference>
+			</component>
+			<anim>
+				Idle
+				<component>smoke wave</component>
+			</anim>
+		</attachment>
+		<attachment>
+			base smoke
+			<component>
+				smoke base
+				<assetreference type="ParticleSystem">
+					<file>effects\smoke\collapsesmoke01.particle</file>
+				</assetreference>
+			</component>
+			<anim>
+				Idle
+				<component>smoke base</component>
+			</anim>
+		</attachment>
+		<component>
+			LIVE
+			<logic type="LowPoly">
+				<normal>
+					<logic type="Destruction">
+						<p1>
+							<assetreference type="GrannyModel" shape="indian_house_01_02">
+								<file>star_wars\buildingsets\Empire\prefabshelters\age_1\GE_House_A0_02</file>
+							</assetreference>
+						</p1>
+						<p99>
+							<assetreference type="GrannyModel" shape="indian_house_01_02">
+								<file>star_wars\buildingsets\Empire\prefabshelters\age_1\GE_House_A0_02</file>
+							</assetreference>
+						</p99>
+					</logic>
+				</normal>
+				<lowpoly>
+					<assetreference type="GrannyModel" shape="indian_house_01_02">
+						<file>star_wars\buildingsets\Empire\prefabshelters\age_1\GE_House_A0_02</file>
+					</assetreference>
+				</lowpoly>
+			</logic>
+			<decal>
+				<effecttype>bump</effecttype>
+				<texture>star_wars\buildingsets\Empire\prefabshelters\age_1\Deccal_House_02</texture>
+				<selectedtexture>shadows_selections\selection_square_64x64</selectedtexture>
+				<bumptexture>shadows_selections\flat_normal_black_spec</bumptexture>
+				<width>6.50</width>
+				<height>6.50</height>
+				<zoffset>-0.20</zoffset>
+			</decal>
+		</component>
+		<component>
+			DEAD
+			<logic type="LowPoly">
+				<normal>
+					<assetreference type="GrannyModel">
+						<file>star_wars\buildingsets\Empire\prefabshelters\age_1\GE_House_A0_02_destroyed</file>
+					</assetreference>
+				</normal>
+				<lowpoly>
+					<assetreference type="GrannyModel">
+						<file>star_wars\buildingsets\Empire\prefabshelters\age_1\GE_House_A0_02_destroyed</file>
+					</assetreference>
+				</lowpoly>
+			</logic>
+			<decal>
+				<effecttype>bump</effecttype>
+				<texture>star_wars\buildingsets\Empire\prefabshelters\age_1\Deccal_House_02</texture>
+				<selectedtexture>shadows_selections\selection_square_64x64</selectedtexture>
+				<bumptexture>shadows_selections\flat_normal_black_spec</bumptexture>
+				<width>6.50</width>
+				<height>6.50</height>
+				<zoffset>-0.20</zoffset>
+			</decal>
+		</component>
+		<anim>
+			Idle
+			<component>LIVE</component>
+			<simskeleton>
+				<model>star_wars\buildingsets\Empire\prefabshelters\age_1\GE_House_A0_02</model>
+				<damagetemplate>buildings\asian_civs\house_indian\india_house_age1_02.dmg</damagetemplate>
+			</simskeleton>
+		</anim>
+		<anim>
+			RangedAttack
+			<assetreference type="GrannyAnim">
+				<file>animation_library\building\ranged_attack</file>
+				<tag type="Attack">0.98</tag>
+				<tag type="SpecificSoundSet" checkvisible="1" set="Arrows">0.98</tag>
+			</assetreference>
+			<component>LIVE</component>
+			<simskeleton>
+				<model>star_wars\buildingsets\Empire\prefabshelters\age_1\GE_House_A0_02</model>
+				<damagetemplate>buildings\asian_civs\house_indian\india_house_age1_02.dmg</damagetemplate>
+			</simskeleton>
+		</anim>
+		<anim>
+			RangedAttackShip
+			<assetreference type="GrannyAnim">
+				<file>animation_library\building\ranged_attack</file>
+				<tag type="Attack">0.98</tag>
+				<tag type="SpecificSoundSet" checkvisible="1" set="Arrows">0.98</tag>
+			</assetreference>
+			<component>LIVE</component>
+			<simskeleton>
+				<model>star_wars\buildingsets\Empire\prefabshelters\age_1\GE_House_A0_02</model>
+				<damagetemplate>buildings\asian_civs\house_indian\india_house_age1_02.dmg</damagetemplate>
+			</simskeleton>
+		</anim>
+		<anim>
+			Death
+			<assetreference type="GrannyAnim">
+				<file>star_wars\buildingsets\Empire\prefabshelters\age_1\GE_House_A0_02_deathanime</file>
+			</assetreference>
+			<component>DEAD</component>
+			<attach a="collapse_smoke" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+			<attach a="base smoke" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+			<attach a="base smoke2" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+			<attach a="base smoke3" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+		</anim>
+	</submodel>
+	<submodel>
+		empire_house_age1_03
+		<attachment>
+			collapse_smoke
+			<component>
+				collapse_smoke
+				<assetreference type="ParticleSystem">
+					<file>effects\smoke\collapse_smoke_a.particle</file>
+				</assetreference>
+			</component>
+			<anim>
+				Idle
+				<component>collapse_smoke</component>
+			</anim>
+		</attachment>
+		<attachment>
+			base smoke3
+			<component>
+				smoke wave center
+				<assetreference type="ParticleSystem">
+					<file>effects\smoke\collapse_smoke_wave02.particle</file>
+				</assetreference>
+			</component>
+			<anim>
+				Idle
+				<component>smoke wave center</component>
+			</anim>
+		</attachment>
+		<attachment>
+			base smoke2
+			<component>
+				smoke wave
+				<assetreference type="ParticleSystem">
+					<file>effects\smoke\collapse_smoke_wave.particle</file>
+				</assetreference>
+			</component>
+			<anim>
+				Idle
+				<component>smoke wave</component>
+			</anim>
+		</attachment>
+		<attachment>
+			base smoke
+			<component>
+				smoke base
+				<assetreference type="ParticleSystem">
+					<file>effects\smoke\collapsesmoke01.particle</file>
+				</assetreference>
+			</component>
+			<anim>
+				Idle
+				<component>smoke base</component>
+			</anim>
+		</attachment>
+		<component>
+			LIVE
+			<logic type="LowPoly">
+				<normal>
+					<logic type="Destruction">
+						<p1>
+							<assetreference type="GrannyModel" shape="indian_house_01_03">
+								<file>star_wars\buildingsets\Empire\prefabshelters\age_1\GE_House_A0_03</file>
+							</assetreference>
+						</p1>
+						<p99>
+							<assetreference type="GrannyModel" shape="indian_house_01_03">
+								<file>star_wars\buildingsets\Empire\prefabshelters\age_1\GE_House_A0_03</file>
+							</assetreference>
+						</p99>
+					</logic>
+				</normal>
+				<lowpoly>
+					<assetreference type="GrannyModel" shape="indian_house_01_03">
+						<file>star_wars\buildingsets\Empire\prefabshelters\age_1\GE_House_A0_03</file>
+					</assetreference>
+				</lowpoly>
+			</logic>
+			<decal>
+				<effecttype>bump</effecttype>
+				<texture>star_wars\buildingsets\Empire\prefabshelters\age_1\Deccal_House_03</texture>
+				<selectedtexture>shadows_selections\selection_square_64x64</selectedtexture>
+				<bumptexture>shadows_selections\flat_normal_black_spec</bumptexture>
+				<width>6.50</width>
+				<height>6.50</height>
+				<xoffset>-0.20</xoffset> <!-->East/-West<!-->
+				<zoffset>0.30</zoffset> <!-->-North/South<!-->
+			</decal>
+		</component>
+		<component>
+			DEAD
+			<logic type="LowPoly">
+				<normal>
+					<assetreference type="GrannyModel">
+						<file>star_wars\buildingsets\Empire\prefabshelters\age_1\GE_House_A0_03_destroyed</file>
+					</assetreference>
+				</normal>
+				<lowpoly>
+					<assetreference type="GrannyModel">
+						<file>star_wars\buildingsets\Empire\prefabshelters\age_1\GE_House_A0_03_destroyed</file>
+					</assetreference>
+				</lowpoly>
+			</logic>
+			<decal>
+				<effecttype>bump</effecttype>
+				<texture>star_wars\buildingsets\Empire\prefabshelters\age_1\Deccal_House_03</texture>
+				<selectedtexture>shadows_selections\selection_square_64x64</selectedtexture>
+				<bumptexture>shadows_selections\flat_normal_black_spec</bumptexture>
+				<width>6.50</width>
+				<height>6.50</height>
+				<xoffset>-0.20</xoffset> <!-->East/-West<!-->
+				<zoffset>0.30</zoffset> <!-->-North/South<!-->
+			</decal>
+		</component>
+		<anim>
+			Idle
+			<component>LIVE</component>
+			<simskeleton>
+				<model>star_wars\buildingsets\Empire\prefabshelters\age_1\GE_House_A0_03</model>
+				<damagetemplate>buildings\asian_civs\house_indian\india_house_age1_03.dmg</damagetemplate>
+			</simskeleton>
+		</anim>
+		<anim>
+			RangedAttack
+			<assetreference type="GrannyAnim">
+				<file>animation_library\building\ranged_attack</file>
+				<tag type="Attack">0.98</tag>
+				<tag type="SpecificSoundSet" checkvisible="1" set="Arrows">0.98</tag>
+			</assetreference>
+			<component>LIVE</component>
+			<simskeleton>
+				<model>star_wars\buildingsets\Empire\prefabshelters\age_1\GE_House_A0_03</model>
+				<damagetemplate>buildings\asian_civs\house_indian\india_house_age1_03.dmg</damagetemplate>
+			</simskeleton>
+		</anim>
+		<anim>
+			RangedAttackShip
+			<assetreference type="GrannyAnim">
+				<file>animation_library\building\ranged_attack</file>
+				<tag type="Attack">0.98</tag>
+				<tag type="SpecificSoundSet" checkvisible="1" set="Arrows">0.98</tag>
+			</assetreference>
+			<component>LIVE</component>
+			<simskeleton>
+				<model>star_wars\buildingsets\Empire\prefabshelters\age_1\GE_House_A0_03</model>
+				<damagetemplate>buildings\asian_civs\house_indian\india_house_age1_03.dmg</damagetemplate>
+			</simskeleton>
+		</anim>
+		<anim>
+			Death
+			<assetreference type="GrannyAnim">
+				<file>star_wars\buildingsets\Empire\prefabshelters\age_1\GE_House_A0_03_deathanime</file>
+			</assetreference>
+			<component>DEAD</component>
+			<attach a="collapse_smoke" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+			<attach a="base smoke" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+			<attach a="base smoke2" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+			<attach a="base smoke3" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+		</anim>
+	</submodel>
+	<submodel>
+		empire_sub_construction_stage_01
+		<component>
+			construction_stage_01
+			<assetreference type="GrannyModel">
+				<file>buildings\constructions\2x2_stage1</file>
+			</assetreference>
+			<decal>
+				<effecttype>bump</effecttype>
+				<texture>buildings\constructions\2x2_construction_decal</texture>
+				<selectedtexture>shadows_selections\selection_square_64x64</selectedtexture>
+				<bumptexture>shadows_selections\flat_normal_black_spec</bumptexture>
+				<width>7.00</width>
+				<height>7.00</height>
+			</decal>
+		</component>
+		<anim>
+			Idle
+			<component>construction_stage_01</component>
+		</anim>
+	</submodel>
+	<submodel>
+		empire_sub_construction_stage_02
+		<component>
+			construction_stage_02
+			<assetreference type="GrannyModel">
+				<file>buildings\constructions\2x2_stage2</file>
+			</assetreference>
+			<decal>
+				<effecttype>bump</effecttype>
+				<texture>buildings\constructions\2x2_construction_decal</texture>
+				<selectedtexture>shadows_selections\selection_square_64x64</selectedtexture>
+				<bumptexture>shadows_selections\flat_normal_black_spec</bumptexture>
+				<width>7.00</width>
+				<height>7.00</height>
+			</decal>
+		</component>
+		<anim>
+			Idle
+			<component>construction_stage_02</component>
+		</anim>
+	</submodel>
+	<submodel>
+		empire_house_age1_01_construction_stage_03
+		<attachment>
+			scalf
+			<component>
+				scalf
+				<assetreference type="GrannyModel">
+					<file>buildings\constructions\2x2_stage2</file>
+				</assetreference>
+			</component>
+			<anim>
+				<component>scalf</component>
+			</anim>
+		</attachment>
+		<component>
+			az_sub_construction_age1_01_stage_03
+			<assetreference type="GrannyModel">
+				<file>star_wars\buildingsets\Empire\prefabshelters\age_1\prefabshelters\age_1\GE_House_A0_01</file>
+			</assetreference>
+			<decal>
+				<effecttype>default</effecttype>
+				<texture>star_wars\buildingsets\Empire\prefabshelters\age_1\prefabshelters\age_1\Deccal_House_01</texture>
+				<selectedtexture>shadows_selections\selection_square_64x64</selectedtexture>
+				<width>6.50</width>
+				<height>6.50</height>
+			</decal>
+			<attach a="scalf" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+		</component>
+		<anim>
+			Idle
+			<component>az_sub_construction_age1_01_stage_03</component>
+		</anim>
+	</submodel>
+	<submodel>
+		empire_house_age1_02_construction_stage_03
+		<attachment>
+			scalf
+			<component>
+				scalf
+				<assetreference type="GrannyModel">
+					<file>buildings\constructions\2x2_stage2</file>
+				</assetreference>
+			</component>
+			<anim>
+				<component>scalf</component>
+			</anim>
+		</attachment>
+		<component>
+			az_sub_construction_age1_01_stage_03
+			<assetreference type="GrannyModel">
+				<file>star_wars\buildingsets\Empire\prefabshelters\age_1\prefabshelters\age_1\GE_House_A0_02</file>
+			</assetreference>
+			<decal>
+				<effecttype>default</effecttype>
+				<texture>star_wars\buildingsets\Empire\prefabshelters\age_1\prefabshelters\age_1\Deccal_House_02</texture>
+				<selectedtexture>shadows_selections\selection_square_64x64</selectedtexture>
+				<width>6.50</width>
+				<height>6.50</height>
+			</decal>
+			<attach a="scalf" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+		</component>
+		<anim>
+			Idle
+			<component>az_sub_construction_age1_01_stage_03</component>
+		</anim>
+	</submodel>
+	<submodel>
+		empire_house_age1_03_construction_stage_03
+		<attachment>
+			scalf
+			<component>
+				scalf
+				<assetreference type="GrannyModel">
+					<file>buildings\constructions\2x2_stage2</file>
+				</assetreference>
+			</component>
+			<anim>
+				<component>scalf</component>
+			</anim>
+		</attachment>
+		<component>
+			az_sub_construction_age1_01_stage_03
+			<assetreference type="GrannyModel">
+				<file>star_wars\buildingsets\Empire\prefabshelters\age_1\prefabshelters\age_1\GE_House_A0_03</file>
+			</assetreference>
+			<decal>
+				<effecttype>default</effecttype>
+				<texture>star_wars\buildingsets\Empire\prefabshelters\age_1\prefabshelters\age_1\Deccal_House_03</texture>
+				<selectedtexture>shadows_selections\selection_square_64x64</selectedtexture>
+				<width>6.50</width>
+				<height>6.50</height>
+			</decal>
+			<attach a="scalf" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+		</component>
+		<anim>
+			Idle
+			<component>az_sub_construction_age1_01_stage_03</component>
+		</anim>
+	</submodel>
+	<component>
+		yphouseindian
+		<logic type="Tech">
+			<none>
+				<logic type="BuildingCompletion">
+					<p0>
+						<submodelref ref="empire_sub_construction_stage_01"/>
+					</p0>
+					<p33>
+						<submodelref ref="empire_sub_construction_stage_02"/>
+					</p33>
+					<p66>
+						<logic type="Variation">
+							<data>
+								<submodelref ref="empire_house_age1_01_construction_stage_03"/>
+							</data>
+							<data>
+								<submodelref ref="empire_house_age1_02_construction_stage_03"/>
+							</data>
+							<data>
+								<submodelref ref="empire_house_age1_03_construction_stage_03"/>
+							</data>
+						</logic>
+					</p66>
+					<p100>
+						<logic type="Variation">
+							<data>
+								<submodelref ref="empire_house_age1_01"/>
+							</data>
+							<data>
+								<submodelref ref="empire_house_age1_02"/>
+							</data>
+							<data>
+								<submodelref ref="empire_house_age1_03"/>
+							</data>
+						</logic>
+					</p100>
+				</logic>
+			</none>
+			<colonialize>
+				<logic type="BuildingCompletion">
+					<p0>
+						<submodelref ref="empire_sub_construction_stage_01"/>
+					</p0>
+					<p33>
+						<submodelref ref="empire_sub_construction_stage_02"/>
+					</p33>
+					<p66>
+						<logic type="Variation">
+							<data>
+								<submodelref ref="empire_house_age1_01_construction_stage_03"/>
+							</data>
+							<data>
+								<submodelref ref="empire_house_age1_02_construction_stage_03"/>
+							</data>
+							<data>
+								<submodelref ref="empire_house_age1_03_construction_stage_03"/>
+							</data>
+						</logic>
+					</p66>
+					<p100>
+						<logic type="Variation">
+							<data>
+								<submodelref ref="empire_house_age1_01"/>
+							</data>
+							<data>
+								<submodelref ref="empire_house_age1_02"/>
+							</data>
+							<data>
+								<submodelref ref="empire_house_age1_03"/>
+							</data>
+						</logic>
+					</p100>
+				</logic>
+			</colonialize>
+			<industrialize>
+				<logic type="BuildingCompletion">
+					<p0>
+						<submodelref ref="empire_sub_construction_stage_01"/>
+					</p0>
+					<p33>
+						<submodelref ref="empire_sub_construction_stage_02"/>
+					</p33>
+					<p66>
+						<logic type="Variation">
+							<data>
+								<submodelref ref="empire_house_age1_01_construction_stage_03"/>
+							</data>
+							<data>
+								<submodelref ref="empire_house_age1_02_construction_stage_03"/>
+							</data>
+							<data>
+								<submodelref ref="empire_house_age1_03_construction_stage_03"/>
+							</data>
+						</logic>
+					</p66>
+					<p100>
+						<logic type="Variation">
+							<data>
+								<submodelref ref="empire_house_age1_01"/>
+							</data>
+							<data>
+								<submodelref ref="empire_house_age1_02"/>
+							</data>
+							<data>
+								<submodelref ref="empire_house_age1_03"/>
+							</data>
+						</logic>
+					</p100>
+				</logic>
+			</industrialize>
+		</logic>
+	</component>
+</animfile>

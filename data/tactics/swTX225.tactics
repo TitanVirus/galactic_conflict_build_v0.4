@@ -1,0 +1,78 @@
+<!-- converted from XMB to XML -->
+
+<tactics>
+	<action>
+	<!-->Medium Blaster Cannon<!-->
+		<name stringid="70597">DoubleLaserCannonAttack</name>
+		<type>Attack</type>
+		<attackaction>1</attackaction>
+		<rangedlogic>1</rangedlogic>
+		<anim>Volley_standing_attack</anim>
+		<boredanim>Bored</boredanim>
+		<idleanim>Idle</idleanim>
+		<maxheight>0</maxheight>
+		<accuracy>0.90</accuracy>
+		<accuracyreductionfactor>0.75</accuracyreductionfactor>
+		<aimbonus>0</aimbonus>
+		<maxspread>5</maxspread>
+		<spreadfactor>0.25</spreadfactor>
+		<trackrating>8</trackrating>
+		<unintentionaldamagemultiplier>0.7</unintentionaldamagemultiplier>
+		<projectile>zBlueBlaster</projectile>
+		<impacteffect>Star_Wars\Effects\Impacts\Laser</impacteffect>
+		<numberprojectiles>1</numberprojectiles>
+		<rate type="Unit">1.0</rate>
+		<rate type="Building">1.0 </rate>
+		<throw>1</throw>
+		<damage>13.000000</damage>
+		<maxrange>12.000000</maxrange>
+		<rof>2.000000</rof>
+		<basedamagecap>1</basedamagecap>
+		<!--><reloadanim>Idle</reloadanim><!-->
+	</action>
+	<tactic>
+		Volley
+		<action priority="90">DoubleLaserCannonAttack</action>
+		<attacktype>LogicalTypeRangedUnitsAttack</attacktype>
+		<autoattacktype>LogicalTypeRangedUnitsAutoAttack</autoattacktype>
+		<attackresponsetype>LogicalTypeRangedUnitsAttack</attackresponsetype>
+		<autoretarget>1</autoretarget>
+		<runaway>1</runaway>
+		<idleanim>Idle</idleanim>
+		<boredanim>Bored</boredanim>
+		<deathanim>Death</deathanim>
+		<walkanim>Walk</walkanim>
+		<joganim>Jog</joganim>
+		<runanim>Run</runanim>
+	</tactic>
+	<tactic>
+		Defend
+		<action priority="90">DoubleLaserCannonAttack</action>
+		<attacktype>LogicalTypeRangedUnitsAttack</attacktype>
+		<autoattacktype>LogicalTypeRangedUnitsAutoAttack</autoattacktype>
+		<attackresponsetype>LogicalTypeRangedUnitsAttack</attackresponsetype>
+		<autoretarget>1</autoretarget>
+		<runaway>0</runaway>
+		<idleanim>Idle</idleanim>
+		<boredanim>Bored</boredanim>
+		<deathanim>Death</deathanim>
+		<walkanim>Walk</walkanim>
+		<joganim>Jog</joganim>
+		<runanim>Run</runanim>
+	</tactic>
+	<tactic>
+		Stagger
+		<action priority="90">DoubleLaserCannonAttack</action>
+		<attacktype>LogicalTypeRangedUnitsAttack</attacktype>
+		<autoattacktype>LogicalTypeRangedUnitsAutoAttack</autoattacktype>
+		<attackresponsetype>LogicalTypeRangedUnitsAttack</attackresponsetype>
+		<autoretarget>1</autoretarget>
+		<runaway>0</runaway>
+		<idleanim>Idle</idleanim>
+		<boredanim>Bored</boredanim>
+		<deathanim>Death</deathanim>
+		<walkanim>Walk</walkanim>
+		<joganim>Jog</joganim>
+		<runanim>Run</runanim>
+	</tactic>
+</tactics>

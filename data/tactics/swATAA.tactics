@@ -1,0 +1,71 @@
+<!-- converted from XMB to XML -->
+
+<tactics>
+	<action>
+		<name stringid="38119">CannonAttack</name>
+		<reloadanim>Bombard_ranged_idle</reloadanim>
+		<type>Attack</type>
+		<attackaction>1</attackaction>
+		<rangedlogic>1</rangedlogic>
+		<anim>Bombard_ranged_attack</anim>
+		<idleanim>Bombard_ranged_idle</idleanim>
+		<boredanim>Bombard_ranged_idle</boredanim>
+		<maxheight>0</maxheight>
+		<accuracy>1.0</accuracy>
+		<accuracyreductionfactor>0.5</accuracyreductionfactor>
+		<aimbonus>0</aimbonus>
+		<maxspread>5</maxspread>
+		<spreadfactor>0.25</spreadfactor>
+		<trackrating>12</trackrating>
+		<unintentionaldamagemultiplier>0.7</unintentionaldamagemultiplier>
+		<projectile>zRedBlaster</projectile>
+		<numberprojectiles>1</numberprojectiles>
+		<impacteffect>star_wars\effects\impacts\AirBlaster</impacteffect>
+		<rate type="All">1.0</rate>
+		<basedamagecap>1</basedamagecap>
+	</action>
+	<tactic>
+		Limber
+		<speedmodifier>1.0</speedmodifier>
+		<attacktype>LogicalTypeRangedUnitsAttack</attacktype>
+		<attackresponsetype>LogicalTypeRangedUnitsAttack</attackresponsetype>
+		<transition>
+			<tactic>Bombard</tactic>
+			<action>Limber</action>
+			<anim>Bombard_unlimber</anim>
+			<length>2</length>
+			<exit>1</exit>
+			<commandautomatic>1</commandautomatic>
+			<automatic>1</automatic>
+		</transition>
+		<idleanim>Idle</idleanim>
+		<boredanim>Bored</boredanim>
+		<walkanim>Walk</walkanim>
+		<joganim>Jog</joganim>
+		<runanim>Run</runanim>
+		<deathanim>Death</deathanim>
+	</tactic>
+	<tactic>
+		Bombard
+		<speedmodifier>0.4</speedmodifier>
+		<attacktype>LogicalTypeRangedUnitsAttack</attacktype>
+		<autoattacktype>LogicalTypeRangedUnitsAutoAttack</autoattacktype>
+		<attackresponsetype>LogicalTypeRangedUnitsAttack</attackresponsetype>
+		<exclusive>1</exclusive>
+		<action>CannonAttack</action>
+		<transition>
+			<tactic>Limber</tactic>
+			<action>Limber</action>
+			<anim>Bombard_limber</anim>
+			<length>2</length>
+			<exit>1</exit>
+		</transition>
+		<idleanim>Bombard_ranged_idle</idleanim>
+		<boredanim>Bombard_ranged_idle</boredanim>
+		<walkanim>Bombard_Walk</walkanim>
+		<joganim>Bombard_Jog</joganim>
+		<runanim>Bombard_Run</runanim>
+		<deathanim>Bombard_Death</deathanim>
+		<throw>1</throw>
+	</tactic>
+</tactics>

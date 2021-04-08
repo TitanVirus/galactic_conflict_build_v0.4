@@ -1,0 +1,96 @@
+<!-- converted from XMB to XML -->
+
+<tactics>
+	<action>
+		<name stringid="71037">ElectrostaffAttack</name>
+		<type>Attack</type>
+		<maxrange>1.75</maxrange>
+		<rate type="Unit">1.0 </rate>
+		<rate type="Building">1.0 </rate>
+		<rate type="LogicalTypeShipsAndBuildings">1.0 </rate>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<speedboost>1</speedboost>
+		<anim>Charge_attack</anim>
+		<idleanim>CombatIdle</idleanim>
+		<impacteffect>star_wars\effects\impacts\electrostaff2</impacteffect>
+		<targetspeedboost>1</targetspeedboost>
+		<basedamagecap>1</basedamagecap>
+	</action>
+	<action>
+		<name stringid="72211">SweepDamage</name>
+		<type>Attack</type>
+		<maxrange>1.75</maxrange>
+		<rate type="Unit">1.0 </rate>
+		<rate type="Guardian">1.0 </rate>
+		<rate type="LogicalTypeShipsAndBuildings">1.0 </rate>
+		<basedamagecap>1</basedamagecap>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<anim>Charge_attack</anim>
+		<idleanim>CombatIdle</idleanim>
+		<impacteffect>effects\impacts\melee_no_weapon</impacteffect>
+	</action>
+	<tactic>
+		Melee
+		<action priority="100">ElectrostaffAttack</action>
+		<speedmodifier>1.0</speedmodifier>
+		<attacktype>LogicalTypeHandUnitsAttack</attacktype>
+		<autoattacktype>LogicalTypeHandUnitsAutoAttack</autoattacktype>
+		<attackresponsetype>LogicalTypeHandUnitsAttack</attackresponsetype>
+		<runaway>0</runaway>
+		<transition>
+			<tactic>Defend</tactic>
+			<length>0</length>
+			<exit>1</exit>
+		</transition>
+		<autoretarget>1</autoretarget>
+		<idleanim>Charge_idle</idleanim>
+		<boredanim>Charge_bored</boredanim>
+		<deathanim>Death_by_melee</deathanim>
+		<walkanim>Charge_walk</walkanim>
+		<joganim>Charge_jog</joganim>
+		<runanim>Charge_run</runanim>
+	</tactic>
+	<tactic>
+		Defend
+		<action priority="100">ElectrostaffAttack</action>
+		<attacktype>LogicalTypeHandUnitsAttack</attacktype>
+		<autoattacktype>LogicalTypeHandUnitsAutoAttack</autoattacktype>
+		<attackresponsetype>LogicalTypeHandUnitsAttack</attackresponsetype>
+		<runaway>0</runaway>
+		<autoretarget>1</autoretarget>
+		<transition>
+			<tactic>Normal</tactic>
+			<length>0</length>
+			<exit>1</exit>
+		</transition>
+		<idleanim>Defend_idle</idleanim>
+		<boredanim>Defend_bored</boredanim>
+		<deathanim>Death_by_melee</deathanim>
+		<walkanim>Cover_walk</walkanim>
+		<joganim>Cover_jog</joganim>
+		<runanim>Cover_run</runanim>
+	</tactic>
+	<tactic>
+		Cover
+		<speedmodifier>0.5</speedmodifier>
+		<action priority="100">ElectrostaffAttack</action>
+		<attacktype>LogicalTypeHandUnitsAttack</attacktype>
+		<autoattacktype>LogicalTypeHandUnitsAutoAttack</autoattacktype>
+		<attackresponsetype>LogicalTypeHandUnitsAttack</attackresponsetype>
+		<runaway>0</runaway>
+		<autoretarget>1</autoretarget>
+		<transition>
+			<tactic>Normal</tactic>
+			<length>0</length>
+			<exit>1</exit>
+		</transition>
+		<idleanim>Cover_idle</idleanim>
+		<boredanim>Cover_bored</boredanim>
+		<deathanim>Death_by_melee</deathanim>
+		<walkanim>Cover_walk</walkanim>
+		<joganim>Cover_jog</joganim>
+		<runanim>Cover_run</runanim>
+	</tactic>
+</tactics>

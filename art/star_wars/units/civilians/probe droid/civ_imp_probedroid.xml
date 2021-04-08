@@ -1,0 +1,110 @@
+	<animfile>
+	<definebone>bone_main</definebone>
+	<definebone>bone_launchpoint</definebone>
+	<definebone>Bip01</definebone>
+	<definebone>Bip01 Pelvis</definebone>
+	<definebone>Bip01 Spine</definebone>
+	<definebone>Bip01 Spine1</definebone>
+	<definebone>bone hitpointbar</definebone>
+	<definebone>Bip01 R Thigh</definebone>
+	<definebone>Bip01 L Thigh</definebone>
+	<definebone>Bip01 L Calf</definebone>
+	<definebone>Bip01 R Calf</definebone>
+	<definebone>Bip01 R Foot</definebone>
+	<definebone>Bip01 L Foot</definebone>
+	<component>
+		Explosion
+		<notshadowcaster/>
+		<assetreference type="ParticleSystem">
+			<file>explosionsmall</file>
+		</assetreference>
+	</component>
+	<component>
+		ModelComp
+		<assetreference type="GrannyModel">
+			<file>star_wars\units\civilians\probe droid\probe_droid_Model</file>
+		</assetreference>
+		<decal>
+			<effecttype>default</effecttype>
+			<texture isfakeshadow="1">shadows_selections\shadow_circle_32x32</texture>
+			<selectedtexture>shadows_selections\selection_circle_32x32</selectedtexture>
+			<width>1.5</width>
+			<height>1.5</height>
+		</decal>
+		<watersplash>
+			<texture>effects\water_wakes\water_splash</texture>
+			<width>1.75</width>
+			<height>2.00</height>
+		</watersplash>
+	</component>
+	<anim>
+		Idle
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\civilians\probe droid\probe_droid_idle_a_Anim</file>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\civilians\probe droid\probe_droid_idle_b_Anim</file>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\civilians\probe droid\probe_droid_idle_c_Anim</file>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Walk
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\civilians\probe droid\probe_droid_walk_a_Anim</file>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\civilians\probe droid\probe_droid_walk_b_Anim</file>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Jog
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\civilians\probe droid\probe_droid_walk_a_Anim</file>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\civilians\probe droid\probe_droid_walk_b_Anim</file>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Run
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\civilians\probe droid\probe_droid_walk_a_Anim</file>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\civilians\probe droid\probe_droid_walk_b_Anim</file>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Bored
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\civilians\probe droid\probe_droid_bored_a_Anim</file>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\civilians\probe droid\probe_droid_bored_b_Anim</file>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\civilians\probe droid\probe_droid_bored_c_Anim</file>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		RangedAttack
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\civilians\probe droid\probe_droid_attack_a_Anim</file>
+				<tag type="Attack">0.44</tag>
+				<tag type="SpecificSoundSet" checkvisible="1" set="swBlasterE11">0.44</tag>
+				<tag type="Particles" particlename="LaserCannonRedshotSingle">0.44</tag>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Death
+		<component>Explosion</component>
+	</anim>
+</animfile>

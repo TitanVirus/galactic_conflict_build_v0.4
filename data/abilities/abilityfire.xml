@@ -1,0 +1,46 @@
+<power name="PrairieFire" type="PrairieFire">
+
+   <Placement forceOnMap='1'>full</Placement>
+   <ActiveTime>-1</ActiveTime>
+
+   <MinimapEventTime SendAlertTo="all">10.0</MinimapEventTime>
+
+   <!-- Forest Fire Specific -->
+   <Icon>god power firestorm icon</Icon>
+   <UsedIcon>god power firestorm icon done</UsedIcon>
+
+   <BurnLength>2.0</BurnLength>
+   <!-- <BurnFadeLength>15.0</BurnFadeLength> -->
+   <FireDistance>15.0</FireDistance>
+   <FireSpreadSpeed>10.0</FireSpreadSpeed>
+   <FireSpreadAngle>45.0</FireSpreadAngle>
+   <FireSFX>TestObject</FireSFX>
+   <!-- How much HP damage the fire inflicts to units in the spreading fire -->
+   <!-- VERY TEMPORARY, I'll fix when I come back from Boston to make it use the GPDamageModel
+        like ForestFire was using in AoM -->
+   <FireDamage>100.0</FireDamage>
+
+   <!-- GP Damage Model-->
+   <!-- NOT SUPPORTED YET
+   <GPDamageModel>
+		<!-- Player Relation defines for whom the damage model will be applied to
+		<PlayerRelation>enemy</PlayerRelation>
+
+        <!-- BaseDamagePercent : values must be between 0.0f and 1.0f because this is a percentage
+        <BaseDamagePercentUnit>0.80</BaseDamagePercentUnit>
+        <BaseDamagePercentVillager>0.50</BaseDamagePercentVillager>
+        <BaseDamagePercentBuilding>0.90</BaseDamagePercentBuilding>
+
+        <!-- MinHP Damage : values represent the min amount of HP damage the power will do
+        <MinHPDamageUnit>500</MinHPDamageUnit>
+        <MinHPDamageVillager>600</MinHPDamageVillager>
+        <MinHPDamageBuilding>2000</MinHPDamageBuilding>
+
+        <!-- MaxHP Damage : values represent the absolute max amount of HP damage the power will do
+        <MaxHPDamageUnit>2000</MaxHPDamageUnit>
+        <MaxHPDamageVillager>800</MaxHPDamageVillager>
+        <MaxHPDamageBuilding>2000</MaxHPDamageBuilding>
+   </GPDamageModel>
+   -->
+
+</power>

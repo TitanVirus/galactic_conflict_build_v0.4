@@ -1,0 +1,362 @@
+<!-- converted from XMB to XML -->
+
+<animfile>
+	<definebone>bone_flag_civ</definebone>
+	<definebone>bone_chimney_01</definebone>
+	<definebone>bone_chimney</definebone>
+	<definebone>boneimpact01</definebone>
+	<definebone>boneimpact02</definebone>
+	<definebone>boneimpact03</definebone>
+	<definebone>boneimpact04</definebone>
+	<definebone>bone_debris_1G</definebone>
+	<definebone>bone_debris_1H</definebone>
+	<definebone>bone_debris_1I</definebone>
+	<definebone>bone_debris_1J</definebone>
+	<definebone>bone_debris_1K</definebone>
+	<definebone>bone_debris_1L</definebone>
+	<definebone>bone_debris_1M</definebone>
+	<definebone>bone_debris_1N</definebone>
+	<definebone>bone_debris_1o</definebone>
+	<definebone>bone_debris_1p</definebone>
+	<definebone>bone_debris_1q</definebone>
+	<definebone>bone_debris_2A</definebone>
+	<definebone>bone_debris_2B</definebone>
+	<definebone>bone_debris_2C</definebone>
+	<definebone>bone_debris_2D</definebone>
+	<definebone>bone_debris_2E</definebone>
+	<definebone>bone_debris_2F</definebone>
+	<definebone>bone_debris_2G</definebone>
+	<definebone>bone_debris_2H</definebone>
+	<definebone>bone_debris_2I</definebone>
+	<definebone>bone_debris_2J</definebone>
+	<definebone>bone_debris_2k</definebone>
+	<definebone>bone_debris_2l</definebone>
+	<definebone>bone_debris_2m</definebone>
+	<definebone>bone_debris_2n</definebone>
+	<definebone>bone_debris_2o</definebone>
+	<definebone>bone_debris_2p</definebone>
+	<definebone>bone_debris_2q</definebone>
+	<definebone>bone_debris_2r</definebone>
+	<definebone>bone_debris_2s</definebone>
+	<definebone>bone_debris_2t</definebone>
+	<definebone>bone_debris_2u</definebone>
+	<definebone>bone_debris_3A</definebone>
+	<definebone>bone_debris_3B</definebone>
+	<definebone>bone_debris_3C</definebone>
+	<definebone>bone_debris_3D</definebone>
+	<definebone>bone_debris_3E</definebone>
+	<definebone>bone_debris_3F</definebone>
+	<definebone>bone_debris_3G</definebone>
+	<definebone>bone_debris_3H</definebone>
+	<definebone>bone_debris_3I</definebone>
+	<definebone>bone_debris_3J</definebone>
+	<definebone>bone_debris_3K</definebone>
+	<definebone>bone_debris_4A</definebone>
+	<definebone>bone_debris_4B</definebone>
+	<definebone>bone_debris_4C</definebone>
+	<definebone>bone_debris_4D</definebone>
+	<definebone>bone_debris_4E</definebone>
+	<definebone>bone_debris_4F</definebone>
+	<definebone>bone_debris_4g</definebone>
+	<definebone>bone_debris_4h</definebone>
+	<definebone>bone_debris_4i</definebone>
+	<definebone>bone_debris_4j</definebone>
+	<definebone>bone_debris_5A</definebone>
+	<definebone>bone_debris_5B</definebone>
+	<definebone>bone_debris_5C</definebone>
+	<definebone>bone_debris_5D</definebone>
+	<definebone>bone_debris_5E</definebone>
+	<definebone>bone_debris_5F</definebone>
+	<definebone>bone_debris_5G</definebone>
+	<definebone>bone_debris_5H</definebone>
+	<definebone>bone_debris_5I</definebone>
+	<definebone>bone_debris_5J</definebone>
+	<definebone>bone_debris_5K</definebone>
+	<definebone>bone_fire</definebone>
+	<definebone>bone_debris_2f</definebone>
+	<definebone>bone_debris_4k</definebone>
+	<definebone>bone_debris_4l</definebone>
+	<definebone>bone_campfire</definebone>
+	<definebone>bone_smoke</definebone>
+	<submodel>
+		storehouse_empire_age0
+		<attachment>
+			ChimneySmoke
+			<component>
+				fireEmitter
+				<assetreference type="ParticleSystem">
+					<file>effects\smoke\white_smoke_c.particle</file>
+				</assetreference>
+			</component>
+			<anim>
+				None
+				<component>fireEmitter</component>
+			</anim>
+		</attachment>
+		<attachment>
+			base smoke
+			<component>
+				smoke base
+				<assetreference type="ParticleSystem">
+					<file>effects\smoke\collapsesmoke01.particle</file>
+				</assetreference>
+			</component>
+			<anim>
+				Idle
+				<component>smoke base</component>
+			</anim>
+		</attachment>
+		<attachment>
+			base smoke2
+			<component>
+				smoke wave
+				<assetreference type="ParticleSystem">
+					<file>effects\smoke\collapse_smoke_wave.particle</file>
+				</assetreference>
+			</component>
+			<anim>
+				Idle
+				<component>smoke wave</component>
+			</anim>
+		</attachment>
+		<attachment>
+			base smoke3
+			<component>
+				smoke wave center
+				<assetreference type="ParticleSystem">
+					<file>effects\smoke\collapse_smoke_wave02.particle</file>
+				</assetreference>
+			</component>
+			<anim>
+				Idle
+				<component>smoke wave center</component>
+			</anim>
+		</attachment>
+		<attachment>
+			collapse_smoke
+			<component>
+				collapse_smoke
+				<assetreference type="ParticleSystem">
+					<file>effects\smoke\collapse_smoke_a.particle</file>
+				</assetreference>
+			</component>
+			<anim>
+				Idle
+				<component>collapse_smoke</component>
+			</anim>
+		</attachment>
+		<component>
+			east_age2
+			<logic type="LowPoly">
+				<normal>
+					<logic type="Destruction">
+						<p1>
+							<assetreference type="GrannyModel" shape="east_market_age2">
+								<file>star_wars\buildingsets\empire\storehouse\Age_1\bld_emp_storehouse_age1_Model</file>
+							</assetreference>
+							<attach a="ChimneySmoke" frombone="ATTACHPOINT" tobone="bone_chimney" syncanims="0"/>
+							<attach a="ChimneySmoke" frombone="ATTACHPOINT" tobone="bone_chimney_01" syncanims="0"/>
+						</p1>
+						<p99>
+							<assetreference type="GrannyModel" shape="east_market_age2">
+								<file>star_wars\buildingsets\empire\storehouse\Age_1\bld_emp_storehouse_age1_Model</file>
+							</assetreference>
+							<attach a="ChimneySmoke" frombone="ATTACHPOINT" tobone="bone_chimney" syncanims="0"/>
+							<attach a="ChimneySmoke" frombone="ATTACHPOINT" tobone="bone_chimney_01" syncanims="0"/>
+						</p99>
+					</logic>
+				</normal>
+				<lowpoly>
+					<assetreference type="GrannyModel" shape="east_market_age2">
+						<file>star_wars\buildingsets\empire\storehouse\Age_1\bld_emp_storehouse_age1_Model</file>
+					</assetreference>
+					<attach a="ChimneySmoke" frombone="ATTACHPOINT" tobone="bone_chimney" syncanims="0"/>
+					<attach a="ChimneySmoke" frombone="ATTACHPOINT" tobone="bone_chimney_01" syncanims="0"/>
+				</lowpoly>
+			</logic>
+			<decal>
+				<effecttype>bump</effecttype>
+				<texture>buildings\market\market_ground_generic</texture>
+				<selectedtexture>shadows_selections\selection_square_128x128</selectedtexture>
+				<bumptexture>shadows_selections\flat_normal_black_spec</bumptexture>
+				<width>12.00</width>
+				<height>12.00</height>
+			</decal>
+		</component>
+		<component>
+			east_age2_death
+			<logic type="LowPoly">
+				<normal>
+					<assetreference type="GrannyModel">
+						<file>star_wars\buildingsets\empire\storehouse\Age_1\bld_emp_storehouse_age1_Model</file>
+					</assetreference>
+				</normal>
+				<lowpoly>
+					<assetreference type="GrannyModel">
+						<file>star_wars\buildingsets\empire\storehouse\Age_1\bld_emp_storehouse_age1_Model</file>
+					</assetreference>
+				</lowpoly>
+			</logic>
+			<decal>
+				<effecttype>bump</effecttype>
+				<texture>buildings\market\market_ground_generic</texture>
+				<selectedtexture>shadows_selections\selection_square_128x128</selectedtexture>
+				<bumptexture>shadows_selections\flat_normal_black_spec</bumptexture>
+				<width>12.00</width>
+				<height>12.00</height>
+			</decal>
+		</component>
+		<anim>
+			Idle
+			<component>east_age2</component>
+			<simskeleton>
+				<model>star_wars\buildingsets\empire\storehouse\Age_1\bld_emp_storehouse_age1_Model</model>
+			</simskeleton>
+		</anim>
+		<anim>
+			Death
+			<assetreference type="GrannyAnim">
+				<file>buildings\market\EAST\AGE_2\east_market_age2_deathAnim</file>
+			</assetreference>
+			<component>east_age2_death</component>
+			<attach a="collapse_smoke" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+			<attach a="base smoke" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+			<attach a="base smoke2" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+			<attach a="base smoke3" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+		</anim>
+	</submodel>
+	<submodel>
+		sub_construction_stage_01
+		<component>
+			construction_stage_01
+			<assetreference type="GrannyModel">
+				<file>buildings\constructions\5x5_stage1</file>
+			</assetreference>
+			<decal>
+				<effecttype>bump</effecttype>
+				<texture>buildings\constructions\2x2_construction_decal</texture>
+				<selectedtexture>shadows_selections\selection_square_128x128</selectedtexture>
+				<bumptexture>shadows_selections\flat_normal_black_spec</bumptexture>
+				<width>12.00</width>
+				<height>12.00</height>
+			</decal>
+		</component>
+		<anim>
+			Idle
+			<component>construction_stage_01</component>
+		</anim>
+	</submodel>
+	<submodel>
+		sub_construction_stage_02
+		<component>
+			construction_stage_02
+			<assetreference type="GrannyModel">
+				<file>buildings\constructions\5x5_stage2</file>
+			</assetreference>
+			<decal>
+				<effecttype>bump</effecttype>
+				<texture>buildings\constructions\2x2_construction_decal</texture>
+				<selectedtexture>shadows_selections\selection_square_128x128</selectedtexture>
+				<bumptexture>shadows_selections\flat_normal_black_spec</bumptexture>
+				<width>12.00</width>
+				<height>12.00</height>
+			</decal>
+		</component>
+		<anim>
+			Idle
+			<component>construction_stage_02</component>
+		</anim>
+	</submodel>
+	<submodel>
+		storehouse_empire_age0_con2
+		<attachment>
+			con
+			<component>
+				scaffolding
+				<assetreference type="GrannyModel">
+					<file>star_wars\buildingsets\empire\storehouse\Age_1\bld_emp_storehouse_age1_Model</file>
+				</assetreference>
+			</component>
+			<anim>
+				Idle
+				<component>scaffolding</component>
+			</anim>
+		</attachment>
+		<component>
+			market
+			<assetreference type="GrannyModel">
+				<file>buildings\constructions\5x5_stage3</file>
+			</assetreference>
+			<decal>
+				<effecttype>bump</effecttype>
+				<texture>buildings\constructions\2x2_construction_decal</texture>
+				<selectedtexture>shadows_selections\selection_square_128x128</selectedtexture>
+				<bumptexture>shadows_selections\flat_normal_black_spec</bumptexture>
+				<width>12.00</width>
+				<height>12.00</height>
+			</decal>
+			<attach a="con" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+		</component>
+		<anim>
+			Idle
+			<component>market</component>
+		</anim>
+	</submodel>
+	<component>
+		Market
+		<logic type="Culture">
+			<Empire>
+				<logic type="Tech">
+					<none>
+						<logic type="BuildingCompletion">
+							<p0>
+								<submodelref ref="sub_construction_stage_01"/>
+							</p0>
+							<p33>
+								<submodelref ref="sub_construction_stage_02"/>
+							</p33>
+							<p66>
+								<submodelref ref="storehouse_empire_age0_con2"/>
+							</p66>
+							<p100>
+								<submodelref ref="storehouse_empire_age0"/>
+							</p100>
+						</logic>
+					</none>
+					<colonialize>
+						<logic type="BuildingCompletion">
+							<p0>
+								<submodelref ref="sub_construction_stage_01"/>
+							</p0>
+							<p33>
+								<submodelref ref="sub_construction_stage_02"/>
+							</p33>
+							<p66>
+								<submodelref ref="storehouse_empire_age0_con2"/>
+							</p66>
+							<p100>
+								<submodelref ref="storehouse_empire_age0"/>
+							</p100>
+						</logic>
+					</colonialize>
+					<industrialize>
+						<logic type="BuildingCompletion">
+							<p0>
+								<submodelref ref="sub_construction_stage_01"/>
+							</p0>
+							<p33>
+								<submodelref ref="sub_construction_stage_02"/>
+							</p33>
+							<p66>
+								<submodelref ref="storehouse_empire_age0_con2"/>
+							</p66>
+							<p100>
+								<submodelref ref="storehouse_empire_age0"/>
+							</p100>
+						</logic>
+					</industrialize>
+				</logic>
+			</Empire>
+		</logic>
+	</component>
+</animfile>

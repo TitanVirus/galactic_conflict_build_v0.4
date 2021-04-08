@@ -1,0 +1,480 @@
+<!-- converted from XMB to XML -->
+
+<animfile>
+	<definebone>bone_main</definebone>
+	<definebone>bone_launchpoint</definebone>
+	<definebone>boneimpact01</definebone>
+	<definebone>boneimpact02</definebone>
+	<definebone>boneimpact03</definebone>
+	<submodel>
+		ATDP
+		<attachment>
+		</attachment>
+		<component>
+			ModelComp
+			<logic type="Tech">
+				<none>
+					<assetreference type="GrannyModel">
+						<file>star_wars\units\mechs\walkers\atst\atdp_Model</file>
+					</assetreference>
+				</none>
+			</logic>
+			<decal>
+				<effecttype>default</effecttype>
+				<texture isfakeshadow="1">shadows_selections\shadow_circle_128x128</texture>
+				<selectedtexture>shadows_selections\selection_oval_64x128</selectedtexture>
+				<width>4.75</width>
+				<height>4.75</height>
+			</decal>
+		</component>
+		<anim>
+			Idle
+			<assetreference type="GrannyAnim">
+				<file>star_wars\units\mechs\walkers\atst\atdp_idle_Anim</file>
+				<weight>60</weight>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>star_wars\units\mechs\walkers\atst\atdp_idle_Anim</file>
+				<weight>60</weight>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>star_wars\units\mechs\walkers\atst\atdp_idle_Anim</file>
+				<weight>15</weight>
+			</assetreference>
+			<component>ModelComp</component>
+				<simskeleton>
+					<model>star_wars\units\mechs\walkers\atst\atdp_Model</model>
+				</simskeleton>
+		</anim>
+		<anim>
+			Bored
+			<assetreference type="GrannyAnim">
+				<file>star_wars\units\mechs\walkers\atst\atdp_bored_Anim</file>
+				<weight>60</weight>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>star_wars\units\mechs\walkers\atst\atdp_bored_Anim</file>
+				<weight>60</weight>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>star_wars\units\mechs\walkers\atst\atdp_bored_Anim</file>
+				<weight>15</weight>
+			</assetreference>
+			<component>ModelComp</component>
+				<simskeleton>
+					<model>star_wars\units\mechs\walkers\atst\atdp_Model</model>
+				</simskeleton>
+		</anim>
+		<anim animlengthoverride="1.5000">
+			Walk
+			<assetreference type="GrannyAnim">
+				<file>star_wars\units\mechs\walkers\atst\atdp_walk_Anim</file>
+					<tag type="FootstepLeft">0.52</tag>
+					<tag type="FootstepRight">0.97</tag>
+					<tag type="SpecificSoundSet" checkvisible="1" set="swSFXWalkerFootstepsATST">0.51</tag>
+					<tag type="SpecificSoundSet" checkvisible="1" set="swSFXWalkerFootstepsATST">0.96</tag>
+			</assetreference>
+			<component>ModelComp</component>
+				<simskeleton>
+					<model>star_wars\units\mechs\walkers\atst\atdp_Model</model>
+				</simskeleton>
+		</anim>
+		<anim>
+			Jog
+			<assetreference type="GrannyAnim">
+				<file>star_wars\units\mechs\walkers\atst\atdp_walk_Anim</file>
+				<weight>30</weight>
+					<tag type="FootstepLeft">0.52</tag>
+					<tag type="FootstepRight">0.97</tag>
+					<tag type="SpecificSoundSet" checkvisible="1" set="swSFXWalkerFootstepsATST">0.51</tag>
+					<tag type="SpecificSoundSet" checkvisible="1" set="swSFXWalkerFootstepsATST">0.96</tag>
+			</assetreference>
+			<component>ModelComp</component>
+				<simskeleton>
+					<model>star_wars\units\mechs\walkers\atst\atdp_Model</model>
+				</simskeleton>
+		</anim>
+		<anim>
+			Run
+			<assetreference type="GrannyAnim">
+				<file>star_wars\units\mechs\walkers\atst\atdp_walk_Anim</file>
+				<weight>15</weight>
+					<tag type="FootstepLeft">0.52</tag>
+					<tag type="FootstepRight">0.97</tag>
+					<tag type="SpecificSoundSet" checkvisible="1" set="swSFXWalkerFootstepsATST">0.51</tag>
+					<tag type="SpecificSoundSet" checkvisible="1" set="swSFXWalkerFootstepsATST">0.96</tag>
+			</assetreference>
+			<component>ModelComp</component>
+				<simskeleton>
+					<model>star_wars\units\mechs\walkers\atst\atdp_Model</model>
+				</simskeleton>
+		</anim>
+		<anim>
+			RangedAttackSharpshoot
+			<assetreference type="GrannyAnim">
+				<file>star_wars\units\mechs\walkers\atst\atdp_attack_primary_Anim</file>
+				<weight>60</weight>
+				<tag type="Attack">0.40</tag>
+				<tag type="Attack">0.40</tag>
+				<tag type="SpecificSoundSet" checkvisible="1" set="Swoosh">0.40</tag>
+				<tag type="SpecificSoundSet" checkvisible="1" set="Swoosh">0.41</tag>
+				<tag type="Particles" particlename="LaserCannonRedshotSingular">0.40</tag>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>star_wars\units\mechs\walkers\atst\atdp_attack_primary_Anim</file>
+				<weight>60</weight>
+				<tag type="Attack">0.40</tag>
+				<tag type="Attack">0.40</tag>
+				<tag type="SpecificSoundSet" checkvisible="1" set="Swoosh">0.40</tag>
+				<tag type="SpecificSoundSet" checkvisible="1" set="Swoosh">0.41</tag>
+				<tag type="Particles" particlename="LaserCannonRedshotSingular">0.40</tag>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>star_wars\units\mechs\walkers\atst\atdp_attack_primary_Anim</file>
+				<weight>15</weight>
+				<tag type="Attack">0.40</tag>
+				<tag type="Attack">0.40</tag>
+				<tag type="SpecificSoundSet" checkvisible="1" set="Swoosh">0.40</tag>
+				<tag type="SpecificSoundSet" checkvisible="1" set="Swoosh">0.41</tag>
+				<tag type="Particles" particlename="LaserCannonRedshotSingular">0.40</tag>
+			</assetreference>
+			<component>ModelComp</component>
+				<simskeleton>
+					<model>star_wars\units\mechs\walkers\atst\atdp_Model</model>
+				</simskeleton>
+		</anim>
+		<anim>
+			RangedAttack
+			<assetreference type="GrannyAnim">
+				<file>star_wars\units\mechs\walkers\atst\atdp_idle_Anim</file>
+				<weight>60</weight>
+				<tag type="Attack">0.30</tag>
+				<tag type="Attack">0.40</tag>
+				<tag type="Attack">0.50</tag>
+				<tag type="Attack">0.60</tag>
+				<tag type="SpecificSoundSet" checkvisible="1" set="swLaserWalkerMedium">0.30</tag>
+				<tag type="SpecificSoundSet" checkvisible="1" set="swLaserWalkerMedium">0.40</tag>
+				<tag type="SpecificSoundSet" checkvisible="1" set="swLaserWalkerMedium">0.50</tag>
+				<tag type="SpecificSoundSet" checkvisible="1" set="swLaserWalkerMedium">0.60</tag>
+				<tag type="Particles" particlename="LaserCannonRedshotSingular">0.30</tag>
+				<tag type="Particles" particlename="LaserCannonRedshotSingular">0.40</tag>
+				<tag type="Particles" particlename="LaserCannonRedshotSingular">0.50</tag>
+				<tag type="Particles" particlename="LaserCannonRedshotSingular">0.60</tag>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>star_wars\units\mechs\walkers\atst\atdp_idle_Anim</file>
+				<weight>60</weight>
+				<tag type="Attack">0.30</tag>
+				<tag type="Attack">0.40</tag>
+				<tag type="Attack">0.50</tag>
+				<tag type="Attack">0.60</tag>
+				<tag type="SpecificSoundSet" checkvisible="1" set="swLaserWalkerMedium">0.30</tag>
+				<tag type="SpecificSoundSet" checkvisible="1" set="swLaserWalkerMedium">0.40</tag>
+				<tag type="SpecificSoundSet" checkvisible="1" set="swLaserWalkerMedium">0.50</tag>
+				<tag type="SpecificSoundSet" checkvisible="1" set="swLaserWalkerMedium">0.60</tag>
+				<tag type="Particles" particlename="LaserCannonRedshotSingular">0.30</tag>
+				<tag type="Particles" particlename="LaserCannonRedshotSingular">0.40</tag>
+				<tag type="Particles" particlename="LaserCannonRedshotSingular">0.50</tag>
+				<tag type="Particles" particlename="LaserCannonRedshotSingular">0.60</tag>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>star_wars\units\mechs\walkers\atst\atdp_idle_Anim</file>
+				<weight>15</weight>
+				<tag type="Attack">0.30</tag>
+				<tag type="Attack">0.40</tag>
+				<tag type="Attack">0.50</tag>
+				<tag type="Attack">0.60</tag>
+				<tag type="SpecificSoundSet" checkvisible="1" set="swLaserWalkerMedium">0.30</tag>
+				<tag type="SpecificSoundSet" checkvisible="1" set="swLaserWalkerMedium">0.40</tag>
+				<tag type="SpecificSoundSet" checkvisible="1" set="swLaserWalkerMedium">0.50</tag>
+				<tag type="SpecificSoundSet" checkvisible="1" set="swLaserWalkerMedium">0.60</tag>
+				<tag type="Particles" particlename="LaserCannonRedshotSingular">0.30</tag>
+				<tag type="Particles" particlename="LaserCannonRedshotSingular">0.40</tag>
+				<tag type="Particles" particlename="LaserCannonRedshotSingular">0.50</tag>
+				<tag type="Particles" particlename="LaserCannonRedshotSingular">0.60</tag>
+			</assetreference>
+			<component>ModelComp</component>
+				<simskeleton>
+					<model>star_wars\units\mechs\walkers\atst\atdp_Model</model>
+				</simskeleton>
+		</anim>
+		<anim>
+			Death
+			<assetreference type="GrannyAnim">
+				<file>star_wars\units\mechs\walkers\atst\atdp_death_a_Anim</file>
+				<tag type="SpecificSoundSet" checkvisible="1" set="SettlerGunShot">0.03</tag>
+				<tag type="SpecificSoundSet" checkvisible="1" set="SettlerGunShot">0.06</tag>
+				<tag type="SpecificSoundSet" checkvisible="1" set="SettlerGunShot">0.09</tag>
+				<tag type="Particles" particlename="MechDeathExplosionGeneric01">0.03</tag>
+				<tag type="Particles" particlename="MechDeathExplosionGeneric02">0.06</tag>
+				<tag type="Particles" particlename="MechDeathExplosionGeneric03">0.09</tag>
+				<weight>60</weight>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>star_wars\units\mechs\walkers\atst\atdp_death_b_Anim</file>
+				<tag type="SpecificSoundSet" checkvisible="1" set="SettlerGunShot">0.03</tag>
+				<tag type="SpecificSoundSet" checkvisible="1" set="SettlerGunShot">0.06</tag>
+				<tag type="SpecificSoundSet" checkvisible="1" set="SettlerGunShot">0.09</tag>
+				<tag type="Particles" particlename="MechDeathExplosionGeneric01">0.03</tag>
+				<tag type="Particles" particlename="MechDeathExplosionGeneric02">0.06</tag>
+				<tag type="Particles" particlename="MechDeathExplosionGeneric03">0.09</tag>
+				<weight>60</weight>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>star_wars\units\mechs\walkers\atst\atdp_death_c_Anim</file>
+				<tag type="SpecificSoundSet" checkvisible="1" set="SettlerGunShot">0.03</tag>
+				<tag type="SpecificSoundSet" checkvisible="1" set="SettlerGunShot">0.06</tag>
+				<tag type="SpecificSoundSet" checkvisible="1" set="SettlerGunShot">0.09</tag>
+				<tag type="Particles" particlename="MechDeathExplosionGeneric01">0.03</tag>
+				<tag type="Particles" particlename="MechDeathExplosionGeneric02">0.06</tag>
+				<tag type="Particles" particlename="MechDeathExplosionGeneric03">0.09</tag>
+				<weight>15</weight>
+			</assetreference>
+			<component>ModelComp</component>
+				<simskeleton>
+					<model>star_wars\units\mechs\walkers\atst\atdp_Model</model>
+				</simskeleton>
+		</anim>
+	</submodel>
+	<submodel>
+		ATST
+		<attachment>
+		</attachment>
+		<component>
+			ModelComp
+			<logic type="Tech">
+				<none>
+					<assetreference type="GrannyModel">
+						<file>star_wars\units\mechs\walkers\atst\atst_mesh_Model</file>
+					</assetreference>
+				</none>
+			</logic>
+			<decal>
+				<effecttype>default</effecttype>
+				<texture isfakeshadow="1">shadows_selections\shadow_circle_128x128</texture>
+				<selectedtexture>shadows_selections\selection_oval_64x128</selectedtexture>
+				<width>4.75</width>
+				<height>4.75</height>
+			</decal>
+		</component>
+		<anim>
+			Idle
+			<assetreference type="GrannyAnim">
+				<file>star_wars\units\mechs\walkers\atst\atst_anim_idle_Anim</file>
+				<weight>60</weight>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>star_wars\units\mechs\walkers\atst\atst_anim_idle_Anim</file>
+				<weight>60</weight>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>star_wars\units\mechs\walkers\atst\atst_anim_idle_Anim</file>
+				<weight>15</weight>
+			</assetreference>
+			<component>ModelComp</component>
+				<simskeleton>
+					<model>star_wars\units\mechs\walkers\atst\atst_mesh_Model</model>
+				</simskeleton>
+		</anim>
+		<anim>
+			Bored
+			<assetreference type="GrannyAnim">
+				<file>star_wars\units\mechs\walkers\atst\atst_anim_bored_Anim</file>
+				<weight>60</weight>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>star_wars\units\mechs\walkers\atst\atst_anim_bored_Anim</file>
+				<weight>60</weight>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>star_wars\units\mechs\walkers\atst\atst_anim_bored_Anim</file>
+				<weight>15</weight>
+			</assetreference>
+			<component>ModelComp</component>
+				<simskeleton>
+					<model>star_wars\units\mechs\walkers\atst\atst_mesh_Model</model>
+				</simskeleton>
+		</anim>
+		<anim>
+			Walk
+			<assetreference type="GrannyAnim">
+				<file>star_wars\units\mechs\walkers\atst\atst_anim_walk_Anim</file>
+					<tag type="FootstepLeft">0.52</tag>
+					<tag type="FootstepRight">0.97</tag>
+					<tag type="SpecificSoundSet" checkvisible="1" set="swSFXWalkerFootstepsATST">0.51</tag>
+					<tag type="SpecificSoundSet" checkvisible="1" set="swSFXWalkerFootstepsATST">0.96</tag>
+			</assetreference>
+			<component>ModelComp</component>
+				<simskeleton>
+					<model>star_wars\units\mechs\walkers\atst\atst_mesh_Model</model>
+				</simskeleton>
+		</anim>
+		<anim>
+			Jog
+			<assetreference type="GrannyAnim">
+				<file>star_wars\units\mechs\walkers\atst\atst_anim_walk_Anim</file>
+				<weight>30</weight>
+					<tag type="FootstepLeft">0.52</tag>
+					<tag type="FootstepRight">0.97</tag>
+					<tag type="SpecificSoundSet" checkvisible="1" set="swSFXWalkerFootstepsATST">0.51</tag>
+					<tag type="SpecificSoundSet" checkvisible="1" set="swSFXWalkerFootstepsATST">0.96</tag>
+			</assetreference>
+			<component>ModelComp</component>
+				<simskeleton>
+					<model>star_wars\units\mechs\walkers\atst\atst_mesh_Model</model>
+				</simskeleton>
+		</anim>
+		<anim>
+			Run
+			<assetreference type="GrannyAnim">
+				<file>star_wars\units\mechs\walkers\atst\atst_anim_walk_Anim</file>
+				<weight>15</weight>
+					<tag type="FootstepLeft">0.52</tag>
+					<tag type="FootstepRight">0.97</tag>
+					<tag type="SpecificSoundSet" checkvisible="1" set="swSFXWalkerFootstepsATST">0.51</tag>
+					<tag type="SpecificSoundSet" checkvisible="1" set="swSFXWalkerFootstepsATST">0.96</tag>
+			</assetreference>
+			<component>ModelComp</component>
+				<simskeleton>
+					<model>star_wars\units\mechs\walkers\atst\atst_mesh_Model</model>
+				</simskeleton>
+		</anim>
+		<anim>
+			RangedAttackSharpshoot
+			<assetreference type="GrannyAnim">
+				<file>star_wars\units\mechs\walkers\atst\atst_anim_attack_primary_Anim</file>
+				<weight>60</weight>
+				<tag type="Attack">0.40</tag>
+				<tag type="Attack">0.40</tag>
+				<tag type="SpecificSoundSet" checkvisible="1" set="Swoosh">0.40</tag>
+				<tag type="SpecificSoundSet" checkvisible="1" set="Swoosh">0.41</tag>
+				<tag type="Particles" particlename="LaserCannonRedshotSingular">0.40</tag>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>star_wars\units\mechs\walkers\atst\atst_anim_attack_primary_Anim</file>
+				<weight>60</weight>
+				<tag type="Attack">0.40</tag>
+				<tag type="Attack">0.40</tag>
+				<tag type="SpecificSoundSet" checkvisible="1" set="Swoosh">0.40</tag>
+				<tag type="SpecificSoundSet" checkvisible="1" set="Swoosh">0.41</tag>
+				<tag type="Particles" particlename="LaserCannonRedshotSingular">0.40</tag>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>star_wars\units\mechs\walkers\atst\atst_anim_attack_primary_Anim</file>
+				<weight>15</weight>
+				<tag type="Attack">0.40</tag>
+				<tag type="Attack">0.40</tag>
+				<tag type="SpecificSoundSet" checkvisible="1" set="Swoosh">0.40</tag>
+				<tag type="SpecificSoundSet" checkvisible="1" set="Swoosh">0.41</tag>
+				<tag type="Particles" particlename="LaserCannonRedshotSingular">0.40</tag>
+			</assetreference>
+			<component>ModelComp</component>
+				<simskeleton>
+					<model>star_wars\units\mechs\walkers\atst\atst_mesh_Model</model>
+				</simskeleton>
+		</anim>
+		<anim>
+			RangedAttack
+			<assetreference type="GrannyAnim">
+				<file>star_wars\units\mechs\walkers\atst\atst_anim_idle_Anim</file>
+				<weight>60</weight>
+				<tag type="Attack">0.30</tag>
+				<tag type="Attack">0.40</tag>
+				<tag type="Attack">0.50</tag>
+				<tag type="Attack">0.60</tag>
+				<tag type="SpecificSoundSet" checkvisible="1" set="Swoosh">0.30</tag>
+				<tag type="SpecificSoundSet" checkvisible="1" set="Swoosh">0.40</tag>
+				<tag type="SpecificSoundSet" checkvisible="1" set="Swoosh">0.50</tag>
+				<tag type="SpecificSoundSet" checkvisible="1" set="Swoosh">0.60</tag>
+				<tag type="Particles" particlename="LaserCannonRedshotSingular">0.30</tag>
+				<tag type="Particles" particlename="LaserCannonRedshotSingular">0.40</tag>
+				<tag type="Particles" particlename="LaserCannonRedshotSingular">0.50</tag>
+				<tag type="Particles" particlename="LaserCannonRedshotSingular">0.60</tag>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>star_wars\units\mechs\walkers\atst\atst_anim_idle_Anim</file>
+				<weight>60</weight>
+				<tag type="Attack">0.30</tag>
+				<tag type="Attack">0.40</tag>
+				<tag type="Attack">0.50</tag>
+				<tag type="Attack">0.60</tag>
+				<tag type="SpecificSoundSet" checkvisible="1" set="Swoosh">0.30</tag>
+				<tag type="SpecificSoundSet" checkvisible="1" set="Swoosh">0.40</tag>
+				<tag type="SpecificSoundSet" checkvisible="1" set="Swoosh">0.50</tag>
+				<tag type="SpecificSoundSet" checkvisible="1" set="Swoosh">0.60</tag>
+				<tag type="Particles" particlename="LaserCannonRedshotSingular">0.30</tag>
+				<tag type="Particles" particlename="LaserCannonRedshotSingular">0.40</tag>
+				<tag type="Particles" particlename="LaserCannonRedshotSingular">0.50</tag>
+				<tag type="Particles" particlename="LaserCannonRedshotSingular">0.60</tag>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>star_wars\units\mechs\walkers\atst\atst_anim_idle_Anim</file>
+				<weight>15</weight>
+				<tag type="Attack">0.30</tag>
+				<tag type="Attack">0.40</tag>
+				<tag type="Attack">0.50</tag>
+				<tag type="Attack">0.60</tag>
+				<tag type="SpecificSoundSet" checkvisible="1" set="Swoosh">0.30</tag>
+				<tag type="SpecificSoundSet" checkvisible="1" set="Swoosh">0.40</tag>
+				<tag type="SpecificSoundSet" checkvisible="1" set="Swoosh">0.50</tag>
+				<tag type="SpecificSoundSet" checkvisible="1" set="Swoosh">0.60</tag>
+				<tag type="Particles" particlename="LaserCannonRedshotSingular">0.30</tag>
+				<tag type="Particles" particlename="LaserCannonRedshotSingular">0.40</tag>
+				<tag type="Particles" particlename="LaserCannonRedshotSingular">0.50</tag>
+				<tag type="Particles" particlename="LaserCannonRedshotSingular">0.60</tag>
+			</assetreference>
+			<component>ModelComp</component>
+				<simskeleton>
+					<model>star_wars\units\mechs\walkers\atst\atst_mesh_Model</model>
+				</simskeleton>
+		</anim>
+		<anim>
+			Death
+			<assetreference type="GrannyAnim">
+				<file>star_wars\units\mechs\walkers\atst\atst_anim_death1_Anim</file>
+				<tag type="SpecificSoundSet" checkvisible="1" set="SettlerGunShot">0.03</tag>
+				<tag type="SpecificSoundSet" checkvisible="1" set="SettlerGunShot">0.06</tag>
+				<tag type="SpecificSoundSet" checkvisible="1" set="SettlerGunShot">0.09</tag>
+				<tag type="Particles" particlename="MechDeathExplosionGeneric01">0.03</tag>
+				<tag type="Particles" particlename="MechDeathExplosionGeneric02">0.06</tag>
+				<tag type="Particles" particlename="MechDeathExplosionGeneric03">0.09</tag>
+				<weight>60</weight>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>star_wars\units\mechs\walkers\atst\atst_anim_death2_Anim</file>
+				<tag type="SpecificSoundSet" checkvisible="1" set="SettlerGunShot">0.03</tag>
+				<tag type="SpecificSoundSet" checkvisible="1" set="SettlerGunShot">0.06</tag>
+				<tag type="SpecificSoundSet" checkvisible="1" set="SettlerGunShot">0.09</tag>
+				<tag type="Particles" particlename="MechDeathExplosionGeneric01">0.03</tag>
+				<tag type="Particles" particlename="MechDeathExplosionGeneric02">0.06</tag>
+				<tag type="Particles" particlename="MechDeathExplosionGeneric03">0.09</tag>
+				<weight>60</weight>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>star_wars\units\mechs\walkers\atst\atst_anim_death3_Anim</file>
+				<tag type="SpecificSoundSet" checkvisible="1" set="SettlerGunShot">0.03</tag>
+				<tag type="SpecificSoundSet" checkvisible="1" set="SettlerGunShot">0.06</tag>
+				<tag type="SpecificSoundSet" checkvisible="1" set="SettlerGunShot">0.09</tag>
+				<tag type="Particles" particlename="MechDeathExplosionGeneric01">0.03</tag>
+				<tag type="Particles" particlename="MechDeathExplosionGeneric02">0.06</tag>
+				<tag type="Particles" particlename="MechDeathExplosionGeneric03">0.09</tag>
+				<weight>15</weight>
+			</assetreference>
+			<component>ModelComp</component>
+				<simskeleton>
+					<model>star_wars\units\mechs\walkers\atst\atst_mesh_Model</model>
+				</simskeleton>
+		</anim>
+	</submodel>
+	<component>
+		ModelComp
+			<logic type="Tech">
+				<none>
+					<submodelref ref="ATDP"/>
+				</none>
+				<zUpgradeATST>
+					<submodelref ref="ATST"/>
+				</zUpgradeATST>
+			</logic>
+	</component>
+</animfile>

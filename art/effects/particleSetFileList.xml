@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<particlesetxmlfiles>
+	<psetsfile filename="art\effects\particlesets.xml"/>
+	<psetsfile filename="art\units\animals\turtle\TurtlesBoredFX.xml"/>
+	<psetsfile filename="art\units\animals\turtle\TurtlesSwimFX.xml"/>
+	<psetsfile filename="art\effects\animal particles\BassFX.xml"/>
+	<psetsfile filename="art\effects\fire\torchFireSet.xml"/>
+	<psetsfile filename="art\units\cavalry\war_wagon\war_wagon_attackFX.xml"/>
+	<psetsfile filename="art\effects\weapon_fire\CannonMuzzleFX.xml"/>
+	<psetsfile filename="art\units\spc\fire_ship\fireshipFX.xml"/>
+	<psetsfile filename="art\terrain\great_plains\geyserFX.xml"/>
+	<psetsfile filename="art\effects\explosions\explosionFXset.xml"/>
+	<psetsfile filename="art\effects\particlesets_xpack.xml"/>
+	<psetsfile filename="art\effects\particlesets_ypack.xml"/>
+	<psetsfile filename="art\effects\particlesets_zpack.xml"/>
+</particlesetxmlfiles>

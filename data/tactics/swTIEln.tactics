@@ -1,0 +1,116 @@
+<!-- converted from XMB to XML -->
+
+<tactics>
+	<action>
+	<!-->Medium Laser Cannon<!-->
+		<name stringid="70778">ProtonTorpedoAttack</name>
+		<type>Attack</type>
+		<attackaction>1</attackaction>
+		<rangedlogic>1</rangedlogic>
+		<anim>RangedAttackSharpshoot</anim>
+		<idleanim>CombatIdle</idleanim>
+		<maxheight>0</maxheight>
+		<accuracy>1.0</accuracy>
+		<aimbonus>0</aimbonus>
+		<maxspread>5</maxspread>
+		<spreadfactor>0.25</spreadfactor>
+		<trackrating>8</trackrating>
+		<unintentionaldamagemultiplier>1.0</unintentionaldamagemultiplier>
+		<projectile>zPlexMissile</projectile>
+		<impacteffect>Star_Wars\Effects\Impacts\Plex</impacteffect>
+		<rate type="All">1.0</rate>
+		<throw>1</throw>
+		<impactforcemin>700.0f</impactforcemin>
+		<impactforcemax>900.0f</impactforcemax>
+		<outerdamageareadistance>.25</outerdamageareadistance>
+		<outerdamageareafactor>.20</outerdamageareafactor>
+		<impactlaunchangle>12.0</impactlaunchangle>
+		<areasortmode>Directional</areasortmode>
+		<targetground>1</targetground>
+		<numberbounces>0</numberbounces>
+		<chargeaction>1</chargeaction>
+		<basedamagecap>1</basedamagecap>
+		<active>0</active>
+	</action>
+	<action>
+		<name stringid="70779">LaserCannonAttack</name>
+		<type>Attack</type>
+		<attackaction>1</attackaction>
+		<rangedlogic>1</rangedlogic>
+		<anim>RangedAttack</anim>
+		<boredanim>Idle</boredanim>
+		<idleanim>CombatIdle</idleanim>
+		<maxheight>0</maxheight>
+		<accuracy>0.90</accuracy>
+		<accuracyreductionfactor>0.75</accuracyreductionfactor>
+		<aimbonus>0</aimbonus>
+		<maxspread>5</maxspread>
+		<spreadfactor>0.25</spreadfactor>
+		<trackrating>8</trackrating>
+		<unintentionaldamagemultiplier>0.7</unintentionaldamagemultiplier>
+		<projectile>zGreenBlaster</projectile>
+		<impacteffect>star_wars\effects\impacts\AirBlaster</impacteffect>
+		<numberprojectiles>1</numberprojectiles>
+		<rate type="Unit">1.0</rate>
+		<throw>1</throw>
+		<damage>13.000000</damage>
+		<maxrange>12.000000</maxrange>
+		<rof>2.000000</rof>
+		<active>1</active>
+		<basedamagecap>1</basedamagecap>
+		<impactforcemin>100.0f</impactforcemin>
+		<impactforcemax>300.0f</impactforcemax>
+		<outerdamageareadistance>.25</outerdamageareadistance>
+		<outerdamageareafactor>.20</outerdamageareafactor>
+		<areasortmode>Directional</areasortmode>
+		<!--><reloadanim>Idle</reloadanim><!-->
+	</action>
+	<tactic>
+		Volley
+		<action priority="95">ProtonTorpedoAttack</action>
+		<action priority="90">LaserCannonAttack</action>
+		<attacktype>LogicalTypeRangedUnitsAttack</attacktype>
+		<autoattacktype>LogicalTypeRangedUnitsAutoAttack</autoattacktype>
+		<attackresponsetype>LogicalTypeRangedUnitsAttack</attackresponsetype>
+		<autoretarget>1</autoretarget>
+		<runaway>1</runaway>
+		<idleanim>Idle</idleanim>
+		<boredanim>Bored</boredanim>
+		<deathanim>Death</deathanim>
+		<walkanim>Walk</walkanim>
+		<joganim>Jog</joganim>
+		<runanim>Run</runanim>
+	</tactic>
+	<tactic>
+		Defend
+		<action priority="95">ProtonTorpedoAttack</action>
+		<action priority="90">LaserCannonAttack</action>
+		<attacktype>LogicalTypeRangedUnitsAttack</attacktype>
+		<autoattacktype>LogicalTypeRangedUnitsAutoAttack</autoattacktype>
+		<attackresponsetype>LogicalTypeRangedUnitsAttack</attackresponsetype>
+		<autoretarget>1</autoretarget>
+		<runaway>0</runaway>
+		<idleanim>Idle</idleanim>
+		<boredanim>Bored</boredanim>
+		<deathanim>Death</deathanim>
+		<walkanim>Walk</walkanim>
+		<joganim>Jog</joganim>
+		<runanim>Run</runanim>
+	</tactic>
+	<tactic>
+		Stagger
+		<action priority="95">ProtonTorpedoAttack</action>
+		<action priority="90">LaserCannonAttack</action>
+		<attacktype>LogicalTypeRangedUnitsAttack</attacktype>
+		<autoattacktype>LogicalTypeRangedUnitsAutoAttack</autoattacktype>
+		<attackresponsetype>LogicalTypeRangedUnitsAttack</attackresponsetype>
+		<autoretarget>1</autoretarget>
+		<runaway>0</runaway>
+		<idleanim>Idle</idleanim>
+		<boredanim>Bored</boredanim>
+		<deathanim>Death</deathanim>
+		<walkanim>Walk</walkanim>
+		<joganim>Jog</joganim>
+		<runanim>Run</runanim>
+	</tactic>
+</tactics>

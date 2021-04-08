@@ -1,0 +1,13 @@
+<AI>
+   <version>2</version>
+   <script>aiLoaderStandard</script>
+   <nameID>70821</nameID>
+   <tooltipID>70822</tooltipID>
+   <forcedciv>zEmpireTarkin</forcedciv>
+   <rushboom>1</rushboom>
+   <icon>star_wars\politicians\leader_empire_tarkin</icon>
+   <chatset>frederick</chatset>
+   <playerNames>
+      <nameID>70821<civ>zEmpireTarkin</civ></nameID> 
+	</playerNames>
+</AI>

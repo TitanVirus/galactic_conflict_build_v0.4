@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<particlesetdef>
+	<particleset name="BlasterGreenshot">
+		<particle filename="Star_Wars\Effects\laser_Green_flair_A.particle" bone="R Hand"/>
+	</particleset>
+	<particleset name="BlasterBlueshot">
+		<particle filename="Star_Wars\Effects\laser_Blue_flair_A.particle" bone="R Hand"/>
+	</particleset>
+	<particleset name="BlasterRedshot">
+		<particle filename="Star_Wars\Effects\laser_red_flair_A.particle" bone="R Hand"/>
+	</particleset>
+	<particleset name="LaserCannonRedshot">
+		<particle filename="Star_Wars\Effects\laser_cannon_red_flair_A.particle" bone="bone_launchpoint01"/>
+		<particle filename="Star_Wars\Effects\laser_cannon_red_flair_A.particle" bone="bone_launchpoint02"/>
+	</particleset>
+	<particleset name="LaserCannonRedTrishot">
+		<particle filename="Star_Wars\Effects\laser_cannon_red_flair_A.particle" bone="bone_launchpoint01"/>
+		<particle filename="Star_Wars\Effects\laser_cannon_red_flair_A.particle" bone="bone_launchpoint02"/>
+		<particle filename="Star_Wars\Effects\laser_cannon_red_flair_A.particle" bone="bone_launchpoint03"/>
+	</particleset>
+	<particleset name="LaserCannonRedQuadshot">
+		<particle filename="Star_Wars\Effects\laser_cannon_red_flair_A.particle" bone="bone_launchpoint01"/>
+		<particle filename="Star_Wars\Effects\laser_cannon_red_flair_A.particle" bone="bone_launchpoint02"/>
+		<particle filename="Star_Wars\Effects\laser_cannon_red_flair_A.particle" bone="bone_launchpoint03"/>
+		<particle filename="Star_Wars\Effects\laser_cannon_red_flair_A.particle" bone="bone_launchpoint04"/>
+	</particleset>
+	<particleset name="LaserCannonGreenshot">
+		<particle filename="Star_Wars\Effects\laser_cannon_green_flair_A.particle" bone="bone_launchpoint01"/>
+		<particle filename="Star_Wars\Effects\laser_cannon_green_flair_A.particle" bone="bone_launchpoint02"/>
+	</particleset>
+	<particleset name="LaserCannonBlueshot">
+		<particle filename="Star_Wars\Effects\laser_cannon_blue_flair_A.particle" bone="bone_launchpoint01"/>
+		<particle filename="Star_Wars\Effects\laser_cannon_blue_flair_A.particle" bone="bone_launchpoint02"/>
+	</particleset>
+	<particleset name="LaserCannonBlueQuadshot">
+		<particle filename="Star_Wars\Effects\laser_cannon_blue_flair_A.particle" bone="bone_launchpoint01"/>
+		<particle filename="Star_Wars\Effects\laser_cannon_blue_flair_A.particle" bone="bone_launchpoint02"/>
+		<particle filename="Star_Wars\Effects\laser_cannon_blue_flair_A.particle" bone="bone_launchpoint03"/>
+		<particle filename="Star_Wars\Effects\laser_cannon_blue_flair_A.particle" bone="bone_launchpoint04"/>
+	</particleset>
+	<particleset name="ShipTurboLaserGreenshot">
+		<particle filename="Star_Wars\Effects\laser_cannon_green_flair_A.particle" bone="bone_launchpoint01"/>
+		<particle filename="Star_Wars\Effects\laser_cannon_green_flair_A.particle" bone="launchpoint"/>
+	</particleset>
+	<particleset name="LaserCannonBlueshotSingular">
+		<particle filename="Star_Wars\Effects\laser_Blue_flair_A.particle" bone="bone_launchpoint01"/>
+	</particleset>
+	<particleset name="LaserCannonRedshotSingular">
+		<particle filename="Star_Wars\Effects\laser_cannon_red_flair_A.particle" bone="bone_launchpoint01"/>
+	</particleset>
+	<particleset name="blaster_impact_wood">
+		<particle filename="effects\fire\hoopfirespark.particle"/>
+		<particle filename="effects\impacts\bullet_impact_wood_debris.particle"/>
+		<particle filename="effects\impacts\bullet_impact_wood_smoke.particle"/>
+	</particleset>
+	<particleset name="blaster_impact_stone">
+		<particle filename="effects\fire\hoopfirespark.particle"/>
+		<particle filename="effects\impacts\bullet_impact_wood_debris.particle"/>
+		<particle filename="effects\impacts\bullet_impact_wood_smoke.particle"/>
+	</particleset>
+	<particleset name="blaster_impact_snow">
+		<particle filename="effects\fire\hoopfirespark.particle"/>
+		<particle filename="effects\impacts\bullet_impact_snow_debris.particle"/>
+		<particle filename="effects\impacts\bullet_impact_snow_fire.particle"/>
+		<particle filename="effects\impacts\bullet_impact_snow_hole.particle"/>
+		<particle filename="effects\impacts\bullet_impact_snow_smoke.particle"/>
+	</particleset>
+	<particleset name="blaster_impact_grass">
+		<particle filename="effects\fire\hoopfirespark.particle"/>
+		<particle filename="effects\impacts\bullet_impact_wood_smoke.particle"/>
+		<particle filename="effects\impacts\bullet_impact_wood_debris.particle"/>
+	</particleset>
+	<particleset name="blaster_impact_dirt">
+		<particle filename="effects\fire\hoopfirespark.particle"/>
+		<particle filename="effects\impacts\bullet_impact_wood_smoke.particle"/>
+		<particle filename="effects\impacts\bullet_impact_wood_debris.particle"/>
+	</particleset>
+	<particleset name="blaster_impact_flesh">
+		<particle filename="effects\fire\hoopfirespark.particle"/>
+		<particle filename="effects\impacts\bullet_impact_flesh_smoke.particle"/>
+		<particle filename="effects\impacts\bullet_impact_flesh_debris.particle"/>
+	</particleset>
+	<particleset name="blaster_impact_water">
+		<particle filename="effects\fire\hoopfirespark.particle"/>
+		<particle filename="effects\impacts\bullet_impact_water_debris.particle"/>
+		<particle filename="effects\impacts\bullet_impact_water_fire.particle"/>
+		<particle filename="effects\impacts\bullet_impact_water_smoke.particle"/>
+		<particle filename="effects\impacts\bullet_impact_water_spray.particle"/>
+	</particleset>
+	<particleset name="Turbolaser_impact_grass_light">
+		<particle filename="Star_Wars\Effects\Impacts\TurbolaserSparks.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_dirt_clods.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_dirt_fire.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_dirt_smoke_light.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_crator.particle"/>
+	</particleset>
+	<particleset name="Turbolaser_impact_grass2">
+		<particle filename="Star_Wars\Effects\Impacts\TurbolaserSparks.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_dirt_clods2.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_dirt_dustParent.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_dirt_fire2.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_dirt_smoke.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_dirt_shockwave.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_crator.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_flash.particle"/>
+		<particle filename="effects\impacts\smoke\smoke_column_tumble1.particle"/>
+		<particle filename="effects\impacts\smoke\smoke_column_tumble1b.particle"/>
+		<particle filename="effects\impacts\smoke\smoke_column_tumble2.particle"/>
+		<particle filename="effects\impacts\smoke\smoke_column_tumble2b.particle"/>
+	</particleset>
+	<particleset name="Turbolaser_impact_grass">
+		<particle filename="Star_Wars\Effects\Impacts\TurbolaserSparks.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_dirt_clods.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_dirt_dustParent.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_dirt_fire.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_dirt_smoke.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_dirt_shockwave.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_crator.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_flash.particle"/>
+		<particle filename="effects\impacts\smoke\smoke_column_tumble1.particle"/>
+		<particle filename="effects\impacts\smoke\smoke_column_tumble1b.particle"/>
+		<particle filename="effects\impacts\smoke\smoke_column_tumble2.particle"/>
+		<particle filename="effects\impacts\smoke\smoke_column_tumble2b.particle"/>
+	</particleset>
+	<particleset name="Turbolaser_impact_rooftile">
+		<particle filename="Star_Wars\Effects\Impacts\TurbolaserSparks.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_tile_debris.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_tile_spray.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_wood_smoke.particle"/>
+		<particle filename="effects\projectiles\building_debris_tileroof.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_whoosh_smoke.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_flame.particle"/>
+	</particleset>
+	<particleset name="Turbolaser_impact_dirt">
+		<particle filename="Star_Wars\Effects\Impacts\TurbolaserSparks.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_dirt_debris.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_dirt_dustParent.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_dirt_fire.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_dirt_smoke.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_dirt_shockwave.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_crator.particle"/>
+		<particle filename="effects\impacts\cannonballs\cannonball_impact_dirt_clods_v2.particle"/>
+	</particleset>
+	<particleset name="Turbolaser_impact_wood">
+		<particle filename="Star_Wars\Effects\Impacts\TurbolaserSparks.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_wood_debris.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_whoosh_smoke.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_whooshstreak_wood.particle"/>
+		<particle filename="effects\projectiles\building_debris_wood.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_wood_smoke.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_flame.particle"/>
+		<particle filename="effects\impacts\damageFire.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_wood_debris2.particle"/>
+	</particleset>
+	<particleset name="Turbolaser_impact_snow">
+		<particle filename="Star_Wars\Effects\Impacts\TurbolaserSparks.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_snow_debris.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_snow_spray.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_snow_fire.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_snow_smoke.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_snow_crator.particle"/>
+	</particleset>
+	<particleset name="Turbolaser_impact_flesh">
+		<particle filename="Star_Wars\Effects\Impacts\TurbolaserSparks.particle"/>
+		<particle filename="effects\impacts\bullet_impact_flesh_debris.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_flesh_fire.particle"/>
+	</particleset>
+	<particleset name="Turbolaser_impact_water">
+		<particle filename="Star_Wars\Effects\Impacts\TurbolaserSparks.particle"/>
+		<particle filename="effects\water_effects\large_splash_drops.particle"/>
+		<particle filename="effects\water_effects\large_splash_fan.particle"/>
+		<particle filename="effects\water_effects\large_splash_impactring.particle"/>
+		<particle filename="effects\water_effects\large_splash_ring.particle"/>
+		<particle filename="effects\water_effects\large_splash_slosh.particle"/>
+		<particle filename="effects\water_effects\large_splash_spray.particle"/>
+	</particleset>
+	<particleset name="Turbolaser_impact_stone">
+		<particle filename="Star_Wars\Effects\Impacts\TurbolaserSparks.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_stone_debris.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_whoosh_smoke.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_whooshstreak_stone.particle"/>
+		<particle filename="effects\projectiles\building_debris_stone.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_flame.particle"/>
+	</particleset>
+	<particleset name="Turbolaser_impact_gen">
+		<particle filename="Star_Wars\Effects\Impacts\TurbolaserSparks.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_wood_debris.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_whoosh_smoke.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_whooshstreak_wood.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_flame.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_wood_smoke"/>
+	</particleset>
+	<particleset name="Turbolaser_impact_dirt2">
+		<particle filename="Star_Wars\Effects\Impacts\TurbolaserSparks.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_dirt_clods3.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_dirt_dustParent.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_dirt_fire2.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_dirt_smoke.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_dirt_shockwave.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_crator.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_flash.particle"/>
+		<particle filename="effects\impacts\smoke\smoke_column_tumble1.particle"/>
+		<particle filename="effects\impacts\smoke\smoke_column_tumble1b.particle"/>
+		<particle filename="effects\impacts\smoke\smoke_column_tumble2.particle"/>
+		<particle filename="effects\impacts\smoke\smoke_column_tumble2b.particle"/>
+	</particleset>
+	<particleset name="ProtonTorpedo_impact_flesh">
+		<particle filename="effects\impacts\bullet_impact_flesh_debris.particle"/>
+		<particle filename="effects\impacts\mortar_impact_wood_smoke.particle"/>
+		<particle filename="effects\impacts\mortar_impact_dirt_crator.particle"/>
+		<particle filename="effects\explosions\flameThrower_death_flash.particle"/>
+		<particle filename="effects\explosions\flameThrower_death_smoke_small.particle"/>
+		<particle filename="effects\explosions\flameThrower_death_flameFlare.particle"/>
+		<particle filename="effects\explosions\flameThrower_death_shockwave.particle"/>
+		<particle filename="effects\explosions\flameThrower_death_bigSparkles"/>
+		<particle filename="effects\explosions\flyingCrow_smallBurst_red"/>
+		<particle filename="effects\impacts\flyingCrow_fireworks_red"/>
+	</particleset>
+	<particleset name="LaserRedHP01">
+		<particle filename="Star_Wars\Effects\laser_cannon_red_flair_A.particle" bone="HP01"/>
+	</particleset>
+	<particleset name="LaserRedHP02">
+		<particle filename="Star_Wars\Effects\laser_cannon_red_flair_A.particle" bone="HP02"/>
+	</particleset>
+	<particleset name="LaserRedHP03">
+		<particle filename="Star_Wars\Effects\laser_cannon_red_flair_A.particle" bone="HP03"/>
+	</particleset>
+	<particleset name="LaserRedHP04">
+		<particle filename="Star_Wars\Effects\laser_cannon_red_flair_A.particle" bone="HP04"/>
+	</particleset>
+	<particleset name="LaserRedHP05">
+		<particle filename="Star_Wars\Effects\laser_cannon_red_flair_A.particle" bone="HP05"/>
+	</particleset>
+	<particleset name="LaserRedHP06">
+		<particle filename="Star_Wars\Effects\laser_cannon_red_flair_A.particle" bone="HP06"/>
+	</particleset>
+	<particleset name="LaserRedHP07">
+		<particle filename="Star_Wars\Effects\laser_cannon_red_flair_A.particle" bone="HP07"/>
+	</particleset>
+	<particleset name="LaserRedHP08">
+		<particle filename="Star_Wars\Effects\laser_cannon_red_flair_A.particle" bone="HP08"/>
+	</particleset>
+	<particleset name="LaserRedHP09">
+		<particle filename="Star_Wars\Effects\laser_cannon_red_flair_A.particle" bone="HP09"/>
+	</particleset>
+	<particleset name="LaserRedHP10">
+		<particle filename="Star_Wars\Effects\laser_cannon_red_flair_A.particle" bone="HP10"/>
+	</particleset>
+	<particleset name="LaserRedHP11">
+		<particle filename="Star_Wars\Effects\laser_cannon_red_flair_A.particle" bone="HP11"/>
+	</particleset>
+	<particleset name="LaserRedHP12">
+		<particle filename="Star_Wars\Effects\laser_cannon_red_flair_A.particle" bone="HP12"/>
+	</particleset>
+	<particleset name="BlasterCannonATAT">
+		<particle filename="Star_Wars\Effects\laser_cannon_red_flair_A.particle" bone="bone_launchpoint03"/>
+		<particle filename="Star_Wars\Effects\laser_cannon_red_flair_A.particle" bone="bone_launchpoint04"/>
+	</particleset>
+	<particleset name="FlakPodsATAA">
+		<particle filename="units\artillery\organ_gun\organ_muzzle_flame" bone="bone_launchpoint01" xoff="0.0000" yoff="0.0000" zoff="0.00"/>
+		<particle filename="units\artillery\organ_gun\organ_muzzle_glow" bone="bone_launchpoint01" xoff="0.0000" yoff="0.0000" zoff="0.00"/>
+		<particle filename="units\artillery\organ_gun\organ_muzzle_smoke" bone="bone_launchpoint01" xoff="0.0000" yoff="0.0000" zoff="0.00"/>
+		<particle filename="units\artillery\organ_gun\organ_muzzle_sparks" bone="bone_launchpoint01" xoff="0.0000" yoff="0.0000" zoff="0.00"/>
+		<particle filename="units\artillery\organ_gun\organ_muzzle_flame" bone="bone_launchpoint02" xoff="0.0000" yoff="0.0000" zoff="0.00"/>
+		<particle filename="units\artillery\organ_gun\organ_muzzle_glow" bone="bone_launchpoint02" xoff="0.0000" yoff="0.0000" zoff="0.00"/>
+		<particle filename="units\artillery\organ_gun\organ_muzzle_smoke" bone="bone_launchpoint02" xoff="0.0000" yoff="0.0000" zoff="0.00"/>
+		<particle filename="units\artillery\organ_gun\organ_muzzle_sparks" bone="bone_launchpoint02" xoff="0.0000" yoff="0.0000" zoff="0.00"/>
+		<particle filename="units\artillery\organ_gun\organ_muzzle_flame" bone="bone_launchpoint03" xoff="0.0000" yoff="0.0000" zoff="0.00"/>
+		<particle filename="units\artillery\organ_gun\organ_muzzle_glow" bone="bone_launchpoint03" xoff="0.0000" yoff="0.0000" zoff="0.00"/>
+		<particle filename="units\artillery\organ_gun\organ_muzzle_smoke" bone="bone_launchpoint03" xoff="0.0000" yoff="0.0000" zoff="0.00"/>
+		<particle filename="units\artillery\organ_gun\organ_muzzle_sparks" bone="bone_launchpoint03" xoff="0.0000" yoff="0.0000" zoff="0.00"/>
+		<particle filename="units\artillery\organ_gun\organ_muzzle_flame" bone="bone_launchpoint04" xoff="0.0000" yoff="0.0000" zoff="0.00"/>
+		<particle filename="units\artillery\organ_gun\organ_muzzle_glow" bone="bone_launchpoint04" xoff="0.0000" yoff="0.0000" zoff="0.00"/>
+		<particle filename="units\artillery\organ_gun\organ_muzzle_smoke" bone="bone_launchpoint04" xoff="0.0000" yoff="0.0000" zoff="0.00"/>
+		<particle filename="units\artillery\organ_gun\organ_muzzle_sparks" bone="bone_launchpoint04" xoff="0.0000" yoff="0.0000" zoff="0.00"/>
+	</particleset>
+	<particleset name="LaserImpactAir">
+		<particle filename="effects\fire\hoopfirespark.particle"/>
+		<particle filename="effects\fire\hoopfirespark.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_dirt_debris.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_dirt_dustParent.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_dirt_fire.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_dirt_smoke.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_dirt_shockwave.particle"/>
+	</particleset>
+	<particleset name="laser_impact_wood">
+		<particle filename="effects\fire\hoopfirespark.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_wood_debris.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_wood_fire.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_wood_smoke.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_dirt_shockwave.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_wood_spray.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_woodendebris.particle"/>
+	</particleset>
+	<particleset name="laser_impact_stone">
+		<particle filename="effects\fire\hoopfirespark.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_stone_debris.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_stone_fire.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_stone_smoke.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_dirt_shockwave.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_stone_spray.particle"/>
+	</particleset>
+	<particleset name="laser_impact_snow">
+		<particle filename="effects\fire\hoopfirespark.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_snow_debris.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_snow_fire.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_snow_smoke.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_snow_shockwave.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_snow_spray.particle"/>
+	</particleset>
+	<particleset name="laser_impact_grass">
+		<particle filename="effects\fire\hoopfirespark.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_grass_debris.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_dirt_dustParent.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_grass_fire.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_grass_smoke.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_grass_shockwave.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_grass_spray.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_grass_smoke_puff.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_grass_ruffle.particle"/>
+	</particleset>
+	<particleset name="laser_impact_dirt">
+		<particle filename="effects\fire\hoopfirespark.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_flesh_debris.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_flesh_spray.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_flesh_fire.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_flesh_smoke.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_dirt_shockwave.particle"/>
+	</particleset>
+	<particleset name="laser_impact_flesh">
+		<particle filename="effects\fire\hoopfirespark.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_dirt_debris.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_dirt_dustParent.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_dirt_fire.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_dirt_smoke.particle"/>
+		<particle filename="effects\impacts\cannonball_impact_dirt_shockwave.particle"/>
+	</particleset>
+	<particleset name="laser_impact_water">
+		<particle filename="effects\fire\hoopfirespark.particle"/>
+		<particle filename="effects\water_effects\medium_splash_drops.particle"/>
+		<particle filename="effects\water_effects\small_splash_fan.particle"/>
+		<particle filename="effects\water_effects\large_splash_impactring.particle"/>
+		<particle filename="effects\water_effects\medium_splash_ring.particle"/>
+		<particle filename="effects\water_effects\medium_splash_slosh.particle"/>
+		<particle filename="effects\water_effects\medium_splash_spray.particle"/>
+	</particleset>
+</particlesetdef>

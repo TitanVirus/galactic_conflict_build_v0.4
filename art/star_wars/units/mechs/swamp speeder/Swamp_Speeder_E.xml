@@ -1,0 +1,65 @@
+<!-- converted from XMB to XML -->
+
+<animfile>
+	<definebone>bone_follow</definebone>
+	<component>
+		ModelComp
+		<logic type="Variation">
+			<v2>
+				<assetreference type="GrannyModel">
+					<file>Star_Wars\Units\Mechs\Swamp Speeder\GE_ISP</file>
+				</assetreference>
+			</v2>
+		</logic>
+		<decal>
+			<effecttype>default</effecttype>
+			<selectedtexture>shadows_selections\selection_circle_128x128</selectedtexture>
+			<width>3.00</width>
+			<height>3.00</height>
+			<zoffset>0.00</zoffset>
+		</decal>
+	</component>
+	<component>
+		Effect3
+		<notshadowcaster/>
+		<assetreference type="ParticleSystem">
+			<file>explosionsmall</file>
+		</assetreference>
+	</component>
+	<anim>
+		Death
+		<assetreference type="GrannyAnim">
+			<file>buildings\fort\west_fort_idle</file>
+			<tag type="SpecificSoundSet" checkvisible="1" set="FighterExplode">0.01</tag>
+		</assetreference>
+		<component>Effect3</component>
+	</anim>
+	<anim>
+		Idle
+		<assetreference type="GrannyAnim">
+			<file>buildings\fort\west_fort_idle</file>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Walk
+		<assetreference type="GrannyAnim">
+			<file>buildings\fort\west_fort_idle</file>
+			<tag type="SpecificSoundSet" checkvisible="1" set="RepulsorLightMove">0.01</tag>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Volley_standing_attack
+		<assetreference type="GrannyAnim">
+			<file>buildings\fort\west_fort_idle</file>
+			<tag type="Attack">0.48</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="LaserCannonGeneric">0.48</tag>
+			<tag type="Particles" particlename="LaserCannonGreenshot">0.48</tag>
+			<tag type="Attack">0.52</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="LaserCannonGeneric">0.52</tag>
+			<tag type="Particles" particlename="LaserCannonGreenshot">0.52</tag>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+</animfile>

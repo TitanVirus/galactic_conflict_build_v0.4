@@ -1,0 +1,191 @@
+<!-- converted from XMB to XML -->
+
+<animfile>
+	<definebone>Bone_Main</definebone>
+	<definebone>Bone_Attachment</definebone>
+	<definebone>bone_launchpoint</definebone>
+	<definebone>bone_launchpoint01</definebone>
+	<definebone>Launchpoint</definebone>
+	<definebone>ATTACHPOINT</definebone>
+	<definebone>bone_follow</definebone>
+	<definebone>Bip01</definebone>
+	<definebone>Bip01 Pelvis</definebone>
+	<definebone>Bip01 Spine</definebone>
+	<definebone>Bip01 L Thigh</definebone>
+	<definebone>Bip01 L Calf</definebone>
+	<definebone>Bip01 L HorseLink</definebone>
+	<definebone>Bip01 L Foot</definebone>
+	<definebone>Bip01 R Thigh</definebone>
+	<definebone>Bip01 R Calf</definebone>
+	<definebone>Bip01 R HorseLink</definebone>
+	<definebone>Bip01 R Foot</definebone>
+	<definebone>Bip01 Spine1</definebone>
+	<definebone>Bip01 Spine2</definebone>
+	<definebone>Bip01 Neck</definebone>
+	<attachment>
+		AnimatedWalker
+		<component>
+			smoke_puff
+			<assetreference type="GrannyModel">
+				<file>Star_Wars\Units\Mechs\Homing_Spider_Droid\CIS_SpiderDroid</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<assetreference type="GrannyAnim">
+				<file>animation_library\infantry\volley\pikemen_volley_idle</file>
+			</assetreference>
+			<component>smoke_puff</component>
+		</anim>
+		<anim>
+			Walk
+			<assetreference type="GrannyAnim">
+				<file>animation_library\shared\walk_generic</file>
+			</assetreference>
+			<component>smoke_puff</component>
+		</anim>
+		<anim>
+			Death
+			<assetreference type="GrannyAnim">
+				<file>animation_library\villager\generic_death</file>
+			</assetreference>
+			<component>smoke_puff</component>
+		</anim>
+		<anim>
+			Bombard_ranged_attack
+			<assetreference type="GrannyAnim">
+				<file>animation_library\range\volley\volley_standing_idle</file>
+			</assetreference>
+			<component>smoke_puff</component>
+		</anim>
+		<anim>
+			Volley_standing_attack
+			<assetreference type="GrannyAnim">
+				<file>animation_library\range\volley\volley_standing_idle</file>
+			</assetreference>
+			<component>smoke_puff</component>
+		</anim>
+	</attachment>
+	<component>
+		ModelComp
+		<logic type="Variation">
+			<none>
+				<assetreference type="GrannyModel">
+					<file>Star_Wars\Units\Mechs\Homing_Spider_Droid\CIS_SpiderDroid_Cannon_Skeleton</file>
+				</assetreference>
+				<attach a="AnimatedWalker" frombone="hotspot" tobone="Bone_Attachment" syncanims="1"/>
+			</none>
+		</logic>
+		<decal>
+			<effecttype>default</effecttype>
+			<selectedtexture>shadows_selections\selection_circle_128x128</selectedtexture>
+			<width>4.50</width>
+			<height>4.50</height>
+			<zoffset>0.00</zoffset>
+		</decal>
+	</component>
+	<component>
+		HomingModel
+		<logic type="Variation">
+			<none>
+				<assetreference type="GrannyModel">
+					<file>Star_Wars\Units\Mechs\Homing_Spider_Droid\CIS_SpiderDroid_Homing_Skeleton</file>
+				</assetreference>
+				<attach a="AnimatedWalker" frombone="hotspot" tobone="Bone_Attachment" syncanims="1"/>
+			</none>
+		</logic>
+		<decal>
+			<effecttype>default</effecttype>
+			<selectedtexture>shadows_selections\selection_circle_128x128</selectedtexture>
+			<width>4.50</width>
+			<height>4.50</height>
+			<zoffset>0.00</zoffset>
+		</decal>
+	</component>
+	<component>
+		Effect3
+		<notshadowcaster/>
+		<assetreference type="ParticleSystem">
+			<file>explosionsmall</file>
+		</assetreference>
+	</component>
+	<anim>
+		Death
+		<assetreference type="GrannyAnim">
+			<file>animation_library\villager\generic_death</file>
+			<tag type="SpecificSoundSet" checkvisible="1" set="FighterExplode">0.01</tag>
+		</assetreference>
+		<component>ModelComp</component>
+		<simskeleton>
+			<model>Star_Wars\Units\Mechs\Homing_Spider_Droid\CIS_SpiderDroid_Homing_Skeleton</model>
+		</simskeleton>
+	</anim>
+	<anim>
+		Idle
+		<assetreference type="GrannyAnim">
+			<file>animation_library\range\volley\volley_standing_idle</file>
+		</assetreference>
+		<component>ModelComp</component>
+		<simskeleton>
+			<model>Star_Wars\Units\Mechs\Homing_Spider_Droid\CIS_SpiderDroid_Homing_Skeleton</model>
+		</simskeleton>
+	</anim>
+	<anim>
+		Walk
+		<assetreference type="GrannyAnim">
+			<file>animation_library\range\walk_water_rifleman_lower</file>
+			<tag type="FootstepLeft" footprinttype="HumanLeft">0.62</tag>
+			<tag type="FootstepRight" footprinttype="HumanRight">0.08</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="SFXWalkerHydraulicsATST">0.24</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="SFXWalkerHydraulicsATST">0.54</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="SFXWalkerFootstepsATST">0.20</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="SFXWalkerFootstepsATST">0.50</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="SFXWalkerReleaseATST">0.23</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="SFXWalkerReleaseATST">0.53</tag>
+		</assetreference>
+		<component>ModelComp</component>
+		<simskeleton>
+			<model>Star_Wars\Units\Mechs\Homing_Spider_Droid\CIS_SpiderDroid_Homing_Skeleton</model>
+		</simskeleton>
+			<!--><file>animation_library\range\march_rifleman</file><!-->
+	</anim>
+	<anim>
+		Volley_standing_attack
+		<assetreference type="GrannyAnim">
+			<file>buildings\fort\west_fort_idle</file>
+			<tag type="Attack">0.50</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="ATSTLaserCannon">0.42</tag>
+			<tag type="Particles" particlename="LaserCannonRedshot">0.47</tag>
+			<tag type="Particles" particlename="LaserCannonRedshot">0.78</tag>
+		</assetreference>
+		<component>HomingModel</component>
+		<simskeleton>
+			<model>Star_Wars\Units\Mechs\Homing_Spider_Droid\CIS_SpiderDroid_Homing_Skeleton</model>
+		</simskeleton>
+	</anim>
+	<anim>
+		Bombard_ranged_attack
+		<assetreference type="GrannyAnim">
+			<file>buildings\fort\west_fort_idle</file>
+			<tag type="Attack">0.47</tag>
+			<tag type="Attack">0.78</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="ATSTLaserCannon">0.47</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="ATSTLaserCannon">0.78</tag>
+			<tag type="Particles" particlename="LaserCannonRedshot">0.47</tag>
+			<tag type="Particles" particlename="LaserCannonRedshot">0.78</tag>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>buildings\fort\west_fort_idle</file>
+			<tag type="Attack">0.25</tag>
+			<tag type="Attack">0.45</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="ATSTLaserCannon">0.25</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="ATSTLaserCannon">0.45</tag>
+			<tag type="Particles" particlename="LaserCannonRedshot">0.25</tag>
+			<tag type="Particles" particlename="LaserCannonRedshot">0.55</tag>
+		</assetreference>
+		<component>ModelComp</component>
+		<simskeleton>
+			<model>Star_Wars\Units\Mechs\Homing_Spider_Droid\CIS_SpiderDroid_Cannon_Skeleton</model>
+		</simskeleton>
+	</anim>
+</animfile>

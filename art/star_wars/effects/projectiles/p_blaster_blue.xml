@@ -1,0 +1,34 @@
+<!-- converted from XMB to XML -->
+
+<animfile>
+	<component>
+		ball
+		<notshadowcaster/>
+		<logic type="Tech">
+			<none>
+				<assetreference type="GrannyModel">
+					<file>star_wars\effects\lasers\p_blaster_blue_alpha_Model</file>
+				</assetreference>
+			</none>
+			<zPrimaryFocusingFoils>
+				<assetreference type="GrannyModel">
+					<file>star_wars\effects\lasers\p_blaster_blue_beta_Model</file>
+				</assetreference>
+			</zPrimaryFocusingFoils>
+			<zCoolingSleeves>
+				<assetreference type="GrannyModel">
+					<file>star_wars\effects\lasers\p_blaster_blue_gamma_Model</file>
+				</assetreference>
+			</zCoolingSleeves>
+			<zAdvancedPowerPack>
+				<assetreference type="GrannyModel">
+					<file>star_wars\effects\lasers\p_blaster_blue_omega_Model</file>
+				</assetreference>
+			</zAdvancedPowerPack>
+		</logic>
+	</component>
+	<anim>
+		Idle
+		<component>ball</component>
+	</anim>
+</animfile>

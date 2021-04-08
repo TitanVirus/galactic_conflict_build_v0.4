@@ -1,0 +1,112 @@
+<!-- converted from XMB to XML -->
+
+<protounitsounddef>
+	<protounit name="zWorkerEmpire">
+		<soundtype name="Creation">
+			<variationlogic>
+				<choice name="0">
+					<soundset name="swEmpireWorkerMaleCreation"/>
+				</choice>
+				<choice name="1">
+					<soundset name="swEmpireWorkerMaleCreation"/>
+				</choice>
+			</variationlogic>
+		</soundtype>
+		<soundtype name="Grunt">
+			<variationlogic>
+				<choice name="0">
+					<soundset name="GenericMaleGrunt"/>
+				</choice>
+				<choice name="1">
+					<soundset name="GenericMaleGrunt"/>
+				</choice>
+			</variationlogic>
+		</soundtype>
+		<soundtype name="Death">
+			<variationlogic>
+				<choice name="0">
+					<soundset name="swEmpireWorkerMaleDeath"/>
+				</choice>
+				<choice name="1">
+					<soundset name="swEmpireWorkerMaleDeath"/>
+				</choice>
+			</variationlogic>
+		</soundtype>
+		<soundtype name="Acknowledge">
+			<variationlogic>
+				<choice name="0">
+					<targetlogic>
+						<choice name="default">
+							<soundset name="swEmpireWorkerMaleAcknowledge"/>
+						</choice>
+						<choice name="enemy">
+							<soundset name="swEmpireWorkerMaleAttack"/>
+						</choice>
+						<choice name="build">
+							<soundset name="swEmpireWorkerMaleBuild"/>
+						</choice>
+						<choice name="Huntable">
+							<soundset name="swEmpireWorkerMaleHunt"/>
+						</choice>
+						<choice name="Tree">
+							<soundset name="swEmpireWorkerMaleWood"/>
+						</choice>
+						<choice name="AbstractMine">
+							<soundset name="swEmpireWorkerMaleMine"/>
+						</choice>
+						<choice name="AbstractFarm">
+							<soundset name="swEmpireWorkerMaleFarm"/>
+						</choice>
+						<choice name="AbstractResourceCrate">
+							<soundset name="swEmpireWorkerMaleCrate"/>
+						</choice>
+						<choice name="AbstractFruit">
+							<soundset name="swEmpireWorkerMaleForage"/>
+						</choice>
+					</targetlogic>
+				</choice>
+				<choice name="1">
+					<targetlogic>
+						<choice name="default">
+							<soundset name="swEmpireWorkerMaleAcknowledge"/>
+						</choice>
+						<choice name="enemy">
+							<soundset name="swEmpireWorkerMaleAttack"/>
+						</choice>
+						<choice name="build">
+							<soundset name="swEmpireWorkerMaleBuild"/>
+						</choice>
+						<choice name="Huntable">
+							<soundset name="swEmpireWorkerMaleHunt"/>
+						</choice>
+						<choice name="Tree">
+							<soundset name="swEmpireWorkerMaleWood"/>
+						</choice>
+						<choice name="AbstractMine">
+							<soundset name="swEmpireWorkerMaleMine"/>
+						</choice>
+						<choice name="AbstractFarm">
+							<soundset name="swEmpireWorkerMaleFarm"/>
+						</choice>
+						<choice name="AbstractResourceCrate">
+							<soundset name="swEmpireWorkerMaleCrate"/>
+						</choice>
+						<choice name="AbstractFruit">
+							<soundset name="swEmpireWorkerMaleForage"/>
+						</choice>
+					</targetlogic>
+				</choice>
+			</variationlogic>
+		</soundtype>
+		<soundtype name="Select">
+			<variationlogic>
+				<choice name="0">
+					<soundset name="swEmpireWorkerMaleSelect"/>
+				</choice>
+				<choice name="1">
+					<soundset name="swEmpireWorkerMaleSelect"/>
+				</choice>
+			</variationlogic>
+		</soundtype>
+	</protounit>
+</protounitsounddef>

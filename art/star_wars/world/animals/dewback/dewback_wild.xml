@@ -1,0 +1,119 @@
+<!-- converted from XMB to XML -->
+
+<animfile>
+	<component>
+		Male
+		<assetreference type="GrannyModel">
+			<file>star_wars\world\animals\dewback\anim_cav_dewback_wild_Model</file>
+		</assetreference>
+		<decal>
+			<effecttype>default</effecttype>
+			<texture isfakeshadow="1">shadows_selections\shadow_circle_64x64</texture>
+			<selectedtexture>shadows_selections\selection_oval_32x64</selectedtexture>
+			<width>1.50</width>
+			<height>3.00</height>
+			<xoffset>0.00</xoffset>
+			<zoffset>0.00</zoffset> <!--> was -0.75<!-->
+		</decal>
+	</component>
+	<anim>
+		Idle
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\infantry\cavalry dewback\anim_cav_dewback_idle_Anim</file>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\infantry\cavalry dewback\anim_cav_dewback_idle_Anim</file>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\infantry\cavalry dewback\anim_cav_dewback_idle_Anim</file>
+		</assetreference>
+		<component>male</component>
+	</anim>
+	<anim>
+		Walk
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\infantry\cavalry dewback\anim_cav_dewback_walk_Anim</file>
+			<weight>0.70</weight>
+			<tag type="FootstepLeft">0.30</tag>
+			<tag type="FootstepRight">0.80</tag>
+		</assetreference>
+		<component>male</component>
+	</anim>
+	<anim>
+		Death
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\infantry\cavalry dewback\anim_cav_dewback_die_Anim</file>
+			<tag type="SpecificSoundSet" checkvisible="1" set="RagdollImpact">0.73</tag>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\infantry\cavalry dewback\anim_cav_dewback_die_Anim</file>
+			<tag type="SpecificSoundSet" checkvisible="1" set="RagdollImpact">0.83</tag>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\infantry\cavalry dewback\anim_cav_dewback_die_Anim</file>
+			<tag type="SpecificSoundSet" checkvisible="1" set="RagdollImpact">0.83</tag>
+		</assetreference>
+		<component>male</component>
+	</anim>
+	<anim>
+		LayDown
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\infantry\cavalry dewback\anim_cav_dewback_idle_Anim</file>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\infantry\cavalry dewback\anim_cav_dewback_idle_Anim</file>
+		</assetreference>
+		<component>male</component>
+	</anim>
+	<anim>
+		LayDownIdle
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\infantry\cavalry dewback\anim_cav_dewback_idle_Anim</file>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\infantry\cavalry dewback\anim_cav_dewback_idle_Anim</file>
+		</assetreference>
+		<component>male</component>
+	</anim>
+	<anim>
+		GetUp
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\infantry\cavalry dewback\anim_cav_dewback_idle_Anim</file>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\infantry\cavalry dewback\anim_cav_dewback_idle_Anim</file>
+		</assetreference>
+		<component>male</component>
+	</anim>
+	<anim>
+		LayDownBored
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\infantry\cavalry dewback\anim_cav_dewback_idle_Anim</file>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\infantry\cavalry dewback\anim_cav_dewback_idle_Anim</file>
+		</assetreference>
+		<component>male</component>
+	</anim>
+	<anim>
+		Run
+		<assetreference type="GrannyAnim">
+			<file>star_wars\world\animals\dewback\anim_cav_dewback_walk_Anim</file>
+		</assetreference>
+		<component>male</component>
+	</anim>
+	<anim>
+		Attack_melee
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\infantry\cavalry dewback\anim_cav_dewback_attack_melee_Anim</file>
+			<weight>40</weight>
+			<tag type="Attack">0.57</tag>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\infantry\cavalry dewback\anim_cav_dewback_attack_melee_Anim</file>
+			<weight>10</weight>
+			<tag type="Attack">0.57</tag>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+</animfile>

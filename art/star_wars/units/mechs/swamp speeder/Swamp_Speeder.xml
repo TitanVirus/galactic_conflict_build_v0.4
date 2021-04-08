@@ -1,0 +1,164 @@
+<!-- converted from XMB to XML -->
+
+<animfile>
+	<definebone>bone_follow</definebone>
+	<definebone>launchpoint</definebone>
+	<definebone>bone_launchpoint01</definebone>
+	<definebone>bone_launchpoint02</definebone>
+	<definebone>boneimpact01</definebone>
+	<definebone>boneimpact01</definebone>
+	<definebone>boneimpact02</definebone>
+	<definebone>boneimpact03</definebone>
+	<attachment>
+		ExplosionTiny
+		<component>
+			emitter4
+			<assetreference type="ParticleSystem">
+				<file>TinyTinyExplosion</file>
+			</assetreference>
+		</component>
+		<anim>
+			None
+			<component>emitter4</component>
+		</anim>
+	</attachment>
+	<attachment>
+		ExplosionSmall
+		<component>
+			emitter4
+			<assetreference type="ParticleSystem">
+				<file>explosionsmall</file>
+			</assetreference>
+		</component>
+		<anim>
+			None
+			<component>emitter4</component>
+		</anim>
+	</attachment>
+	<component>
+		ModelComp
+		<logic type="Variation">
+			<v1>
+				<assetreference type="GrannyModel">
+					<file>Star_Wars\Units\Mechs\Swamp Speeder\WOO_SwampSpeeder_a1</file>
+				</assetreference>
+			</v1>
+			<v2>
+				<assetreference type="GrannyModel">
+					<file>Star_Wars\Units\Mechs\Swamp Speeder\WOO_SwampSpeeder_a2</file>
+				</assetreference>
+			</v2>
+			<v3>
+				<assetreference type="GrannyModel">
+					<file>Star_Wars\Units\Mechs\Swamp Speeder\WOO_SwampSpeeder_a3</file>
+				</assetreference>
+			</v3>
+		</logic>
+		<decal>
+			<effecttype>default</effecttype>
+			<selectedtexture>shadows_selections\selection_circle_128x128</selectedtexture>
+			<width>3.00</width>
+			<height>3.00</height>
+			<zoffset>0.00</zoffset>
+		</decal>
+	</component>
+	<component>
+		Dead
+		<logic type="Variation">
+			<v1>
+				<logic type="Variation">
+					<var1>
+						<assetreference type="GrannyModel">
+							<file>Star_Wars\Units\Mechs\Swamp Speeder\WOO_SwampSpeeder_a1_deadA</file>
+						</assetreference>
+					</var1>
+					<var2>
+						<assetreference type="GrannyModel">
+							<file>Star_Wars\Units\Mechs\Swamp Speeder\WOO_SwampSpeeder_a1_deadB</file>
+						</assetreference>
+					</var2>
+				</logic>
+			</v1>
+			<v2>
+				<logic type="Variation">
+					<var1>
+						<assetreference type="GrannyModel">
+							<file>Star_Wars\Units\Mechs\Swamp Speeder\WOO_SwampSpeeder_a2_deadA</file>
+						</assetreference>
+					</var1>
+					<var2>
+						<assetreference type="GrannyModel">
+							<file>Star_Wars\Units\Mechs\Swamp Speeder\WOO_SwampSpeeder_a2_deadB</file>
+						</assetreference>
+					</var2>
+					<var3>
+						<assetreference type="GrannyModel">
+							<file>Star_Wars\Units\Mechs\Swamp Speeder\WOO_SwampSpeeder_a2_deadC</file>
+						</assetreference>
+					</var3>
+				</logic>
+			</v2>
+			<v3>
+				<logic type="Variation">
+					<var1>
+						<assetreference type="GrannyModel">
+							<file>Star_Wars\Units\Mechs\Swamp Speeder\WOO_SwampSpeeder_a3_deadA</file>
+						</assetreference>
+					</var1>
+					<var2>
+						<assetreference type="GrannyModel">
+							<file>Star_Wars\Units\Mechs\Swamp Speeder\WOO_SwampSpeeder_a3_deadB</file>
+						</assetreference>
+					</var2>
+				</logic>
+			</v3>
+		</logic>
+		<decal>
+			<effecttype>default</effecttype>
+			<selectedtexture>shadows_selections\selection_circle_128x128</selectedtexture>
+			<width>3.00</width>
+			<height>3.00</height>
+			<zoffset>0.00</zoffset>
+		</decal>
+	</component>
+	<anim>
+		Death
+		<assetreference type="GrannyAnim">
+			<file>buildings\spc\weapons_cache\spc_weapons_cacheDeathAnim</file>
+			<tag type="SpecificSoundSet" checkvisible="1" set="FighterExplode">0.01</tag>
+		</assetreference>
+		<component>Dead</component>
+		<attach a="ExplosionSmall" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+		<attach a="ExplosionTiny" frombone="ATTACHPOINT" tobone="boneimpact01" syncanims="0"/>
+		<attach a="ExplosionTiny" frombone="ATTACHPOINT" tobone="boneimpact02" syncanims="0"/>
+		<attach a="ExplosionTiny" frombone="ATTACHPOINT" tobone="boneimpact03" syncanims="0"/>
+	</anim>
+	<anim>
+		Idle
+		<assetreference type="GrannyAnim">
+			<file>buildings\fort\west_fort_idle</file>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Walk
+		<assetreference type="GrannyAnim">
+			<file>buildings\fort\west_fort_idle</file>
+			<tag type="SpecificSoundSet" checkvisible="1" set="RepulsorLightMove">0.01</tag>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Volley_standing_attack
+		<assetreference type="GrannyAnim">
+			<file>buildings\fort\west_fort_idle</file>
+			<tag type="Attack">0.48</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="LaserCannonGeneric">0.48</tag>
+			<tag type="Particles" particlename="LaserCannonGreenshot">0.48</tag>
+			<tag type="Attack">0.52</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="LaserCannonGeneric">0.52</tag>
+			<tag type="Particles" particlename="LaserCannonGreenshot">0.52</tag>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+</animfile>

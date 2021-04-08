@@ -1,0 +1,126 @@
+<!-- converted from XMB to XML -->
+
+<animfile>
+	<definebone>Bone_Main</definebone>
+	<definebone>bone_HITPOINTBAR</definebone>
+	<definebone>Launchpoint</definebone>
+	<definebone>bone_launchpoint</definebone>
+	<definebone>bone_launchpoint01</definebone>
+	<definebone>bone_launchpoint02</definebone>
+	<definebone>boneimpact01</definebone>
+	<definebone>boneimpact02</definebone>
+	<definebone>boneimpact03</definebone>
+	<component>
+		Dead1
+		<assetreference type="GrannyModel">
+			<file>Star_Wars\Units\Mechs\IFT-X\GE_IFTX_dead_a</file>
+		</assetreference>
+		<assetreference type="GrannyModel">
+			<file>Star_Wars\Units\Mechs\IFT-X\GE_IFTX_dead_b</file>
+		</assetreference>
+		<assetreference type="GrannyModel">
+			<file>Star_Wars\Units\Mechs\IFT-X\GE_IFTX_dead_c</file>
+		</assetreference>
+	</component>
+	<component>
+		ModelComp
+		<assetreference type="GrannyModel">
+			<file>Star_Wars\Units\Mechs\IFT-X\GE_IFTX</file>
+		</assetreference>
+		<decal>
+			<effecttype>default</effecttype>
+			<selectedtexture>shadows_selections\selection_circle_128x128</selectedtexture>
+			<width>3.00</width>
+			<height>5.00</height>
+			<zoffset>0.00</zoffset>
+		</decal>
+	</component>
+	<component>
+		HeavyCannon
+		<assetreference type="GrannyModel">
+			<file>Star_Wars\Units\Mechs\IFT-X\GE_IFTX_beam</file>
+		</assetreference>
+		<decal>
+			<effecttype>default</effecttype>
+			<selectedtexture>shadows_selections\selection_circle_128x128</selectedtexture>
+			<width>3.00</width>
+			<height>5.00</height>
+			<zoffset>0.00</zoffset>
+		</decal>
+	</component>
+	<component>
+		Missile
+		<assetreference type="GrannyModel">
+			<file>Star_Wars\Units\Mechs\IFT-X\GE_IFTX_missiles</file>
+		</assetreference>
+		<decal>
+			<effecttype>default</effecttype>
+			<selectedtexture>shadows_selections\selection_circle_128x128</selectedtexture>
+			<width>3.00</width>
+			<height>5.00</height>
+			<zoffset>0.00</zoffset>
+		</decal>
+	</component>
+	<component>
+		Effect3
+		<notshadowcaster/>
+		<assetreference type="ParticleSystem">
+			<file>explosionsmall</file>
+		</assetreference>
+	</component>
+	<anim>
+		Death
+		<assetreference type="GrannyAnim">
+			<file>buildings\fort\west_fort_idle</file>
+		</assetreference>
+		<component>Dead1</component>
+	</anim>
+	<anim>
+		Idle
+		<assetreference type="GrannyAnim">
+			<file>buildings\fort\west_fort_idle</file>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Walk
+		<assetreference type="GrannyAnim">
+			<file>buildings\fort\west_fort_idle</file>
+			<tag type="SpecificSoundSet" checkvisible="1" set="RepulsorMediumMove">0.01</tag>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Volley_standing_attack
+		<assetreference type="GrannyAnim">
+			<file>animation_library\special\lazerbear\volley_standing_attack</file>
+			<tag type="Attack">0.48</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="LaserCannonGeneric">0.48</tag>
+			<tag type="Particles" particlename="LaserCannonBlueshot">0.48</tag>
+			<tag type="Attack">0.52</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="LaserCannonGeneric">0.52</tag>
+			<tag type="Particles" particlename="LaserCannonBlueshot">0.52</tag>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		RangedAttack
+		<assetreference type="GrannyAnim">
+			<file>animation_library\special\lazerbear\volley_standing_attack</file>
+			<tag type="Attack">0.50</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="CompositeLaserBeam">0.50</tag>
+			<tag type="Particles" particlename="LaserCannonBlueshot">0.50</tag>
+		</assetreference>
+		<component>HeavyCannon</component>
+	</anim>
+	<anim>
+		Bombard_ranged_attack
+		<assetreference type="GrannyAnim">
+			<file>animation_library\special\lazerbear\volley_standing_attack</file>
+			<tag type="Attack">0.50</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="AATMissile">0.50</tag>
+			<tag type="Particles" particlename="LaserCannonRedshot">0.50</tag>
+		</assetreference>
+		<component>Missile</component>
+	</anim>
+</animfile>

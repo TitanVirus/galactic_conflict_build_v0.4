@@ -1,0 +1,13 @@
+<AI>
+   <version>2</version>
+   <script>aiLoaderStandard</script>
+   <nameID>70819</nameID>
+   <tooltipID>70820</tooltipID>
+   <forcedciv>zEmpireEmperor</forcedciv>
+   <rushboom>-1</rushboom>
+   <icon>star_wars\politicians\leader_empire_emperor</icon>
+   <chatset>elizabeth</chatset>
+   <playerNames> 
+      <nameID>70819<civ>zEmpireEmperor</civ></nameID>
+	</playerNames>
+</AI>

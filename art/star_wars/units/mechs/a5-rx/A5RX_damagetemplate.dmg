@@ -1,0 +1,30 @@
+<!-- converted from XMB to XML -->
+
+<damagetemplate>
+	<model name="Star_Wars\Units\Mechs\A5-RX\WOO_A5_RX_death.gr2" splasheffect="watersplash_med">
+		<impactpoint bone="default">
+			<part mesh="Turret" bone="Turret" effect="effects\stone_streamer.xml"/>
+		</impactpoint>
+		<impactpoint bone="default2">
+			<part mesh="Turret2" bone="Turret2" effect="effects\stone_streamer.xml"/>
+		</impactpoint>
+		<impactpoint bone="default3">
+			<part mesh="Head" bone="Head" effect="effects\stone_streamer.xml"/>
+		</impactpoint>
+		<impactpoint bone="default4">
+			<part mesh="Body" bone="Body" effect="effects\stone_streamer.xml"/>
+		</impactpoint>
+		<impactpoint bone="default5">
+			<part mesh="MissileLauncher" bone="MissileLauncher" effect="effects\stone_streamer.xml"/>
+		</impactpoint>
+		<impactpoint bone="default6">
+			<part mesh="Turret3" bone="Turret3" effect="effects\stone_streamer.xml"/>
+		</impactpoint>
+		<impactpoint bone="default7">
+			<part mesh="Turret4" bone="Turret4" effect="effects\stone_streamer.xml"/>
+		</impactpoint>
+		<impactpoint bone="default8">
+			<part mesh="Under" bone="Under" effect="effects\stone_streamer.xml"/>
+		</impactpoint>
+	</model>
+</damagetemplate>

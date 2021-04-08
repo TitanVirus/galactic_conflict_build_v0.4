@@ -1,0 +1,287 @@
+<!-- converted from XMB to XML -->
+
+<animfile>
+	<definebone>HS Bone Hoof Frnt Lt</definebone>
+	<definebone>HS Bone Hoof Frnt Rt</definebone>
+	<definebone>HS Bone Hoof Back Lt</definebone>
+	<definebone>HS Bone Hoof Back Rt</definebone>
+	<attachment>
+		RiderAttachment
+		<include>star_wars\units\infantry\cavalry dewback\cav_empire_dewback_rider.xml</include>
+	</attachment>
+	<component>
+		ModelComp
+		<logic type="Tech">
+			<none>
+				<assetreference type="GrannyModel">
+					<file>star_wars\units\infantry\cavalry dewback\anim_cav_dewback_Model</file>
+				</assetreference>
+			</none>
+		</logic>
+		<decal>
+			<effecttype>default</effecttype>
+			<texture isfakeshadow="1">shadows_selections\shadow_circle_128x128</texture>
+			<selectedtexture>shadows_selections\selection_oval_32x64</selectedtexture>
+			<width>1.50</width>
+			<height>3.00</height>
+		</decal>
+		<attach a="RiderAttachment" frombone="hotspot" tobone="Attachpoint" syncanims="1"/>
+	</component>
+	<anim>
+		Walk
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\infantry\cavalry dewback\anim_cav_dewback_walk_Anim</file>
+			<tag type="FootstepLeft" footprinttype="Horse" footprintbone="HS BONE HOOF FRNT LT">1.00</tag>
+			<tag type="FootstepLeft" footprinttype="Horse" footprintbone="HS BONE HOOF BACK LT">0.83</tag>
+			<tag type="FootstepRight" footprinttype="Horse" footprintbone="HS BONE HOOF FRNT RT">0.70</tag>
+			<tag type="FootstepRight" footprinttype="Horse" footprintbone="HS BONE HOOF BACK RT">0.50</tag>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Jog
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\infantry\cavalry dewback\anim_cav_dewback_walk_Anim</file>
+			<tag type="FootstepLeft" footprinttype="Horse" footprintbone="HS BONE HOOF FRNT LT">0.80</tag>
+			<tag type="FootstepLeft" footprinttype="Horse" footprintbone="HS BONE HOOF BACK LT">0.50</tag>
+			<tag type="FootstepRight" footprinttype="Horse" footprintbone="HS BONE HOOF FRNT RT">0.95</tag>
+			<tag type="FootstepRight" footprinttype="Horse" footprintbone="HS BONE HOOF BACK RT">0.75</tag>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Run
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\infantry\cavalry dewback\anim_cav_dewback_walk_Anim</file>
+			<tag type="FootstepLeft" footprinttype="Horse" footprintbone="HS BONE HOOF FRNT LT">0.73</tag>
+			<tag type="FootstepLeft" footprinttype="Horse" footprintbone="HS BONE HOOF BACK LT">0.50</tag>
+			<tag type="FootstepRight" footprinttype="Horse" footprintbone="HS BONE HOOF FRNT RT">1.00</tag>
+			<tag type="FootstepRight" footprinttype="Horse" footprintbone="HS BONE HOOF BACK RT">0.70</tag>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Highstep
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\infantry\cavalry dewback\anim_cav_dewback_walk_Anim</file>
+			<tag type="FootstepLeft" footprinttype="Horse" footprintbone="HS BONE HOOF FRNT LT">0.73</tag>
+			<tag type="FootstepLeft" footprinttype="Horse" footprintbone="HS BONE HOOF BACK LT">0.50</tag>
+			<tag type="FootstepRight" footprinttype="Horse" footprintbone="HS BONE HOOF FRNT RT">1.00</tag>
+			<tag type="FootstepRight" footprinttype="Horse" footprintbone="HS BONE HOOF BACK RT">0.70</tag>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Idle
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\infantry\cavalry dewback\anim_cav_dewback_idle_Anim</file>
+			<weight>40</weight>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\infantry\cavalry dewback\anim_cav_dewback_idle_Anim</file>
+			<weight>10</weight>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\infantry\cavalry dewback\anim_cav_dewback_idle_Anim</file>
+			<weight>40</weight>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\infantry\cavalry dewback\anim_cav_dewback_idle_Anim</file>
+			<weight>10</weight>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\infantry\cavalry dewback\anim_cav_dewback_idle_Anim</file>
+			<weight>40</weight>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\infantry\cavalry dewback\anim_cav_dewback_idle_Anim</file>
+			<weight>10</weight>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\infantry\cavalry dewback\anim_cav_dewback_idle_Anim</file>
+			<weight>40</weight>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\infantry\cavalry dewback\anim_cav_dewback_idle_Anim</file>
+			<weight>10</weight>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Bored
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\infantry\cavalry dewback\anim_cav_dewback_idle_Anim</file>
+			<weight>10</weight>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\infantry\cavalry dewback\anim_cav_dewback_idle_Anim</file>
+			<weight>40</weight>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\infantry\cavalry dewback\anim_cav_dewback_idle_Anim</file>
+			<weight>10</weight>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\infantry\cavalry dewback\anim_cav_dewback_idle_Anim</file>
+			<weight>40</weight>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Attack_melee
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\infantry\cavalry dewback\anim_cav_dewback_attack_melee_Anim</file>
+			<weight>40</weight>
+			<tag type="Attack">0.57</tag>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\infantry\cavalry dewback\anim_cav_dewback_attack_melee_Anim</file>
+			<weight>10</weight>
+			<tag type="Attack">0.57</tag>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\infantry\cavalry dewback\anim_cav_dewback_attack_melee_Anim</file>
+			<weight>40</weight>
+			<tag type="Attack">0.57</tag>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\infantry\cavalry dewback\anim_cav_dewback_attack_melee_Anim</file>
+			<weight>10</weight>
+			<tag type="Attack">0.57</tag>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Attack_trample
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\infantry\cavalry dewback\anim_cav_dewback_attack_melee_Anim</file>
+			<weight>40</weight>
+			<tag type="Attack">0.53</tag>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\infantry\cavalry dewback\anim_cav_dewback_attack_melee_Anim</file>
+			<weight>10</weight>
+			<tag type="Attack">0.57</tag>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Death_by_melee
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\infantry\cavalry dewback\anim_cav_dewback_die_Anim</file>
+			<tag type="SpecificSoundSet" checkvisible="1" set="RagdollImpact">0.64</tag>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\infantry\cavalry dewback\anim_cav_dewback_die_Anim</file>
+			<tag type="SpecificSoundSet" checkvisible="1" set="RagdollImpact">0.64</tag>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\infantry\cavalry dewback\anim_cav_dewback_die_Anim</file>
+			<tag type="SpecificSoundSet" checkvisible="1" set="RagdollImpact">0.64</tag>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Death_by_range
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\infantry\cavalry dewback\anim_cav_dewback_die_Anim</file>
+			<tag type="SpecificSoundSet" checkvisible="1" set="RagdollImpact">0.64</tag>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\infantry\cavalry dewback\anim_cav_dewback_die_Anim</file>
+			<tag type="SpecificSoundSet" checkvisible="1" set="RagdollImpact">0.64</tag>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\infantry\cavalry dewback\anim_cav_dewback_die_Anim</file>
+			<tag type="SpecificSoundSet" checkvisible="1" set="RagdollImpact">0.64</tag>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Death_by_havoc
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\infantry\cavalry dewback\anim_cav_dewback_die_Anim</file>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\infantry\cavalry dewback\anim_cav_dewback_die_Anim</file>
+			<tag type="SpecificSoundSet" checkvisible="1" set="RagdollImpact">0.64</tag>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Cheer
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\infantry\cavalry dewback\anim_cav_dewback_idle_Anim</file>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\infantry\cavalry dewback\anim_cav_dewback_idle_Anim</file>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\infantry\cavalry dewback\anim_cav_dewback_idle_Anim</file>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\infantry\cavalry dewback\anim_cav_dewback_idle_Anim</file>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Raze_idle
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\infantry\cavalry dewback\anim_cav_dewback_idle_Anim</file>
+			<weight>40</weight>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\infantry\cavalry dewback\anim_cav_dewback_idle_Anim</file>
+			<weight>10</weight>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\infantry\cavalry dewback\anim_cav_dewback_idle_Anim</file>
+			<weight>40</weight>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\infantry\cavalry dewback\anim_cav_dewback_idle_Anim</file>
+			<weight>10</weight>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\infantry\cavalry dewback\anim_cav_dewback_idle_Anim</file>
+			<weight>40</weight>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\infantry\cavalry dewback\anim_cav_dewback_idle_Anim</file>
+			<weight>10</weight>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\infantry\cavalry dewback\anim_cav_dewback_idle_Anim</file>
+			<weight>40</weight>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\infantry\cavalry dewback\anim_cav_dewback_idle_Anim</file>
+			<weight>10</weight>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Raze_attack
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\infantry\cavalry dewback\anim_cav_dewback_attack_melee_Anim</file>
+			<tag type="Attack">0.43</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="TorchSwing">0.33</tag>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\infantry\cavalry dewback\anim_cav_dewback_attack_melee_Anim</file>
+			<tag type="Attack">0.43</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="TorchSwing">0.33</tag>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\infantry\cavalry dewback\anim_cav_dewback_attack_melee_Anim</file>
+			<tag type="Attack">0.43</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="TorchSwing">0.33</tag>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>star_wars\units\infantry\cavalry dewback\anim_cav_dewback_attack_melee_Anim</file>
+			<tag type="Attack">0.43</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="TorchSwing">0.33</tag>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+</animfile>
