@@ -5174,6 +5174,7 @@
 		<food>1000000</food>
 		<wood>1000000</wood>
 		<startingunit>zFieldCommanderEmpire</startingunit>
+		<townstartingunit>zAITaxBlock</townstartingunit>
 		<townstartingunit>zLaborDroid</townstartingunit>
 		<townstartingunit>zLaborDroid</townstartingunit>
 		<townstartingunit>zLaborDroid</townstartingunit>
@@ -9716,6 +9717,7 @@
 		<food>1000000</food>
 		<wood>1000000</wood>
 		<startingunit>zFieldCommanderEmpire</startingunit>
+		<townstartingunit>zAITaxBlock</townstartingunit>
 		<townstartingunit>zWorkerEmpire</townstartingunit>
 		<townstartingunit>zWorkerEmpire</townstartingunit>
 		<townstartingunit>zWorkerEmpire</townstartingunit>
@@ -9820,6 +9822,7 @@
 		<postimperialtech>PostImperialOttoman</postimperialtech>
 		<!--><buildingefficiency>0.3</buildingefficiency><!-->
 		<startingunit>zFieldCommanderEmpire</startingunit>
+		<townstartingunit>zAITaxBlock</townstartingunit>
 		<townstartingunit>zWorkerEmpire</townstartingunit>
 		<townstartingunit>zWorkerEmpire</townstartingunit>
 		<townstartingunit>zWorkerEmpire</townstartingunit>
@@ -9924,6 +9927,7 @@
 		<postimperialtech>PostImperialOttoman</postimperialtech>
 		<!--><buildingefficiency>0.3</buildingefficiency><!-->
 		<startingunit>zFieldCommanderEmpire</startingunit>
+		<townstartingunit>zAITaxBlock</townstartingunit>
 		<townstartingunit>zWorkerEmpire</townstartingunit>
 		<townstartingunit>zWorkerEmpire</townstartingunit>
 		<townstartingunit>zWorkerEmpire</townstartingunit>

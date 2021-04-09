@@ -51230,14 +51230,21 @@
 		<Effects>
 			<Effect type ='Data' action ='AutoGather' amount ='0.40' subtype ='WorkRate' unittype ='XP' relativity ='Absolute'>
 				<Target type ='ProtoUnit'>Church</Target></Effect></Effects>
-	</Tech>	<Tech name ='zAge0Tarkin' type ='Normal'>
-		<DBID>5272</DBID>
+	</Tech>
+	<Tech name ='zAge0Tarkin' type ='Normal'>
+		<DBID>100000</DBID>
 		<Status>UNOBTAINABLE</Status>
 		<Flag>Shadow</Flag>
 		<Effects>
 			<Effect type ='TechStatus' status ='active'>zMainSetup</Effect>
 			<Effect type ='TechStatus' status ='active'>zSetupEmpire</Effect>
 			<Effect type ='TechStatus' status ='active'>XPTrickle</Effect>
+			<Effect type ='TechStatus' status ='obtainable'>zDetoniteCore</Effect>
+			<Effect type ='TechStatus' status ='obtainable'>zBigGamePouchers</Effect>
+			<Effect type ='TechStatus' status ='obtainable'>zCulturedMeat</Effect>
+			<Effect type ='TechStatus' status ='obtainable'>zMolecularFurnaces</Effect>
+			<Effect type ='TechStatus' status ='obtainable'>zFusionReactors</Effect>
+			<Effect type ='TechStatus' status ='obtainable'>zGeneticallyModifiedCrops</Effect>
 			<Effect type ='TechStatus' status ='obtainable'>zIntegratedRangefinder</Effect>
 			<Effect type ='TechStatus' status ='obtainable'>zHeavyArmor</Effect>
 			<Effect type ='TechStatus' status ='obtainable'>zAdvancedPowerPack</Effect>
@@ -51247,6 +51254,7 @@
 			<Effect type ='TechStatus' status ='obtainable'>zSpecializedCrews</Effect>
 			<Effect type ='TechStatus' status ='obtainable'>zTargetingSensor</Effect>
 			<Effect type ='TechStatus' status ='obtainable'>zTransportRetrofits</Effect>
+			<Effect type ='TechStatus' status ='obtainable'>zPermacitePlating</Effect>
 			<Effect type ='TechStatus' status ='obtainable'>zMark2TX225Tank</Effect>
 			<Effect type ='TechStatus' status ='obtainable'>zMark3TX225Tank</Effect>
 			<Effect type ='TechStatus' status ='obtainable'>zMark4TX225Tank</Effect>
@@ -51262,8 +51270,12 @@
 			<Effect type ='TechStatus' status ='obtainable'>zMark2SPMAShadow</Effect>
 			<Effect type ='TechStatus' status ='obtainable'>zMark3SPMA</Effect>
 			<Effect type ='TechStatus' status ='obtainable'>zMark4SPMA</Effect>
+			<Effect type ='TechStatus' status ='unobtainable'>zConscriptedRiotTroopers</Effect>
+			<Effect type ='TechStatus' status ='unobtainable'>zPrivateRiotTroopers</Effect>
 			<Effect type ='Data' amount ='1.00' subtype ='Enable' relativity ='Absolute'>
 				<Target type ='ProtoUnit'>zStormtrooper</Target></Effect>
+			<Effect type ='Data' amount ='1.00' subtype ='Enable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zArmyTrooper</Target></Effect>
 			<Effect type ='Data' amount ='1.00' subtype ='Enable' relativity ='Absolute'>
 				<Target type ='ProtoUnit'>zTX225Tank</Target></Effect>
 			<Effect type ='TechStatus' status ='obtainable'>zPoliticianEmpireTech2Jerjerrod</Effect>
@@ -51287,7 +51299,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zAge0Vader' type ='Normal'>
-		<DBID>5273</DBID>
+		<DBID>100001</DBID>
 		<Status>UNOBTAINABLE</Status>
 		<Flag>Shadow</Flag>
 		<Effects>
@@ -51353,13 +51365,17 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zAge0Emperor' type ='Normal'>
-		<DBID>5274</DBID>
+		<DBID>100002</DBID>
 		<Status>UNOBTAINABLE</Status>
 		<Flag>Shadow</Flag>
 		<Effects>
 			<Effect type ='TechStatus' status ='active'>zMainSetup</Effect>
 			<Effect type ='TechStatus' status ='active'>zSetupEmpire</Effect>
 			<Effect type ='TechStatus' status ='active'>XPTrickle</Effect>
+			<Effect type ='TechStatus' status ='obtainable'>zMolecularFurnaces</Effect>
+			<Effect type ='TechStatus' status ='obtainable'>zFusionReactors</Effect>
+			<Effect type ='TechStatus' status ='obtainable'>zGeneticallyModifiedCrops</Effect>
+			<Effect type ='TechStatus' status ='obtainable'>zPermacitePlating</Effect>
 			<Effect type ='TechStatus' status ='obtainable'>zHeavyArmor</Effect>
 			<Effect type ='TechStatus' status ='obtainable'>zAdvancedPowerPack</Effect>
 			<Effect type ='TechStatus' status ='obtainable'>zThermalDetonators</Effect>
@@ -51413,7 +51429,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zMainSetup' type ='Normal'>
-		<DBID>5275</DBID>
+		<DBID>100003</DBID>
 		<DisplayNameID>5273</DisplayNameID>
 		<Status>UNOBTAINABLE</Status>
 		<Icon>units\artillery\organ_gun\organ_gun_icon_64x64</Icon>
@@ -51422,17 +51438,33 @@
 			<Effect type ='TechStatus' status ='active'>YPDodge</Effect>
 			<Effect type ='Data' amount ='0.00' subtype ='CopyUnitPortraitAndIcon' unittype ='Farm' relativity ='Absolute'>
 				<Target type ='ProtoUnit'>zFarmstead</Target></Effect>
+			<Effect type ='Data' amount ='0.00' subtype ='CopyUnitPortraitAndIcon' unittype ='Market' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zSpaceport</Target></Effect>
+			<Effect type ='Data' amount ='2.00' subtype ='AllowedAge' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>Market</Target></Effect>
 			<Effect type ='SetName' proto ='Farm' culture ='none' newName ='71079'></Effect>
 			<Effect type ='SetName' proto ='TownCenter' culture ='none' newName ='70827'></Effect>
 			<Effect type ='SetName' proto ='TradingPost' culture ='none' newName ='70826'></Effect>
 			<Effect type ='SetName' proto ='Market' culture ='none' newName ='70828'></Effect>
-			<Effect type ='SetName' proto ='WallStraight1' culture ='none' newName ='707810'></Effect>
-			<Effect type ='SetName' proto ='WallStraight2' culture ='none' newName ='707810'></Effect>
-			<Effect type ='SetName' proto ='WallStraight3' culture ='none' newName ='707810'></Effect>
-			<Effect type ='SetName' proto ='WallStraight4' culture ='none' newName ='707810'></Effect>
-			<Effect type ='SetName' proto ='WallStraight5' culture ='none' newName ='707810'></Effect>
-			<Effect type ='SetName' proto ='WallConnector' culture ='none' newName ='707810'></Effect>
-			<Effect type ='SetName' proto ='CWallGate' culture ='none' newName ='70782'></Effect>
+			<Effect type ='SetName' proto ='WallStraight1' culture ='none' newName ='72323'></Effect>
+			<Effect type ='SetName' proto ='WallStraight2' culture ='none' newName ='72323'></Effect>
+			<Effect type ='SetName' proto ='WallStraight3' culture ='none' newName ='72323'></Effect>
+			<Effect type ='SetName' proto ='WallStraight4' culture ='none' newName ='72323'></Effect>
+			<Effect type ='SetName' proto ='WallStraight5' culture ='none' newName ='72323'></Effect>
+			<Effect type ='SetName' proto ='WallConnector' culture ='none' newName ='72323'></Effect>
+			<Effect type ='SetName' proto ='CWallGate' culture ='none' newName ='72324'></Effect>
+			<Effect type ='Data' amount ='0.00' subtype ='CopyUnitPortraitAndIcon' unittype ='WallStraight1' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zPropWallLight</Target></Effect>
+			<Effect type ='Data' amount ='0.00' subtype ='CopyUnitPortraitAndIcon' unittype ='WallStraight2' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zPropWallLight</Target></Effect>
+			<Effect type ='Data' amount ='0.00' subtype ='CopyUnitPortraitAndIcon' unittype ='WallStraight3' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zPropWallLight</Target></Effect>
+			<Effect type ='Data' amount ='0.00' subtype ='CopyUnitPortraitAndIcon' unittype ='WallStraight4' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zPropWallLight</Target></Effect>
+			<Effect type ='Data' amount ='0.00' subtype ='CopyUnitPortraitAndIcon' unittype ='WallStraight5' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zPropWallLight</Target></Effect>
+			<Effect type ='Data' amount ='0.00' subtype ='CopyUnitPortraitAndIcon' unittype ='WallConnector' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zPropWallLight</Target></Effect>
 			<Effect type ='Data' amount ='0.00' subtype ='EnableTradeRouteLOS' relativity ='Absolute'>
 				<Target type ='Player'></Target></Effect>
 			<Effect type ='Data' amount ='0.00' subtype ='CopyUnitPortraitAndIcon' unittype ='TownCenter' relativity ='Absolute'>
@@ -51471,7 +51503,7 @@
 			<!--><Effect type ='TechStatus' status ='obtainable'>zIonThrusters</Effect> //CIV SPECIFIC<!-->
 			<Effect type ='TechStatus' status ='obtainable'>zCombatDrivers</Effect>
 			<!--> <Effect type ='TechStatus' status ='obtainable'>zSpecializedCrews</Effect> //CIV SPECIFIC<!-->
-			<!-->WAR CENTER TECHTREE<!-->
+			<!-->Armory Complex TECHTREE<!-->
 			<Effect type ='TechStatus' status ='obtainable'>zBasicArmor</Effect>
 			<Effect type ='TechStatus' status ='obtainable'>zLightArmor</Effect>
 			<!--><Effect type ='TechStatus' status ='obtainable'>zHeavyArmor</Effect> //CIV SPECIFIC<!-->
@@ -51490,6 +51522,19 @@
 			<Effect type ='TechStatus' status ='obtainable'>zIonPropulsion</Effect>
 			<Effect type ='TechStatus' status ='obtainable'>zRedesignSpecifications</Effect>
 			<!--><Effect type ='TechStatus' status ='obtainable'>zTransportRetrofits</Effect> //CIV SPECIFIC<!-->
+			<Effect type ='TechStatus' status ='obtainable'>zArmorPiercingShells</Effect>
+			<Effect type ='TechStatus' status ='obtainable'>zEnergizedOrdnance</Effect>
+			<!--><Effect type ='TechStatus' status ='obtainable'>zDetoniteCore</Effect> //CIV SPECIFIC<!-->
+			<!-->FARM TECHTREE<!-->
+			<Effect type ='TechStatus' status ='obtainable'>zMoistureFarming</Effect>
+			<Effect type ='TechStatus' status ='obtainable'>zAutomatedIrrigation</Effect>
+			<Effect type ='TechStatus' status ='obtainable'>zHarvestingPrograms</Effect>
+			<!--><Effect type ='TechStatus' status ='obtainable'>zGeneticallyModifiedCrops</Effect> //CIV SPECIFIC<!-->
+			<!-->FARM TECHTREE - LIVESTOCK<!-->
+			<Effect type ='TechStatus' status ='obtainable'>zAnimalNursery</Effect>
+			<Effect type ='TechStatus' status ='obtainable'>zSelectiveBreeding</Effect>
+			<Effect type ='TechStatus' status ='obtainable'>zGrowthStimulants</Effect>
+			<!--><Effect type ='TechStatus' status ='obtainable'>zCulturedMeat</Effect> //CIV SPECIFIC<!-->
 			<!-->COMMAND CENTER TECHTREE<!-->
 			<Effect type ='TechStatus' status ='obtainable'>zBactaTanks</Effect>
 			<Effect type ='TechStatus' status ='obtainable'>zAdvancedMouseDroids</Effect>
@@ -51500,31 +51545,43 @@
 			<!-->RESEARCH FACILITY TECHTREE<!-->
 			<Effect type ='TechStatus' status ='obtainable'>zHCBlockade</Effect>
 			<Effect type ='TechStatus' status ='obtainable'>zSpies</Effect>
+			<Effect type ='TechStatus' status ='obtainable'>zTransparisteelWindows</Effect>
 			<Effect type ='TechStatus' status ='obtainable'>zDurasteelReinforcedSupportBeams</Effect>
-			<Effect type ='TechStatus' status ='obtainable'>zPermacitePlating</Effect>
+		<!--><Effect type ='TechStatus' status ='obtainable'>zPermacitePlating</Effect> //CIV SPECIFIC<!-->
 			<Effect type ='TechStatus' status ='obtainable'>zPrefabicatedStructures</Effect>
 			<Effect type ='TechStatus' status ='obtainable'>zAutomatedProcess</Effect>
 			<Effect type ='TechStatus' status ='obtainable'>zWallsMedium</Effect>
 			<Effect type ='TechStatus' status ='obtainable'>zWallsHeavy</Effect>
 			<Effect type ='TechStatus' status ='obtainable'>zWallsShield</Effect>
-			<Effect type ='TechStatus' status ='obtainable'>zHeavyTurret</Effect>
-			<Effect type ='TechStatus' status ='obtainable'>zTurbolaserTower</Effect>
+			<Effect type ='TechStatus' status ='obtainable'>zMediumDefenseTower</Effect>
+			<Effect type ='TechStatus' status ='obtainable'>zHeavyDefenseTower</Effect>
 			<Effect type ='TechStatus' status ='obtainable'>zIonAccuAcelerator</Effect>
+			<!-->ECONOMIC STOREHOUSE TECHS - SUPPLIES<!-->
+			<Effect type ='TechStatus' status ='obtainable'>zStunnet</Effect>
+			<Effect type ='TechStatus' status ='obtainable'>zBeastCallers</Effect>
+			<Effect type ='TechStatus' status ='obtainable'>zHuntingGroundLegislation</Effect>
+			<Effect type ='TechStatus' status ='obtainable'>zCyclerRifle</Effect>
+			<Effect type ='TechStatus' status ='obtainable'>zPersonalShieldEmitters</Effect>
+			<!--><Effect type ='TechStatus' status ='obtainable'>zBigGamePouchers</Effect> //CIV SPECIFIC<!-->
+			<!-->ECONOMIC STOREHOUSE TECHS - Materials<!-->
+			<Effect type ='TechStatus' status ='obtainable'>zHandheldExtractors</Effect>
+			<Effect type ='TechStatus' status ='obtainable'>zPortableCollectors</Effect>
+			<Effect type ='TechStatus' status ='obtainable'>zMineralDecompositors</Effect>
+			<Effect type ='TechStatus' status ='obtainable'>zAccousticDisruptor</Effect>
+			<!--><Effect type ='TechStatus' status ='obtainable'>zMolecularFurnaces</Effect> //CIV SPECIFIC<!-->
+			<!-->ECONOMIC STOREHOUSE TECHS - Credits<!-->
+			<Effect type ='TechStatus' status ='obtainable'>zBeamdrill</Effect>
+			<Effect type ='TechStatus' status ='obtainable'>zOreGasifier</Effect>
+			<Effect type ='TechStatus' status ='obtainable'>zFuelRefinement</Effect>
+			<!--><Effect type ='TechStatus' status ='obtainable'>zFusionReactors</Effect> //CIV SPECIFIC<!-->
 			<!-->LATER REMOVE<!-->
-			<Effect type ='TechStatus' status ='obtainable'>Gangsaw</Effect>
 			<Effect type ='TechStatus' status ='obtainable'>CavalryCuirass</Effect>
 			<Effect type ='TechStatus' status ='obtainable'>Rifling</Effect>
 			<Effect type ='TechStatus' status ='obtainable'>GunnersQuadrant</Effect>
 			<Effect type ='TechStatus' status ='obtainable'>HeatedShot</Effect>
 			<Effect type ='TechStatus' status ='obtainable'>InfantryBreastplate</Effect>
-			<Effect type ='TechStatus' status ='obtainable'>SeedDrill</Effect>
-			<Effect type ='TechStatus' status ='obtainable'>SelectiveBreeding</Effect>
-			<Effect type ='TechStatus' status ='obtainable'>HuntingDogs</Effect>
 			<Effect type ='TechStatus' status ='obtainable'>Revetment</Effect>
-			<Effect type ='TechStatus' status ='obtainable'>Bastion</Effect>
-			<Effect type ='TechStatus' status ='obtainable'>PlacerMines</Effect>
 			<Effect type ='TechStatus' status ='obtainable'>Caracole</Effect>
-			<Effect type ='TechStatus' status ='obtainable'>OreRefining</Effect>
 			<Effect type ='TechStatus' status ='obtainable'>ImpExcessiveTaxation</Effect>
 			<Effect type ='TechStatus' status ='obtainable'>ImpLargeScaleAgriculture</Effect>
 			<Effect type ='TechStatus' status ='obtainable'>ImpDeforestation</Effect>
@@ -51540,23 +51597,14 @@
 			<Effect type ='TechStatus' status ='obtainable'>ChurchMercantilism</Effect>
 			<Effect type ='TechStatus' status ='obtainable'>ChurchStandingArmy</Effect>
 			<Effect type ='TechStatus' status ='obtainable'>ChurchGasLighting</Effect>
-			<Effect type ='TechStatus' status ='obtainable'>Blunderbuss</Effect>
-			<Effect type ='TechStatus' status ='obtainable'>GreatCoat</Effect>
-			<Effect type ='TechStatus' status ='obtainable'>LogFlume</Effect>
 			<Effect type ='TechStatus' status ='obtainable'>Bookkeeping</Effect>
-			<Effect type ='TechStatus' status ='obtainable'>ArtificialFertilizer</Effect>
-			<Effect type ='TechStatus' status ='obtainable'>CircularSaw</Effect>
-			<Effect type ='TechStatus' status ='obtainable'>Amalgamation</Effect>
 			<Effect type ='TechStatus' status ='obtainable'>Homesteading</Effect>
 			<Effect type ='TechStatus' status ='obtainable'>LongLines</Effect>
 			<Effect type ='TechStatus' status ='obtainable'>GillNets</Effect>
-			<Effect type ='TechStatus' status ='obtainable'>FrontierOutpost</Effect>
-			<Effect type ='TechStatus' status ='obtainable'>SteelTraps</Effect>
 			<Effect type ='TechStatus' status ='obtainable'>FactoryWaterPower</Effect>
 			<Effect type ='TechStatus' status ='obtainable'>FactorySteamPower</Effect>
 			<Effect type ='TechStatus' status ='obtainable'>FactoryCannery</Effect>
 			<Effect type ='TechStatus' status ='obtainable'>StarFort</Effect>
-			<Effect type ='TechStatus' status ='obtainable'>FortifiedOutpost</Effect>
 			<Effect type ='TechStatus' status ='obtainable'>ChurchMassCavalry</Effect>
 			<Effect type ='TechStatus' status ='obtainable'>FactoryMassProduction</Effect>
 			<Effect type ='TechStatus' status ='obtainable'>GrapeShot</Effect>
@@ -51586,7 +51634,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zSetupEmpire' type ='Normal'>
-		<DBID>5276</DBID>
+		<DBID>100004</DBID>
 		<DisplayNameID>5273</DisplayNameID>
 		<Status>UNOBTAINABLE</Status>
 		<Icon>units\artillery\organ_gun\organ_gun_icon_64x64</Icon>
@@ -51606,6 +51654,10 @@
 			<Effect type ='TechStatus' status ='obtainable'>zMark2ATDP</Effect>
 			<Effect type ='TechStatus' status ='obtainable'>zUpgradeATST</Effect>
 			<Effect type ='TechStatus' status ='obtainable'>zMark2ATST</Effect>
+			<!-->THERE ARE ONLY TWO THINGS CERTAIN IN THIS LIFE, THOSE ARE 1) DEATH AND 2) TAXES <!-->
+			<Effect type ='TechStatus' status ='obtainable'>zTaxAt0</Effect>
+			<Effect type ='TechStatus' status ='obtainable'>zTaxDecreaseNull</Effect>
+			<Effect type ='TechStatus' status ='obtainable'>zTaxIncreaseTo5</Effect>
 			<Effect type ='Data' amount ='0.00' subtype ='EnableTradeRouteLOS' relativity ='Absolute'>
 				<Target type ='Player'></Target></Effect>
 			<Effect type ='Data' amount ='1.00' subtype ='Enable' relativity ='Absolute'>
@@ -51629,7 +51681,7 @@
 			<Effect type ='Data' amount ='1.00' subtype ='Enable' relativity ='Absolute'>
 				<Target type ='ProtoUnit'>WallStraight5</Target></Effect>
 			<Effect type ='Data' amount ='1.00' subtype ='Enable' relativity ='Absolute'>
-				<Target type ='ProtoUnit'>zGuardTower</Target></Effect>
+				<Target type ='ProtoUnit'>zDefenseTower</Target></Effect>
 			<Effect type ='Data' amount ='1.00' subtype ='Enable' relativity ='Absolute'>
 				<Target type ='ProtoUnit'>zInfantryBarracks</Target></Effect>
 			<Effect type ='Data' amount ='1.00' subtype ='Enable' relativity ='Absolute'>
@@ -51637,7 +51689,7 @@
 			<Effect type ='Data' amount ='1.00' subtype ='Enable' relativity ='Absolute'>
 				<Target type ='ProtoUnit'>zAirbase</Target></Effect>
 			<Effect type ='Data' amount ='1.00' subtype ='Enable' relativity ='Absolute'>
-				<Target type ='ProtoUnit'>zWarCenter</Target></Effect>
+				<Target type ='ProtoUnit'>zArmoryComplex</Target></Effect>
 			<Effect type ='Data' amount ='1.00' subtype ='Enable' relativity ='Absolute'>
 				<Target type ='ProtoUnit'>zResearchFacility</Target></Effect>
 			<Effect type ='Data' amount ='1.00' subtype ='Enable' relativity ='Absolute'>
@@ -51655,7 +51707,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zPrivateStormtroopers' type ='Normal'>
-		<DBID>5274</DBID>
+		<DBID>100005</DBID>
 		<DisplayNameID>70829</DisplayNameID>
 		<Cost resourcetype ='Wood'>200.0000</Cost>
 		<Cost resourcetype ='Gold'>200.0000</Cost>
@@ -51685,7 +51737,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zCorporalStormtroopers' type ='Normal'>
-		<DBID>5275</DBID>
+		<DBID>100006</DBID>
 		<DisplayNameID>708290</DisplayNameID>
 		<Cost resourcetype ='Wood'>600.0000</Cost>
 		<Cost resourcetype ='Gold'>600.0000</Cost>
@@ -51715,7 +51767,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zSergeantStormtroopers' type ='Normal'>
-		<DBID>5276</DBID>
+		<DBID>100007</DBID>
 		<DisplayNameID>70833</DisplayNameID>
 		<Cost resourcetype ='Wood'>1500.0000</Cost>
 		<Cost resourcetype ='Gold'>1500.0000</Cost>
@@ -51745,7 +51797,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zPrivateScoutTroopersShadow' type ='Normal'>
-		<DBID>5277</DBID>
+		<DBID>100008</DBID>
 		<ResearchPoints>0.0000</ResearchPoints>
 		<Status>UNOBTAINABLE</Status>
 		<Flag>Shadow</Flag>
@@ -51762,7 +51814,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zCorporalScoutTroopers' type ='Normal'>
-		<DBID>5278</DBID>
+		<DBID>100009</DBID>
 		<DisplayNameID>70839</DisplayNameID>
 		<Cost resourcetype ='Wood'>600.0000</Cost>
 		<Cost resourcetype ='Gold'>600.0000</Cost>
@@ -51786,7 +51838,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zSergeantScoutTroopers' type ='Normal'>
-		<DBID>5279</DBID>
+		<DBID>100010</DBID>
 		<DisplayNameID>70841</DisplayNameID>
 		<Cost resourcetype ='Wood'>1500.0000</Cost>
 		<Cost resourcetype ='Gold'>1500.0000</Cost>
@@ -51811,7 +51863,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zPrivateDemoTroopersShadow' type ='Normal'>
-		<DBID>5336</DBID>
+		<DBID>100011</DBID>
 		<ResearchPoints>0.0000</ResearchPoints>
 		<Status>UNOBTAINABLE</Status>
 		<Flag>Shadow</Flag>
@@ -51828,7 +51880,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zCorporalDemoTroopers' type ='Normal'>
-		<DBID>5337</DBID>
+		<DBID>100012</DBID>
 		<DisplayNameID>70845</DisplayNameID>
 		<Cost resourcetype ='Wood'>600.0000</Cost>
 		<Cost resourcetype ='Gold'>600.0000</Cost>
@@ -51853,7 +51905,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zSergeantDemoTroopers' type ='Normal'>
-		<DBID>5338</DBID>
+		<DBID>100012</DBID>
 		<DisplayNameID>70847</DisplayNameID>
 		<Cost resourcetype ='Wood'>1500.0000</Cost>
 		<Cost resourcetype ='Gold'>1500.0000</Cost>
@@ -51878,7 +51930,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zConscriptedRiotTroopers' type ='Normal'>
-		<DBID>5274</DBID>
+		<DBID>100013</DBID>
 		<DisplayNameID>70850</DisplayNameID>
 		<Cost resourcetype ='Wood'>200.0000</Cost>
 		<Cost resourcetype ='Gold'>200.0000</Cost>
@@ -51901,7 +51953,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zPrivateRiotTroopers' type ='Normal'>
-		<DBID>5275</DBID>
+		<DBID>100014</DBID>
 		<DisplayNameID>70852</DisplayNameID>
 		<Cost resourcetype ='Wood'>600.0000</Cost>
 		<Cost resourcetype ='Gold'>600.0000</Cost>
@@ -51926,7 +51978,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zLighterArmor' type ='Normal'>
-		<DBID>5290</DBID>
+		<DBID>100015</DBID>
 		<DisplayNameID>70872</DisplayNameID>
 		<Cost resourcetype ='Wood'>200.0000</Cost>
 		<ResearchPoints>40.0000</ResearchPoints>
@@ -51944,7 +51996,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zDexterity' type ='Normal'>
-		<DBID>5291</DBID>
+		<DBID>100016</DBID>
 		<DisplayNameID>70870</DisplayNameID>
 		<Cost resourcetype ='Wood'>500.0000</Cost>
 		<Cost resourcetype ='Gold'>500.0000</Cost>
@@ -51964,7 +52016,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zDroidAssistants' type ='Normal'>
-		<DBID>5292</DBID>
+		<DBID>100017</DBID>
 		<DisplayNameID>70880</DisplayNameID>
 		<Cost resourcetype ='Gold'>850.0000</Cost>
 		<ResearchPoints>30.0000</ResearchPoints>
@@ -51981,7 +52033,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zMacroBinoculars' type ='Normal'>
-		<DBID>5286</DBID>
+		<DBID>100018</DBID>
 		<DisplayNameID>70878</DisplayNameID>
 		<Cost resourcetype ='Food'>200.0000</Cost>
 		<ResearchPoints>40.0000</ResearchPoints>
@@ -52020,7 +52072,7 @@
 	</Effects>
 	</Tech>
 	<Tech name ='zPortableScanners' type ='Normal'>
-		<DBID>5287</DBID>
+		<DBID>100019</DBID>
 		<DisplayNameID>70876</DisplayNameID>
 		<Cost resourcetype ='Food'>200.0000</Cost>
 		<Cost resourcetype ='Gold'>200.0000</Cost>
@@ -52062,7 +52114,7 @@
 	</Effects>
 	</Tech>
 	<Tech name ='zIntegratedRangefinder' type ='Normal'>
-		<DBID>5289</DBID>
+		<DBID>100020</DBID>
 		<DisplayNameID>70874</DisplayNameID>
 		<Cost resourcetype ='Food'>750.0000</Cost>
 		<Cost resourcetype ='Gold'>500.0000</Cost>
@@ -52104,7 +52156,7 @@
 	</Effects>
 	</Tech>
 	<Tech name ='zBasicTraining' type ='Normal'>
-		<DBID>5282</DBID>
+		<DBID>100021</DBID>
 		<DisplayNameID>70863</DisplayNameID>
 		<Cost resourcetype ='Food'>215.0000</Cost>
 		<ResearchPoints>30.0000</ResearchPoints>
@@ -52130,7 +52182,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zMouseDroids' type ='Normal'>
-		<DBID>5283</DBID>
+		<DBID>100022</DBID>
 		<DisplayNameID>70861</DisplayNameID>
 		<Cost resourcetype ='Wood'>125.0000</Cost>
 		<ResearchPoints>75.0000</ResearchPoints>
@@ -52165,7 +52217,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zAdvancedMouseDroids' type ='Normal'>
-		<DBID>5284</DBID>
+		<DBID>100023</DBID>
 		<DisplayNameID>70859</DisplayNameID>
 		<Cost resourcetype ='Wood'>350.0000</Cost>
 		<Cost resourcetype ='Food'>125.0000</Cost>
@@ -52202,7 +52254,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zBactaTanks' type ='Normal'>
-		<DBID>5285</DBID>
+		<DBID>100024</DBID>
 		<DisplayNameID>70857</DisplayNameID>
 		<Cost resourcetype ='Food'>500.0000</Cost>
 		<Cost resourcetype ='Gold'>250.0000</Cost>
@@ -52221,7 +52273,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zBasicArmor' type ='Normal'>
-		<DBID>5296</DBID>
+		<DBID>100025</DBID>
 		<DisplayNameID>70883</DisplayNameID>
 		<Cost resourcetype ='Food'>200.0000</Cost>
 		<ResearchPoints>40.0000</ResearchPoints>
@@ -52238,7 +52290,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zLightArmor' type ='Normal'>
-		<DBID>5296</DBID>
+		<DBID>100026</DBID>
 		<DisplayNameID>70885</DisplayNameID>
 		<Cost resourcetype ='Food'>200.0000</Cost>
 		<Cost resourcetype ='Gold'>200.0000</Cost>
@@ -52258,7 +52310,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zHeavyArmor' type ='Normal'>
-		<DBID>5297</DBID>
+		<DBID>100027</DBID>
 		<DisplayNameID>70887</DisplayNameID>
 		<Cost resourcetype ='Food'>800.0000</Cost>
 		<Cost resourcetype ='Gold'>400.0000</Cost>
@@ -52278,7 +52330,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zPrimaryFocusingFoils' type ='Normal'>
-		<DBID>5298</DBID>
+		<DBID>100028</DBID>
 		<DisplayNameID>70890</DisplayNameID>
 		<Cost resourcetype ='Wood'>350.0000</Cost>
 		<ResearchPoints>50.0000</ResearchPoints>
@@ -52354,7 +52406,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zCoolingSleeves' type ='Normal'>
-		<DBID>5298</DBID>
+		<DBID>100029</DBID>
 		<DisplayNameID>70891</DisplayNameID>
 		<Cost resourcetype ='Wood'>500.0000</Cost>
 		<Cost resourcetype ='Gold'>350.0000</Cost>
@@ -52433,7 +52485,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zAdvancedPowerPack' type ='Normal'>
-		<DBID>5299</DBID>
+		<DBID>100030</DBID>
 		<DisplayNameID>70892</DisplayNameID>
 		<Cost resourcetype ='Wood'>750.0000</Cost>
 		<Cost resourcetype ='Gold'>500.0000</Cost>
@@ -52512,7 +52564,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zLightPlating' type ='Normal'>
-		<DBID>5300</DBID>
+		<DBID>100031</DBID>
 		<DisplayNameID>70893</DisplayNameID>
 		<Cost resourcetype ='Gold'>350.0000</Cost>
 		<ResearchPoints>45.0000</ResearchPoints>
@@ -52529,7 +52581,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zMediumPlating' type ='Normal'>
-		<DBID>5301</DBID>
+		<DBID>100032</DBID>
 		<DisplayNameID>70895</DisplayNameID>
 		<Cost resourcetype ='Gold'>500.0000</Cost>
 		<Cost resourcetype ='Food'>350.0000</Cost>
@@ -52549,7 +52601,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zHeavyPlating' type ='Normal'>
-		<DBID>5302</DBID>
+		<DBID>100033</DBID>
 		<DisplayNameID>70896</DisplayNameID>
 		<Cost resourcetype ='Gold'>700.0000</Cost>
 		<Cost resourcetype ='Food'>550.0000</Cost>
@@ -52569,7 +52621,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zElevationTracking' type ='Normal'>
-		<DBID>5302</DBID>
+		<DBID>100034</DBID>
 		<DisplayNameID>70898</DisplayNameID>
 		<Cost resourcetype ='Food'>200.0000</Cost>
 		<ResearchPoints>30.0000</ResearchPoints>
@@ -52645,7 +52697,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zSensorPods' type ='Normal'>
-		<DBID>5303</DBID>
+		<DBID>100035</DBID>
 		<DisplayNameID>70899</DisplayNameID>
 		<Cost resourcetype ='Food'>400.0000</Cost>
 		<Cost resourcetype ='Gold'>200.0000</Cost>
@@ -52723,7 +52775,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zTargetingSensor' type ='Normal'>
-		<DBID>5304</DBID>
+		<DBID>100036</DBID>
 		<DisplayNameID>70900</DisplayNameID>
 		<Cost resourcetype ='Food'>800.0000</Cost>
 		<Cost resourcetype ='Gold'>400.0000</Cost>
@@ -52801,7 +52853,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zRedesignSpecifications' type ='Normal'>
-		<DBID>5304</DBID>
+		<DBID>100037</DBID>
 		<DisplayNameID>70901</DisplayNameID>
 		<Cost resourcetype ='Wood'>250.0000</Cost>
 		<ResearchPoints>50.0000</ResearchPoints>
@@ -52869,7 +52921,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zScanningDevices' type ='Normal'>
-		<DBID>5307</DBID>
+		<DBID>100038</DBID>
 		<DisplayNameID>70906</DisplayNameID>
 		<Cost resourcetype ='Food'>200.0000</Cost>
 		<Cost resourcetype ='Wood'>100.0000</Cost>
@@ -52886,7 +52938,7 @@
 				<Target type ='ProtoUnit'>AbstractSepoy</Target></Effect></Effects>
 	</Tech>
 	<Tech name ='zBlasterRifles' type ='Normal'>
-		<DBID>5308</DBID>
+		<DBID>100039</DBID>
 		<DisplayNameID>70908</DisplayNameID>
 		<Cost resourcetype ='Wood'>400.0000</Cost>
 		<Cost resourcetype ='Gold'>400.0000</Cost>
@@ -52916,7 +52968,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zThermalDetonators' type ='Normal'>
-		<DBID>5309</DBID>
+		<DBID>100040</DBID>
 		<DisplayNameID>70910</DisplayNameID>
 		<Cost resourcetype ='Gold'>500.0000</Cost>
 		<ResearchPoints>55.0000</ResearchPoints>
@@ -52937,7 +52989,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zDurasteelReinforcedSupportBeams' type ='Normal'>
-		<DBID>126</DBID>
+		<DBID>100041</DBID>
 		<DisplayNameID>70913</DisplayNameID>
 		<Cost resourcetype ='Wood'>400.0000</Cost>
 		<Cost resourcetype ='Gold'>300.0000</Cost>
@@ -52948,6 +53000,7 @@
 		<Flag>CountsTowardMilitaryScore</Flag>
 		<Flag>UpgradeTech</Flag>
 		<Prereqs>
+			<TechStatus status ='Active'>zTransparisteelWindows</TechStatus>
 			<TechStatus status ='Active'>Industrialize</TechStatus>
 		</Prereqs>
 		<Effects>
@@ -52966,7 +53019,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zPermacitePlating' type ='Normal'>
-		<DBID>126</DBID>
+		<DBID>100042</DBID>
 		<DisplayNameID>70914</DisplayNameID>
 		<Cost resourcetype ='Wood'>600.0000</Cost>
 		<Cost resourcetype ='Gold'>400.0000</Cost>
@@ -52996,7 +53049,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zSpies' type ='Normal'>
-		<DBID>3280</DBID>
+		<DBID>100043</DBID>
 		<DisplayNameID>46001</DisplayNameID>
 		<Cost resourcetype ='Gold'>75.0000</Cost>
 		<ResearchPoints>30.0000</ResearchPoints>
@@ -53011,7 +53064,7 @@
 			<Effect all ='true' type ='SharedLOS'></Effect></Effects>
 	</Tech>
 	<Tech name ='zBothanSpynet' type ='Normal'>
-		<DBID>3280</DBID>
+		<DBID>100044</DBID>
 		<DisplayNameID>70916</DisplayNameID>
 		<Cost resourcetype ='Gold'>30.0000</Cost>
 		<ResearchPoints>20.0000</ResearchPoints>
@@ -53026,7 +53079,7 @@
 			<Effect all ='true' type ='SharedLOS'></Effect></Effects>
 	</Tech>
 	<Tech name ='zHCBlockade' type ='Normal'>
-		<DBID>3516</DBID>
+		<DBID>100045</DBID>
 		<DisplayNameID>70917</DisplayNameID>
 		<Cost resourcetype ='Gold'>100.0000</Cost>
 		<ResearchPoints>30.0000</ResearchPoints>
@@ -53041,7 +53094,7 @@
 			<Effect type ='Blockade' delay ='10.00'></Effect></Effects>
 	</Tech>
 	<Tech name ='zPrefabicatedStructures' type ='Normal'>
-		<DBID>2036</DBID>
+		<DBID>100046</DBID>
 		<DisplayNameID>70919</DisplayNameID>
 		<Cost resourcetype ='Food'>500.0000</Cost>
 		<Cost resourcetype ='Gold'>400.0000</Cost>
@@ -53059,7 +53112,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zAutomatedProcess' type ='Normal'>
-		<DBID>2397</DBID>
+		<DBID>100047</DBID>
 		<DisplayNameID>70922</DisplayNameID>
 		<Cost resourcetype ='Gold'>750.0000</Cost>
 		<ResearchPoints>60.0000</ResearchPoints>
@@ -53075,7 +53128,7 @@
 				<Target type ='ProtoUnit'>Military</Target></Effect></Effects>
 	</Tech>
 	<Tech name ='zWallsMedium' type ='Normal'>
-		<DBID>158</DBID>
+		<DBID>100048</DBID>
 		<DisplayNameID>70924</DisplayNameID>
 		<Cost resourcetype ='Wood'>400.0000</Cost>
 		<Cost resourcetype ='Gold'>400.0000</Cost>
@@ -53088,6 +53141,18 @@
 		<Prereqs>
 			<TechStatus status ='Active'>Fortressize</TechStatus></Prereqs>
 		<Effects>
+			<Effect type ='Data' amount ='0.00' subtype ='CopyUnitPortraitAndIcon' unittype ='WallStraight1' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zPropWallMedium</Target></Effect>
+			<Effect type ='Data' amount ='0.00' subtype ='CopyUnitPortraitAndIcon' unittype ='WallStraight2' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zPropWallMedium</Target></Effect>
+			<Effect type ='Data' amount ='0.00' subtype ='CopyUnitPortraitAndIcon' unittype ='WallStraight3' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zPropWallMedium</Target></Effect>
+			<Effect type ='Data' amount ='0.00' subtype ='CopyUnitPortraitAndIcon' unittype ='WallStraight4' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zPropWallMedium</Target></Effect>
+			<Effect type ='Data' amount ='0.00' subtype ='CopyUnitPortraitAndIcon' unittype ='WallStraight5' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zPropWallMedium</Target></Effect>
+			<Effect type ='Data' amount ='0.00' subtype ='CopyUnitPortraitAndIcon' unittype ='WallConnector' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zPropWallMedium</Target></Effect>
 			<Effect type ='SetName' proto ='WallStraight1' culture ='none' newName ='70928'></Effect>
 			<Effect type ='SetName' proto ='WallStraight2' culture ='none' newName ='70928'></Effect>
 			<Effect type ='SetName' proto ='WallStraight3' culture ='none' newName ='70928'></Effect>
@@ -53103,7 +53168,7 @@
 		</Effects>
 	</Tech>
 	<Tech name="zWallsHeavy" type="Normal">
-		<DBID>5274</DBID>
+		<DBID>100048</DBID>
 		<DisplayNameID>70926</DisplayNameID>
 		<Cost resourcetype="Wood">600.0000</Cost>
 		<Cost resourcetype="Gold">600.0000</Cost>
@@ -53119,6 +53184,18 @@
 			<TechStatus status="Active">Industrialize</TechStatus>
 		</Prereqs>
 		<Effects>
+			<Effect type ='Data' amount ='0.00' subtype ='CopyUnitPortraitAndIcon' unittype ='WallStraight1' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zPropWallHeavy</Target></Effect>
+			<Effect type ='Data' amount ='0.00' subtype ='CopyUnitPortraitAndIcon' unittype ='WallStraight2' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zPropWallHeavy</Target></Effect>
+			<Effect type ='Data' amount ='0.00' subtype ='CopyUnitPortraitAndIcon' unittype ='WallStraight3' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zPropWallHeavy</Target></Effect>
+			<Effect type ='Data' amount ='0.00' subtype ='CopyUnitPortraitAndIcon' unittype ='WallStraight4' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zPropWallHeavy</Target></Effect>
+			<Effect type ='Data' amount ='0.00' subtype ='CopyUnitPortraitAndIcon' unittype ='WallStraight5' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zPropWallHeavy</Target></Effect>
+			<Effect type ='Data' amount ='0.00' subtype ='CopyUnitPortraitAndIcon' unittype ='WallConnector' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zPropWallHeavy</Target></Effect>
 			<Effect type ='SetName' proto ='WallStraight1' culture ='none' newName ='70930'></Effect>
 			<Effect type ='SetName' proto ='WallStraight2' culture ='none' newName ='70930'></Effect>
 			<Effect type ='SetName' proto ='WallStraight3' culture ='none' newName ='70930'></Effect>
@@ -53135,7 +53212,7 @@
 		</Effects>
 	</Tech>
 	<Tech name="zWallsShield" type="Normal">
-		<DBID>5274</DBID>
+		<DBID>100049</DBID>
 		<DisplayNameID>70927</DisplayNameID>
 		<Cost resourcetype="Wood">1200.0000</Cost>
 		<Cost resourcetype="Gold">800.0000</Cost>
@@ -53151,6 +53228,18 @@
 			<TechStatus status="Active">Imperialize</TechStatus>
 		</Prereqs>
 		<Effects>
+			<Effect type ='Data' amount ='0.00' subtype ='CopyUnitPortraitAndIcon' unittype ='WallStraight1' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zPropWallShield</Target></Effect>
+			<Effect type ='Data' amount ='0.00' subtype ='CopyUnitPortraitAndIcon' unittype ='WallStraight2' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zPropWallShield</Target></Effect>
+			<Effect type ='Data' amount ='0.00' subtype ='CopyUnitPortraitAndIcon' unittype ='WallStraight3' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zPropWallShield</Target></Effect>
+			<Effect type ='Data' amount ='0.00' subtype ='CopyUnitPortraitAndIcon' unittype ='WallStraight4' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zPropWallShield</Target></Effect>
+			<Effect type ='Data' amount ='0.00' subtype ='CopyUnitPortraitAndIcon' unittype ='WallStraight5' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zPropWallShield</Target></Effect>
+			<Effect type ='Data' amount ='0.00' subtype ='CopyUnitPortraitAndIcon' unittype ='WallConnector' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zPropWallShield</Target></Effect>
 			<Effect type ='SetName' proto ='WallStraight1' culture ='none' newName ='70932'></Effect>
 			<Effect type ='SetName' proto ='WallStraight2' culture ='none' newName ='70932'></Effect>
 			<Effect type ='SetName' proto ='WallStraight3' culture ='none' newName ='70932'></Effect>
@@ -53167,7 +53256,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zPoliticianEmpireTech2Jerjerrod' type ='Normal'>
-		<DBID>1722</DBID>
+		<DBID>100050</DBID>
 		<DisplayNameID>70934</DisplayNameID>
 		<Cost resourcetype ='Food'>800.0000</Cost>
 		<ResearchPoints>90.0000</ResearchPoints>
@@ -53189,7 +53278,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zPoliticianEmpireTech2Pryce' type ='Normal'>
-		<DBID>1722</DBID>
+		<DBID>100051</DBID>
 		<DisplayNameID>70936</DisplayNameID>
 		<Cost resourcetype ='Food'>800.0000</Cost>
 		<ResearchPoints>90.0000</ResearchPoints>
@@ -53211,7 +53300,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zPoliticianEmpireTech2Pestage' type ='Normal'>
-		<DBID>1722</DBID>
+		<DBID>100052</DBID>
 		<DisplayNameID>70938</DisplayNameID>
 		<Cost resourcetype ='Food'>800.0000</Cost>
 		<ResearchPoints>90.0000</ResearchPoints>
@@ -53233,7 +53322,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zPoliticianEmpireTech2Gideon' type ='Normal'>
-		<DBID>1722</DBID>
+		<DBID>100053</DBID>
 		<DisplayNameID>70940</DisplayNameID>
 		<Cost resourcetype ='Food'>800.0000</Cost>
 		<ResearchPoints>90.0000</ResearchPoints>
@@ -53255,7 +53344,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zPoliticianEmpireTech2Vanee' type ='Normal'>
-		<DBID>1722</DBID>
+		<DBID>100054</DBID>
 		<DisplayNameID>70942</DisplayNameID>
 		<Cost resourcetype ='Food'>800.0000</Cost>
 		<ResearchPoints>90.0000</ResearchPoints>
@@ -53277,7 +53366,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zPoliticianEmpireTech2Kosh' type ='Normal'>
-		<DBID>1722</DBID>
+		<DBID>100055</DBID>
 		<DisplayNameID>70944</DisplayNameID>
 		<Cost resourcetype ='Food'>800.0000</Cost>
 		<ResearchPoints>90.0000</ResearchPoints>
@@ -53300,7 +53389,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zPoliticianEmpireTech2Kallus' type ='Normal'>
-		<DBID>1722</DBID>
+		<DBID>100056</DBID>
 		<DisplayNameID>70962</DisplayNameID>
 		<Cost resourcetype ='Food'>800.0000</Cost>
 		<ResearchPoints>90.0000</ResearchPoints>
@@ -53322,7 +53411,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zPoliticianEmpireTech3Trios' type ='Normal'>
-		<DBID>1695</DBID>
+		<DBID>100057</DBID>
 		<DisplayNameID>70946</DisplayNameID>
 		<Cost resourcetype ='Food'>1200.0000</Cost>
 		<Cost resourcetype ='Gold'>1000.0000</Cost>
@@ -53345,7 +53434,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zPoliticianEmpireTech3Yularen' type ='Normal'>
-		<DBID>1695</DBID>
+		<DBID>100058</DBID>
 		<DisplayNameID>70948</DisplayNameID>
 		<Cost resourcetype ='Food'>1200.0000</Cost>
 		<Cost resourcetype ='Gold'>1000.0000</Cost>
@@ -53368,7 +53457,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zPoliticianEmpireTech3Daala' type ='Normal'>
-		<DBID>1695</DBID>
+		<DBID>100059</DBID>
 		<DisplayNameID>70950</DisplayNameID>
 		<Cost resourcetype ='Food'>1200.0000</Cost>
 		<Cost resourcetype ='Gold'>1000.0000</Cost>
@@ -53391,7 +53480,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zPoliticianEmpireTech3Sienar' type ='Normal'>
-		<DBID>1695</DBID>
+		<DBID>100060</DBID>
 		<DisplayNameID>70952</DisplayNameID>
 		<Cost resourcetype ='Food'>1200.0000</Cost>
 		<Cost resourcetype ='Gold'>1000.0000</Cost>
@@ -53414,7 +53503,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zPoliticianEmpireTech3Inquisitor' type ='Normal'>
-		<DBID>1695</DBID>
+		<DBID>100061</DBID>
 		<DisplayNameID>70954</DisplayNameID>
 		<Cost resourcetype ='Food'>1200.0000</Cost>
 		<Cost resourcetype ='Gold'>1000.0000</Cost>
@@ -53437,7 +53526,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zPoliticianEmpireTech3Versio' type ='Normal'>
-		<DBID>1695</DBID>
+		<DBID>100062</DBID>
 		<DisplayNameID>70956</DisplayNameID>
 		<Cost resourcetype ='Food'>1200.0000</Cost>
 		<Cost resourcetype ='Gold'>1000.0000</Cost>
@@ -53460,7 +53549,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zPoliticianEmpireTech3CienaRee' type ='Normal'>
-		<DBID>1695</DBID>
+		<DBID>100063</DBID>
 		<DisplayNameID>70958</DisplayNameID>
 		<Cost resourcetype ='Food'>1200.0000</Cost>
 		<Cost resourcetype ='Gold'>1000.0000</Cost>
@@ -53478,7 +53567,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zPoliticianEmpireTech3Kerril' type ='Normal'>
-		<DBID>1695</DBID>
+		<DBID>100064</DBID>
 		<DisplayNameID>70960</DisplayNameID>
 		<Cost resourcetype ='Food'>1200.0000</Cost>
 		<Cost resourcetype ='Gold'>1000.0000</Cost>
@@ -53496,7 +53585,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zPoliticianEmpireTech3Blackhole' type ='Normal'>
-		<DBID>1695</DBID>
+		<DBID>100065</DBID>
 		<DisplayNameID>72101</DisplayNameID>
 		<Cost resourcetype ='Food'>1200.0000</Cost>
 		<Cost resourcetype ='Gold'>1000.0000</Cost>
@@ -53519,7 +53608,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zPoliticianEmpireTech4Piett' type ='Normal'>
-		<DBID>1700</DBID>
+		<DBID>100066</DBID>
 		<DisplayNameID>70964</DisplayNameID>
 		<Cost resourcetype ='Food'>2000.0000</Cost>
 		<Cost resourcetype ='Gold'>1200.0000</Cost>
@@ -53535,7 +53624,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zPoliticianEmpireTech4Tarko' type ='Normal'>
-		<DBID>1700</DBID>
+		<DBID>100067</DBID>
 		<DisplayNameID>70966</DisplayNameID>
 		<Cost resourcetype ='Food'>2000.0000</Cost>
 		<Cost resourcetype ='Gold'>1200.0000</Cost>
@@ -53558,7 +53647,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zPoliticianEmpireTech4Amedda' type ='Normal'>
-		<DBID>1700</DBID>
+		<DBID>100068</DBID>
 		<DisplayNameID>70968</DisplayNameID>
 		<Cost resourcetype ='Food'>2000.0000</Cost>
 		<Cost resourcetype ='Gold'>1200.0000</Cost>
@@ -53583,7 +53672,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zPoliticianEmpireTech4Cylo' type ='Normal'>
-		<DBID>1700</DBID>
+		<DBID>100069</DBID>
 		<DisplayNameID>70970</DisplayNameID>
 		<Cost resourcetype ='Food'>2000.0000</Cost>
 		<Cost resourcetype ='Gold'>1200.0000</Cost>
@@ -53608,7 +53697,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zPoliticianEmpireTech4Krennic' type ='Normal'>
-		<DBID>1700</DBID>
+		<DBID>100070</DBID>
 		<DisplayNameID>70972</DisplayNameID>
 		<Cost resourcetype ='Food'>2000.0000</Cost>
 		<Cost resourcetype ='Gold'>1200.0000</Cost>
@@ -53633,7 +53722,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zPoliticianEmpireTech4Saxon' type ='Normal'>
-		<DBID>1700</DBID>
+		<DBID>100071</DBID>
 		<DisplayNameID>70974</DisplayNameID>
 		<Cost resourcetype ='Food'>2000.0000</Cost>
 		<Cost resourcetype ='Gold'>1200.0000</Cost>
@@ -53658,7 +53747,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zPoliticianEmpireTech4Veers' type ='Normal'>
-		<DBID>1700</DBID>
+		<DBID>100072</DBID>
 		<DisplayNameID>70976</DisplayNameID>
 		<Cost resourcetype ='Food'>2000.0000</Cost>
 		<Cost resourcetype ='Gold'>1200.0000</Cost>
@@ -53681,7 +53770,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zPoliticianEmpireTech4Romodi' type ='Normal'>
-		<DBID>1700</DBID>
+		<DBID>100073</DBID>
 		<DisplayNameID>70978</DisplayNameID>
 		<Cost resourcetype ='Food'>2000.0000</Cost>
 		<Cost resourcetype ='Gold'>1200.0000</Cost>
@@ -53704,7 +53793,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zPoliticianEmpireTech4Sloane' type ='Normal'>
-		<DBID>1700</DBID>
+		<DBID>100074</DBID>
 		<DisplayNameID>70980</DisplayNameID>
 		<Cost resourcetype ='Food'>2000.0000</Cost>
 		<Cost resourcetype ='Gold'>1200.0000</Cost>
@@ -53722,7 +53811,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zPoliticianEmpireTech5Moch' type ='Normal'>
-		<DBID>1697</DBID>
+		<DBID>100075</DBID>
 		<DisplayNameID>70982</DisplayNameID>
 		<Cost resourcetype ='Food'>4000.0000</Cost>
 		<Cost resourcetype ='Gold'>4000.0000</Cost>
@@ -53747,7 +53836,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zPoliticianEmpireTech5Jax' type ='Normal'>
-		<DBID>1697</DBID>
+		<DBID>100076</DBID>
 		<DisplayNameID>70984</DisplayNameID>
 		<Cost resourcetype ='Food'>4000.0000</Cost>
 		<Cost resourcetype ='Gold'>4000.0000</Cost>
@@ -53774,7 +53863,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zPoliticianEmpireTech5Isard' type ='Normal'>
-		<DBID>1697</DBID>
+		<DBID>100077</DBID>
 		<DisplayNameID>70986</DisplayNameID>
 		<Cost resourcetype ='Food'>4000.0000</Cost>
 		<Cost resourcetype ='Gold'>4000.0000</Cost>
@@ -53801,7 +53890,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zPoliticianEmpireTech5Tagge' type ='Normal'>
-		<DBID>1697</DBID>
+		<DBID>100078</DBID>
 		<DisplayNameID>70988</DisplayNameID>
 		<Cost resourcetype ='Food'>4000.0000</Cost>
 		<Cost resourcetype ='Gold'>4000.0000</Cost>
@@ -53823,7 +53912,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zPoliticianEmpireTech5Thrawn' type ='Normal'>
-		<DBID>1697</DBID>
+		<DBID>100079</DBID>
 		<DisplayNameID>70990</DisplayNameID>
 		<Cost resourcetype ='Food'>4000.0000</Cost>
 		<Cost resourcetype ='Gold'>4000.0000</Cost>
@@ -53845,7 +53934,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='XPRevolutionSWKaine' type ='Normal'>
-		<DBID>3272</DBID>
+		<DBID>100080</DBID>
 		<DisplayNameID>70992</DisplayNameID>
 		<Cost resourcetype ='Food'>1000.0000</Cost>
 		<Cost resourcetype ='Wood'>1000.0000</Cost>
@@ -53871,7 +53960,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='XPRevolutionSWTeradoc' type ='Normal'>
-		<DBID>3272</DBID>
+		<DBID>100081</DBID>
 		<DisplayNameID>70994</DisplayNameID>
 		<Cost resourcetype ='Food'>1000.0000</Cost>
 		<Cost resourcetype ='Wood'>1000.0000</Cost>
@@ -53897,7 +53986,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='XPRevolutionSWZsinj' type ='Normal'>
-		<DBID>3272</DBID>
+		<DBID>100082</DBID>
 		<DisplayNameID>70996</DisplayNameID>
 		<Cost resourcetype ='Food'>1000.0000</Cost>
 		<Cost resourcetype ='Wood'>1000.0000</Cost>
@@ -53923,7 +54012,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='XPRevolutionSWDelvardus' type ='Normal'>
-		<DBID>3272</DBID>
+		<DBID>100083</DBID>
 		<DisplayNameID>70998</DisplayNameID>
 		<Cost resourcetype ='Food'>1000.0000</Cost>
 		<Cost resourcetype ='Wood'>1000.0000</Cost>
@@ -53949,7 +54038,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='XPRevolutionSWRax' type ='Normal'>
-		<DBID>3272</DBID>
+		<DBID>100084</DBID>
 		<DisplayNameID>71000</DisplayNameID>
 		<Cost resourcetype ='Food'>1000.0000</Cost>
 		<Cost resourcetype ='Wood'>1000.0000</Cost>
@@ -53975,7 +54064,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='XPRevolutionSWAdelhard' type ='Normal'>
-		<DBID>3272</DBID>
+		<DBID>100085</DBID>
 		<DisplayNameID>71002</DisplayNameID>
 		<Cost resourcetype ='Food'>1000.0000</Cost>
 		<Cost resourcetype ='Wood'>1000.0000</Cost>
@@ -54001,7 +54090,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zMark2TX225Tank' type ='Normal'>
-		<DBID>5343</DBID>
+		<DBID>100086</DBID>
 		<DisplayNameID>71045</DisplayNameID>
 		<RolloverTextID>71051</RolloverTextID>
 		<Cost resourcetype ='Wood'>200.0000</Cost>
@@ -54022,7 +54111,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zMark3TX225Tank' type ='Normal'>
-		<DBID>5344</DBID>
+		<DBID>100087</DBID>
 		<DisplayNameID>71046</DisplayNameID>
 		<RolloverTextID>71051</RolloverTextID>
 		<Cost resourcetype ='Wood'>600.0000</Cost>
@@ -54045,7 +54134,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zMark4TX225Tank' type ='Normal'>
-		<DBID>5345</DBID>
+		<DBID>100088</DBID>
 		<DisplayNameID>71047</DisplayNameID>
 		<RolloverTextID>71051</RolloverTextID>
 		<Cost resourcetype ='Wood'>1500.0000</Cost>
@@ -54068,7 +54157,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zMark2TIEMauler' type ='Normal'>
-		<DBID>5343</DBID>
+		<DBID>100089</DBID>
 		<DisplayNameID>71038</DisplayNameID>
 		<RolloverTextID>71041</RolloverTextID>
 		<Cost resourcetype ='Wood'>200.0000</Cost>
@@ -54089,7 +54178,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zMark3TIEMauler' type ='Normal'>
-		<DBID>5344</DBID>
+		<DBID>100090</DBID>
 		<DisplayNameID>71039</DisplayNameID>
 		<RolloverTextID>71041</RolloverTextID>
 		<Cost resourcetype ='Wood'>600.0000</Cost>
@@ -54112,7 +54201,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zMark4TIEMauler' type ='Normal'>
-		<DBID>5345</DBID>
+		<DBID>100091</DBID>
 		<DisplayNameID>71040</DisplayNameID>
 		<RolloverTextID>71041</RolloverTextID>
 		<Cost resourcetype ='Wood'>1500.0000</Cost>
@@ -54135,7 +54224,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zMark2ATDP' type ='Normal'>
-		<DBID>5343</DBID>
+		<DBID>100092</DBID>
 		<DisplayNameID>71061</DisplayNameID>
 		<RolloverTextID>71059</RolloverTextID>
 		<Cost resourcetype ='Wood'>200.0000</Cost>
@@ -54156,7 +54245,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zMark3ATDP' type ='Normal'>
-		<DBID>5344</DBID>
+		<DBID>100093</DBID>
 		<DisplayNameID>71060</DisplayNameID>
 		<RolloverTextID>71059</RolloverTextID>
 		<Cost resourcetype ='Wood'>600.0000</Cost>
@@ -54178,7 +54267,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zMark2ATST' type ='Normal'>
-		<DBID>5345</DBID>
+		<DBID>100094</DBID>
 		<DisplayNameID>71054</DisplayNameID>
 		<RolloverTextID>71055</RolloverTextID>
 		<Cost resourcetype ='Wood'>1500.0000</Cost>
@@ -54201,7 +54290,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zUpgradeATST' type ='Normal'>
-		<DBID>5350</DBID>
+		<DBID>100095</DBID>
 		<DisplayNameID>71052</DisplayNameID>
 		<RolloverTextID>71053</RolloverTextID>
 		<Cost resourcetype ='Wood'>1000.0000</Cost>
@@ -54227,7 +54316,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zSpeederMilitaryRetrofit' type ='Normal'>
-		<DBID>5274</DBID>
+		<DBID>100096</DBID>
 		<DisplayNameID>71024</DisplayNameID>
 		<Cost resourcetype ='Food'>200.0000</Cost>
 		<Cost resourcetype ='Gold'>100.0000</Cost>
@@ -54247,7 +54336,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zTurbineEngines' type ='Normal'>
-		<DBID>5291</DBID>
+		<DBID>100097</DBID>
 		<DisplayNameID>71033</DisplayNameID>
 		<Cost resourcetype ='Wood'>200.0000</Cost>
 		<Cost resourcetype ='Gold'>100.0000</Cost>
@@ -54266,7 +54355,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zIonThrusters' type ='Normal'>
-		<DBID>5292</DBID>
+		<DBID>100098</DBID>
 		<DisplayNameID>71034</DisplayNameID>
 		<Cost resourcetype ='Wood'>400.0000</Cost>
 		<Cost resourcetype ='Gold'>200.0000</Cost>
@@ -54286,7 +54375,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zCombatDrivers' type ='Normal'>
-		<DBID>5290</DBID>
+		<DBID>100099</DBID>
 		<DisplayNameID>71027</DisplayNameID>
 		<Cost resourcetype ='Wood'>200.0000</Cost>
 		<Cost resourcetype ='Gold'>100.0000</Cost>
@@ -54305,7 +54394,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zSpecializedCrews' type ='Normal'>
-		<DBID>5290</DBID>
+		<DBID>100100</DBID>
 		<DisplayNameID>71028</DisplayNameID>
 		<Cost resourcetype ='Wood'>400.0000</Cost>
 		<Cost resourcetype ='Gold'>200.0000</Cost>
@@ -54325,7 +54414,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zPrivateDemoTroopers' type ='Normal'>
-		<DBID>5274</DBID>
+		<DBID>100101</DBID>
 		<DisplayNameID>71062</DisplayNameID>
 		<RolloverTextID>70849</RolloverTextID>
 		<Cost resourcetype ='Wood'>200.0000</Cost>
@@ -54348,7 +54437,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='swHCShipWorkersEmp1' type ='Normal'>
-		<DBID>2183</DBID>
+		<DBID>100102</DBID>
 		<DisplayNameID>71063</DisplayNameID>
 		<Cost resourcetype ='Ships'>1.0000</Cost>
 		<ResearchPoints>40.0000</ResearchPoints>
@@ -54360,7 +54449,7 @@
 				<Target type ='Player'></Target></Effect></Effects>
 	</Tech>
 	<Tech name ='swHCShipWorkersEmp2' type ='Normal'>
-		<DBID>2206</DBID>
+		<DBID>100103</DBID>
 		<DisplayNameID>71064</DisplayNameID>
 		<Cost resourcetype ='Ships'>1.0000</Cost>
 		<ResearchPoints>40.0000</ResearchPoints>
@@ -54372,7 +54461,7 @@
 				<Target type ='Player'></Target></Effect></Effects>
 	</Tech>
 	<Tech name ='swHCShipWorkersEmp3' type ='Normal'>
-		<DBID>2207</DBID>
+		<DBID>100104</DBID>
 		<DisplayNameID>71065</DisplayNameID>
 		<Cost resourcetype ='Ships'>1.0000</Cost>
 		<ResearchPoints>40.0000</ResearchPoints>
@@ -54384,7 +54473,7 @@
 				<Target type ='Player'></Target></Effect></Effects>
 	</Tech>
 	<Tech name ='swHCShipWorkersEmp4' type ='Normal'>
-		<DBID>2208</DBID>
+		<DBID>100105</DBID>
 		<DisplayNameID>71066</DisplayNameID>
 		<Cost resourcetype ='Ships'>1.0000</Cost>
 		<ResearchPoints>40.0000</ResearchPoints>
@@ -54396,7 +54485,7 @@
 				<Target type ='Player'></Target></Effect></Effects>
 	</Tech>
 	<Tech name ='zMark2ATATShadow' type ='Normal'>
-		<DBID>5343</DBID>
+		<DBID>100106</DBID>
 		<DisplayNameID>71088</DisplayNameID>
 		<RolloverTextID>71091</RolloverTextID>
 		<ResearchPoints>0.0000</ResearchPoints>
@@ -54413,7 +54502,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zMark3ATAT' type ='Normal'>
-		<DBID>5344</DBID>
+		<DBID>100107</DBID>
 		<DisplayNameID>71089</DisplayNameID>
 		<RolloverTextID>71091</RolloverTextID>
 		<Cost resourcetype ='Wood'>800.0000</Cost>
@@ -54435,7 +54524,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zMark4ATAT' type ='Normal'>
-		<DBID>5345</DBID>
+		<DBID>100108</DBID>
 		<DisplayNameID>71090</DisplayNameID>
 		<RolloverTextID>71091</RolloverTextID>
 		<Cost resourcetype ='Wood'>2000.0000</Cost>
@@ -54458,7 +54547,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zMark2SPMAShadow' type ='Normal'>
-		<DBID>5343</DBID>
+		<DBID>100109</DBID>
 		<DisplayNameID>71095</DisplayNameID>
 		<RolloverTextID>71098</RolloverTextID>
 		<ResearchPoints>0.0000</ResearchPoints>
@@ -54475,7 +54564,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zMark3SPMA' type ='Normal'>
-		<DBID>5344</DBID>
+		<DBID>100110</DBID>
 		<DisplayNameID>71096</DisplayNameID>
 		<RolloverTextID>71098</RolloverTextID>
 		<Cost resourcetype ='Wood'>800.0000</Cost>
@@ -54497,7 +54586,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zMark4SPMA' type ='Normal'>
-		<DBID>5345</DBID>
+		<DBID>100111</DBID>
 		<DisplayNameID>71097</DisplayNameID>
 		<RolloverTextID>71098</RolloverTextID>
 		<Cost resourcetype ='Wood'>2000.0000</Cost>
@@ -54520,7 +54609,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zMark2ATAA' type ='Normal'>
-		<DBID>5344</DBID>
+		<DBID>1001112</DBID>
 		<DisplayNameID>71102</DisplayNameID>
 		<RolloverTextID>71105</RolloverTextID>
 		<Cost resourcetype ='Wood'>400.0000</Cost>
@@ -54542,7 +54631,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zMark3ATAA' type ='Normal'>
-		<DBID>5344</DBID>
+		<DBID>1001113</DBID>
 		<DisplayNameID>71103</DisplayNameID>
 		<RolloverTextID>71105</RolloverTextID>
 		<Cost resourcetype ='Wood'>800.0000</Cost>
@@ -54565,7 +54654,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zMark4ATAA' type ='Normal'>
-		<DBID>5345</DBID>
+		<DBID>100114</DBID>
 		<DisplayNameID>71104</DisplayNameID>
 		<RolloverTextID>71105</RolloverTextID>
 		<Cost resourcetype ='Wood'>2000.0000</Cost>
@@ -54588,7 +54677,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zEMPPOLJerjerrodTightSchedules' type ='Normal'>
-		<DBID>2666</DBID>
+		<DBID>100115</DBID>
 		<DisplayNameID>71118</DisplayNameID>
 		<RolloverTextID>71119</RolloverTextID>
 		<Cost resourcetype ='Wood'>300.0000</Cost>
@@ -54622,7 +54711,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zEMPPOLJerjerrodDoubledEfforts' type ='Normal'>
-		<DBID>1953</DBID>
+		<DBID>100116</DBID>
 		<Cost resourcetype ='Wood'>400.0000</Cost>
 		<Cost resourcetype ='Gold'>300.0000</Cost>
 		<DisplayNameID>71156</DisplayNameID>
@@ -54650,7 +54739,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zEMPPOLJerjerrodWeNeedMoreMen' type ='Normal'>
-		<DBID>1953</DBID>
+		<DBID>100117</DBID>
 		<Cost resourcetype ='Food'>400.0000</Cost>
 		<Cost resourcetype ='Gold'>500.0000</Cost>
 		<DisplayNameID>71154</DisplayNameID>
@@ -54670,7 +54759,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zEMPPOLKallusFrontlineCommanders' type ='Normal'>
-		<DBID>2666</DBID>
+		<DBID>100118</DBID>
 		<DisplayNameID>71118</DisplayNameID>
 		<RolloverTextID>71119</RolloverTextID>
 		<Cost resourcetype ='Wood'>300.0000</Cost>
@@ -54746,7 +54835,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zEMPPOLKallusExtensiveCombatTraining' type ='Normal'>
-		<DBID>129</DBID>
+		<DBID>100119</DBID>
 		<DisplayNameID>71122</DisplayNameID>
 		<RolloverTextID>71123</RolloverTextID>
 		<Cost resourcetype ='Food'>250.0000</Cost>
@@ -54770,7 +54859,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zEMPPOLKallusPleximetalCuirasses' type ='Normal'>
-		<DBID>129</DBID>
+		<DBID>100120</DBID>
 		<DisplayNameID>71124</DisplayNameID>
 		<RolloverTextID>71125</RolloverTextID>
 		<Cost resourcetype ='Food'>300.0000</Cost>
@@ -54792,7 +54881,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zEMPPOLVaneeBactaTanks' type ='Normal'>
-		<DBID>129</DBID>
+		<DBID>100121</DBID>
 		<DisplayNameID>71128</DisplayNameID>
 		<RolloverTextID>71127</RolloverTextID>
 		<Cost resourcetype ='Food'>400.0000</Cost>
@@ -54813,7 +54902,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zEMPPOLVaneeMedicalCenters' type ='Normal'>
-		<DBID>4787</DBID>
+		<DBID>100122</DBID>
 		<DisplayNameID>71129</DisplayNameID>
 		<RolloverTextID>71130</RolloverTextID>
 		<Cost resourcetype ='Food'>250.0000</Cost>
@@ -54846,7 +54935,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zEMPPOLVaneeSpecialCare' type ='Normal'>
-		<DBID>4787</DBID>
+		<DBID>100123</DBID>
 		<DisplayNameID>72115</DisplayNameID>
 		<RolloverTextID>72116</RolloverTextID>
 		<Cost resourcetype ='Food'>250.0000</Cost>
@@ -54866,7 +54955,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zEMPPOLPestageFriendsInHighPlaces' type ='Normal'>
-		<DBID>3962</DBID>
+		<DBID>100124</DBID>
 		<DisplayNameID>71131</DisplayNameID>
 		<RolloverTextID>71132</RolloverTextID>
 		<Cost resourcetype ='Food'>300.0000</Cost>
@@ -54890,7 +54979,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zEMPPOLPestageTrafficofInfluence' type ='Normal'>
-		<DBID>3962</DBID>
+		<DBID>100125</DBID>
 		<DisplayNameID>71133</DisplayNameID>
 		<RolloverTextID>71134</RolloverTextID>
 		<Cost resourcetype ='Gold'>600.0000</Cost>
@@ -54908,7 +54997,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zEMPPOLPestagePoliticalBribe' type ='Normal'>
-		<DBID>648</DBID>
+		<DBID>100126</DBID>
 		<DisplayNameID>71135</DisplayNameID>
 		<RolloverTextID>71136</RolloverTextID>
 		<Cost resourcetype ='Gold'>1500.0000</Cost>
@@ -54926,7 +55015,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zEMPPOLPryceEmploymentPrograms' type ='Normal'>
-		<DBID>4897</DBID>
+		<DBID>100127</DBID>
 		<DisplayNameID>71137</DisplayNameID>
 		<RolloverTextID>71138</RolloverTextID>
 		<ResearchPoints>35.0000</ResearchPoints>
@@ -54945,7 +55034,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zEMPPOLPryceHousingArrengements' type ='Normal'>
-		<DBID>4897</DBID>
+		<DBID>100128</DBID>
 		<DisplayNameID>71139</DisplayNameID>
 		<RolloverTextID>71140</RolloverTextID>
 		<ResearchPoints>30.0000</ResearchPoints>
@@ -54967,7 +55056,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zEMPPOLPryceLocalGarrisons' type ='Normal'>
-		<DBID>4897</DBID>
+		<DBID>100129</DBID>
 		<DisplayNameID>71141</DisplayNameID>
 		<RolloverTextID>71142</RolloverTextID>
 		<ResearchPoints>30.0000</ResearchPoints>
@@ -54989,7 +55078,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zEMPPOLKoshPrefabricatedFactories' type ='Normal'>
-		<DBID>4897</DBID>
+		<DBID>100130</DBID>
 		<DisplayNameID>71141</DisplayNameID>
 		<RolloverTextID>71142</RolloverTextID>
 		<ResearchPoints>20.0000</ResearchPoints>
@@ -55009,7 +55098,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zEMPPOLKoshSurvivingCrews' type ='Normal'>
-		<DBID>4897</DBID>
+		<DBID>100131</DBID>
 		<DisplayNameID>71141</DisplayNameID>
 		<RolloverTextID>71142</RolloverTextID>
 		<ResearchPoints>30.0000</ResearchPoints>
@@ -55027,8 +55116,9 @@
 			<Effect type ='Data' action ='SpawnImperialCombatDriver' amount ='1.00' subtype ='ActionEnable' relativity ='Absolute'>
 				<Target type ='ProtoUnit'>zDeathReplacementDriver</Target></Effect>
 		</Effects>
-	</Tech>	<Tech name ='zEMPPOLKoshCPHPatrolSpeeder' type ='Normal'>
-		<DBID>4897</DBID>
+	</Tech>
+	<Tech name ='zEMPPOLKoshCPHPatrolSpeeder' type ='Normal'>
+		<DBID>100132</DBID>
 		<DisplayNameID>71152</DisplayNameID>
 		<RolloverTextID>71153</RolloverTextID>
 		<ResearchPoints>40.0000</ResearchPoints>
@@ -55055,7 +55145,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zEMPPOLGideonStrictOrders' type ='Normal'>
-		<DBID>4897</DBID>
+		<DBID>100133</DBID>
 		<DisplayNameID>71162</DisplayNameID>
 		<RolloverTextID>71160</RolloverTextID>
 		<ResearchPoints>30.0000</ResearchPoints>
@@ -55074,7 +55164,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zEMPPOLGideonPsycologicalWarfare' type ='Normal'>
-		<DBID>4897</DBID>
+		<DBID>100134</DBID>
 		<DisplayNameID>71161</DisplayNameID>
 		<RolloverTextID>71159</RolloverTextID>
 		<ResearchPoints>40.0000</ResearchPoints>
@@ -55096,7 +55186,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zEMPPOLGideonRuthlessLeadership' type ='Normal'>
-		<DBID>4788</DBID>
+		<DBID>100135</DBID>
 		<DisplayNameID>71163</DisplayNameID>
 		<Cost resourcetype ='Wood'>600.0000</Cost>
 		<Cost resourcetype ='Gold'>600.0000</Cost>
@@ -55115,7 +55205,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zEMPPOLQueenTriosShuTorunOre' type ='Normal'>
-		<DBID>126</DBID>
+		<DBID>100136</DBID>
 		<DisplayNameID>71164</DisplayNameID>
 		<Cost resourcetype ='Gold'>600.0000</Cost>
 		<ResearchPoints>40.0000</ResearchPoints>
@@ -55140,7 +55230,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zEMPPOLQueenTriosReminderofAlderaan' type ='Normal'>
-		<DBID>4479</DBID>
+		<DBID>100137</DBID>
 		<DisplayNameID>71166</DisplayNameID>
 		<RolloverTextID>71167</RolloverTextID>
 		<Cost resourcetype ='Food'>400.0000</Cost>
@@ -55159,7 +55249,7 @@
 				<Target type ='ProtoUnit'>AbstractVillager</Target></Effect></Effects>
 	</Tech>
 	<Tech name ='zEMPPOLQueenTriosDelvingCitadels' type ='Normal'>
-		<DBID>4479</DBID>
+		<DBID>100138</DBID>
 		<DisplayNameID>71168</DisplayNameID>
 		<RolloverTextID>71169</RolloverTextID>
 		<Cost resourcetype ='Wood'>400.0000</Cost>
@@ -55180,7 +55270,7 @@
 				<Target type ='ProtoUnit'>zDrillMine</Target></Effect>
 	</Tech>
 	<Tech name ='zEMPPOLYularenCounterIntelligence' type ='Normal'>
-		<DBID>142</DBID>
+		<DBID>100139</DBID>
 		<DisplayNameID>71173</DisplayNameID>
 		<Cost resourcetype ='Food'>500.0000</Cost>
 		<Cost resourcetype ='Gold'>200.0000</Cost>
@@ -55198,7 +55288,7 @@
 				<Target type ='ProtoUnit'>Unit</Target></Effect></Effects>
 	</Tech>
 	<Tech name ='zEMPPOLYularenISBDepartmentOfSurveillance' type ='Normal'>
-		<DBID>142</DBID>
+		<DBID>100140</DBID>
 		<DisplayNameID>71175</DisplayNameID>
 		<Cost resourcetype ='Food'>500.0000</Cost>
 		<Cost resourcetype ='Gold'>200.0000</Cost>
@@ -55230,7 +55320,7 @@
 				<Target type ='ProtoUnit'>Building</Target></Effect>
 	</Tech>
 	<Tech name ='zEMPPOLYularenExposeSedition' type ='Normal'>
-		<DBID>142</DBID>
+		<DBID>100141</DBID>
 		<DisplayNameID>71177</DisplayNameID>
 		<Cost resourcetype ='Wood'>600.0000</Cost>
 		<Cost resourcetype ='Gold'>400.0000</Cost>
@@ -55249,7 +55339,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zEMPPOLInquisitorPreciseStrike' type ='Normal'>
-		<DBID>4788</DBID>
+		<DBID>100142</DBID>
 		<DisplayNameID>71179</DisplayNameID>
 		<Cost resourcetype ='Wood'>600.0000</Cost>
 		<Cost resourcetype ='Gold'>600.0000</Cost>
@@ -55268,7 +55358,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zEMPPOLInquisitorGreatPurge' type ='Normal'>
-		<DBID>5057</DBID>
+		<DBID>100143</DBID>
 		<DisplayNameID>71182</DisplayNameID>
 		<Cost resourcetype ='Food'>500.0000</Cost>
 		<Cost resourcetype ='Gold'>500.0000</Cost>
@@ -55288,7 +55378,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zEMPPOLInquisitorLuringPloy' type ='Normal'>
-		<DBID>4897</DBID>
+		<DBID>100144</DBID>
 		<DisplayNameID>71183</DisplayNameID>
 		<RolloverTextID>71184</RolloverTextID>
 		<ResearchPoints>40.0000</ResearchPoints>
@@ -55309,7 +55399,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zEMPPOLSienarSFSPs4IonDrives' type ='Normal'>
-		<DBID>5306</DBID>
+		<DBID>100145</DBID>
 		<DisplayNameID>71185</DisplayNameID>
 		<Cost resourcetype ='Wood'>300.0000</Cost>
 		<Cost resourcetype ='Gold'>300.0000</Cost>
@@ -55329,7 +55419,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zEMPPOLSienarAdvancedProjectsDivision' type ='Normal'>
-		<DBID>5306</DBID>
+		<DBID>100146</DBID>
 		<DisplayNameID>71187</DisplayNameID>
 		<Cost resourcetype ='Food'>200.0000</Cost>
 		<Cost resourcetype ='Wood'>200.0000</Cost>
@@ -55354,7 +55444,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zEMPPOLSienarResearchTIEScout' type ='Normal'>
-		<DBID>5306</DBID>
+		<DBID>100147</DBID>
 		<DisplayNameID>71194</DisplayNameID>
 		<Cost resourcetype ='Food'>200.0000</Cost>
 		<Cost resourcetype ='Wood'>400.0000</Cost>
@@ -55373,7 +55463,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zEMPPOLDaalaTheMawInstallation' type ='Normal'>
-		<DBID>3962</DBID>
+		<DBID>100148</DBID>
 		<DisplayNameID>71196</DisplayNameID>
 		<Cost resourcetype ='Wood'>600.0000</Cost>
 		<Cost resourcetype ='Gold'>400.0000</Cost>
@@ -55400,7 +55490,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zEMPPOLDaalaQuantumCrystallineArmor' type ='Normal'>
-		<DBID>5296</DBID>
+		<DBID>100149</DBID>
 		<DisplayNameID>71198</DisplayNameID>
 		<Cost resourcetype ='Wood'>300.0000</Cost>
 		<Cost resourcetype ='Gold'>300.0000</Cost>
@@ -55421,7 +55511,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zEMPPOLDaalaSchematicPrototypeTesting' type ='Normal'>
-		<DBID>2036</DBID>
+		<DBID>100150</DBID>
 		<DisplayNameID>72000</DisplayNameID>
 		<Cost resourcetype ='Food'>500.0000</Cost>
 		<Cost resourcetype ='Wood'>500.0000</Cost>
@@ -55442,7 +55532,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zEMPPOLVersioEnergySerums' type ='Normal'>
-		<DBID>5291</DBID>
+		<DBID>100151</DBID>
 		<DisplayNameID>72002</DisplayNameID>
 		<Cost resourcetype ='Food'>400.0000</Cost>
 		<Cost resourcetype ='Wood'>400.0000</Cost>
@@ -55464,7 +55554,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zEMPPOLVersioAcquireTargets' type ='Normal'>
-		<DBID>5057</DBID>
+		<DBID>100152</DBID>
 		<DisplayNameID>72004</DisplayNameID>
 		<Cost resourcetype ='Food'>500.0000</Cost>
 		<Cost resourcetype ='Gold'>500.0000</Cost>
@@ -55484,7 +55574,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zEMPPOLVersioReleaseTheInferno' type ='Normal'>
-		<DBID>5291</DBID>
+		<DBID>100153</DBID>
 		<DisplayNameID>72006</DisplayNameID>
 		<Cost resourcetype ='Gold'>800.0000</Cost>
 		<ResearchPoints>30.0000</ResearchPoints>
@@ -55507,7 +55597,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zEMPPOLBlackholeSecretOrderOfTheEmperor' type ='Normal'>
-		<DBID>3093</DBID>
+		<DBID>100154</DBID>
 		<DisplayNameID>72008</DisplayNameID>
 		<Cost resourcetype ='Wood'>400.0000</Cost>
 		<Cost resourcetype ='Gold'>400.0000</Cost>
@@ -55529,7 +55619,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zEMPPOLBlackholeDarkSideDivination' type ='Normal'>
-		<DBID>3093</DBID>
+		<DBID>100155</DBID>
 		<DisplayNameID>72010</DisplayNameID>
 		<Cost resourcetype ='Gold'>600.0000</Cost>
 		<ResearchPoints>30.0000</ResearchPoints>
@@ -55548,7 +55638,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zEMPPOLBlackholeProphetsOfTheDarkSide' type ='Normal'>
-		<DBID>3093</DBID>
+		<DBID>100156</DBID>
 		<DisplayNameID>72012</DisplayNameID>
 		<Cost resourcetype ='Food'>1000.0000</Cost>
 		<ResearchPoints>30.0000</ResearchPoints>
@@ -55571,7 +55661,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zEMPPOLCyloVoidgazersModifications' type ='Normal'>
-		<DBID>142</DBID>
+		<DBID>100157</DBID>
 		<DisplayNameID>72014</DisplayNameID>
 		<Cost resourcetype ='Food'>500.0000</Cost>
 		<Cost resourcetype ='Gold'>200.0000</Cost>
@@ -55590,7 +55680,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zEMPPOLCyloBiotechnologicalArmor' type ='Normal'>
-		<DBID>142</DBID>
+		<DBID>100158</DBID>
 		<DisplayNameID>72016</DisplayNameID>
 		<Cost resourcetype ='Wood'>600.0000</Cost>
 		<Cost resourcetype ='Gold'>300.0000</Cost>
@@ -55611,7 +55701,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zEMPPOLCyloOrganicLivingStructures' type ='Normal'>
-		<DBID>142</DBID>
+		<DBID>100159</DBID>
 		<DisplayNameID>72018</DisplayNameID>
 		<Cost resourcetype ='Wood'>1000.0000</Cost>
 		<ResearchPoints>30.0000</ResearchPoints>
@@ -55630,7 +55720,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zEMPPOLKrennicExperimentalWeaponry' type ='Normal'>
-		<DBID>5057</DBID>
+		<DBID>100160</DBID>
 		<DisplayNameID>72020</DisplayNameID>
 		<Cost resourcetype ='Wood'>500.0000</Cost>
 		<Cost resourcetype ='Gold'>500.0000</Cost>
@@ -55650,7 +55740,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zEMPPOLKrennicDirectorOfResearch' type ='Normal'>
-		<DBID>142</DBID>
+		<DBID>100161</DBID>
 		<DisplayNameID>72022</DisplayNameID>
 		<Cost resourcetype ='Food'>700.0000</Cost>
 		<Cost resourcetype ='Wood'>700.0000</Cost>
@@ -55686,7 +55776,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zEMPPOLKrennicProjectStardust' type ='Normal'>
-		<DBID>5299</DBID>
+		<DBID>100162</DBID>
 		<DisplayNameID>72024</DisplayNameID>
 		<Cost resourcetype ='Gold'>750.0000</Cost>
 		<Cost resourcetype ='Food'>1000.0000</Cost>
@@ -55765,7 +55855,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zEMPPOLTarkoIndustryNationalization' type ='Normal'>
-		<DBID>3962</DBID>
+		<DBID>100163</DBID>
 		<DisplayNameID>72026</DisplayNameID>
 		<Cost resourcetype ='Wood'>550.0000</Cost>
 		<Cost resourcetype ='Gold'>550.0000</Cost>
@@ -55791,7 +55881,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zEMPPOLTarkoPersonalShields' type ='Normal'>
-		<DBID>5282</DBID>
+		<DBID>100164</DBID>
 		<DisplayNameID>72028</DisplayNameID>
 		<Cost resourcetype ='Food'>300.0000</Cost>
 		<Cost resourcetype ='Wood'>300.0000</Cost>
@@ -55814,7 +55904,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zEMPPOLTarkoStateCorporativism' type ='Normal'>
-		<DBID>5282</DBID>
+		<DBID>100165</DBID>
 		<DisplayNameID>72028</DisplayNameID>
 		<Cost resourcetype ='Wood'>500.0000</Cost>
 		<Cost resourcetype ='Gold'>500.0000</Cost>
@@ -55844,7 +55934,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zEMPPOLAmeddaHouseholdGuards' type ='Normal'>
-		<DBID>359</DBID>
+		<DBID>100166</DBID>
 		<DisplayNameID>72030</DisplayNameID>
 		<Cost resourcetype ='Gold'>350.0000</Cost>
 		<ResearchPoints>15.0000</ResearchPoints>
@@ -55866,7 +55956,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zEMPPOLAmeddaEmperorsCitadels' type ='Normal'>
-		<DBID>359</DBID>
+		<DBID>100167</DBID>
 		<DisplayNameID>72032</DisplayNameID>
 		<Cost resourcetype ='Gold'>350.0000</Cost>
 		<ResearchPoints>15.0000</ResearchPoints>
@@ -55889,8 +55979,8 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zEMPPOLAmeddaOfficeOfTheGrandVizier' type ='Normal'>
-		<DBID>359</DBID>
-		<DisplayNameID>72034</DisplayNameID>
+		<DBID>100168</DBID>
+		<DisplayNameID>100168</DisplayNameID>
 		<Cost resourcetype ='Gold'>350.0000</Cost>
 		<ResearchPoints>30.0000</ResearchPoints>
 		<Status>UNOBTAINABLE</Status>
@@ -55907,7 +55997,7 @@
         </Effects>
 	</Tech>
     <Tech name ='zShadowMoreUnitsShipmentAmedda' type ='Normal'>
-		<DBID>100060</DBID>
+		<DBID>100168</DBID>
 		<DisplayNameID>1001233</DisplayNameID>
 		<ResearchPoints>0.0000</ResearchPoints>
 		<Status>UNOBTAINABLE</Status>
@@ -55915,7 +56005,7 @@
 		<Flag>YPNoTextMessage</Flag>
 	</Tech>
 	<Tech name ='zEMPPOLSaxonImperialBeskarSmelters' type ='Normal'>
-		<DBID>129</DBID>
+		<DBID>100169</DBID>
 		<DisplayNameID>72036</DisplayNameID>
 		<RolloverTextID>72037</RolloverTextID>
 		<Cost resourcetype ='Food'>400.0000</Cost>
@@ -55937,7 +56027,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zEMPPOLSaxonDisohonorableTactics' type ='Normal'>
-		<DBID>5289</DBID>
+		<DBID>100170</DBID>
 		<DisplayNameID>72038</DisplayNameID>
 		<Cost resourcetype ='Food'>400.0000</Cost>
 		<Cost resourcetype ='Gold'>600.0000</Cost>
@@ -55992,7 +56082,7 @@
 	</Effects>
 	</Tech>
 	<Tech name ='zEMPPOLSaxonViceroyOfMandalore' type ='Normal'>
-		<DBID>3093</DBID>
+		<DBID>100171</DBID>
 		<DisplayNameID>72040</DisplayNameID>
 		<Cost resourcetype ='Food'>1000.0000</Cost>
 		<ResearchPoints>30.0000</ResearchPoints>
@@ -56013,7 +56103,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zEMPPOLRomodiVeteranLeadership' type ='Normal'>
-		<DBID>359</DBID>
+		<DBID>100172</DBID>
 		<DisplayNameID>72042</DisplayNameID>
 		<Cost resourcetype ='Wood'>600.0000</Cost>
 		<Cost resourcetype ='Gold'>400.0000</Cost>
@@ -56037,7 +56127,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zEMPPOLRomodiReconquestOfTheRim' type ='Normal'>
-		<DBID>359</DBID>
+		<DBID>100173</DBID>
 		<DisplayNameID>72044</DisplayNameID>
 		<Cost resourcetype ='Wood'>600.0000</Cost>
 		<Cost resourcetype ='Gold'>400.0000</Cost>
@@ -56065,7 +56155,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zEMPPOLRomodiWarFactorySetup' type ='Normal'>
-		<DBID>4897</DBID>
+		<DBID>100174</DBID>
 		<DisplayNameID>72049</DisplayNameID>
 		<RolloverTextID>72050</RolloverTextID>
 		<ResearchPoints>20.0000</ResearchPoints>
@@ -56085,7 +56175,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zEMPPOLVeersTargetingMaximumFirepower' type ='Normal'>
-		<DBID>5298</DBID>
+		<DBID>100175</DBID>
 		<DisplayNameID>72051</DisplayNameID>
 		<Cost resourcetype ='Wood'>500.0000</Cost>
 		<Cost resourcetype ='Gold'>350.0000</Cost>
@@ -56122,7 +56212,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zEMPPOLVeersWalkerResearch' type ='Normal'>
-		<DBID>129</DBID>
+		<DBID>100176</DBID>
 		<DisplayNameID>72053</DisplayNameID>
 		<RolloverTextID>72054</RolloverTextID>
 		<Cost resourcetype ='Wood'>800.0000</Cost>
@@ -56144,7 +56234,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zEMPPOLVeersGeneralInTheFrontlines' type ='Normal'>
-		<DBID>3093</DBID>
+		<DBID>100177</DBID>
 		<DisplayNameID>72055</DisplayNameID>
 		<Cost resourcetype ='Food'>1000.0000</Cost>
 		<Cost resourcetype ='Gold'>1000.0000</Cost>
@@ -56166,7 +56256,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zUpgradeTIEHunter' type ='Normal'>
-		<DBID>244</DBID>
+		<DBID>100178</DBID>
 		<DisplayNameID>72058</DisplayNameID>
 		<Cost resourcetype ='Wood'>1000.0000</Cost>
 		<Cost resourcetype ='Gold'>1000.0000</Cost>
@@ -56193,7 +56283,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zUpgradeTIEAvenger' type ='Normal'>
-		<DBID>244</DBID>
+		<DBID>100179</DBID>
 		<DisplayNameID>72061</DisplayNameID>
 		<Cost resourcetype ='Wood'>1000.0000</Cost>
 		<Cost resourcetype ='Gold'>1000.0000</Cost>
@@ -56220,7 +56310,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zUpgradeTIEScimitar' type ='Normal'>
-		<DBID>244</DBID>
+		<DBID>100180</DBID>
 		<DisplayNameID>72064</DisplayNameID>
 		<Cost resourcetype ='Wood'>1000.0000</Cost>
 		<Cost resourcetype ='Gold'>1000.0000</Cost>
@@ -56247,7 +56337,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zUpgrade2MHovertank' type ='Normal'>
-		<DBID>244</DBID>
+		<DBID>100181</DBID>
 		<DisplayNameID>72066</DisplayNameID>
 		<Cost resourcetype ='Wood'>1000.0000</Cost>
 		<Cost resourcetype ='Gold'>1000.0000</Cost>
@@ -56272,7 +56362,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zUpgradeEliteATAT' type ='Normal'>
-		<DBID>244</DBID>
+		<DBID>100182</DBID>
 		<DisplayNameID>72069</DisplayNameID>
 		<Cost resourcetype ='Wood'>1000.0000</Cost>
 		<Cost resourcetype ='Gold'>1000.0000</Cost>
@@ -56299,7 +56389,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zUpgradeVeteranATST' type ='Normal'>
-		<DBID>244</DBID>
+		<DBID>100182</DBID>
 		<DisplayNameID>72072</DisplayNameID>
 		<Cost resourcetype ='Wood'>1000.0000</Cost>
 		<Cost resourcetype ='Gold'>1000.0000</Cost>
@@ -56324,7 +56414,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zUpgradeNovaCorps' type ='Normal'>
-		<DBID>244</DBID>
+		<DBID>100183</DBID>
 		<DisplayNameID>72075</DisplayNameID>
 		<Cost resourcetype ='Wood'>1000.0000</Cost>
 		<Cost resourcetype ='Gold'>1000.0000</Cost>
@@ -56357,7 +56447,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zEMPPOLIsardProjectAmbition' type ='Normal'>
-		<DBID>244</DBID>
+		<DBID>100184</DBID>
 		<DisplayNameID>72081</DisplayNameID>
 		<Cost resourcetype ='Food'>1000.0000</Cost>
 		<Cost resourcetype ='Gold'>1000.0000</Cost>
@@ -56376,7 +56466,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zEMPPOLIsardBactaWars' type ='Normal'>
-		<DBID>244</DBID>
+		<DBID>100185</DBID>
 		<DisplayNameID>72081</DisplayNameID>
 		<Cost resourcetype ='Wood'>1000.0000</Cost>
 		<Cost resourcetype ='Gold'>2000.0000</Cost>
@@ -56396,7 +56486,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zEMPPOLJaxSecretLanguage' type ='Normal'>
-		<DBID>5291</DBID>
+		<DBID>100186</DBID>
 		<DisplayNameID>72085</DisplayNameID>
 		<Cost resourcetype ='Food'>600.0000</Cost>
 		<Cost resourcetype ='Gold'>600.0000</Cost>
@@ -56418,7 +56508,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zEMPPOLJaxPilotsOfTheRedGuard' type ='Normal'>
-		<DBID>5306</DBID>
+		<DBID>100187</DBID>
 		<DisplayNameID>72087</DisplayNameID>
 		<Cost resourcetype ='Wood'>1000.0000</Cost>
 		<Cost resourcetype ='Gold'>1000.0000</Cost>
@@ -56442,7 +56532,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zEMPPOLJaxChampionsOfTheGuard' type ='Normal'>
-		<DBID>244</DBID>
+		<DBID>100188</DBID>
 		<DisplayNameID>72089</DisplayNameID>
 		<Cost resourcetype ='Food'>1000.0000</Cost>
 		<Cost resourcetype ='Wood'>1000.0000</Cost>
@@ -56484,7 +56574,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zEMPPOLMochArcHammerFactoryShip' type ='Normal'>
-		<DBID>359</DBID>
+		<DBID>100189</DBID>
 		<DisplayNameID>72094</DisplayNameID>
 		<Cost resourcetype ='Wood'>1200.0000</Cost>
 		<Cost resourcetype ='Gold'>800.0000</Cost>
@@ -56508,7 +56598,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zEMPPOLMochSpecialEnhancements' type ='Normal'>
-		<DBID>1388</DBID>
+		<DBID>100190</DBID>
 		<DisplayNameID>72096</DisplayNameID>
 		<Cost resourcetype ='Gold'>1000.0000</Cost>
 		<ResearchPoints>30.0000</ResearchPoints>
@@ -56527,7 +56617,7 @@
 		</Effects>
 	</Tech>
 	<Tech name ='zEMPPOLMochDarkTrooperProject' type ='Normal'>
-		<DBID>664</DBID>
+		<DBID>100191</DBID>
 		<DisplayNameID>72098</DisplayNameID>
 		<Cost resourcetype ='Food'>800.0000</Cost>
 		<Cost resourcetype ='Wood'>800.0000</Cost>
@@ -56544,7 +56634,7 @@
 		</Effects>
 	</Tech>
     <Tech name="swHCEmpireSquadStormtrooper" type="Normal">
-        <dbid>100080</dbid>
+        <dbid>100192</dbid>
         <displaynameid>72120</displaynameid>
         <RolloverTextID>72121</RolloverTextID>
         <cost resourcetype="Ships">1.0000</cost>
@@ -56560,7 +56650,1446 @@
             <Effect tech ='zShadowMoreUnitsShipmentAmedda' type ='Data' amount ='2.00' subtype ='FreeHomeCityUnitIfTechObtainable' unittype ='zStormtrooper' relativity ='Absolute'>
 				<Target type ='Player'></Target></Effect>
         </effects>
-    </Tech><!-->  Use as an example for future unit shipments
+    </Tech>
+	<Tech name ='zMoistureFarming' type ='Normal'>
+		<DBID>100193</DBID>
+		<DisplayNameID>72252</DisplayNameID>
+		<Cost resourcetype ='Wood'>100.0000</Cost>
+		<Cost resourcetype ='Gold'>75.0000</Cost>
+		<ResearchPoints>30.0000</ResearchPoints>
+		<Status>UNOBTAINABLE</Status>
+		<Icon>star_wars\icons\icon_tech_moisturefarming</Icon>
+		<RolloverTextID>72256</RolloverTextID>
+		<Flag>CountsTowardEconomicScore</Flag>
+		<Prereqs>
+			<TechStatus status ='Active'>Colonialize</TechStatus></Prereqs>
+		<Effects>
+			<Effect type ='Data2' action ='Gather' amount ='1.15' subtype ='WorkRateSpecific' resource ='Food' unittype ='ypRicePaddy' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractVillager</Target></Effect>
+			<Effect type ='Data' action ='Gather' amount ='1.15' subtype ='WorkRate' unittype ='Farm' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractVillager</Target></Effect>
+			<Effect type ='Data' action ='Gather' amount ='1.15' subtype ='WorkRate' unittype ='Mill' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractVillager</Target></Effect>
+		</Effects>
+	</Tech>
+	<Tech name ='zAutomatedIrrigation' type ='Normal'>
+		<DBID>100194</DBID>
+		<DisplayNameID>72253</DisplayNameID>
+		<Cost resourcetype ='Wood'>225.0000</Cost>
+		<Cost resourcetype ='Gold'>125.0000</Cost>
+		<ResearchPoints>40.0000</ResearchPoints>
+		<Status>UNOBTAINABLE</Status>
+		<Icon>star_wars\icons\icon_tech_automatedirrigation</Icon>
+		<RolloverTextID>72256</RolloverTextID>
+		<Flag>CountsTowardEconomicScore</Flag>
+		<Prereqs>
+			<TechStatus status ='Active'>Fortressize</TechStatus>
+			<TechStatus status ='Active'>zMoistureFarming</TechStatus></Prereqs>
+		<Effects>
+			<Effect type ='Data2' action ='Gather' amount ='1.10' subtype ='WorkRateSpecific' resource ='Food' unittype ='ypRicePaddy' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractVillager</Target></Effect>
+			<Effect type ='Data' action ='Gather' amount ='1.10' subtype ='WorkRate' unittype ='Farm' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractVillager</Target></Effect>
+			<Effect type ='Data' action ='Gather' amount ='1.10' subtype ='WorkRate' unittype ='Mill' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractVillager</Target></Effect>
+		</Effects>
+	</Tech>
+	<Tech name ='zHarvestingPrograms' type ='Normal'>
+		<DBID>100195</DBID>
+		<DisplayNameID>72254</DisplayNameID>
+		<Cost resourcetype ='Wood'>225.0000</Cost>
+		<Cost resourcetype ='Gold'>125.0000</Cost>
+		<ResearchPoints>50.0000</ResearchPoints>
+		<Status>UNOBTAINABLE</Status>
+		<Icon>star_wars\icons\icon_tech_harvestingprograms</Icon>
+		<RolloverTextID>72256</RolloverTextID>
+		<Flag>CountsTowardEconomicScore</Flag>
+		<Prereqs>
+			<TechStatus status ='Active'>Industrialize</TechStatus>
+			<TechStatus status ='Active'>zAutomatedIrrigation</TechStatus></Prereqs>
+		<Effects>
+			<Effect type ='Data2' action ='Gather' amount ='1.15' subtype ='WorkRateSpecific' resource ='Food' unittype ='ypRicePaddy' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractVillager</Target></Effect>
+			<Effect type ='Data' action ='Gather' amount ='1.15' subtype ='WorkRate' unittype ='Farm' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractVillager</Target></Effect>
+			<Effect type ='Data' action ='Gather' amount ='1.15' subtype ='WorkRate' unittype ='Mill' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractVillager</Target></Effect>
+		</Effects>
+	</Tech>
+	<Tech name ='zGeneticallyModifiedCrops' type ='Normal'>
+		<DBID>100196</DBID>
+		<DisplayNameID>72255</DisplayNameID>
+		<Cost resourcetype ='Wood'>375.0000</Cost>
+		<Cost resourcetype ='Gold'>250.0000</Cost>
+		<ResearchPoints>60.0000</ResearchPoints>
+		<Status>UNOBTAINABLE</Status>
+		<Icon>star_wars\icons\icon_tech_geneticallymodifiedcrops</Icon>
+		<RolloverTextID>72256</RolloverTextID>
+		<Flag>CountsTowardEconomicScore</Flag>
+		<Prereqs>
+			<TechStatus status ='Active'>Imperialize</TechStatus>
+			<TechStatus status ='Active'>zHarvestingPrograms</TechStatus></Prereqs>
+		<Effects>
+			<Effect type ='Data2' action ='Gather' amount ='1.10' subtype ='WorkRateSpecific' resource ='Food' unittype ='ypRicePaddy' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractVillager</Target></Effect>
+			<Effect type ='Data' action ='Gather' amount ='1.10' subtype ='WorkRate' unittype ='Farm' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractVillager</Target></Effect>
+			<Effect type ='Data' action ='Gather' amount ='1.10' subtype ='WorkRate' unittype ='Mill' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractVillager</Target></Effect>
+		</Effects>
+	</Tech>
+	<Tech name ='zTransparisteelWindows' type ='Normal'>
+		<DBID>100197</DBID>
+		<DisplayNameID>72257</DisplayNameID>
+		<Cost resourcetype ='Wood'>200.0000</Cost>
+		<Cost resourcetype ='Gold'>150.0000</Cost>
+		<ResearchPoints>40.0000</ResearchPoints>
+		<Status>UNOBTAINABLE</Status>
+		<Icon>Star_Wars\Icons\icon_tech_transparisteelwindows</Icon>
+		<RolloverTextID>70915</RolloverTextID>
+		<Flag>CountsTowardMilitaryScore</Flag>
+		<Flag>UpgradeTech</Flag>
+		<Prereqs>
+			<TechStatus status ='Active'>Fortressize</TechStatus>
+		</Prereqs>
+		<Effects>
+			<Effect type ='Data' amount ='1.10' subtype ='Hitpoints' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>Building</Target></Effect>
+			<Effect type ='Data' amount ='0.10' subtype ='Armor' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>Building</Target></Effect>
+			<Effect type ='Data' amount ='0.90' subtype ='Hitpoints' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractWall</Target></Effect>
+			<Effect type ='Data' amount ='-0.90' subtype ='Armor' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>AbstractWall</Target></Effect>
+			<Effect type ='Data' amount ='0.90' subtype ='Hitpoints' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>zTurret</Target></Effect>
+			<Effect type ='Data' amount ='0.90' subtype ='Armor' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zTurret</Target></Effect>
+		</Effects>
+	</Tech>
+	<Tech name ='zMediumDefenseTower' type ='Normal'>
+		<DBID>100198</DBID>
+		<DisplayNameID>72261</DisplayNameID>
+		<Cost resourcetype ='Wood'>400.0000</Cost>
+		<Cost resourcetype ='Gold'>200.0000</Cost>
+		<ResearchPoints>40.0000</ResearchPoints>
+		<Status>UNOBTAINABLE</Status>
+		<Icon>star_wars\icons\ICON_TECH_MediumInfantryTurret</Icon>
+		<RolloverTextID>72260</RolloverTextID>
+		<Flag>CountsTowardMilitaryScore</Flag>
+		<Prereqs>
+			<TechStatus status ='Active'>Fortressize</TechStatus></Prereqs>
+		<Effects>
+			<Effect type ='Data' amount ='0.00' subtype ='UpdateVisual' unittype ='zDefenseTower' relativity ='Absolute'>
+				<Target type ='Player'></Target></Effect>
+			<Effect type ='SetName' proto ='zDefenseTower' culture ='none' newName ='72258'></Effect>
+			<Effect type ='Data' amount ='1.50' subtype ='Hitpoints' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>zDefenseTower</Target></Effect>
+			<Effect type ='Data' amount ='1.50' subtype ='Damage' allactions ='1' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>zDefenseTower</Target></Effect>
+		</Effects>
+	</Tech>
+	<Tech name ='zHeavyDefenseTower' type ='Normal'>
+		<DBID>100199</DBID>
+		<DisplayNameID>72262</DisplayNameID>
+		<Cost resourcetype ='Wood'>800.0000</Cost>
+		<Cost resourcetype ='Gold'>400.0000</Cost>
+		<ResearchPoints>75.0000</ResearchPoints>
+		<Status>UNOBTAINABLE</Status>
+		<Icon>star_wars\icons\Icon_Tech_HeavyTurret</Icon>
+		<RolloverTextID>72260</RolloverTextID>
+		<Flag>CountsTowardMilitaryScore</Flag>
+		<Prereqs>
+			<TechStatus status ='Active'>zMediumDefenseTower</TechStatus>
+			<TechStatus status ='Active'>Industrialize</TechStatus>
+		</Prereqs>
+		<Effects>
+			<Effect type ='Data' amount ='1.50' subtype ='Hitpoints' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>zDefenseTower</Target></Effect>
+			<Effect type ='Data' amount ='1.50' subtype ='Damage' allactions ='1' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>zDefenseTower</Target></Effect>
+			<Effect type ='SetName' proto ='zDefenseTower' culture ='none' newName ='72259'></Effect>
+			<Effect type ='Data' amount ='0.00' subtype ='UpdateVisual' unittype ='Outpost' relativity ='Absolute'>
+				<Target type ='Player'></Target></Effect>
+		</Effects>
+	</Tech>
+	<Tech name ='zTaxAt0' type ='Normal'>
+		<DBID>100200</DBID>
+		<DisplayNameID>72267</DisplayNameID>
+		<ResearchPoints>10.0000</ResearchPoints>
+		<Status>UNOBTAINABLE</Status>
+		<Icon>star_wars\icons\tax_bigbuttons\icon_bigtech_tax0</Icon>
+		<IconTextureCoords>0.0 0.0 1.0 1.0</IconTextureCoords>
+		<RolloverTextID>72268</RolloverTextID>
+		<Flag>NativeDance</Flag>
+		<Flag>AlwaysShowButton</Flag>
+		<Flag>YPAlwaysDisableButtonInGrid</Flag>
+		<Flag>CountsTowardEconomicScore</Flag>
+		<Flag>YPInfiniteTech</Flag>
+	</Tech>
+	<Tech name ='zTaxDecreaseNull' type ='Normal'>
+		<DBID>100201</DBID>
+		<DisplayNameID>72278</DisplayNameID>
+		<ResearchPoints>10.0000</ResearchPoints>
+		<Status>UNOBTAINABLE</Status>
+		<Icon>star_wars\icons\tax_bigbuttons\icon_tech_tax_limit_bottom</Icon>
+		<RolloverTextID>72300</RolloverTextID>
+		<Flag>Shadow</Flag>
+		<Flag>YPInfiniteTech</Flag>
+		<Flag>YPAlwaysDisableButtonInGrid</Flag>
+	</Tech>
+	<Tech name ='zTaxIncreaseTo5' type ='Normal'>
+		<DBID>100202</DBID>
+		<DisplayNameID>72275</DisplayNameID>
+		<ResearchPoints>10.0000</ResearchPoints>
+		<Cost resourcetype ='Ships'>1.0000</Cost>
+		<Status>UNOBTAINABLE</Status>
+		<Icon>star_wars\icons\tax_bigbuttons\icon_tech_taxup</Icon>
+		<RolloverTextID>72290</RolloverTextID>
+		<Flag>Shadow</Flag>
+		<Flag>YPInfiniteTech</Flag>
+		<Effects>
+			<Effect type ='TechStatus' status ='obtainable'>zTaxIncreaseTo10</Effect>
+			<Effect type ='TechStatus' status ='obtainable'>zTaxDecreaseTo0</Effect>
+			<Effect type ='TechStatus' status ='obtainable'>zTaxAt5</Effect>
+			<Effect type ='TechStatus' status ='unobtainable'>zTaxAt0</Effect>
+			<Effect type ='TechStatus' status ='unobtainable'>zTaxDecreaseNull</Effect>
+			<Effect type ='TechStatus' status ='unobtainable'>zTaxIncreaseTo5</Effect>
+			<Effect type ='Data' action ='Aura5' amount ='1.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+			<Effect type ='Data' action ='Tax5' amount ='1.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+			<Effect type ='Data' action ='Aura0' amount ='0.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+			<Effect type ='Data' action ='Tax0' amount ='0.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+		</Effects>
+	</Tech>
+	<Tech name ='zTaxAt5' type ='Normal'>
+		<DBID>100203</DBID>
+		<DisplayNameID>72273</DisplayNameID>
+		<ResearchPoints>10.0000</ResearchPoints>
+		<Status>UNOBTAINABLE</Status>
+		<Icon>star_wars\icons\tax_bigbuttons\icon_bigtech_tax0</Icon>
+		<IconTextureCoords>0.0 0.0 1.0 1.0</IconTextureCoords>
+		<RolloverTextID>72274</RolloverTextID>
+		<Flag>NativeDance</Flag>
+		<Flag>AlwaysShowButton</Flag>
+		<Flag>YPAlwaysDisableButtonInGrid</Flag>
+		<Flag>CountsTowardEconomicScore</Flag>
+		<Flag>YPInfiniteTech</Flag>
+	</Tech>
+	<Tech name ='zTaxIncreaseTo10' type ='Normal'>
+		<DBID>100204</DBID>
+		<DisplayNameID>72275</DisplayNameID>
+		<ResearchPoints>10.0000</ResearchPoints>
+		<Cost resourcetype ='Ships'>1.0000</Cost>
+		<Status>UNOBTAINABLE</Status>
+		<Icon>star_wars\icons\tax_bigbuttons\icon_tech_taxup</Icon>
+		<RolloverTextID>72291</RolloverTextID>
+		<Flag>Shadow</Flag>
+		<Flag>YPInfiniteTech</Flag>
+		<Effects>
+			<Effect type ='TechStatus' status ='obtainable'>zTaxIncreaseTo15</Effect>
+			<Effect type ='TechStatus' status ='obtainable'>zTaxDecreaseTo5</Effect>
+			<Effect type ='TechStatus' status ='obtainable'>zTaxAt10</Effect>
+			<Effect type ='TechStatus' status ='unobtainable'>zTaxAt5</Effect>
+			<Effect type ='TechStatus' status ='unobtainable'>zTaxDecreaseTo0</Effect>
+			<Effect type ='TechStatus' status ='unobtainable'>zTaxIncreaseTo10</Effect>
+			<Effect type ='Data' action ='Aura10' amount ='1.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+			<Effect type ='Data' action ='Tax10' amount ='1.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+			<Effect type ='Data' action ='Aura5' amount ='0.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+			<Effect type ='Data' action ='Tax5' amount ='0.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+		</Effects>
+	</Tech>
+	<Tech name ='zTaxDecreaseTo0' type ='Normal'>
+		<DBID>100205</DBID>
+		<DisplayNameID>72276</DisplayNameID>
+		<ResearchPoints>10.0000</ResearchPoints>
+		<Cost resourcetype ='Ships'>1.0000</Cost>
+		<Status>UNOBTAINABLE</Status>
+		<Icon>star_wars\icons\tax_bigbuttons\icon_tech_taxdown</Icon>
+		<RolloverTextID>72279</RolloverTextID>
+		<Flag>Shadow</Flag>
+		<Flag>YPInfiniteTech</Flag>
+		<Effects>
+			<Effect type ='TechStatus' status ='obtainable'>zTaxIncreaseTo5</Effect>
+			<Effect type ='TechStatus' status ='obtainable'>zTaxDecreaseNull</Effect>
+			<Effect type ='TechStatus' status ='obtainable'>zTaxAt0</Effect>
+			<Effect type ='TechStatus' status ='unobtainable'>zTaxAt5</Effect>
+			<Effect type ='TechStatus' status ='unobtainable'>zTaxIncreaseTo10</Effect>
+			<Effect type ='TechStatus' status ='unobtainable'>zTaxDecreaseTo0</Effect>
+			<Effect type ='Data' action ='Aura0' amount ='1.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+			<Effect type ='Data' action ='Tax0' amount ='1.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+			<Effect type ='Data' action ='Aura5' amount ='0.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+			<Effect type ='Data' action ='Tax5' amount ='0.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+		</Effects>
+	</Tech>
+	<Tech name ='zTaxAt10' type ='Normal'>
+		<DBID>100206</DBID>
+		<DisplayNameID>72267</DisplayNameID>
+		<ResearchPoints>10.0000</ResearchPoints>
+		<Status>UNOBTAINABLE</Status>
+		<Icon>star_wars\icons\tax_bigbuttons\icon_bigtech_tax0</Icon>
+		<IconTextureCoords>0.0 0.0 1.0 1.0</IconTextureCoords>
+		<RolloverTextID>72268</RolloverTextID>
+		<Flag>NativeDance</Flag>
+		<Flag>AlwaysShowButton</Flag>
+		<Flag>YPAlwaysDisableButtonInGrid</Flag>
+		<Flag>CountsTowardEconomicScore</Flag>
+		<Flag>YPInfiniteTech</Flag>
+	</Tech>
+	<Tech name ='zTaxIncreaseTo15' type ='Normal'>
+		<DBID>100207</DBID>
+		<DisplayNameID>72275</DisplayNameID>
+		<ResearchPoints>10.0000</ResearchPoints>
+		<Cost resourcetype ='Ships'>1.0000</Cost>
+		<Status>UNOBTAINABLE</Status>
+		<Icon>star_wars\icons\tax_bigbuttons\icon_tech_taxup</Icon>
+		<RolloverTextID>72292</RolloverTextID>
+		<Flag>Shadow</Flag>
+		<Flag>YPInfiniteTech</Flag>
+		<Effects>
+			<Effect type ='TechStatus' status ='obtainable'>zTaxIncreaseTo20</Effect>
+			<Effect type ='TechStatus' status ='obtainable'>zTaxDecreaseTo10</Effect>
+			<Effect type ='TechStatus' status ='obtainable'>zTaxAt15</Effect>
+			<Effect type ='TechStatus' status ='unobtainable'>zTaxAt10</Effect>
+			<Effect type ='TechStatus' status ='unobtainable'>zTaxDecreaseTo5</Effect>
+			<Effect type ='TechStatus' status ='unobtainable'>zTaxIncreaseTo15</Effect>
+			<Effect type ='Data' action ='Aura15' amount ='1.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+			<Effect type ='Data' action ='Tax15' amount ='1.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+			<Effect type ='Data' action ='Aura10' amount ='0.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+			<Effect type ='Data' action ='Tax10' amount ='0.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+		</Effects>
+	</Tech>
+	<Tech name ='zTaxDecreaseTo5' type ='Normal'>
+		<DBID>100208</DBID>
+		<DisplayNameID>72276</DisplayNameID>
+		<ResearchPoints>10.0000</ResearchPoints>
+		<Cost resourcetype ='Ships'>1.0000</Cost>
+		<Status>UNOBTAINABLE</Status>
+		<Icon>star_wars\icons\tax_bigbuttons\icon_tech_taxdown</Icon>
+		<RolloverTextID>72280</RolloverTextID>
+		<Flag>Shadow</Flag>
+		<Flag>YPInfiniteTech</Flag>
+		<Effects>
+			<Effect type ='TechStatus' status ='obtainable'>zTaxIncreaseTo10</Effect>
+			<Effect type ='TechStatus' status ='obtainable'>zTaxDecreaseTo0</Effect>
+			<Effect type ='TechStatus' status ='obtainable'>zTaxAt5</Effect>
+			<Effect type ='TechStatus' status ='unobtainable'>zTaxAt10</Effect>
+			<Effect type ='TechStatus' status ='unobtainable'>zTaxIncreaseTo15</Effect>
+			<Effect type ='TechStatus' status ='unobtainable'>zTaxDecreaseTo5</Effect>
+			<Effect type ='Data' action ='Aura5' amount ='1.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+			<Effect type ='Data' action ='Tax5' amount ='1.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+			<Effect type ='Data' action ='Aura10' amount ='0.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+			<Effect type ='Data' action ='Tax10' amount ='0.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+		</Effects>
+	</Tech>
+	<Tech name ='zTaxAt15' type ='Normal'>
+		<DBID>100209</DBID>
+		<DisplayNameID>72267</DisplayNameID>
+		<ResearchPoints>10.0000</ResearchPoints>
+		<Status>UNOBTAINABLE</Status>
+		<Icon>star_wars\icons\tax_bigbuttons\icon_bigtech_tax0</Icon>
+		<IconTextureCoords>0.0 0.0 1.0 1.0</IconTextureCoords>
+		<RolloverTextID>72268</RolloverTextID>
+		<Flag>NativeDance</Flag>
+		<Flag>AlwaysShowButton</Flag>
+		<Flag>YPAlwaysDisableButtonInGrid</Flag>
+		<Flag>CountsTowardEconomicScore</Flag>
+		<Flag>YPInfiniteTech</Flag>
+	</Tech>
+	<Tech name ='zTaxIncreaseTo20' type ='Normal'>
+		<DBID>100210</DBID>
+		<DisplayNameID>72275</DisplayNameID>
+		<ResearchPoints>10.0000</ResearchPoints>
+		<Cost resourcetype ='Ships'>1.0000</Cost>
+		<Status>UNOBTAINABLE</Status>
+		<Icon>star_wars\icons\tax_bigbuttons\icon_tech_taxup</Icon>
+		<RolloverTextID>72293</RolloverTextID>
+		<Flag>Shadow</Flag>
+		<Flag>YPInfiniteTech</Flag>
+		<Effects>
+			<Effect type ='TechStatus' status ='obtainable'>zTaxIncreaseTo25</Effect>
+			<Effect type ='TechStatus' status ='obtainable'>zTaxDecreaseTo15</Effect>
+			<Effect type ='TechStatus' status ='obtainable'>zTaxAt20</Effect>
+			<Effect type ='TechStatus' status ='unobtainable'>zTaxAt15</Effect>
+			<Effect type ='TechStatus' status ='unobtainable'>zTaxDecreaseTo10</Effect>
+			<Effect type ='TechStatus' status ='unobtainable'>zTaxIncreaseTo20</Effect>
+			<Effect type ='Data' action ='Aura20' amount ='1.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+			<Effect type ='Data' action ='Tax20' amount ='1.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+			<Effect type ='Data' action ='Aura15' amount ='0.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+			<Effect type ='Data' action ='Tax15' amount ='0.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+		</Effects>
+	</Tech>
+	<Tech name ='zTaxDecreaseTo10' type ='Normal'>
+		<DBID>100211</DBID>
+		<DisplayNameID>72276</DisplayNameID>
+		<ResearchPoints>10.0000</ResearchPoints>
+		<Cost resourcetype ='Ships'>1.0000</Cost>
+		<Status>UNOBTAINABLE</Status>
+		<Icon>star_wars\icons\tax_bigbuttons\icon_tech_taxdown</Icon>
+		<RolloverTextID>72281</RolloverTextID>
+		<Flag>Shadow</Flag>
+		<Flag>YPInfiniteTech</Flag>
+		<Effects>
+			<Effect type ='TechStatus' status ='obtainable'>zTaxIncreaseTo15</Effect>
+			<Effect type ='TechStatus' status ='obtainable'>zTaxDecreaseTo5</Effect>
+			<Effect type ='TechStatus' status ='obtainable'>zTaxAt10</Effect>
+			<Effect type ='TechStatus' status ='unobtainable'>zTaxAt15</Effect>
+			<Effect type ='TechStatus' status ='unobtainable'>zTaxIncreaseTo20</Effect>
+			<Effect type ='TechStatus' status ='unobtainable'>zTaxDecreaseTo10</Effect>
+			<Effect type ='Data' action ='Aura10' amount ='1.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+			<Effect type ='Data' action ='Tax10' amount ='1.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+			<Effect type ='Data' action ='Aura15' amount ='0.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+			<Effect type ='Data' action ='Tax15' amount ='0.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+		</Effects>
+	</Tech>
+	<Tech name ='zTaxAt20' type ='Normal'>
+		<DBID>100212</DBID>
+		<DisplayNameID>72267</DisplayNameID>
+		<ResearchPoints>10.0000</ResearchPoints>
+		<Status>UNOBTAINABLE</Status>
+		<Icon>star_wars\icons\tax_bigbuttons\icon_bigtech_tax0</Icon>
+		<IconTextureCoords>0.0 0.0 1.0 1.0</IconTextureCoords>
+		<RolloverTextID>72268</RolloverTextID>
+		<Flag>NativeDance</Flag>
+		<Flag>AlwaysShowButton</Flag>
+		<Flag>YPAlwaysDisableButtonInGrid</Flag>
+		<Flag>CountsTowardEconomicScore</Flag>
+		<Flag>YPInfiniteTech</Flag>
+	</Tech>
+	<Tech name ='zTaxIncreaseTo25' type ='Normal'>
+		<DBID>100213</DBID>
+		<DisplayNameID>72275</DisplayNameID>
+		<ResearchPoints>10.0000</ResearchPoints>
+		<Cost resourcetype ='Ships'>1.0000</Cost>
+		<Status>UNOBTAINABLE</Status>
+		<Icon>star_wars\icons\tax_bigbuttons\icon_tech_taxup</Icon>
+		<RolloverTextID>72294</RolloverTextID>
+		<Flag>Shadow</Flag>
+		<Flag>YPInfiniteTech</Flag>
+		<Effects>
+			<Effect type ='TechStatus' status ='obtainable'>zTaxIncreaseTo30</Effect>
+			<Effect type ='TechStatus' status ='obtainable'>zTaxDecreaseTo20</Effect>
+			<Effect type ='TechStatus' status ='obtainable'>zTaxAt25</Effect>
+			<Effect type ='TechStatus' status ='unobtainable'>zTaxAt20</Effect>
+			<Effect type ='TechStatus' status ='unobtainable'>zTaxDecreaseTo15</Effect>
+			<Effect type ='TechStatus' status ='unobtainable'>zTaxIncreaseTo25</Effect>
+			<Effect type ='Data' action ='Aura25' amount ='1.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+			<Effect type ='Data' action ='Tax25' amount ='1.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+			<Effect type ='Data' action ='Aura20' amount ='0.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+			<Effect type ='Data' action ='Tax20' amount ='0.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+		</Effects>
+	</Tech>
+	<Tech name ='zTaxDecreaseTo15' type ='Normal'>
+		<DBID>100214</DBID>
+		<DisplayNameID>72276</DisplayNameID>
+		<ResearchPoints>10.0000</ResearchPoints>
+		<Cost resourcetype ='Ships'>1.0000</Cost>
+		<Status>UNOBTAINABLE</Status>
+		<Icon>star_wars\icons\tax_bigbuttons\icon_tech_taxdown</Icon>
+		<RolloverTextID>72282</RolloverTextID>
+		<Flag>Shadow</Flag>
+		<Flag>YPInfiniteTech</Flag>
+		<Effects>
+			<Effect type ='TechStatus' status ='obtainable'>zTaxIncreaseTo20</Effect>
+			<Effect type ='TechStatus' status ='obtainable'>zTaxDecreaseTo10</Effect>
+			<Effect type ='TechStatus' status ='obtainable'>zTaxAt15</Effect>
+			<Effect type ='TechStatus' status ='unobtainable'>zTaxAt20</Effect>
+			<Effect type ='TechStatus' status ='unobtainable'>zTaxIncreaseTo25</Effect>
+			<Effect type ='TechStatus' status ='unobtainable'>zTaxDecreaseTo15</Effect>
+			<Effect type ='Data' action ='Aura15' amount ='1.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+			<Effect type ='Data' action ='Tax15' amount ='1.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+			<Effect type ='Data' action ='Aura20' amount ='0.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+			<Effect type ='Data' action ='Tax20' amount ='0.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+		</Effects>
+	</Tech>
+	<Tech name ='zTaxAt25' type ='Normal'>
+		<DBID>100215</DBID>
+		<DisplayNameID>72267</DisplayNameID>
+		<ResearchPoints>10.0000</ResearchPoints>
+		<Status>UNOBTAINABLE</Status>
+		<Icon>star_wars\icons\tax_bigbuttons\icon_bigtech_tax0</Icon>
+		<IconTextureCoords>0.0 0.0 1.0 1.0</IconTextureCoords>
+		<RolloverTextID>72294</RolloverTextID>
+		<Flag>NativeDance</Flag>
+		<Flag>AlwaysShowButton</Flag>
+		<Flag>YPAlwaysDisableButtonInGrid</Flag>
+		<Flag>CountsTowardEconomicScore</Flag>
+		<Flag>YPInfiniteTech</Flag>
+	</Tech>
+	<Tech name ='zTaxIncreaseTo30' type ='Normal'>
+		<DBID>100216</DBID>
+		<DisplayNameID>72275</DisplayNameID>
+		<ResearchPoints>10.0000</ResearchPoints>
+		<Cost resourcetype ='Ships'>1.0000</Cost>
+		<Status>UNOBTAINABLE</Status>
+		<Icon>star_wars\icons\tax_bigbuttons\icon_tech_taxup</Icon>
+		<RolloverTextID>72295</RolloverTextID>
+		<Flag>Shadow</Flag>
+		<Flag>YPInfiniteTech</Flag>
+		<Effects>
+			<Effect type ='TechStatus' status ='obtainable'>zTaxIncreaseTo35</Effect>
+			<Effect type ='TechStatus' status ='obtainable'>zTaxDecreaseTo25</Effect>
+			<Effect type ='TechStatus' status ='obtainable'>zTaxAt30</Effect>
+			<Effect type ='TechStatus' status ='unobtainable'>zTaxAt25</Effect>
+			<Effect type ='TechStatus' status ='unobtainable'>zTaxDecreaseTo20</Effect>
+			<Effect type ='TechStatus' status ='unobtainable'>zTaxIncreaseTo30</Effect>
+			<Effect type ='Data' action ='Aura30' amount ='1.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+			<Effect type ='Data' action ='Tax30' amount ='1.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+			<Effect type ='Data' action ='Aura25' amount ='0.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+			<Effect type ='Data' action ='Tax25' amount ='0.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+		</Effects>
+	</Tech>
+	<Tech name ='zTaxDecreaseTo20' type ='Normal'>
+		<DBID>100217</DBID>
+		<DisplayNameID>72276</DisplayNameID>
+		<ResearchPoints>10.0000</ResearchPoints>
+		<Cost resourcetype ='Ships'>1.0000</Cost>
+		<Status>UNOBTAINABLE</Status>
+		<Icon>star_wars\icons\tax_bigbuttons\icon_tech_taxdown</Icon>
+		<RolloverTextID>72283</RolloverTextID>
+		<Flag>Shadow</Flag>
+		<Flag>YPInfiniteTech</Flag>
+		<Effects>
+			<Effect type ='TechStatus' status ='obtainable'>zTaxIncreaseTo25</Effect>
+			<Effect type ='TechStatus' status ='obtainable'>zTaxDecreaseTo15</Effect>
+			<Effect type ='TechStatus' status ='obtainable'>zTaxAt20</Effect>
+			<Effect type ='TechStatus' status ='unobtainable'>zTaxAt25</Effect>
+			<Effect type ='TechStatus' status ='unobtainable'>zTaxIncreaseTo30</Effect>
+			<Effect type ='TechStatus' status ='unobtainable'>zTaxDecreaseTo20</Effect>
+			<Effect type ='Data' action ='Aura20' amount ='1.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+			<Effect type ='Data' action ='Tax20' amount ='1.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+			<Effect type ='Data' action ='Aura25' amount ='0.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+			<Effect type ='Data' action ='Tax25' amount ='0.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+		</Effects>
+	</Tech>
+	<Tech name ='zTaxAt30' type ='Normal'>
+		<DBID>100218</DBID>
+		<DisplayNameID>72267</DisplayNameID>
+		<ResearchPoints>10.0000</ResearchPoints>
+		<Status>UNOBTAINABLE</Status>
+		<Icon>star_wars\icons\tax_bigbuttons\icon_bigtech_tax0</Icon>
+		<IconTextureCoords>0.0 0.0 1.0 1.0</IconTextureCoords>
+		<RolloverTextID>72268</RolloverTextID>
+		<Flag>NativeDance</Flag>
+		<Flag>AlwaysShowButton</Flag>
+		<Flag>YPAlwaysDisableButtonInGrid</Flag>
+		<Flag>CountsTowardEconomicScore</Flag>
+		<Flag>YPInfiniteTech</Flag>
+	</Tech>
+	<Tech name ='zTaxIncreaseTo35' type ='Normal'>
+		<DBID>100219</DBID>
+		<DisplayNameID>72275</DisplayNameID>
+		<ResearchPoints>10.0000</ResearchPoints>
+		<Cost resourcetype ='Ships'>1.0000</Cost>
+		<Status>UNOBTAINABLE</Status>
+		<Icon>star_wars\icons\tax_bigbuttons\icon_tech_taxup</Icon>
+		<RolloverTextID>72296</RolloverTextID>
+		<Flag>Shadow</Flag>
+		<Flag>YPInfiniteTech</Flag>
+		<Effects>
+			<Effect type ='TechStatus' status ='obtainable'>zTaxIncreaseTo40</Effect>
+			<Effect type ='TechStatus' status ='obtainable'>zTaxDecreaseTo30</Effect>
+			<Effect type ='TechStatus' status ='obtainable'>zTaxAt35</Effect>
+			<Effect type ='TechStatus' status ='unobtainable'>zTaxAt30</Effect>
+			<Effect type ='TechStatus' status ='unobtainable'>zTaxDecreaseTo25</Effect>
+			<Effect type ='TechStatus' status ='unobtainable'>zTaxIncreaseTo35</Effect>
+			<Effect type ='Data' action ='Aura35' amount ='1.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+			<Effect type ='Data' action ='Tax35' amount ='1.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+			<Effect type ='Data' action ='Aura30' amount ='0.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+			<Effect type ='Data' action ='Tax30' amount ='0.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+		</Effects>
+	</Tech>
+	<Tech name ='zTaxDecreaseTo25' type ='Normal'>
+		<DBID>100220</DBID>
+		<DisplayNameID>72276</DisplayNameID>
+		<ResearchPoints>10.0000</ResearchPoints>
+		<Cost resourcetype ='Ships'>1.0000</Cost>
+		<Status>UNOBTAINABLE</Status>
+		<Icon>star_wars\icons\tax_bigbuttons\icon_tech_taxdown</Icon>
+		<RolloverTextID>72284</RolloverTextID>
+		<Flag>Shadow</Flag>
+		<Flag>YPInfiniteTech</Flag>
+		<Effects>
+			<Effect type ='TechStatus' status ='obtainable'>zTaxIncreaseTo30</Effect>
+			<Effect type ='TechStatus' status ='obtainable'>zTaxDecreaseTo20</Effect>
+			<Effect type ='TechStatus' status ='obtainable'>zTaxAt25</Effect>
+			<Effect type ='TechStatus' status ='unobtainable'>zTaxAt30</Effect>
+			<Effect type ='TechStatus' status ='unobtainable'>zTaxIncreaseTo35</Effect>
+			<Effect type ='TechStatus' status ='unobtainable'>zTaxDecreaseTo25</Effect>
+			<Effect type ='Data' action ='Aura25' amount ='1.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+			<Effect type ='Data' action ='Tax25' amount ='1.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+			<Effect type ='Data' action ='Aura30' amount ='0.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+			<Effect type ='Data' action ='Tax30' amount ='0.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+		</Effects>
+	</Tech>
+	<Tech name ='zTaxAt35' type ='Normal'>
+		<DBID>100221</DBID>
+		<DisplayNameID>72267</DisplayNameID>
+		<ResearchPoints>10.0000</ResearchPoints>
+		<Status>UNOBTAINABLE</Status>
+		<Icon>star_wars\icons\tax_bigbuttons\icon_bigtech_tax0</Icon>
+		<IconTextureCoords>0.0 0.0 1.0 1.0</IconTextureCoords>
+		<RolloverTextID>72268</RolloverTextID>
+		<Flag>NativeDance</Flag>
+		<Flag>AlwaysShowButton</Flag>
+		<Flag>YPAlwaysDisableButtonInGrid</Flag>
+		<Flag>CountsTowardEconomicScore</Flag>
+		<Flag>YPInfiniteTech</Flag>
+	</Tech>
+	<Tech name ='zTaxIncreaseTo40' type ='Normal'>
+		<DBID>100222</DBID>
+		<DisplayNameID>72275</DisplayNameID>
+		<ResearchPoints>10.0000</ResearchPoints>
+		<Cost resourcetype ='Ships'>1.0000</Cost>
+		<Status>UNOBTAINABLE</Status>
+		<Icon>star_wars\icons\tax_bigbuttons\icon_tech_taxup</Icon>
+		<RolloverTextID>72297</RolloverTextID>
+		<Flag>Shadow</Flag>
+		<Flag>YPInfiniteTech</Flag>
+		<Effects>
+			<Effect type ='TechStatus' status ='obtainable'>zTaxIncreaseTo45</Effect>
+			<Effect type ='TechStatus' status ='obtainable'>zTaxDecreaseTo35</Effect>
+			<Effect type ='TechStatus' status ='obtainable'>zTaxAt40</Effect>
+			<Effect type ='TechStatus' status ='unobtainable'>zTaxAt35</Effect>
+			<Effect type ='TechStatus' status ='unobtainable'>zTaxDecreaseTo30</Effect>
+			<Effect type ='TechStatus' status ='unobtainable'>zTaxIncreaseTo40</Effect>
+			<Effect type ='Data' action ='Aura40' amount ='1.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+			<Effect type ='Data' action ='Tax40' amount ='1.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+			<Effect type ='Data' action ='Aura35' amount ='0.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+			<Effect type ='Data' action ='Tax35' amount ='0.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+		</Effects>
+	</Tech>
+	<Tech name ='zTaxDecreaseTo30' type ='Normal'>
+		<DBID>100223</DBID>
+		<DisplayNameID>72276</DisplayNameID>
+		<ResearchPoints>10.0000</ResearchPoints>
+		<Cost resourcetype ='Ships'>1.0000</Cost>
+		<Status>UNOBTAINABLE</Status>
+		<Icon>star_wars\icons\tax_bigbuttons\icon_tech_taxdown</Icon>
+		<RolloverTextID>72285</RolloverTextID>
+		<Flag>Shadow</Flag>
+		<Flag>YPInfiniteTech</Flag>
+		<Effects>
+			<Effect type ='TechStatus' status ='obtainable'>zTaxIncreaseTo35</Effect>
+			<Effect type ='TechStatus' status ='obtainable'>zTaxDecreaseTo25</Effect>
+			<Effect type ='TechStatus' status ='obtainable'>zTaxAt30</Effect>
+			<Effect type ='TechStatus' status ='unobtainable'>zTaxAt35</Effect>
+			<Effect type ='TechStatus' status ='unobtainable'>zTaxIncreaseTo40</Effect>
+			<Effect type ='TechStatus' status ='unobtainable'>zTaxDecreaseTo30</Effect>
+			<Effect type ='Data' action ='Aura30' amount ='1.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+			<Effect type ='Data' action ='Tax30' amount ='1.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+			<Effect type ='Data' action ='Aura35' amount ='0.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+			<Effect type ='Data' action ='Tax35' amount ='0.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+		</Effects>
+	</Tech>
+	<Tech name ='zTaxAt40' type ='Normal'>
+		<DBID>100224</DBID>
+		<DisplayNameID>72267</DisplayNameID>
+		<ResearchPoints>10.0000</ResearchPoints>
+		<Status>UNOBTAINABLE</Status>
+		<Icon>star_wars\icons\tax_bigbuttons\icon_bigtech_tax0</Icon>
+		<IconTextureCoords>0.0 0.0 1.0 1.0</IconTextureCoords>
+		<RolloverTextID>72268</RolloverTextID>
+		<Flag>NativeDance</Flag>
+		<Flag>AlwaysShowButton</Flag>
+		<Flag>YPAlwaysDisableButtonInGrid</Flag>
+		<Flag>CountsTowardEconomicScore</Flag>
+		<Flag>YPInfiniteTech</Flag>
+	</Tech>
+	<Tech name ='zTaxIncreaseTo45' type ='Normal'>
+		<DBID>100225</DBID>
+		<DisplayNameID>72275</DisplayNameID>
+		<ResearchPoints>10.0000</ResearchPoints>
+		<Cost resourcetype ='Ships'>1.0000</Cost>
+		<Status>UNOBTAINABLE</Status>
+		<Icon>star_wars\icons\tax_bigbuttons\icon_tech_taxup</Icon>
+		<RolloverTextID>72298</RolloverTextID>
+		<Flag>Shadow</Flag>
+		<Flag>YPInfiniteTech</Flag>
+		<Effects>
+			<Effect type ='TechStatus' status ='obtainable'>zTaxIncreaseTo50</Effect>
+			<Effect type ='TechStatus' status ='obtainable'>zTaxDecreaseTo40</Effect>
+			<Effect type ='TechStatus' status ='obtainable'>zTaxAt45</Effect>
+			<Effect type ='TechStatus' status ='unobtainable'>zTaxAt40</Effect>
+			<Effect type ='TechStatus' status ='unobtainable'>zTaxDecreaseTo35</Effect>
+			<Effect type ='TechStatus' status ='unobtainable'>zTaxIncreaseTo45</Effect>
+			<Effect type ='Data' action ='Aura45' amount ='1.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+			<Effect type ='Data' action ='Tax45' amount ='1.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+			<Effect type ='Data' action ='Aura40' amount ='0.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+			<Effect type ='Data' action ='Tax40' amount ='0.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+		</Effects>
+	</Tech>
+	<Tech name ='zTaxDecreaseTo35' type ='Normal'>
+		<DBID>100226</DBID>
+		<DisplayNameID>72276</DisplayNameID>
+		<ResearchPoints>10.0000</ResearchPoints>
+		<Cost resourcetype ='Ships'>1.0000</Cost>
+		<Status>UNOBTAINABLE</Status>
+		<Icon>star_wars\icons\tax_bigbuttons\icon_tech_taxdown</Icon>
+		<RolloverTextID>72286</RolloverTextID>
+		<Flag>Shadow</Flag>
+		<Flag>YPInfiniteTech</Flag>
+		<Effects>
+			<Effect type ='TechStatus' status ='obtainable'>zTaxIncreaseTo40</Effect>
+			<Effect type ='TechStatus' status ='obtainable'>zTaxDecreaseTo30</Effect>
+			<Effect type ='TechStatus' status ='obtainable'>zTaxAt35</Effect>
+			<Effect type ='TechStatus' status ='unobtainable'>zTaxAt20</Effect>
+			<Effect type ='TechStatus' status ='unobtainable'>zTaxIncreaseTo45</Effect>
+			<Effect type ='TechStatus' status ='unobtainable'>zTaxDecreaseTo35</Effect>
+			<Effect type ='Data' action ='Aura35' amount ='1.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+			<Effect type ='Data' action ='Tax35' amount ='1.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+			<Effect type ='Data' action ='Aura40' amount ='0.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+			<Effect type ='Data' action ='Tax40' amount ='0.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+		</Effects>
+	</Tech>
+	<Tech name ='zTaxAt45' type ='Normal'>
+		<DBID>100227</DBID>
+		<DisplayNameID>72267</DisplayNameID>
+		<ResearchPoints>10.0000</ResearchPoints>
+		<Status>UNOBTAINABLE</Status>
+		<Icon>star_wars\icons\tax_bigbuttons\icon_bigtech_tax0</Icon>
+		<IconTextureCoords>0.0 0.0 1.0 1.0</IconTextureCoords>
+		<RolloverTextID>72268</RolloverTextID>
+		<Flag>NativeDance</Flag>
+		<Flag>AlwaysShowButton</Flag>
+		<Flag>YPAlwaysDisableButtonInGrid</Flag>
+		<Flag>CountsTowardEconomicScore</Flag>
+		<Flag>YPInfiniteTech</Flag>
+	</Tech>
+	<Tech name ='zTaxIncreaseTo50' type ='Normal'>
+		<DBID>100228</DBID>
+		<DisplayNameID>72275</DisplayNameID>
+		<ResearchPoints>10.0000</ResearchPoints>
+		<Cost resourcetype ='Ships'>1.0000</Cost>
+		<Status>UNOBTAINABLE</Status>
+		<Icon>star_wars\icons\tax_bigbuttons\icon_tech_taxup</Icon>
+		<RolloverTextID>72299</RolloverTextID>
+		<Flag>Shadow</Flag>
+		<Flag>YPInfiniteTech</Flag>
+		<Effects>
+			<Effect type ='TechStatus' status ='obtainable'>zTaxIncreaseNull</Effect>
+			<Effect type ='TechStatus' status ='obtainable'>zTaxDecreaseTo45</Effect>
+			<Effect type ='TechStatus' status ='obtainable'>zTaxAt50</Effect>
+			<Effect type ='TechStatus' status ='unobtainable'>zTaxAt45</Effect>
+			<Effect type ='TechStatus' status ='unobtainable'>zTaxDecreaseTo40</Effect>
+			<Effect type ='TechStatus' status ='unobtainable'>zTaxIncreaseTo50</Effect>
+			<Effect type ='Data' action ='Aura50' amount ='1.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+			<Effect type ='Data' action ='Tax50' amount ='1.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+			<Effect type ='Data' action ='Aura45' amount ='0.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+			<Effect type ='Data' action ='Tax45' amount ='0.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+		</Effects>
+	</Tech>
+	<Tech name ='zTaxDecreaseTo40' type ='Normal'>
+		<DBID>100229</DBID>
+		<DisplayNameID>72276</DisplayNameID>
+		<ResearchPoints>10.0000</ResearchPoints>
+		<Cost resourcetype ='Ships'>1.0000</Cost>
+		<Status>UNOBTAINABLE</Status>
+		<Icon>star_wars\icons\tax_bigbuttons\icon_tech_taxdown</Icon>
+		<RolloverTextID>72287</RolloverTextID>
+		<Flag>Shadow</Flag>
+		<Flag>YPInfiniteTech</Flag>
+		<Effects>
+			<Effect type ='TechStatus' status ='obtainable'>zTaxIncreaseTo45</Effect>
+			<Effect type ='TechStatus' status ='obtainable'>zTaxDecreaseTo35</Effect>
+			<Effect type ='TechStatus' status ='obtainable'>zTaxAt40</Effect>
+			<Effect type ='TechStatus' status ='unobtainable'>zTaxAt45</Effect>
+			<Effect type ='TechStatus' status ='unobtainable'>zTaxIncreaseTo50</Effect>
+			<Effect type ='TechStatus' status ='unobtainable'>zTaxDecreaseTo40</Effect>
+			<Effect type ='Data' action ='Aura40' amount ='1.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+			<Effect type ='Data' action ='Tax40' amount ='1.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+			<Effect type ='Data' action ='Aura45' amount ='0.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+			<Effect type ='Data' action ='Tax45' amount ='0.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+		</Effects>
+	</Tech>
+	<Tech name ='zTaxAt50' type ='Normal'>
+		<DBID>100230</DBID>
+		<DisplayNameID>72267</DisplayNameID>
+		<ResearchPoints>10.0000</ResearchPoints>
+		<Status>UNOBTAINABLE</Status>
+		<Icon>star_wars\icons\tax_bigbuttons\icon_bigtech_tax0</Icon>
+		<IconTextureCoords>0.0 0.0 1.0 1.0</IconTextureCoords>
+		<RolloverTextID>72268</RolloverTextID>
+		<Flag>NativeDance</Flag>
+		<Flag>AlwaysShowButton</Flag>
+		<Flag>YPAlwaysDisableButtonInGrid</Flag>
+		<Flag>CountsTowardEconomicScore</Flag>
+		<Flag>YPInfiniteTech</Flag>
+	</Tech>
+	<Tech name ='zTaxIncreaseNull' type ='Normal'>
+		<DBID>100231</DBID>
+		<DisplayNameID>72277</DisplayNameID>
+		<ResearchPoints>10.0000</ResearchPoints>
+		<Status>UNOBTAINABLE</Status>
+		<Icon>star_wars\icons\tax_bigbuttons\icon_tech_tax_limit_upper</Icon>
+		<RolloverTextID>72299</RolloverTextID>
+		<Flag>Shadow</Flag>
+		<Flag>YPInfiniteTech</Flag>
+		<Flag>YPAlwaysDisableButtonInGrid</Flag>
+	</Tech>
+	<Tech name ='zTaxDecreaseTo45' type ='Normal'>
+		<DBID>100232</DBID>
+		<DisplayNameID>72269</DisplayNameID>
+		<ResearchPoints>10.0000</ResearchPoints>
+		<Cost resourcetype ='Ships'>1.0000</Cost>
+		<Status>UNOBTAINABLE</Status>
+		<Icon>star_wars\icons\tax_bigbuttons\icon_tech_taxdown</Icon>
+		<RolloverTextID>72300</RolloverTextID>
+		<Flag>Shadow</Flag>
+		<Flag>YPInfiniteTech</Flag>
+		<Effects>
+			<Effect type ='TechStatus' status ='obtainable'>zTaxIncreaseTo50</Effect>
+			<Effect type ='TechStatus' status ='obtainable'>zTaxDecreaseTo40</Effect>
+			<Effect type ='TechStatus' status ='obtainable'>zTaxAt45</Effect>
+			<Effect type ='TechStatus' status ='unobtainable'>zTaxAt50</Effect>
+			<Effect type ='TechStatus' status ='unobtainable'>zTaxIncreaseNull</Effect>
+			<Effect type ='TechStatus' status ='unobtainable'>zTaxDecreaseTo45</Effect>
+			<Effect type ='Data' action ='Aura45' amount ='1.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+			<Effect type ='Data' action ='Tax45' amount ='1.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+			<Effect type ='Data' action ='Aura50' amount ='0.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+			<Effect type ='Data' action ='Tax50' amount ='0.00' subtype ='ActionEnable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAITaxBlock</Target></Effect>
+		</Effects>
+	</Tech>
+	<Tech name ='zStunnet' type ='Normal'>
+		<DBID>100233</DBID>
+		<DisplayNameID>72328</DisplayNameID>
+		<Cost resourcetype ='Wood'>50.0000</Cost>
+		<Cost resourcetype ='Gold'>50.0000</Cost>
+		<ResearchPoints>20.0000</ResearchPoints>
+		<Status>UNOBTAINABLE</Status>
+		<Icon>star_wars\icons\icon_tech_stunnet</Icon>
+		<RolloverTextID>72327</RolloverTextID>
+		<Flag>CountsTowardEconomicScore</Flag>
+		<Effects>
+			<Effect type ='Data' action ='Gather' amount ='1.10' subtype ='WorkRate' unittype ='Huntable' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractVillager</Target></Effect></Effects>
+	</Tech>
+	<Tech name ='zAnimalNursery' type ='Normal'>
+		<DBID>100234</DBID>
+		<DisplayNameID>72324</DisplayNameID>
+		<Cost resourcetype ='Wood'>150.0000</Cost>
+		<Cost resourcetype ='Gold'>150.0000</Cost>
+		<ResearchPoints>30.0000</ResearchPoints>
+		<Status>UNOBTAINABLE</Status>
+		<Icon>star_wars\icons\icon_tech_animalnursery</Icon>
+		<RolloverTextID>72325</RolloverTextID>
+		<Flag>CountsTowardEconomicScore</Flag>
+		<Effects>
+			<Effect type ='Data' action ='Gather' amount ='1.25' subtype ='WorkRate' unittype ='LivestockPen' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>Herdable</Target></Effect>
+			<Effect type ='Data' action ='Gather' amount ='1.25' subtype ='WorkRate' unittype ='Farm' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>Herdable</Target></Effect>
+			<Effect type ='Data' action ='Gather' amount ='1.25' subtype ='WorkRate' unittype ='ypVillage' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>Herdable</Target></Effect>
+			<Effect type ='Data' action ='Gather' amount ='1.25' subtype ='WorkRate' unittype ='YPLivestockPenAsian' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>Herdable</Target></Effect>
+		</Effects>
+	</Tech>
+	<Tech name ='zBeastCallers' type ='Normal'>
+		<DBID>100235</DBID>
+		<DisplayNameID>72329</DisplayNameID>
+		<Cost resourcetype ='Wood'>125.0000</Cost>
+		<Cost resourcetype ='Gold'>125.0000</Cost>
+		<ResearchPoints>30.0000</ResearchPoints>
+		<Status>UNOBTAINABLE</Status>
+		<Icon>star_wars\icons\icon_tech_fabritechanimalcallers</Icon>
+		<RolloverTextID>72327</RolloverTextID>
+		<Flag>CountsTowardEconomicScore</Flag>
+		<Prereqs>
+			<TechStatus status ='Active'>zStunnet</TechStatus>
+			<TechStatus status ='Active'>Colonialize</TechStatus>
+		</Prereqs>
+		<Effects>
+			<Effect type ='Data' action ='Gather' amount ='1.20' subtype ='WorkRate' unittype ='HuntedResource' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractVillager</Target></Effect></Effects>
+	</Tech>
+	<Tech name ='zHeatMaskers' type ='Normal'>
+		<DBID>100236</DBID>
+		<DisplayNameID>72330</DisplayNameID>
+		<Cost resourcetype ='Wood'>275.0000</Cost>
+		<Cost resourcetype ='Gold'>275.0000</Cost>
+		<ResearchPoints>40.0000</ResearchPoints>
+		<Status>UNOBTAINABLE</Status>
+		<Icon>star_wars\icons\icon_tech_heatmaskers</Icon>
+		<RolloverTextID>72327</RolloverTextID>
+		<Flag>CountsTowardEconomicScore</Flag>
+		<Prereqs>
+			<TechStatus status ='Active'>zBeastCallers</TechStatus>
+			<TechStatus status ='Active'>Fortressize</TechStatus>
+		</Prereqs>
+		<Effects>
+			<Effect type ='Data' action ='Gather' amount ='1.10' subtype ='WorkRate' unittype ='HuntedResource' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractVillager</Target></Effect></Effects>
+	</Tech>
+	<Tech name ='zHuntingGroundLegislation' type ='Normal'>
+		<DBID>100237</DBID>
+		<DisplayNameID>72331</DisplayNameID>
+		<Cost resourcetype ='Wood'>550.0000</Cost>
+		<Cost resourcetype ='Gold'>550.0000</Cost>
+		<ResearchPoints>50.0000</ResearchPoints>
+		<Status>UNOBTAINABLE</Status>
+		<Icon>star_wars\icons\icon_tech_huntinggroundlegislation</Icon>
+		<RolloverTextID>72327</RolloverTextID>
+		<Flag>CountsTowardEconomicScore</Flag>
+		<Prereqs>
+			<TechStatus status ='Active'>zHeatMaskers</TechStatus>
+			<TechStatus status ='Active'>Industrialize</TechStatus>
+		</Prereqs>
+		<Effects>
+			<Effect type ='Data' action ='Gather' amount ='1.10' subtype ='WorkRate' unittype ='HuntedResource' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractVillager</Target></Effect></Effects>
+	</Tech>
+	<Tech name ='zBigGamePouchers' type ='Normal'>
+		<DBID>100238</DBID>
+		<DisplayNameID>72331</DisplayNameID>
+		<Cost resourcetype ='Wood'>750.0000</Cost>
+		<Cost resourcetype ='Gold'>750.0000</Cost>
+		<ResearchPoints>60.0000</ResearchPoints>
+		<Status>UNOBTAINABLE</Status>
+		<Icon>star_wars\icons\icon_tech_biggamehunt</Icon>
+		<RolloverTextID>72327</RolloverTextID>
+		<Flag>CountsTowardEconomicScore</Flag>
+		<Prereqs>
+			<TechStatus status ='Active'>zHuntingGroundLegislation</TechStatus>
+			<TechStatus status ='Active'>Imperialize</TechStatus>
+		</Prereqs>
+		<Effects>
+			<Effect type ='Data' action ='Gather' amount ='1.20' subtype ='WorkRate' unittype ='HuntedResource' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractVillager</Target></Effect></Effects>
+	</Tech>
+	<Tech name ='zSelectiveBreeding' type ='Normal'>
+		<DBID>100239</DBID>
+		<DisplayNameID>72332</DisplayNameID>
+		<Cost resourcetype ='Wood'>350.0000</Cost>
+		<Cost resourcetype ='Gold'>350.0000</Cost>
+		<ResearchPoints>40.0000</ResearchPoints>
+		<Status>UNOBTAINABLE</Status>
+		<Icon>star_wars\icons\icon_tech_selectivebreeding</Icon>
+		<RolloverTextID>72333</RolloverTextID>
+		<Flag>CountsTowardEconomicScore</Flag>
+		<Prereqs>
+			<TechStatus status ='Active'>zAnimalNursery</TechStatus>
+			<TechStatus status ='Active'>Colonialize</TechStatus>
+		</Prereqs>
+		<Effects>
+			<Effect type ='Data' action ='Gather' amount ='1.10' subtype ='WorkRate' unittype ='LivestockPen' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>Herdable</Target></Effect>
+			<Effect type ='Data' action ='Gather' amount ='1.10' subtype ='WorkRate' unittype ='Farm' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>Herdable</Target></Effect>
+			<Effect type ='Data' action ='Gather' amount ='1.10' subtype ='WorkRate' unittype ='ypVillage' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>Herdable</Target></Effect>
+			<Effect type ='Data' action ='Gather' amount ='1.10' subtype ='WorkRate' unittype ='YPLivestockPenAsian' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>Herdable</Target></Effect>
+			<Effect type ='Data' amount ='1.15' subtype ='InventoryAmount' resource ='Food' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>Herdable</Target></Effect>
+		</Effects>
+	</Tech>
+	<Tech name ='zGrowthStimulants' type ='Normal'>
+		<DBID>100240</DBID>
+		<DisplayNameID>72332</DisplayNameID>
+		<Cost resourcetype ='Wood'>650.0000</Cost>
+		<Cost resourcetype ='Gold'>650.0000</Cost>
+		<ResearchPoints>50.0000</ResearchPoints>
+		<Status>UNOBTAINABLE</Status>
+		<Icon>star_wars\icons\icon_tech_growthstimulants</Icon>
+		<RolloverTextID>72333</RolloverTextID>
+		<Flag>CountsTowardEconomicScore</Flag>
+		<Prereqs>
+			<TechStatus status ='Active'>zSelectiveBreeding</TechStatus>
+			<TechStatus status ='Active'>Fortressize</TechStatus>
+		</Prereqs>
+		<Effects>
+			<Effect type ='Data' action ='Gather' amount ='1.10' subtype ='WorkRate' unittype ='LivestockPen' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>Herdable</Target></Effect>
+			<Effect type ='Data' action ='Gather' amount ='1.10' subtype ='WorkRate' unittype ='Farm' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>Herdable</Target></Effect>
+			<Effect type ='Data' action ='Gather' amount ='1.10' subtype ='WorkRate' unittype ='ypVillage' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>Herdable</Target></Effect>
+			<Effect type ='Data' action ='Gather' amount ='1.10' subtype ='WorkRate' unittype ='YPLivestockPenAsian' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>Herdable</Target></Effect>
+			<Effect type ='Data' amount ='1.15' subtype ='InventoryAmount' resource ='Food' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>Herdable</Target></Effect>
+		</Effects>
+	</Tech>
+	<Tech name ='zCulturedMeat' type ='Normal'>
+		<DBID>100241</DBID>
+		<DisplayNameID>72335</DisplayNameID>
+		<Cost resourcetype ='Wood'>800.0000</Cost>
+		<Cost resourcetype ='Gold'>800.0000</Cost>
+		<ResearchPoints>60.0000</ResearchPoints>
+		<Status>UNOBTAINABLE</Status>
+		<Icon>star_wars\icons\icon_tech_culturedmeat</Icon>
+		<RolloverTextID>72333</RolloverTextID>
+		<Flag>CountsTowardEconomicScore</Flag>
+		<Prereqs>
+			<TechStatus status ='Active'>zGrowthStimulants</TechStatus>
+			<TechStatus status ='Active'>Industrialize</TechStatus>
+		</Prereqs>
+		<Effects>
+			<Effect type ='Data' action ='Gather' amount ='1.05' subtype ='WorkRate' unittype ='LivestockPen' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>Herdable</Target></Effect>
+			<Effect type ='Data' action ='Gather' amount ='1.05' subtype ='WorkRate' unittype ='Farm' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>Herdable</Target></Effect>
+			<Effect type ='Data' action ='Gather' amount ='1.05' subtype ='WorkRate' unittype ='ypVillage' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>Herdable</Target></Effect>
+			<Effect type ='Data' action ='Gather' amount ='1.05' subtype ='WorkRate' unittype ='YPLivestockPenAsian' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>Herdable</Target></Effect>
+			<Effect type ='Data' amount ='1.25' subtype ='InventoryAmount' resource ='Food' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>Herdable</Target></Effect>
+		</Effects>
+	</Tech>
+	<Tech name ='zHandheldExtractors' type ='Normal'>
+		<DBID>100242</DBID>
+		<DisplayNameID>72337</DisplayNameID>
+		<Cost resourcetype ='Food'>100.0000</Cost>
+		<ResearchPoints>30.0000</ResearchPoints>
+		<Status>UNOBTAINABLE</Status>
+		<Icon>star_wars\icons\icon_tech_handheldextractors</Icon>
+		<RolloverTextID>72336</RolloverTextID>
+		<Flag>CountsTowardEconomicScore</Flag>
+		<Effects>
+			<Effect type ='Data' action ='Gather' amount ='1.10' subtype ='WorkRate' unittype ='Tree' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractVillager</Target></Effect>
+			<Effect type ='Data' action ='Gather' amount ='1.10' subtype ='WorkRate' unittype ='ypGroveBuilding' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractVillager</Target></Effect>
+		</Effects>
+	</Tech>
+	<Tech name ='zPortableCollectors' type ='Normal'>
+		<DBID>100243</DBID>
+		<DisplayNameID>72337</DisplayNameID>
+		<Cost resourcetype ='Food'>200.0000</Cost>
+		<Cost resourcetype ='Gold'>250.0000</Cost>
+		<ResearchPoints>40.0000</ResearchPoints>
+		<Status>UNOBTAINABLE</Status>
+		<Icon>star_wars\icons\icon_tech_portablecollectors</Icon>
+		<RolloverTextID>72336</RolloverTextID>
+		<Flag>CountsTowardEconomicScore</Flag>
+		<Prereqs>
+			<TechStatus status ='Active'>zHandheldExtractors</TechStatus>
+			<TechStatus status ='Active'>Colonialize</TechStatus>
+		</Prereqs>
+		<Effects>
+			<Effect type ='Data' action ='Gather' amount ='1.15' subtype ='WorkRate' unittype ='Tree' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractVillager</Target></Effect>
+			<Effect type ='Data' action ='Gather' amount ='1.15' subtype ='WorkRate' unittype ='ypGroveBuilding' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractVillager</Target></Effect>
+		</Effects>
+	</Tech>
+	<Tech name ='zMineralDecompositors' type ='Normal'>
+		<DBID>100245</DBID>
+		<DisplayNameID>72339</DisplayNameID>
+		<Cost resourcetype ='Food'>240.0000</Cost>
+		<Cost resourcetype ='Gold'>480.0000</Cost>
+		<ResearchPoints>50.0000</ResearchPoints>
+		<Status>UNOBTAINABLE</Status>
+		<Icon>star_wars\icons\icon_tech_mineraldecompositor</Icon>
+		<RolloverTextID>72336</RolloverTextID>
+		<Flag>CountsTowardEconomicScore</Flag>
+		<Prereqs>
+			<TechStatus status ='Active'>Fortressize</TechStatus>
+			<TechStatus status ='Active'>zPortableCollectors</TechStatus>
+		</Prereqs>
+		<Effects>
+			<Effect type ='Data' action ='Gather' amount ='1.25' subtype ='WorkRate' unittype ='Tree' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractVillager</Target></Effect>
+			<Effect type ='Data' action ='Gather' amount ='1.25' subtype ='WorkRate' unittype ='ypGroveBuilding' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractVillager</Target></Effect>
+		</Effects>
+	</Tech>
+	<Tech name ='zAccousticDisruptor' type ='Normal'>
+		<DBID>100246</DBID>
+		<DisplayNameID>72340</DisplayNameID>
+		<Cost resourcetype ='Food'>500.0000</Cost>
+		<Cost resourcetype ='Gold'>600.0000</Cost>
+		<ResearchPoints>60.0000</ResearchPoints>
+		<Status>UNOBTAINABLE</Status>
+		<Icon>star_wars\icons\icon_tech_mineraldecompositor</Icon>
+		<RolloverTextID>72336</RolloverTextID>
+		<Flag>CountsTowardEconomicScore</Flag>
+		<Prereqs>
+			<TechStatus status ='Active'>Industrialize</TechStatus>
+			<TechStatus status ='Active'>zMineralDecompositors</TechStatus>
+		</Prereqs>
+		<Effects>
+			<Effect type ='Data' action ='Gather' amount ='1.10' subtype ='WorkRate' unittype ='Tree' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractVillager</Target></Effect>
+			<Effect type ='Data' action ='Gather' amount ='1.10' subtype ='WorkRate' unittype ='ypGroveBuilding' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractVillager</Target></Effect>
+		</Effects>
+	</Tech>
+	<Tech name ='zMolecularFurnaces' type ='Normal'>
+		<DBID>100247</DBID>
+		<DisplayNameID>72341</DisplayNameID>
+		<Cost resourcetype ='Food'>700.0000</Cost>
+		<Cost resourcetype ='Gold'>800.0000</Cost>
+		<ResearchPoints>70.0000</ResearchPoints>
+		<Status>UNOBTAINABLE</Status>
+		<Icon>star_wars\icons\icon_tech_molecularfurnaces</Icon>
+		<RolloverTextID>72336</RolloverTextID>
+		<Flag>CountsTowardEconomicScore</Flag>
+		<Prereqs>
+			<TechStatus status ='Active'>Imperialize</TechStatus>
+			<TechStatus status ='Active'>zAccousticDisruptor</TechStatus>
+		</Prereqs>
+		<Effects>
+			<Effect type ='Data' action ='Gather' amount ='1.30' subtype ='WorkRate' unittype ='Tree' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractVillager</Target></Effect>
+			<Effect type ='Data' action ='Gather' amount ='1.30' subtype ='WorkRate' unittype ='ypGroveBuilding' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractVillager</Target></Effect>
+		</Effects>
+	</Tech>
+	<Tech name ='zBeamdrill' type ='Normal'>
+		<DBID>100248</DBID>
+		<DisplayNameID>72343</DisplayNameID>
+		<Cost resourcetype ='Food'>75.0000</Cost>
+		<Cost resourcetype ='Wood'>75.0000</Cost>
+		<ResearchPoints>30.0000</ResearchPoints>
+		<Status>UNOBTAINABLE</Status>
+		<Icon>star_wars\icons\icon_tech_beamdrill</Icon>
+		<RolloverTextID>72342</RolloverTextID>
+		<Flag>CountsTowardEconomicScore</Flag>
+		<Effects>
+			<Effect type ='Data' action ='Gather' amount ='1.10' subtype ='WorkRate' unittype ='AbstractMine' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractVillager</Target></Effect></Effects>
+	</Tech>
+	<Tech name ='zOreGasifier' type ='Normal'>
+		<DBID>100249</DBID>
+		<DisplayNameID>72344</DisplayNameID>
+		<Cost resourcetype ='Food'>200.0000</Cost>
+		<Cost resourcetype ='Wood'>200.0000</Cost>
+		<ResearchPoints>40.0000</ResearchPoints>
+		<Status>UNOBTAINABLE</Status>
+		<Icon>star_wars\icons\icon_tech_rockgasifier</Icon>
+		<RolloverTextID>72342</RolloverTextID>
+		<Flag>CountsTowardEconomicScore</Flag>
+		<Prereqs>
+			<TechStatus status ='Active'>Colonialize</TechStatus>
+			<TechStatus status ='Active'>zBeamdrill</TechStatus>
+		</Prereqs>
+		<Effects>
+			<Effect type ='Data' action ='Gather' amount ='1.20' subtype ='WorkRate' unittype ='AbstractMine' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractVillager</Target></Effect></Effects>
+	</Tech>
+	<Tech name ='zFuelRefinement' type ='Normal'>
+		<DBID>100250</DBID>
+		<DisplayNameID>72345</DisplayNameID>
+		<Cost resourcetype ='Food'>400.0000</Cost>
+		<Cost resourcetype ='Wood'>400.0000</Cost>
+		<ResearchPoints>50.0000</ResearchPoints>
+		<Status>UNOBTAINABLE</Status>
+		<Icon>star_wars\icons\icon_tech_fuel_refinery</Icon>
+		<RolloverTextID>72342</RolloverTextID>
+		<Flag>CountsTowardEconomicScore</Flag>
+		<Prereqs>
+			<TechStatus status ='Active'>Fortressize</TechStatus>
+			<TechStatus status ='Active'>zOreGasifier</TechStatus>
+		</Prereqs>
+		<Effects>
+			<Effect type ='Data' action ='Gather' amount ='1.10' subtype ='WorkRate' unittype ='AbstractMine' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractVillager</Target></Effect></Effects>
+	</Tech>
+	<Tech name ='zFusionReactors' type ='Normal'>
+		<DBID>100251</DBID>
+		<DisplayNameID>72346</DisplayNameID>
+		<Cost resourcetype ='Food'>600.0000</Cost>
+		<Cost resourcetype ='Wood'>600.0000</Cost>
+		<ResearchPoints>60.0000</ResearchPoints>
+		<Status>UNOBTAINABLE</Status>
+		<Icon>star_wars\icons\icon_tech_fusionreactors</Icon>
+		<RolloverTextID>72342</RolloverTextID>
+		<Flag>CountsTowardEconomicScore</Flag>
+		<Prereqs>
+			<TechStatus status ='Active'>Industrialize</TechStatus>
+			<TechStatus status ='Active'>zFuelRefinement</TechStatus>
+		</Prereqs>
+		<Effects>
+			<Effect type ='Data' action ='Gather' amount ='1.20' subtype ='WorkRate' unittype ='AbstractMine' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractVillager</Target></Effect></Effects>
+	</Tech>
+	<Tech name ='zArmorPiercingShells' type ='Normal'>
+		<DBID>100252</DBID>
+		<DisplayNameID>72349</DisplayNameID>
+		<Cost resourcetype ='Gold'>300.0000</Cost>
+		<ResearchPoints>50.0000</ResearchPoints>
+		<Status>UNOBTAINABLE</Status>
+		<Icon>Star_Wars\Icons\icon_tech_antiarmorshells</Icon>
+		<RolloverTextID>72348</RolloverTextID>
+		<Flag>CountsTowardMilitaryScore</Flag>
+		<Prereqs>
+			<TechStatus status ='Active'>Fortressize</TechStatus></Prereqs>
+		<Effects>
+			<Effect type ='Data' action ='WristRocketAttack' amount ='1.125' subtype ='Damage' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractInfantry</Target></Effect>
+			<Effect type ='Data' action ='SmartRocketAttack' amount ='1.125' subtype ='Damage' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractInfantry</Target></Effect>
+			<Effect type ='Data' action ='SmartRocketAttackCover' amount ='1.125' subtype ='Damage' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractInfantry</Target></Effect>
+			<Effect type ='Data' action ='HomingShot' amount ='1.125' subtype ='Damage' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractInfantry</Target></Effect>
+			<Effect type ='Data' action ='ProtonTorpedoAttack' amount ='1.125' subtype ='Damage' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractWarShip</Target></Effect>
+			<Effect type ='Data' action ='ConcussionMissileAttack' amount ='1.125' subtype ='Damage' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractWarShip</Target></Effect>
+			<Effect type ='Data' action ='AssaultConcussionMissileAttack' amount ='1.125' subtype ='Damage' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractWarShip</Target></Effect>
+			<Effect type ='Data' action ='DiscordMissileAttack' amount ='1.125' subtype ='Damage' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractWarShip</Target></Effect>
+			<Effect type ='Data' action ='HexMissileAttack' amount ='1.125' subtype ='Damage' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractWarShip</Target></Effect>
+			<Effect type ='Data' action ='CarboniteMissileAttack' amount ='1.125' subtype ='Damage' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractWarShip</Target></Effect>
+			<Effect type ='Data' action ='MissileAttack' amount ='1.125' subtype ='Damage' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractCavalry</Target></Effect>
+			<Effect type ='Data' action ='ConcussionMissileAttack' amount ='1.125' subtype ='Damage' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractCavalry</Target></Effect>
+			<Effect type ='Data' action ='AssaultConcussionMissileAttack' amount ='1.125' subtype ='Damage' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractCavalry</Target></Effect>
+			<Effect type ='Data' action ='HexMissileAttack' amount ='1.125' subtype ='Damage' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractCavalry</Target></Effect>
+			<Effect type ='Data' action ='CarboniteMissileAttack' amount ='1.125' subtype ='Damage' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractCavalry</Target></Effect>
+		</Effects>
+	</Tech>
+	<Tech name ='zEnergizedOrdnance' type ='Normal'>
+		<DBID>100253</DBID>
+		<DisplayNameID>72350</DisplayNameID>
+		<Cost resourcetype ='Gold'>400.0000</Cost>
+		<Cost resourcetype ='Food'>350.0000</Cost>
+		<ResearchPoints>75.0000</ResearchPoints>
+		<Status>UNOBTAINABLE</Status>
+		<Icon>Star_Wars\Icons\icon_tech_energizedordnance</Icon>
+		<RolloverTextID>72348</RolloverTextID>
+		<Flag>CountsTowardMilitaryScore</Flag>
+		<Prereqs>
+			<TechStatus status ='Active'>zArmorPiercingShells</TechStatus>
+			<TechStatus status ='Active'>Industrialize</TechStatus>
+		</Prereqs>
+		<Effects>
+			<Effect type ='Data' action ='WristRocketAttack' amount ='1.125' subtype ='Damage' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractInfantry</Target></Effect>
+			<Effect type ='Data' action ='SmartRocketAttack' amount ='1.125' subtype ='Damage' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractInfantry</Target></Effect>
+			<Effect type ='Data' action ='SmartRocketAttackCover' amount ='1.125' subtype ='Damage' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractInfantry</Target></Effect>
+			<Effect type ='Data' action ='HomingShot' amount ='1.125' subtype ='Damage' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractInfantry</Target></Effect>
+			<Effect type ='Data' action ='ProtonTorpedoAttack' amount ='1.125' subtype ='Damage' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractWarShip</Target></Effect>
+			<Effect type ='Data' action ='ConcussionMissileAttack' amount ='1.125' subtype ='Damage' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractWarShip</Target></Effect>
+			<Effect type ='Data' action ='AssaultConcussionMissileAttack' amount ='1.125' subtype ='Damage' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractWarShip</Target></Effect>
+			<Effect type ='Data' action ='DiscordMissileAttack' amount ='1.125' subtype ='Damage' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractWarShip</Target></Effect>
+			<Effect type ='Data' action ='HexMissileAttack' amount ='1.125' subtype ='Damage' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractWarShip</Target></Effect>
+			<Effect type ='Data' action ='CarboniteMissileAttack' amount ='1.125' subtype ='Damage' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractWarShip</Target></Effect>
+			<Effect type ='Data' action ='MissileAttack' amount ='1.125' subtype ='Damage' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractCavalry</Target></Effect>
+			<Effect type ='Data' action ='ConcussionMissileAttack' amount ='1.125' subtype ='Damage' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractCavalry</Target></Effect>
+			<Effect type ='Data' action ='AssaultConcussionMissileAttack' amount ='1.125' subtype ='Damage' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractCavalry</Target></Effect>
+			<Effect type ='Data' action ='HexMissileAttack' amount ='1.125' subtype ='Damage' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractCavalry</Target></Effect>
+			<Effect type ='Data' action ='CarboniteMissileAttack' amount ='1.125' subtype ='Damage' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractCavalry</Target></Effect>
+		</Effects>
+	</Tech>
+	<Tech name ='zDetoniteCore' type ='Normal'>
+		<DBID>100254</DBID>
+		<DisplayNameID>72351</DisplayNameID>
+		<Cost resourcetype ='Gold'>600.0000</Cost>
+		<Cost resourcetype ='Food'>500.0000</Cost>
+		<ResearchPoints>100.0000</ResearchPoints>
+		<Status>UNOBTAINABLE</Status>
+		<Icon>Star_Wars\Icons\icon_tech_detonitecore</Icon>
+		<RolloverTextID>72348</RolloverTextID>
+		<Flag>CountsTowardMilitaryScore</Flag>
+		<Prereqs>
+			<TechStatus status ='Active'>zEnergizedOrdnance</TechStatus>
+			<TechStatus status ='Active'>Imperialize</TechStatus>
+		</Prereqs>
+		<Effects>
+			<Effect type ='Data' action ='WristRocketAttack' amount ='1.125' subtype ='Damage' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractInfantry</Target></Effect>
+			<Effect type ='Data' action ='SmartRocketAttack' amount ='1.125' subtype ='Damage' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractInfantry</Target></Effect>
+			<Effect type ='Data' action ='SmartRocketAttackCover' amount ='1.125' subtype ='Damage' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractInfantry</Target></Effect>
+			<Effect type ='Data' action ='HomingShot' amount ='1.125' subtype ='Damage' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractInfantry</Target></Effect>
+			<Effect type ='Data' action ='ProtonTorpedoAttack' amount ='1.125' subtype ='Damage' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractWarShip</Target></Effect>
+			<Effect type ='Data' action ='ConcussionMissileAttack' amount ='1.125' subtype ='Damage' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractWarShip</Target></Effect>
+			<Effect type ='Data' action ='AssaultConcussionMissileAttack' amount ='1.125' subtype ='Damage' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractWarShip</Target></Effect>
+			<Effect type ='Data' action ='DiscordMissileAttack' amount ='1.125' subtype ='Damage' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractWarShip</Target></Effect>
+			<Effect type ='Data' action ='HexMissileAttack' amount ='1.125' subtype ='Damage' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractWarShip</Target></Effect>
+			<Effect type ='Data' action ='CarboniteMissileAttack' amount ='1.125' subtype ='Damage' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractWarShip</Target></Effect>
+			<Effect type ='Data' action ='MissileAttack' amount ='1.125' subtype ='Damage' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractCavalry</Target></Effect>
+			<Effect type ='Data' action ='ConcussionMissileAttack' amount ='1.125' subtype ='Damage' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractCavalry</Target></Effect>
+			<Effect type ='Data' action ='AssaultConcussionMissileAttack' amount ='1.125' subtype ='Damage' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractCavalry</Target></Effect>
+			<Effect type ='Data' action ='HexMissileAttack' amount ='1.125' subtype ='Damage' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractCavalry</Target></Effect>
+			<Effect type ='Data' action ='CarboniteMissileAttack' amount ='1.125' subtype ='Damage' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractCavalry</Target></Effect>
+		</Effects>
+	</Tech>
+	<Tech name ='zSensorBeacon' type ='Normal'>
+		<DBID>100255</DBID>
+		<DisplayNameID>70867</DisplayNameID>
+		<Cost resourcetype ='Food'>100.0000</Cost>
+		<ResearchPoints>25.0000</ResearchPoints>
+		<Status>UNOBTAINABLE</Status>
+		<Icon>star_wars\icons\ICON_TECH_SensorBeacon</Icon>
+		<RolloverTextID>7086800</RolloverTextID>
+		<Flag>UniqueTech</Flag>
+		<Flag>CountsTowardMilitaryScore</Flag>
+		<Prereqs>
+			<TechStatus status ='Active'>Colonialize</TechStatus></Prereqs>
+		<Effects>
+			<Effect type ='Data' amount ='4.00' subtype ='LOS' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>Building</Target></Effect></Effects>
+	</Tech>
+	<Tech name ='zSensorArray' type ='Normal'>
+		<DBID>100256</DBID>
+		<DisplayNameID>70865</DisplayNameID>
+		<Cost resourcetype ='Food'>200.0000</Cost>
+		<Cost resourcetype ='Gold'>200.0000</Cost>
+		<ResearchPoints>40.0000</ResearchPoints>
+		<Status>UNOBTAINABLE</Status>
+		<Icon>star_wars\icons\ICON_TECH_SensorArray</Icon>
+		<RolloverTextID>70866</RolloverTextID>
+		<Flag>UniqueTech</Flag>
+		<Flag>CountsTowardMilitaryScore</Flag>
+		<Prereqs>
+			<TechStatus status ='Active'>Fortressize</TechStatus>
+			<TechStatus status ='Active'>zSensorBeacon</TechStatus></Prereqs>
+		<Effects>
+			<Effect type ='Data' amount ='4.00' subtype ='LOS' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>Building</Target></Effect></Effects>
+	</Tech>
+	<Tech name ='zPersonalShieldEmitters' type ='Normal'>
+		<DBID>100257</DBID>
+		<DisplayNameID>72355</DisplayNameID>
+		<Cost resourcetype ='Food'>100.0000</Cost>
+		<ResearchPoints>20.0000</ResearchPoints>
+		<Status>UNOBTAINABLE</Status>
+		<Icon>star_wars\icons\icon_tech_personalshields</Icon>
+		<RolloverTextID>72354</RolloverTextID>
+		<Flag>CountsTowardEconomicScore</Flag>
+		<Flag>UpgradeTech</Flag>
+		<Effects>
+			<Effect type ='Data' amount ='1.35' subtype ='Hitpoints' relativity ='BasePercent'>
+				<Target type ='ProtoUnit'>AbstractVillager</Target></Effect></Effects>
+	</Tech>
+	<Tech name ='zCyclerRifle' type ='Normal'>
+		<DBID>100258</DBID>
+		<DisplayNameID>72353</DisplayNameID>
+		<Cost resourcetype ='Wood'>110.0000</Cost>
+		<ResearchPoints>20.0000</ResearchPoints>
+		<Status>UNOBTAINABLE</Status>
+		<Icon>star_wars\icons\icon_tech_cyclerrifle</Icon>
+		<RolloverTextID>72352</RolloverTextID>
+		<Flag>UpgradeTech</Flag>
+		<Flag>CountsTowardEconomicScore</Flag>
+		<Effects>
+			<Effect type ='Data' amount ='3.00' subtype ='Damage' allactions ='1' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>AbstractVillager</Target></Effect>
+			<Effect type ='Data' action ='BlasterAttack' amount ='4.00' subtype ='MaximumRange' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>AbstractVillager</Target></Effect>
+			<Effect type ='Data' amount ='4.00' subtype ='LOS' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>AbstractVillager</Target></Effect>
+		</Effects>
+	</Tech><!-->  Use as an example for future unit shipments
     <Tech name="zHCEmpireSquadStormtrooper" type="Normal">
         <dbid>100080</dbid>
         <displaynameid>1001232</displaynameid>

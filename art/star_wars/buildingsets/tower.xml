@@ -170,7 +170,7 @@
 			<assetreference type="GrannyAnim">
 				<file>animation_library\building\ranged_attack</file>
 				<tag type="Attack">0.45</tag>
-				<tag type="SpecificSoundSet" checkvisible="1" set="RifleShot">0.45</tag>
+				<tag type="SpecificSoundSet" checkvisible="1" set="swBlasterGeneric">0.45</tag>
 			</assetreference>
 			<component>Outpost_1</component>
 			<simskeleton>
@@ -193,7 +193,7 @@
 			<assetreference type="GrannyAnim">
 				<file>animation_library\building\ranged_attack</file>
 				<tag type="Attack">0.45</tag>
-				<tag type="SpecificSoundSet" checkvisible="1" set="FalconetShoot">0.45</tag>
+				<tag type="SpecificSoundSet" checkvisible="1" set="swAntiAirFlak">0.45</tag>
 			</assetreference>
 			<component>Outpost_1</component>
 			<simskeleton>
