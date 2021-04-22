@@ -20,7 +20,7 @@
 		<numberprojectiles>6</numberprojectiles>
 		<projectile>zRedBlaster</projectile>
 		<impacteffect>star_wars\effects\impacts\blaster</impacteffect>
-		<rate type="Unit">1.0 </rate>
+		<rate type="Unit">1.0</rate>
 		<instantballistics>0</instantballistics>
 		<basedamagecap>1</basedamagecap>
 	</action>
@@ -29,7 +29,7 @@
 		<type>Attack</type>
 		<attackaction>1</attackaction>
 		<rangedlogic>1</rangedlogic>
-		<anim>RangedAttackShip</anim>
+		<anim>Bombard_ranged_attack</anim>
 		<maxheight>0</maxheight>
 		<accuracy>1.0</accuracy>
 		<active>1</active>
@@ -42,7 +42,7 @@
 		<unintentionaldamagemultiplier>0.7</unintentionaldamagemultiplier>
 		<projectile>zBlueBlaster</projectile>
 		<impacteffect>Star_Wars\Effects\Impacts\Laser</impacteffect>
-		<rate type="AbstractCavalry">1.0 </rate>
+		<rate type="AbstractCavalry">1.0</rate>
 		<outerdamageareadistance>.25</outerdamageareadistance>
 		<outerdamageareafactor>.20</outerdamageareafactor>
 		<areasortmode>Directional</areasortmode>
@@ -67,7 +67,11 @@
 		<unintentionaldamagemultiplier>0.7</unintentionaldamagemultiplier>
 		<projectile>zGreenBlaster</projectile>
 		<impacteffect>star_wars\effects\impacts\AirBlaster</impacteffect>
-		<rate type="AbstractWarship">1.0 </rate>
+		<rate type="AbstractWarship">1.0</rate>
+		<outerdamageareadistance>.25</outerdamageareadistance>
+		<outerdamageareafactor>.20</outerdamageareafactor>
+		<areasortmode>Directional</areasortmode>
+		<basedamagecap>1</basedamagecap>
 	</action>
 	<tactic>
 		Normal

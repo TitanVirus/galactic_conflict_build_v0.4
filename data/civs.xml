@@ -5152,19 +5152,19 @@
 		</agetech>
 		<agetech>
 			<age>Age1</age>
-			<tech>ColonializeOttoman</tech>
+			<tech>zColonializeEmpire</tech>
 		</agetech>
 		<agetech>
 			<age>Age2</age>
-			<tech>FortressizeOttoman</tech>
+			<tech>zFortressizeEmpire</tech>
 		</agetech>
 		<agetech>
 			<age>Age3</age>
-			<tech>IndustrializeOttoman</tech>
+			<tech>zIndustrializeEmpire</tech>
 		</agetech>
 		<agetech>
 			<age>Age4</age>
-			<tech>ImperializeOttoman</tech>
+			<tech>zImperializeEmpire</tech>
 		</agetech>
 		<TeamTech>EliteWarRifleShadow</TeamTech>
 		<postindustrialtech>PostIndustrialOttoman</postindustrialtech>
@@ -9695,27 +9695,24 @@
 		</agetech>
 		<agetech>
 			<age>Age1</age>
-			<tech>ColonializeOttoman</tech>
+			<tech>zColonializeEmpire</tech>
 		</agetech>
 		<agetech>
 			<age>Age2</age>
-			<tech>FortressizeOttoman</tech>
+			<tech>zFortressizeEmpire</tech>
 		</agetech>
 		<agetech>
 			<age>Age3</age>
-			<tech>IndustrializeOttoman</tech>
+			<tech>zIndustrializeEmpire</tech>
 		</agetech>
 		<agetech>
 			<age>Age4</age>
-			<tech>ImperializeOttoman</tech>
+			<tech>zImperializeEmpire</tech>
 		</agetech>
 		<TeamTech>EliteWarRifleShadow</TeamTech>
 		<postindustrialtech>PostIndustrialOttoman</postindustrialtech>
 		<postimperialtech>PostImperialOttoman</postimperialtech>
 		<!--><buildingefficiency>0.3</buildingefficiency><!-->
-		<gold>1000000</gold>
-		<food>1000000</food>
-		<wood>1000000</wood>
 		<startingunit>zFieldCommanderEmpire</startingunit>
 		<townstartingunit>zAITaxBlock</townstartingunit>
 		<townstartingunit>zWorkerEmpire</townstartingunit>
@@ -9803,19 +9800,19 @@
 		</agetech>
 		<agetech>
 			<age>Age1</age>
-			<tech>ColonializeOttoman</tech>
+			<tech>zColonializeEmpire</tech>
 		</agetech>
 		<agetech>
 			<age>Age2</age>
-			<tech>FortressizeOttoman</tech>
+			<tech>zFortressizeEmpire</tech>
 		</agetech>
 		<agetech>
 			<age>Age3</age>
-			<tech>IndustrializeOttoman</tech>
+			<tech>zIndustrializeEmpire</tech>
 		</agetech>
 		<agetech>
 			<age>Age4</age>
-			<tech>ImperializeOttoman</tech>
+			<tech>zImperializeEmpire</tech>
 		</agetech>
 		<TeamTech>EliteWarRifleShadow</TeamTech>
 		<postindustrialtech>PostIndustrialOttoman</postindustrialtech>
@@ -9908,19 +9905,19 @@
 		</agetech>
 		<agetech>
 			<age>Age1</age>
-			<tech>ColonializeOttoman</tech>
+			<tech>zColonializeEmpire</tech>
 		</agetech>
 		<agetech>
 			<age>Age2</age>
-			<tech>FortressizeOttoman</tech>
+			<tech>zFortressizeEmpire</tech>
 		</agetech>
 		<agetech>
 			<age>Age3</age>
-			<tech>IndustrializeOttoman</tech>
+			<tech>zIndustrializeEmpire</tech>
 		</agetech>
 		<agetech>
 			<age>Age4</age>
-			<tech>ImperializeOttoman</tech>
+			<tech>zImperializeEmpire</tech>
 		</agetech>
 		<TeamTech>EliteWarRifleShadow</TeamTech>
 		<postindustrialtech>PostIndustrialOttoman</postindustrialtech>

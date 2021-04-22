@@ -51278,6 +51278,8 @@
 				<Target type ='ProtoUnit'>zArmyTrooper</Target></Effect>
 			<Effect type ='Data' amount ='1.00' subtype ='Enable' relativity ='Absolute'>
 				<Target type ='ProtoUnit'>zTX225Tank</Target></Effect>
+			<Effect type ='Data' amount ='1.00' subtype ='Enable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zDarkTrooper</Target></Effect>
 			<Effect type ='TechStatus' status ='obtainable'>zPoliticianEmpireTech2Jerjerrod</Effect>
 			<Effect type ='TechStatus' status ='obtainable'>zPoliticianEmpireTech2Pryce</Effect>
 			<Effect type ='TechStatus' status ='obtainable'>zPoliticianEmpireTech2Gideon</Effect>
@@ -51329,6 +51331,8 @@
 			<Effect type ='TechStatus' status ='obtainable'>zMark2SPMAShadow</Effect>
 			<Effect type ='TechStatus' status ='obtainable'>zMark3SPMA</Effect>
 			<Effect type ='TechStatus' status ='obtainable'>zMark4SPMA</Effect>
+			<Effect type ='Data' amount ='1.00' subtype ='Enable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zInquisitor</Target></Effect>
 			<Effect type ='Data' amount ='1.00' subtype ='Enable' relativity ='Absolute'>
 				<Target type ='ProtoUnit'>zTIEMauler</Target></Effect>
 			<Effect type ='Data' amount ='1.00' subtype ='Enable' relativity ='Absolute'>
@@ -51396,6 +51400,8 @@
 			<Effect type ='TechStatus' status ='obtainable'>zMark2SPMAShadow</Effect>
 			<Effect type ='TechStatus' status ='obtainable'>zMark3SPMA</Effect>
 			<Effect type ='TechStatus' status ='obtainable'>zMark4SPMA</Effect>
+			<Effect type ='Data' amount ='1.00' subtype ='Enable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zRoyalGuard</Target></Effect>
 			<Effect type ='Data' amount ='1.00' subtype ='Enable' relativity ='Absolute'>
 				<Target type ='ProtoUnit'>zTIEMauler</Target></Effect>
 			<Effect type ='Data' amount ='1.00' subtype ='Enable' relativity ='Absolute'>
@@ -51654,10 +51660,16 @@
 			<Effect type ='TechStatus' status ='obtainable'>zMark2ATDP</Effect>
 			<Effect type ='TechStatus' status ='obtainable'>zUpgradeATST</Effect>
 			<Effect type ='TechStatus' status ='obtainable'>zMark2ATST</Effect>
-			<!-->THERE ARE ONLY TWO THINGS CERTAIN IN THIS LIFE, THOSE ARE 1) DEATH AND 2) TAXES <!-->
+			<!-->THERE ARE ONLY TWO THINGS CERTAIN IN THIS LIFE: DEATH AND TAXES <!-->
 			<Effect type ='TechStatus' status ='obtainable'>zTaxAt0</Effect>
 			<Effect type ='TechStatus' status ='obtainable'>zTaxDecreaseNull</Effect>
 			<Effect type ='TechStatus' status ='obtainable'>zTaxIncreaseTo5</Effect>
+			<Effect type ='Data' amount ='1.00' subtype ='BuildLimit' relativity ='Assign'>
+				<Target type ='ProtoUnit'>Market</Target></Effect>
+			<Effect type ='Data' amount ='1.00' subtype ='Enable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zAnimalDomesticNerf</Target></Effect>
+			<Effect type ='Data' amount ='1.00' subtype ='Enable' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zFortress</Target></Effect>
 			<Effect type ='Data' amount ='0.00' subtype ='EnableTradeRouteLOS' relativity ='Absolute'>
 				<Target type ='Player'></Target></Effect>
 			<Effect type ='Data' amount ='1.00' subtype ='Enable' relativity ='Absolute'>
@@ -51709,8 +51721,8 @@
 	<Tech name ='zPrivateStormtroopers' type ='Normal'>
 		<DBID>100005</DBID>
 		<DisplayNameID>70829</DisplayNameID>
-		<Cost resourcetype ='Wood'>200.0000</Cost>
-		<Cost resourcetype ='Gold'>200.0000</Cost>
+		<Cost resourcetype ='Wood'>300.0000</Cost>
+		<Cost resourcetype ='Gold'>300.0000</Cost>
 		<ResearchPoints>40.0000</ResearchPoints>
 		<Status>UNOBTAINABLE</Status>
 		<Icon>Star_Wars\Icons\ICON_TECH_UpgradeInf01</Icon>
@@ -51769,8 +51781,8 @@
 	<Tech name ='zSergeantStormtroopers' type ='Normal'>
 		<DBID>100007</DBID>
 		<DisplayNameID>70833</DisplayNameID>
-		<Cost resourcetype ='Wood'>1500.0000</Cost>
-		<Cost resourcetype ='Gold'>1500.0000</Cost>
+		<Cost resourcetype ='Wood'>900.0000</Cost>
+		<Cost resourcetype ='Gold'>900.0000</Cost>
 		<ResearchPoints>100.0000</ResearchPoints>
 		<Status>UNOBTAINABLE</Status>
 		<Icon>Star_Wars\Icons\ICON_TECH_UpgradeInf03</Icon>
@@ -51840,8 +51852,8 @@
 	<Tech name ='zSergeantScoutTroopers' type ='Normal'>
 		<DBID>100010</DBID>
 		<DisplayNameID>70841</DisplayNameID>
-		<Cost resourcetype ='Wood'>1500.0000</Cost>
-		<Cost resourcetype ='Gold'>1500.0000</Cost>
+		<Cost resourcetype ='Wood'>900.0000</Cost>
+		<Cost resourcetype ='Gold'>900.0000</Cost>
 		<ResearchPoints>100.0000</ResearchPoints>
 		<Status>UNOBTAINABLE</Status>
 		<Icon>Star_Wars\Icons\ICON_TECH_UpgradeInf03</Icon>
@@ -51907,8 +51919,8 @@
 	<Tech name ='zSergeantDemoTroopers' type ='Normal'>
 		<DBID>100012</DBID>
 		<DisplayNameID>70847</DisplayNameID>
-		<Cost resourcetype ='Wood'>1500.0000</Cost>
-		<Cost resourcetype ='Gold'>1500.0000</Cost>
+		<Cost resourcetype ='Wood'>900.0000</Cost>
+		<Cost resourcetype ='Gold'>900.0000</Cost>
 		<ResearchPoints>100.0000</ResearchPoints>
 		<Status>UNOBTAINABLE</Status>
 		<Icon>Star_Wars\Icons\ICON_TECH_UpgradeInf03</Icon>
@@ -51932,8 +51944,8 @@
 	<Tech name ='zConscriptedRiotTroopers' type ='Normal'>
 		<DBID>100013</DBID>
 		<DisplayNameID>70850</DisplayNameID>
-		<Cost resourcetype ='Wood'>200.0000</Cost>
-		<Cost resourcetype ='Gold'>200.0000</Cost>
+		<Cost resourcetype ='Wood'>150.0000</Cost>
+		<Cost resourcetype ='Gold'>150.0000</Cost>
 		<ResearchPoints>40.0000</ResearchPoints>
 		<Status>UNOBTAINABLE</Status>
 		<Icon>Star_Wars\Icons\ICON_TECH_UpgradeInf01</Icon>
@@ -51955,8 +51967,8 @@
 	<Tech name ='zPrivateRiotTroopers' type ='Normal'>
 		<DBID>100014</DBID>
 		<DisplayNameID>70852</DisplayNameID>
-		<Cost resourcetype ='Wood'>600.0000</Cost>
-		<Cost resourcetype ='Gold'>600.0000</Cost>
+		<Cost resourcetype ='Wood'>300.0000</Cost>
+		<Cost resourcetype ='Gold'>300.0000</Cost>
 		<ResearchPoints>75.0000</ResearchPoints>
 		<Status>UNOBTAINABLE</Status>
 		<Icon>Star_Wars\Icons\ICON_TECH_UpgradeInf02</Icon>
@@ -53413,8 +53425,8 @@
 	<Tech name ='zPoliticianEmpireTech3Trios' type ='Normal'>
 		<DBID>100057</DBID>
 		<DisplayNameID>70946</DisplayNameID>
-		<Cost resourcetype ='Food'>1200.0000</Cost>
-		<Cost resourcetype ='Gold'>1000.0000</Cost>
+		<Cost resourcetype ='Food'>1400.0000</Cost>
+		<Cost resourcetype ='Gold'>800.0000</Cost>
 		<ResearchPoints>130.0000</ResearchPoints>
 		<Status>UNOBTAINABLE</Status>
 		<Icon>star_wars\icons\Icon_Tech_Age3</Icon>
@@ -53436,8 +53448,8 @@
 	<Tech name ='zPoliticianEmpireTech3Yularen' type ='Normal'>
 		<DBID>100058</DBID>
 		<DisplayNameID>70948</DisplayNameID>
-		<Cost resourcetype ='Food'>1200.0000</Cost>
-		<Cost resourcetype ='Gold'>1000.0000</Cost>
+		<Cost resourcetype ='Food'>1400.0000</Cost>
+		<Cost resourcetype ='Gold'>800.0000</Cost>
 		<ResearchPoints>130.0000</ResearchPoints>
 		<Status>UNOBTAINABLE</Status>
 		<Icon>star_wars\icons\Icon_Tech_Age3</Icon>
@@ -53459,8 +53471,8 @@
 	<Tech name ='zPoliticianEmpireTech3Daala' type ='Normal'>
 		<DBID>100059</DBID>
 		<DisplayNameID>70950</DisplayNameID>
-		<Cost resourcetype ='Food'>1200.0000</Cost>
-		<Cost resourcetype ='Gold'>1000.0000</Cost>
+		<Cost resourcetype ='Food'>1400.0000</Cost>
+		<Cost resourcetype ='Gold'>800.0000</Cost>
 		<ResearchPoints>130.0000</ResearchPoints>
 		<Status>UNOBTAINABLE</Status>
 		<Icon>star_wars\icons\Icon_Tech_Age3</Icon>
@@ -53482,8 +53494,8 @@
 	<Tech name ='zPoliticianEmpireTech3Sienar' type ='Normal'>
 		<DBID>100060</DBID>
 		<DisplayNameID>70952</DisplayNameID>
-		<Cost resourcetype ='Food'>1200.0000</Cost>
-		<Cost resourcetype ='Gold'>1000.0000</Cost>
+		<Cost resourcetype ='Food'>1400.0000</Cost>
+		<Cost resourcetype ='Gold'>800.0000</Cost>
 		<ResearchPoints>130.0000</ResearchPoints>
 		<Status>UNOBTAINABLE</Status>
 		<Icon>star_wars\icons\Icon_Tech_Age3</Icon>
@@ -53505,8 +53517,8 @@
 	<Tech name ='zPoliticianEmpireTech3Inquisitor' type ='Normal'>
 		<DBID>100061</DBID>
 		<DisplayNameID>70954</DisplayNameID>
-		<Cost resourcetype ='Food'>1200.0000</Cost>
-		<Cost resourcetype ='Gold'>1000.0000</Cost>
+		<Cost resourcetype ='Food'>1400.0000</Cost>
+		<Cost resourcetype ='Gold'>800.0000</Cost>
 		<ResearchPoints>130.0000</ResearchPoints>
 		<Status>UNOBTAINABLE</Status>
 		<Icon>star_wars\icons\Icon_Tech_Age3</Icon>
@@ -53528,8 +53540,8 @@
 	<Tech name ='zPoliticianEmpireTech3Versio' type ='Normal'>
 		<DBID>100062</DBID>
 		<DisplayNameID>70956</DisplayNameID>
-		<Cost resourcetype ='Food'>1200.0000</Cost>
-		<Cost resourcetype ='Gold'>1000.0000</Cost>
+		<Cost resourcetype ='Food'>1400.0000</Cost>
+		<Cost resourcetype ='Gold'>800.0000</Cost>
 		<ResearchPoints>130.0000</ResearchPoints>
 		<Status>UNOBTAINABLE</Status>
 		<Icon>star_wars\icons\Icon_Tech_Age3</Icon>
@@ -53551,8 +53563,8 @@
 	<Tech name ='zPoliticianEmpireTech3CienaRee' type ='Normal'>
 		<DBID>100063</DBID>
 		<DisplayNameID>70958</DisplayNameID>
-		<Cost resourcetype ='Food'>1200.0000</Cost>
-		<Cost resourcetype ='Gold'>1000.0000</Cost>
+		<Cost resourcetype ='Food'>1400.0000</Cost>
+		<Cost resourcetype ='Gold'>800.0000</Cost>
 		<ResearchPoints>130.0000</ResearchPoints>
 		<Status>UNOBTAINABLE</Status>
 		<Icon>star_wars\icons\Icon_Tech_Age3</Icon>
@@ -53569,8 +53581,8 @@
 	<Tech name ='zPoliticianEmpireTech3Kerril' type ='Normal'>
 		<DBID>100064</DBID>
 		<DisplayNameID>70960</DisplayNameID>
-		<Cost resourcetype ='Food'>1200.0000</Cost>
-		<Cost resourcetype ='Gold'>1000.0000</Cost>
+		<Cost resourcetype ='Food'>1400.0000</Cost>
+		<Cost resourcetype ='Gold'>800.0000</Cost>
 		<ResearchPoints>130.0000</ResearchPoints>
 		<Status>UNOBTAINABLE</Status>
 		<Icon>star_wars\icons\Icon_Tech_Age3</Icon>
@@ -53587,8 +53599,8 @@
 	<Tech name ='zPoliticianEmpireTech3Blackhole' type ='Normal'>
 		<DBID>100065</DBID>
 		<DisplayNameID>72101</DisplayNameID>
-		<Cost resourcetype ='Food'>1200.0000</Cost>
-		<Cost resourcetype ='Gold'>1000.0000</Cost>
+		<Cost resourcetype ='Food'>1400.0000</Cost>
+		<Cost resourcetype ='Gold'>800.0000</Cost>
 		<ResearchPoints>130.0000</ResearchPoints>
 		<Status>UNOBTAINABLE</Status>
 		<Icon>star_wars\icons\Icon_Tech_Age3</Icon>
@@ -53610,8 +53622,8 @@
 	<Tech name ='zPoliticianEmpireTech4Piett' type ='Normal'>
 		<DBID>100066</DBID>
 		<DisplayNameID>70964</DisplayNameID>
-		<Cost resourcetype ='Food'>2000.0000</Cost>
-		<Cost resourcetype ='Gold'>1200.0000</Cost>
+		<Cost resourcetype ='Food'>2500.0000</Cost>
+		<Cost resourcetype ='Gold'>1000.0000</Cost>
 		<ResearchPoints>160.0000</ResearchPoints>
 		<Status>UNOBTAINABLE</Status>
 		<Icon>star_wars\icons\Icon_Tech_Age4</Icon>
@@ -53626,8 +53638,8 @@
 	<Tech name ='zPoliticianEmpireTech4Tarko' type ='Normal'>
 		<DBID>100067</DBID>
 		<DisplayNameID>70966</DisplayNameID>
-		<Cost resourcetype ='Food'>2000.0000</Cost>
-		<Cost resourcetype ='Gold'>1200.0000</Cost>
+		<Cost resourcetype ='Food'>2500.0000</Cost>
+		<Cost resourcetype ='Gold'>1000.0000</Cost>
 		<ResearchPoints>160.0000</ResearchPoints>
 		<Status>UNOBTAINABLE</Status>
 		<Icon>star_wars\icons\Icon_Tech_Age4</Icon>
@@ -53649,8 +53661,8 @@
 	<Tech name ='zPoliticianEmpireTech4Amedda' type ='Normal'>
 		<DBID>100068</DBID>
 		<DisplayNameID>70968</DisplayNameID>
-		<Cost resourcetype ='Food'>2000.0000</Cost>
-		<Cost resourcetype ='Gold'>1200.0000</Cost>
+		<Cost resourcetype ='Food'>2500.0000</Cost>
+		<Cost resourcetype ='Gold'>1000.0000</Cost>
 		<ResearchPoints>160.0000</ResearchPoints>
 		<Status>UNOBTAINABLE</Status>
 		<Icon>star_wars\icons\Icon_Tech_Age4</Icon>
@@ -53674,8 +53686,8 @@
 	<Tech name ='zPoliticianEmpireTech4Cylo' type ='Normal'>
 		<DBID>100069</DBID>
 		<DisplayNameID>70970</DisplayNameID>
-		<Cost resourcetype ='Food'>2000.0000</Cost>
-		<Cost resourcetype ='Gold'>1200.0000</Cost>
+		<Cost resourcetype ='Food'>2500.0000</Cost>
+		<Cost resourcetype ='Gold'>1000.0000</Cost>
 		<ResearchPoints>160.0000</ResearchPoints>
 		<Status>UNOBTAINABLE</Status>
 		<Icon>star_wars\icons\Icon_Tech_Age4</Icon>
@@ -53699,8 +53711,8 @@
 	<Tech name ='zPoliticianEmpireTech4Krennic' type ='Normal'>
 		<DBID>100070</DBID>
 		<DisplayNameID>70972</DisplayNameID>
-		<Cost resourcetype ='Food'>2000.0000</Cost>
-		<Cost resourcetype ='Gold'>1200.0000</Cost>
+		<Cost resourcetype ='Food'>2500.0000</Cost>
+		<Cost resourcetype ='Gold'>1000.0000</Cost>
 		<ResearchPoints>160.0000</ResearchPoints>
 		<Status>UNOBTAINABLE</Status>
 		<Icon>star_wars\icons\Icon_Tech_Age4</Icon>
@@ -53724,8 +53736,8 @@
 	<Tech name ='zPoliticianEmpireTech4Saxon' type ='Normal'>
 		<DBID>100071</DBID>
 		<DisplayNameID>70974</DisplayNameID>
-		<Cost resourcetype ='Food'>2000.0000</Cost>
-		<Cost resourcetype ='Gold'>1200.0000</Cost>
+		<Cost resourcetype ='Food'>2500.0000</Cost>
+		<Cost resourcetype ='Gold'>1000.0000</Cost>
 		<ResearchPoints>160.0000</ResearchPoints>
 		<Status>UNOBTAINABLE</Status>
 		<Icon>star_wars\icons\Icon_Tech_Age4</Icon>
@@ -53749,8 +53761,8 @@
 	<Tech name ='zPoliticianEmpireTech4Veers' type ='Normal'>
 		<DBID>100072</DBID>
 		<DisplayNameID>70976</DisplayNameID>
-		<Cost resourcetype ='Food'>2000.0000</Cost>
-		<Cost resourcetype ='Gold'>1200.0000</Cost>
+		<Cost resourcetype ='Food'>2500.0000</Cost>
+		<Cost resourcetype ='Gold'>1000.0000</Cost>
 		<ResearchPoints>160.0000</ResearchPoints>
 		<Status>UNOBTAINABLE</Status>
 		<Icon>star_wars\icons\Icon_Tech_Age4</Icon>
@@ -53772,8 +53784,8 @@
 	<Tech name ='zPoliticianEmpireTech4Romodi' type ='Normal'>
 		<DBID>100073</DBID>
 		<DisplayNameID>70978</DisplayNameID>
-		<Cost resourcetype ='Food'>2000.0000</Cost>
-		<Cost resourcetype ='Gold'>1200.0000</Cost>
+		<Cost resourcetype ='Food'>2500.0000</Cost>
+		<Cost resourcetype ='Gold'>1000.0000</Cost>
 		<ResearchPoints>160.0000</ResearchPoints>
 		<Status>UNOBTAINABLE</Status>
 		<Icon>star_wars\icons\Icon_Tech_Age4</Icon>
@@ -53795,8 +53807,8 @@
 	<Tech name ='zPoliticianEmpireTech4Sloane' type ='Normal'>
 		<DBID>100074</DBID>
 		<DisplayNameID>70980</DisplayNameID>
-		<Cost resourcetype ='Food'>2000.0000</Cost>
-		<Cost resourcetype ='Gold'>1200.0000</Cost>
+		<Cost resourcetype ='Food'>2500.0000</Cost>
+		<Cost resourcetype ='Gold'>1000.0000</Cost>
 		<ResearchPoints>160.0000</ResearchPoints>
 		<Status>UNOBTAINABLE</Status>
 		<Icon>star_wars\icons\Icon_Tech_Age4</Icon>
@@ -53814,7 +53826,7 @@
 		<DBID>100075</DBID>
 		<DisplayNameID>70982</DisplayNameID>
 		<Cost resourcetype ='Food'>4000.0000</Cost>
-		<Cost resourcetype ='Gold'>4000.0000</Cost>
+		<Cost resourcetype ='Gold'>2000.0000</Cost>
 		<ResearchPoints>190.0000</ResearchPoints>
 		<Status>UNOBTAINABLE</Status>
 		<Icon>star_wars\icons\Icon_Tech_Age5</Icon>
@@ -53839,7 +53851,7 @@
 		<DBID>100076</DBID>
 		<DisplayNameID>70984</DisplayNameID>
 		<Cost resourcetype ='Food'>4000.0000</Cost>
-		<Cost resourcetype ='Gold'>4000.0000</Cost>
+		<Cost resourcetype ='Gold'>2000.0000</Cost>
 		<ResearchPoints>190.0000</ResearchPoints>
 		<Status>UNOBTAINABLE</Status>
 		<Icon>star_wars\icons\Icon_Tech_Age5</Icon>
@@ -53866,7 +53878,7 @@
 		<DBID>100077</DBID>
 		<DisplayNameID>70986</DisplayNameID>
 		<Cost resourcetype ='Food'>4000.0000</Cost>
-		<Cost resourcetype ='Gold'>4000.0000</Cost>
+		<Cost resourcetype ='Gold'>2000.0000</Cost>
 		<ResearchPoints>190.0000</ResearchPoints>
 		<Status>UNOBTAINABLE</Status>
 		<Icon>star_wars\icons\Icon_Tech_Age5</Icon>
@@ -53893,7 +53905,7 @@
 		<DBID>100078</DBID>
 		<DisplayNameID>70988</DisplayNameID>
 		<Cost resourcetype ='Food'>4000.0000</Cost>
-		<Cost resourcetype ='Gold'>4000.0000</Cost>
+		<Cost resourcetype ='Gold'>2000.0000</Cost>
 		<ResearchPoints>190.0000</ResearchPoints>
 		<Status>UNOBTAINABLE</Status>
 		<Icon>star_wars\icons\Icon_Tech_Age5</Icon>
@@ -53915,7 +53927,7 @@
 		<DBID>100079</DBID>
 		<DisplayNameID>70990</DisplayNameID>
 		<Cost resourcetype ='Food'>4000.0000</Cost>
-		<Cost resourcetype ='Gold'>4000.0000</Cost>
+		<Cost resourcetype ='Gold'>2000.0000</Cost>
 		<ResearchPoints>190.0000</ResearchPoints>
 		<Status>UNOBTAINABLE</Status>
 		<Icon>star_wars\icons\Icon_Tech_Age5</Icon>
@@ -54093,8 +54105,8 @@
 		<DBID>100086</DBID>
 		<DisplayNameID>71045</DisplayNameID>
 		<RolloverTextID>71051</RolloverTextID>
-		<Cost resourcetype ='Wood'>200.0000</Cost>
-		<Cost resourcetype ='Gold'>200.0000</Cost>
+		<Cost resourcetype ='Wood'>400.0000</Cost>
+		<Cost resourcetype ='Gold'>300.0000</Cost>
 		<ResearchPoints>30.0000</ResearchPoints>
 		<Status>UNOBTAINABLE</Status>
 		<Icon>Star_Wars\Icons\ICON_TECH_UpgradeMech01</Icon>
@@ -54114,7 +54126,7 @@
 		<DBID>100087</DBID>
 		<DisplayNameID>71046</DisplayNameID>
 		<RolloverTextID>71051</RolloverTextID>
-		<Cost resourcetype ='Wood'>600.0000</Cost>
+		<Cost resourcetype ='Wood'>800.0000</Cost>
 		<Cost resourcetype ='Gold'>600.0000</Cost>
 		<ResearchPoints>70.0000</ResearchPoints>
 		<Status>UNOBTAINABLE</Status>
@@ -54137,8 +54149,8 @@
 		<DBID>100088</DBID>
 		<DisplayNameID>71047</DisplayNameID>
 		<RolloverTextID>71051</RolloverTextID>
-		<Cost resourcetype ='Wood'>1500.0000</Cost>
-		<Cost resourcetype ='Gold'>1500.0000</Cost>
+		<Cost resourcetype ='Wood'>1200.0000</Cost>
+		<Cost resourcetype ='Gold'>900.0000</Cost>
 		<ResearchPoints>100.0000</ResearchPoints>
 		<Status>UNOBTAINABLE</Status>
 		<Icon>Star_Wars\Icons\ICON_TECH_UpgradeMech03</Icon>
@@ -54160,8 +54172,8 @@
 		<DBID>100089</DBID>
 		<DisplayNameID>71038</DisplayNameID>
 		<RolloverTextID>71041</RolloverTextID>
-		<Cost resourcetype ='Wood'>200.0000</Cost>
-		<Cost resourcetype ='Gold'>200.0000</Cost>
+		<Cost resourcetype ='Wood'>400.0000</Cost>
+		<Cost resourcetype ='Gold'>300.0000</Cost>
 		<ResearchPoints>30.0000</ResearchPoints>
 		<Status>UNOBTAINABLE</Status>
 		<Icon>Star_Wars\Icons\ICON_TECH_UpgradeMech01</Icon>
@@ -54181,7 +54193,7 @@
 		<DBID>100090</DBID>
 		<DisplayNameID>71039</DisplayNameID>
 		<RolloverTextID>71041</RolloverTextID>
-		<Cost resourcetype ='Wood'>600.0000</Cost>
+		<Cost resourcetype ='Wood'>800.0000</Cost>
 		<Cost resourcetype ='Gold'>600.0000</Cost>
 		<ResearchPoints>70.0000</ResearchPoints>
 		<Status>UNOBTAINABLE</Status>
@@ -54204,8 +54216,8 @@
 		<DBID>100091</DBID>
 		<DisplayNameID>71040</DisplayNameID>
 		<RolloverTextID>71041</RolloverTextID>
-		<Cost resourcetype ='Wood'>1500.0000</Cost>
-		<Cost resourcetype ='Gold'>1500.0000</Cost>
+		<Cost resourcetype ='Wood'>1200.0000</Cost>
+		<Cost resourcetype ='Gold'>900.0000</Cost>
 		<ResearchPoints>100.0000</ResearchPoints>
 		<Status>UNOBTAINABLE</Status>
 		<Icon>Star_Wars\Icons\ICON_TECH_UpgradeMech03</Icon>
@@ -54227,8 +54239,8 @@
 		<DBID>100092</DBID>
 		<DisplayNameID>71061</DisplayNameID>
 		<RolloverTextID>71059</RolloverTextID>
-		<Cost resourcetype ='Wood'>200.0000</Cost>
-		<Cost resourcetype ='Gold'>200.0000</Cost>
+		<Cost resourcetype ='Wood'>400.0000</Cost>
+		<Cost resourcetype ='Gold'>300.0000</Cost>
 		<ResearchPoints>30.0000</ResearchPoints>
 		<Status>UNOBTAINABLE</Status>
 		<Icon>Star_Wars\Icons\ICON_TECH_UpgradeMech01</Icon>
@@ -54248,7 +54260,7 @@
 		<DBID>100093</DBID>
 		<DisplayNameID>71060</DisplayNameID>
 		<RolloverTextID>71059</RolloverTextID>
-		<Cost resourcetype ='Wood'>600.0000</Cost>
+		<Cost resourcetype ='Wood'>800.0000</Cost>
 		<Cost resourcetype ='Gold'>600.0000</Cost>
 		<ResearchPoints>70.0000</ResearchPoints>
 		<Status>UNOBTAINABLE</Status>
@@ -54270,8 +54282,8 @@
 		<DBID>100094</DBID>
 		<DisplayNameID>71054</DisplayNameID>
 		<RolloverTextID>71055</RolloverTextID>
-		<Cost resourcetype ='Wood'>1500.0000</Cost>
-		<Cost resourcetype ='Gold'>1500.0000</Cost>
+		<Cost resourcetype ='Wood'>1200.0000</Cost>
+		<Cost resourcetype ='Gold'>900.0000</Cost>
 		<ResearchPoints>100.0000</ResearchPoints>
 		<Status>UNOBTAINABLE</Status>
 		<Icon>Star_Wars\Icons\ICON_TECH_UpgradeMech03</Icon>
@@ -54293,8 +54305,8 @@
 		<DBID>100095</DBID>
 		<DisplayNameID>71052</DisplayNameID>
 		<RolloverTextID>71053</RolloverTextID>
-		<Cost resourcetype ='Wood'>1000.0000</Cost>
-		<Cost resourcetype ='Gold'>1000.0000</Cost>
+		<Cost resourcetype ='Wood'>900.0000</Cost>
+		<Cost resourcetype ='Gold'>800.0000</Cost>
 		<ResearchPoints>70.0000</ResearchPoints>
 		<Status>UNOBTAINABLE</Status>
 		<Icon>Star_Wars\Icons\Icon_UpgradeATST</Icon>
@@ -54417,8 +54429,8 @@
 		<DBID>100101</DBID>
 		<DisplayNameID>71062</DisplayNameID>
 		<RolloverTextID>70849</RolloverTextID>
-		<Cost resourcetype ='Wood'>200.0000</Cost>
-		<Cost resourcetype ='Gold'>200.0000</Cost>
+		<Cost resourcetype ='Wood'>300.0000</Cost>
+		<Cost resourcetype ='Gold'>300.0000</Cost>
 		<ResearchPoints>40.0000</ResearchPoints>
 		<Status>UNOBTAINABLE</Status>
 		<Icon>Star_Wars\Icons\ICON_TECH_UpgradeInf01</Icon>
@@ -54505,8 +54517,8 @@
 		<DBID>100107</DBID>
 		<DisplayNameID>71089</DisplayNameID>
 		<RolloverTextID>71091</RolloverTextID>
-		<Cost resourcetype ='Wood'>800.0000</Cost>
-		<Cost resourcetype ='Gold'>800.0000</Cost>
+		<Cost resourcetype ='Wood'>900.0000</Cost>
+		<Cost resourcetype ='Gold'>900.0000</Cost>
 		<ResearchPoints>70.0000</ResearchPoints>
 		<Status>UNOBTAINABLE</Status>
 		<Icon>Star_Wars\Icons\ICON_TECH_UpgradeMech02</Icon>
@@ -54527,8 +54539,8 @@
 		<DBID>100108</DBID>
 		<DisplayNameID>71090</DisplayNameID>
 		<RolloverTextID>71091</RolloverTextID>
-		<Cost resourcetype ='Wood'>2000.0000</Cost>
-		<Cost resourcetype ='Gold'>2000.0000</Cost>
+		<Cost resourcetype ='Wood'>1500.0000</Cost>
+		<Cost resourcetype ='Gold'>1500.0000</Cost>
 		<ResearchPoints>100.0000</ResearchPoints>
 		<Status>UNOBTAINABLE</Status>
 		<Icon>Star_Wars\Icons\ICON_TECH_UpgradeMech03</Icon>
@@ -54567,8 +54579,8 @@
 		<DBID>100110</DBID>
 		<DisplayNameID>71096</DisplayNameID>
 		<RolloverTextID>71098</RolloverTextID>
-		<Cost resourcetype ='Wood'>800.0000</Cost>
-		<Cost resourcetype ='Gold'>800.0000</Cost>
+		<Cost resourcetype ='Wood'>900.0000</Cost>
+		<Cost resourcetype ='Gold'>900.0000</Cost>
 		<ResearchPoints>70.0000</ResearchPoints>
 		<Status>UNOBTAINABLE</Status>
 		<Icon>Star_Wars\Icons\ICON_TECH_UpgradeMech02</Icon>
@@ -54589,8 +54601,8 @@
 		<DBID>100111</DBID>
 		<DisplayNameID>71097</DisplayNameID>
 		<RolloverTextID>71098</RolloverTextID>
-		<Cost resourcetype ='Wood'>2000.0000</Cost>
-		<Cost resourcetype ='Gold'>2000.0000</Cost>
+		<Cost resourcetype ='Wood'>1500.0000</Cost>
+		<Cost resourcetype ='Gold'>1500.0000</Cost>
 		<ResearchPoints>100.0000</ResearchPoints>
 		<Status>UNOBTAINABLE</Status>
 		<Icon>Star_Wars\Icons\ICON_TECH_UpgradeMech03</Icon>
@@ -54612,8 +54624,8 @@
 		<DBID>1001112</DBID>
 		<DisplayNameID>71102</DisplayNameID>
 		<RolloverTextID>71105</RolloverTextID>
-		<Cost resourcetype ='Wood'>400.0000</Cost>
-		<Cost resourcetype ='Gold'>400.0000</Cost>
+		<Cost resourcetype ='Wood'>600.0000</Cost>
+		<Cost resourcetype ='Gold'>600.0000</Cost>
 		<ResearchPoints>30.0000</ResearchPoints>
 		<Status>UNOBTAINABLE</Status>
 		<Icon>Star_Wars\Icons\ICON_TECH_UpgradeMech02</Icon>
@@ -54634,8 +54646,8 @@
 		<DBID>1001113</DBID>
 		<DisplayNameID>71103</DisplayNameID>
 		<RolloverTextID>71105</RolloverTextID>
-		<Cost resourcetype ='Wood'>800.0000</Cost>
-		<Cost resourcetype ='Gold'>800.0000</Cost>
+		<Cost resourcetype ='Wood'>900.0000</Cost>
+		<Cost resourcetype ='Gold'>900.0000</Cost>
 		<ResearchPoints>70.0000</ResearchPoints>
 		<Status>UNOBTAINABLE</Status>
 		<Icon>Star_Wars\Icons\ICON_TECH_UpgradeMech02</Icon>
@@ -54657,8 +54669,8 @@
 		<DBID>100114</DBID>
 		<DisplayNameID>71104</DisplayNameID>
 		<RolloverTextID>71105</RolloverTextID>
-		<Cost resourcetype ='Wood'>2000.0000</Cost>
-		<Cost resourcetype ='Gold'>2000.0000</Cost>
+		<Cost resourcetype ='Wood'>1500.0000</Cost>
+		<Cost resourcetype ='Gold'>1500.0000</Cost>
 		<ResearchPoints>100.0000</ResearchPoints>
 		<Status>UNOBTAINABLE</Status>
 		<Icon>Star_Wars\Icons\ICON_TECH_UpgradeMech03</Icon>
@@ -55149,7 +55161,7 @@
 		<DisplayNameID>71162</DisplayNameID>
 		<RolloverTextID>71160</RolloverTextID>
 		<ResearchPoints>30.0000</ResearchPoints>
-		<Cost resourcetype ='Food'>300.0000</Cost>
+		<Cost resourcetype ='Food'>400.0000</Cost>
 		<Status>UNOBTAINABLE</Status>
 		<Icon>star_wars\icons\icon_tech_pol_gideon_strictorders</Icon>
 		<Flag>CountsTowardMilitaryScore</Flag>
@@ -55188,8 +55200,8 @@
 	<Tech name ='zEMPPOLGideonRuthlessLeadership' type ='Normal'>
 		<DBID>100135</DBID>
 		<DisplayNameID>71163</DisplayNameID>
-		<Cost resourcetype ='Wood'>600.0000</Cost>
-		<Cost resourcetype ='Gold'>600.0000</Cost>
+		<Cost resourcetype ='Wood'>300.0000</Cost>
+		<Cost resourcetype ='Gold'>200.0000</Cost>
 		<ResearchPoints>40.0000</ResearchPoints>
 		<Status>UNOBTAINABLE</Status>
 		<Icon>star_wars\icons\icon_tech_pol_gideon_ruthlessleadership</Icon>
@@ -55207,7 +55219,7 @@
 	<Tech name ='zEMPPOLQueenTriosShuTorunOre' type ='Normal'>
 		<DBID>100136</DBID>
 		<DisplayNameID>71164</DisplayNameID>
-		<Cost resourcetype ='Gold'>600.0000</Cost>
+		<Cost resourcetype ='Gold'>400.0000</Cost>
 		<ResearchPoints>40.0000</ResearchPoints>
 		<Status>UNOBTAINABLE</Status>
 		<Icon>star_wars\icons\icon_tech_pol_queentrios_oreofshutorun</Icon>
@@ -55233,7 +55245,7 @@
 		<DBID>100137</DBID>
 		<DisplayNameID>71166</DisplayNameID>
 		<RolloverTextID>71167</RolloverTextID>
-		<Cost resourcetype ='Food'>400.0000</Cost>
+		<Cost resourcetype ='Food'>300.0000</Cost>
 		<Cost resourcetype ='Wood'>400.0000</Cost>
 		<ResearchPoints>30.0000</ResearchPoints>
 		<Status>UNOBTAINABLE</Status>
@@ -58088,6 +58100,40 @@
 				<Target type ='ProtoUnit'>AbstractVillager</Target></Effect>
 			<Effect type ='Data' amount ='4.00' subtype ='LOS' relativity ='Absolute'>
 				<Target type ='ProtoUnit'>AbstractVillager</Target></Effect>
+		</Effects>
+	</Tech>
+	<Tech name ='zColonializeEmpire' type ='Normal'>
+		<DBID>100259</DBID>
+		<Status>UNOBTAINABLE</Status>
+		<Icon>ui\post_game\time_line_age_2</Icon>
+		<Effects>
+			<Effect type ='TechStatus' status ='active'>Colonialize</Effect></Effects>
+	</Tech>
+	<Tech name ='zFortressizeEmpire' type ='Normal'>
+		<DBID>100260</DBID>
+		<Status>UNOBTAINABLE</Status>
+		<Icon>ui\post_game\time_line_age_2</Icon>
+		<Effects>
+			<Effect type ='TechStatus' status ='active'>Fortressize</Effect></Effects>
+	</Tech>
+	<Tech name ='zIndustrializeEmpire' type ='Normal'>
+		<DBID>100261</DBID>
+		<Status>UNOBTAINABLE</Status>
+		<Icon>ui\post_game\time_line_age_2</Icon>
+		<Effects>
+			<Effect type ='TechStatus' status ='active'>Industrialize</Effect>
+			<Effect type ='Data' amount ='2.00' subtype ='BuildLimit' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zFortress</Target></Effect>
+		</Effects>
+	</Tech>
+	<Tech name ='zImperializeEmpire' type ='Normal'>
+		<DBID>100262	</DBID>
+		<Status>UNOBTAINABLE</Status>
+		<Icon>ui\post_game\time_line_age_2</Icon>
+		<Effects>
+			<Effect type ='TechStatus' status ='active'>Imperialize</Effect>
+			<Effect type ='Data' amount ='2.00' subtype ='BuildLimit' relativity ='Absolute'>
+				<Target type ='ProtoUnit'>zFortress</Target></Effect>
 		</Effects>
 	</Tech><!-->  Use as an example for future unit shipments
     <Tech name="zHCEmpireSquadStormtrooper" type="Normal">

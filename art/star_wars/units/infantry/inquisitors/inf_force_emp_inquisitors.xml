@@ -8,24 +8,169 @@
 	<definebone>bone_hat</definebone>
 	<definebone>bone_sword</definebone>
 	<attachment>
-		sword
+		helmet
 		<component>
-			sword
+			helmet
+			<logic type="Variation">
+				<data>
+					<assetreference type="GrannyModel">
+						<file>star_wars\units\infantry\inquisitors\attach_helmet_inquisitor_7thsister_Model</file>
+					</assetreference>
+				</data>
+				<data>
+					<assetreference type="GrannyModel">
+						<file>star_wars\units\infantry\inquisitors\attach_helmet_inquisitor_5thbrother_Model</file>
+					</assetreference>
+				</data>
+				<data>
+					<assetreference type="GrannyModel">
+						<file>star_wars\units\infantry\inquisitors\attach_helmet_inquisitor_6thbrother_Model</file>
+					</assetreference>
+				</data>
+				<data>
+					<assetreference type="GrannyModel">
+						<file>star_wars\units\infantry\inquisitors\attach_helmet_inquisitor_8thbrother_Model</file>
+					</assetreference>
+				</data>
+			</logic>
+		</component>
+		<anim>
+			Idle
+			<component>helmet</component>
+		</anim>
+	</attachment>
+	<attachment>
+		lightsaberPromo
+		<component>
+			helmet
+			<logic type="Variation">
+				<data>
+					<assetreference type="GrannyModel">
+						<file>star_wars\units\attachments\weapons\lightsaber\attach_lightsaber_inquisitor_on_Model</file>
+					</assetreference>
+				</data>
+				<data>
+					<assetreference type="GrannyModel">
+						<file>star_wars\units\attachments\weapons\lightsaber\attach_lightsaber_inquisitor_off_Model</file>
+					</assetreference>
+				</data>
+				<data>
+					<assetreference type="GrannyModel">
+						<file>star_wars\units\attachments\weapons\lightsaber\attach_lightsaber_inquisitor_on_double_Model</file>
+					</assetreference>
+				</data>
+			</logic>
+		</component>
+		<anim>
+			Idle
+			<component>helmet</component>
+		</anim>
+	</attachment>
+	<attachment>
+		lightsaberOn
+		<component>
+			saberOn
+			<notshadowcaster/>
 			<assetreference type="GrannyModel">
-				<file>units\mercenaries\samurai\katana</file>
+				<file>star_wars\units\attachments\weapons\lightsaber\attach_lightsaber_inquisitor_on_Model</file>
 			</assetreference>
 		</component>
 		<anim>
 			Idle
-			<component>sword</component>
+			<component>saberOn</component>
+		</anim>
+	</attachment>
+	<attachment>
+		lightsaberOff
+		<component>
+			saberOff
+			<assetreference type="GrannyModel">
+				<file>star_wars\units\attachments\weapons\lightsaber\attach_lightsaber_inquisitor_off_Model</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>saberOff</component>
+		</anim>
+	</attachment>
+	<attachment>
+		lightsaberSpecial
+		<component>
+			saberSpecial
+			<notshadowcaster/>
+			<assetreference type="GrannyModel">
+				<file>star_wars\units\attachments\weapons\lightsaber\attach_lightsaber_inquisitor_on_double_Model</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>saberSpecial</component>
 		</anim>
 	</attachment>
 	<component>
 		ModelComp
-		<assetreference type="GrannyModel">
-			<file>units\mercenaries\samurai\samurai</file>
-		</assetreference>
-		<attach a="sword" frombone="bone_knife" tobone="Bip01 Prop1" syncanims="0"/>
+		<logic type="Variation">
+			<data>
+				<assetreference type="GrannyModel">
+					<file>star_wars\units\infantry\inquisitors\inf_emp_inquisitor_a_Model</file>
+				</assetreference>
+			</data>
+			<data>
+				<assetreference type="GrannyModel">
+					<file>star_wars\units\infantry\inquisitors\inf_emp_inquisitor_b_Model</file>
+				</assetreference>
+			</data>
+		</logic>
+		<attach a="helmet" frombone="bone_hat" tobone="Bip01 Head" syncanims="0"/>
+		<attach a="lightsaberOff" frombone="bone_knife" tobone="Bip01 Prop1" syncanims="0"/>
+		<decal>
+			<effecttype>default</effecttype>
+			<texture isfakeshadow="1">shadows_selections\shadow_circle_32x32</texture>
+			<selectedtexture>shadows_selections\selection_circle_32x32</selectedtexture>
+			<width>1.0</width>
+			<height>1.0</height>
+		</decal>
+	</component>
+	<component>
+		ModelCompCombat
+		<logic type="Variation">
+			<data>
+				<assetreference type="GrannyModel">
+					<file>star_wars\units\infantry\inquisitors\inf_emp_inquisitor_a_Model</file>
+				</assetreference>
+			</data>
+			<data>
+				<assetreference type="GrannyModel">
+					<file>star_wars\units\infantry\inquisitors\inf_emp_inquisitor_b_Model</file>
+				</assetreference>
+			</data>
+		</logic>
+		<attach a="helmet" frombone="bone_hat" tobone="Bip01 Head" syncanims="0"/>
+		<attach a="lightsaberOn" frombone="bone_knife" tobone="Bip01 Prop1" syncanims="0"/>
+		<decal>
+			<effecttype>default</effecttype>
+			<texture isfakeshadow="1">shadows_selections\shadow_circle_32x32</texture>
+			<selectedtexture>shadows_selections\selection_circle_32x32</selectedtexture>
+			<width>1.0</width>
+			<height>1.0</height>
+		</decal>
+	</component>
+	<component>
+		ModelCompSpecialAttack
+		<logic type="Variation">
+			<data>
+				<assetreference type="GrannyModel">
+					<file>star_wars\units\infantry\inquisitors\inf_emp_inquisitor_a_Model</file>
+				</assetreference>
+			</data>
+			<data>
+				<assetreference type="GrannyModel">
+					<file>star_wars\units\infantry\inquisitors\inf_emp_inquisitor_b_Model</file>
+				</assetreference>
+			</data>
+		</logic>
+		<attach a="helmet" frombone="bone_hat" tobone="Bip01 Head" syncanims="0"/>
+		<attach a="lightsaberSpecial" frombone="bone_knife" tobone="Bip01 Prop1" syncanims="0"/>
 		<decal>
 			<effecttype>default</effecttype>
 			<texture isfakeshadow="1">shadows_selections\shadow_circle_32x32</texture>
@@ -38,12 +183,12 @@
 		Swashbuckler
 		<assetreference type="GrannyAnim">
 			<file>animation_library\explorer\swashbuckler</file>
-			<tag type="Attack">0.70</tag>
+			<tag type="Attack">0.90</tag>
 			<tag type="SpecificSoundSet" checkvisible="1" set="Swoosh">0.50</tag>
 			<tag type="SpecificSoundSet" checkvisible="1" set="Swoosh">0.55</tag>
 			<tag type="SpecificSoundSet" checkvisible="1" set="Swoosh">0.60</tag>
 		</assetreference>
-		<component>ModelComp</component>
+		<component>ModelCompSpecialAttack</component>
 	</anim>
 	<anim>
 		Charge_idle
@@ -89,7 +234,8 @@
 		</assetreference>
 		<component>ModelComp</component>
 	</anim>
-	<anim><!-->
+	<!-->
+	<anim>
 		ForcePush
 		<assetreference type="GrannyAnim">
 			<file>animation_library\mercs\ninja\attack6</file>
@@ -98,7 +244,8 @@
 			<tag type="SpecificSoundSet" checkvisible="1" set="Swoosh">0.32</tag>
 		</assetreference>
 		<component>ModelComp</component>
-	</anim><!-->
+	</anim>
+	<!-->
 	<anim>
 		Charge_attack
 		<assetreference type="GrannyAnim">
@@ -159,14 +306,14 @@
 			<tag type="Attack">0.69</tag>
 			<tag type="SpecificSoundSet" checkvisible="1" set="Swoosh">0.37</tag>
 		</assetreference>
-		<component>ModelComp</component>
+		<component>ModelCompCombat</component>
 	</anim>
 	<anim>
 		CombatIdle
 		<assetreference type="GrannyAnim">
 			<file>animation_library\mercs\samurai\samurai_idle</file>
 		</assetreference>
-		<component>ModelComp</component>
+		<component>ModelCompCombat</component>
 	</anim>
 	<anim>
 		Cover_bored
