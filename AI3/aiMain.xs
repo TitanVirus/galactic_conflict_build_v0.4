@@ -505,6 +505,14 @@ bool civIsAsian(void)
    return(false);
 }
 
+bool civIsStarWars(void)
+{
+   if ((cMyCiv == cCivzGalacticEmpire) || (cMyCiv == cCivzEmpireTarkin) || (cMyCiv == cCivzEmpireVader) || (cMyCiv == cCivzEmpireEmperor))
+      return(true);
+   
+   return(false);
+}
+
 bool civIsEmpire(void)
 {
    if ((cMyCiv == cCivzGalacticEmpire) || (cMyCiv == cCivzEmpireTarkin) || (cMyCiv == cCivzEmpireVader) || (cMyCiv == cCivzEmpireEmperor))
@@ -4452,7 +4460,7 @@ void initEcon(void)
    if ( civIsEmpire() == true )
    {
       gEconUnit = cUnitTypezWorkerEmpire;
-      gTowerUnit = cUnitTypezGuardTower;
+      gTowerUnit = cUnitTypezDefenseTower;
       gHouseUnit = cUnitTypezHomestead;
       gFarmUnit = cUnitTypeFarm;
       gLivestockPenUnit = cUnitTypeFarm;
@@ -7572,10 +7580,10 @@ minInterval 3
     // Set SW:GC major faction's buildplan for tech level 3
    if (civIsEmpire() == true)
    {
-      planID = aiPlanGetIDByTypeAndVariableType(cPlanBuild, cBuildPlanBuildingTypeID, cUnitTypezWarCenter); //At least one War Center
-      if ( (planID < 0) && (kbUnitCount(cMyID, cUnitTypezWarCenter, cUnitStateAlive) < 1) )
+      planID = aiPlanGetIDByTypeAndVariableType(cPlanBuild, cBuildPlanBuildingTypeID, cUnitTypezArmoryComplex); //At least one War Center
+      if ( (planID < 0) && (kbUnitCount(cMyID, cUnitTypezArmoryComplex, cUnitStateAlive) < 1) )
       {
-         createSimpleBuildPlan(cUnitTypezWarCenter, 1, 70, false, cMilitaryEscrowID, kbBaseGetMainID(cMyID), 1);
+         createSimpleBuildPlan(cUnitTypezArmoryComplex, 1, 70, false, cMilitaryEscrowID, kbBaseGetMainID(cMyID), 1);
          aiEcho("Starting a War Center build plan.");
       }
       planID = aiPlanGetIDByTypeAndVariableType(cPlanBuild, cBuildPlanBuildingTypeID, cUnitTypezVehicleWorkshop); //One more light vehicle factory
@@ -7589,6 +7597,12 @@ minInterval 3
       {
          createSimpleBuildPlan(cUnitTypezResearchFacility, 1, 70, false, cMilitaryEscrowID, kbBaseGetMainID(cMyID), 1);
          aiEcho("Starting a Research Facility build plan.");
+      }
+      planID = aiPlanGetIDByTypeAndVariableType(cPlanBuild, cBuildPlanBuildingTypeID, cUnitTypezFortress); //At least one Fortress
+      if ( (planID < 0) && (kbUnitCount(cMyID, cUnitTypezFortress, cUnitStateAlive) < 1) )
+      {
+         createSimpleBuildPlan(cUnitTypezFortress, 1, 70, false, cMilitaryEscrowID, kbBaseGetMainID(cMyID), 1);
+         aiEcho("Starting a Fortress build plan.");
       }
    }
    
@@ -7612,6 +7626,12 @@ minInterval 3
          createSimpleBuildPlan(cUnitTypezInfantryBarracks, 1, 50, false, cMilitaryEscrowID, kbBaseGetMainID(cMyID), 1);
          aiEcho("Starting a new infantry barracks plan.");
       }
+	  planID = aiPlanGetIDByTypeAndVariableType(cPlanBuild, cBuildPlanBuildingTypeID, cUnitTypezFortress); // One more Fortress
+      if ( (planID < 0) && (kbUnitCount(cMyID, cUnitTypezFortress, cUnitStateAlive) < 2) )
+      {
+         createSimpleBuildPlan(cUnitTypezFortress, 1, 50, false, cMilitaryEscrowID, kbBaseGetMainID(cMyID), 1);
+         aiEcho("Starting a new airbase plan.");
+      }
 	  planID = aiPlanGetIDByTypeAndVariableType(cPlanBuild, cBuildPlanBuildingTypeID, cUnitTypezAirbase); // One more airbase
       if ( (planID < 0) && (kbUnitCount(cMyID, cUnitTypezAirbase, cUnitStateAlive) < 2) )
       {
@@ -7625,9 +7645,18 @@ minInterval 3
    if (kbGetAge() < cAge5)
       return;
    // **********************************************************
+   if (civIsEmpire() == true)
+   {
+      planID = aiPlanGetIDByTypeAndVariableType(cPlanBuild, cBuildPlanBuildingTypeID, cUnitTypezFortress); //One more Fortress
+      if ( (planID < 0) && (kbUnitCount(cMyID, cUnitTypezFortress, cUnitStateAlive) < 3) )
+      {
+         createSimpleBuildPlan(cUnitTypezFortress, 3, 70, false, cMilitaryEscrowID, kbBaseGetMainID(cMyID), 1);
+         aiEcho("Starting the third Fortress build plan.");
+      }
+   }
 
    // And how 'bout a capitol, as long as we're here
-   if ( (civIsNative() == false) && (civIsAsian() == false) ) {
+   if ( (civIsNative() == false) && (civIsAsian() == false) && (civIsStarWars() == false) ) {
      planID = aiPlanGetIDByTypeAndVariableType(cPlanBuild, cBuildPlanBuildingTypeID, cUnitTypeCapitol);
      if ( (planID < 0) && (kbUnitCount(cMyID, cUnitTypeCapitol, cUnitStateAlive) < 1) )
      {     // Start a new one
